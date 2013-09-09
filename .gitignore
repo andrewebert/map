@@ -1,0 +1,6 @@
+.tup
+macros
+static/js/*.js
+static/js/*.map
+static/json
+templates/*.html
