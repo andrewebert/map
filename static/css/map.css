@@ -1,16 +1,37 @@
 slider {
-    width: 99%;
+  width: 99%;
 }
-
 #world {
-    -webkit-transform-origin-x: 50%;
-    -webkit-transform-origin-y: 50%;
-    g {
-        -webkit-transform-origin-x: 0px;
-        -webkit-transform-origin-y: 0px;
-    }
+  position: absolute;
+  z-index: 1;
+  top: 67px;
+  -webkit-transform-origin-x: 50%;
+  -webkit-transform-origin-y: 50%;
 }
-
+#world g {
+  -webkit-transform-origin-x: 0px;
+  -webkit-transform-origin-y: 0px;
+}
 #world:focus {
-    cursor: default;
+  cursor: default;
+}
+#labelmarker {
+  position: absolute;
+}
+#label {
+  position: absolute;
+  right: 0px;
+  z-index: 2;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #292929;
+  color: white;
+  padding: 3px;
+  border: solid 1px #cdcdcd;
+  font-family: sans-serif, Verdana;
+  font-size: smaller;
+}
+#label p {
+  margin: 0px;
 }

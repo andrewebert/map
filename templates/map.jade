@@ -22,6 +22,9 @@ html(lang = "en", ng-app = "map")
       //-input(type = "radio" ng-model = "time" value = "2013_01")
       //-input(type = "radio" ng-model = "time" value = "1990_03")
     slider(floor="0" ceiling="276" precision="1" translate="pretty_format" ng-model="raw_time")
+    #labelmarker(ng-show="label.visible" ng-style="{'left': label.x + 'px', 'top': label.y + 'px'}")
+      #label
+        p {{ label.text }}
     svg#world(msd-wheel="zoom($event, $delta, $deltaX, $deltaY)",
               ng-mousedown="grab($event)",
               ng-mousemove="drag($event)",
@@ -32,5 +35,9 @@ html(lang = "en", ng-app = "map")
       g(ng-attr-transform="scale({{ scale }}) translate({{ x_trans }}, {{ y_trans }})")
         path(ng-repeat = "(code, country) in countries[time()]",
              ng-attr-d = "{{ country }}",
-             ng-attr-style = "stroke-width:0.5;stroke-miterlimit:4;fill:{{ fill[code] }};fill-opacity:1;stroke:#000000;stroke-opacity:1"
+             ng-attr-title = "{{ code }}",
+             ng-attr-style = "stroke-width:0.75;stroke-miterlimit:4;fill:{{ fill[code] }};fill-opacity:1;stroke:#000000;stroke-opacity:1"
+             ng-mouseover="label(code, $event)",
+             ng-mousemove="move_label($event)",
+             ng-mouseleave="remove_label()",
           )

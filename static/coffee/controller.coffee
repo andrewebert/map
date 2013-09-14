@@ -41,6 +41,8 @@ MapCtrl = ($scope) ->
     $scope.width = base_scale * base_width
     $scope.height = base_scale * base_height
 
+    $scope.label = {x: 0, y: 0, visible: false}
+
     initialize($scope.countries, $scope.times)
 
     $scope.date_format = (t) ->
@@ -56,6 +58,17 @@ MapCtrl = ($scope) ->
         return "#{if month<10 then "0" else ""}#{month}-#{year}"
         #return "#{months[month]} #{year}"
 
+    $scope.label = (code, e) ->
+        $scope.label.visible = true
+        $scope.label.text = code
+        $scope.move_label(e)
+
+    $scope.move_label = (e) ->
+        $scope.label.x = e.clientX - 10
+        $scope.label.y = e.clientY - 10
+
+    $scope.remove_label = () -> $scope.label.visible = false
+
     $scope.grab = (e) ->
         $scope.last_x = e.offsetX
         $scope.last_y = e.offsetY
@@ -70,7 +83,6 @@ MapCtrl = ($scope) ->
                 $scope.width, $scope.height, $scope.scale)
             $scope.last_x = x
             $scope.last_y = y
-
 
     $scope.release = () ->
         $scope.last_x = undefined

@@ -1,1 +1,1 @@
-: foreach ../less/*.less |> less < %f > %o |> %B.css
+: foreach ../less/*.less |> lessc %f > %o |> %B.css
