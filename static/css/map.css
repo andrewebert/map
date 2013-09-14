@@ -1,0 +1,16 @@
+slider {
+    width: 99%;
+}
+
+#world {
+    -webkit-transform-origin-x: 50%;
+    -webkit-transform-origin-y: 50%;
+    g {
+        -webkit-transform-origin-x: 0px;
+        -webkit-transform-origin-y: 0px;
+    }
+}
+
+#world:focus {
+    cursor: default;
+}

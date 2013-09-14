@@ -2,10 +2,17 @@
 html(lang = "en", ng-app = "map")
   head
     link(rel = "stylesheet", href = "../static/css/lib/angular-slider.css", type = "text/css")
+    link(rel = "stylesheet", href = "../static/css/map.css", type = "text/css")
     script(src = "../static/js/lib/angular.js", type = "text/javascript")
     script(src = "../static/js/lib/angular-slider.js", type = "text/javascript")
+
+    script(src = "../static/js/transform.js", type = "text/javascript")
+
     script(src = "../static/js/controller.js", type = "text/javascript")
     script(src = "../static/js/app.js", type = "text/javascript")
+
+    script(src = "../static/js/lib/hamster.js", type = "text/javascript")
+    script(src = "../static/js/lib/mousewheel.js", type = "text/javascript")
 
     script(src = "../static/js/data/initial.js", type = "text/javascript")
     script(src = "../static/js/data/changes.js", type = "text/javascript")
@@ -15,9 +22,15 @@ html(lang = "en", ng-app = "map")
       //-input(type = "radio" ng-model = "time" value = "2013_01")
       //-input(type = "radio" ng-model = "time" value = "1990_03")
     slider(floor="0" ceiling="276" precision="1" translate="pretty_format" ng-model="raw_time")
-    svg(width = 1000, height = 500)
-      g
+    svg#world(msd-wheel="zoom($event, $delta, $deltaX, $deltaY)",
+              ng-mousedown="grab($event)",
+              ng-mousemove="drag($event)",
+              ng-mouseup="release()",
+              ng-mouseleave="release()",
+              ng-attr-width="{{ width }}",
+              ng-attr-height="{{ height }}")
+      g(ng-attr-transform="scale({{ scale }}) translate({{ x_trans }}, {{ y_trans }})")
         path(ng-repeat = "(code, country) in countries[time()]",
-             d = "{{ country }}",
-             style = "stroke-width:1;stroke-miterlimit:4;fill:{{ fill[code] }};fill-opacity:1;stroke:#000000;stroke-opacity:1"
+             ng-attr-d = "{{ country }}",
+             ng-attr-style = "stroke-width:0.5;stroke-miterlimit:4;fill:{{ fill[code] }};fill-opacity:1;stroke:#000000;stroke-opacity:1"
           )

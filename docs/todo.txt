@@ -1,0 +1,6 @@
+- Allow zoom/grab
+- Allow play
+- Have semitransparent control area in bottom-center
+- Automatic resize
+- Create recolor script
+  - Recolor pinks near USSR, PNG, Phillipines
