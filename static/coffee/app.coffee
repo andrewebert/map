@@ -1,1 +1,1 @@
-app = angular.module('map', [])
+app = angular.module('map', ["uiSlider"])

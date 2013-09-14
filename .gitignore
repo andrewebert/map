@@ -1,5 +1,6 @@
 .tup
 macros
+Session.vim
 static/js/*.js
 static/js/*.map
 static/json

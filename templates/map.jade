@@ -1,22 +1,23 @@
 !!!
 html(lang = "en", ng-app = "map")
   head
-    script
-      | changes = {};
+    link(rel = "stylesheet", href = "../static/css/lib/angular-slider.css", type = "text/css")
     script(src = "../static/js/lib/angular.js", type = "text/javascript")
+    script(src = "../static/js/lib/angular-slider.js", type = "text/javascript")
     script(src = "../static/js/controller.js", type = "text/javascript")
     script(src = "../static/js/app.js", type = "text/javascript")
-    script(src = "../static/js/data/world_2010_01.js", type = "text/javascript")
+
+    script(src = "../static/js/data/initial.js", type = "text/javascript")
     script(src = "../static/js/data/changes.js", type = "text/javascript")
+    script(src = "../static/js/data/fills.js", type = "text/javascript")
   body(ng-controller = "MapCtrl")
-    form(name = "form")
-      input(type = "radio" ng-model = "time" value = "1900_01")
-        | January 1900
-      input(type = "radio" ng-model = "time" value = "2011_07")
-        | July 2011
+    //-form(name = "form")
+      //-input(type = "radio" ng-model = "time" value = "2013_01")
+      //-input(type = "radio" ng-model = "time" value = "1990_03")
+    slider(floor="0" ceiling="276" precision="1" translate="pretty_format" ng-model="raw_time")
     svg(width = 1000, height = 500)
       g
-        path(ng-repeat = "country in countries[time]",
-             d = "{{ country.d }}",
-             style = "stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+        path(ng-repeat = "(code, country) in countries[time()]",
+             d = "{{ country }}",
+             style = "stroke-width:1;stroke-miterlimit:4;fill:{{ fill[code] }};fill-opacity:1;stroke:#000000;stroke-opacity:1"
           )
