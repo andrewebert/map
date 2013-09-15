@@ -1,26 +1,17 @@
-import xml.etree.ElementTree as ET
 import sys
 import json
-import os
 import re
-from pprint import pprint
+from unicodecsv import unicodecsv
 
-attributes = ["d", "name", "formal", "code", "owner", "disputed", "color"]
-
+from util import parse_svg
 
 def parse_fill(style):
     return re.match(r".*fill:(.*?);.*", style).groups()[0]
 
-
-def parse_svg(filename):
-    time = os.path.basename(filename)[6:13]
-    tree = ET.parse(filename)
-    root = tree.getroot()
-    paths = [p.attrib for p in root.findall('{http://www.w3.org/2000/svg}path')]
+def extract_map_data(paths):
     map = {}
     fills = {}
     for p in paths:
-        #country = {attr: p[attr] for attr in attributes if attr in p}
         country = p["d"]
         try:
             map[p["code"]] = country
@@ -34,35 +25,79 @@ def parse_svg(filename):
             except AttributeError:
                 print "Missing fill:", filename
                 print p["code"]
-    return time, map, fills
+    return map, fills
 
 
 def get_map_difference(old, new):
     old_keys = set(old.keys())
     new_keys = set(new.keys())
-    changed_keys = [k for k in old_keys & new_keys if old[k] != new[k]]
+    changed_keys = [k for k in new_keys if k not in old_keys or old[k] != new[k]]
     changed = {k: new[k] for k in changed_keys}
-    added_keys = new_keys - old_keys
-    added = {k: new[k] for k in added_keys}
-    removed_keys = old_keys - new_keys
-    return {"removed": list(removed_keys), "added": added, "changed": changed}
+    removed = list(old_keys - new_keys)
+    return {"removed": removed, "changed": changed}
 
 
 def get_data(filenames):
     files = list(reversed(filenames))
-    t, original, fills = parse_svg(files[0])
+    t, paths = parse_svg(files[0])
+    original, fills = extract_map_data(paths)
     prev = original
     changes = {}
     for f in files[1:]:
-        time, map, new_fills = parse_svg(f)
+        time, paths = parse_svg(f)
+        map, new_fills = extract_map_data(paths)
         changes[time] = get_map_difference(prev, map)
         fills.update(new_fills)
         prev = map
     return original, changes, fills
 
 
+def read_csv(filename):
+    data = {}
+    with open(filename, 'rb') as f:
+        reader = unicodecsv.reader(f)
+        codes = reader.next()[1:]
+        for row in reader:
+            date = row[0]
+            changes = {codes[i]: name for i, name in enumerate(row[1:]) if name != u''}
+            if changes != {}:
+                data[date] = changes
+    return data
+
+
+def merge_data(map, names):
+    codes = set(map.keys()) | set(names.keys())
+    data = {}
+    for code in codes:
+        data[code] = {}
+        if code in map:
+            data[code]["d"] = map[code]
+        if code in names:
+            data[code]["name"] = names[code]
+    return data
+
+
 def convert(filenames):
-    original, changes, fills = get_data(filenames)
+    original_map, changes_map, fills = get_data(filenames)
+    names = read_csv('data/names.csv')
+    original_names = names["2013_01"]
+    del names["2013_01"]
+    changes_names = names
+    original = merge_data(original_map, original_names)
+    changes = {}
+    for date in set(changes_map.keys()) | set(changes_names.keys()):
+        if date in changes_map and date in changes_names:
+            changes[date] = {
+                             "removed": changes_map[date]["removed"],
+                             "changed": merge_data(changes_map[date]["changed"], changes_names[date])}
+        elif date in changes_map:
+            changes[date] = {"removed": changes_map[date]["removed"],
+                             "changed": {c: {"d": d} for c, d in changes_map[date]["changed"].items()}}
+        elif date in changes_names:
+            changes[date] = {"removed": {},
+                             "changed": {c: {"name": name} for c, name in changes_names[date].items()}}
+
+
     original_str =  "initial_countries = " + json.dumps(original, sort_keys=True) + ";"
     changes_str = "changes = " + json.dumps(changes, sort_keys=True) + ";"
     fills_str = "fills = " + json.dumps(fills, sort_keys=True) + ";"
@@ -78,16 +113,3 @@ def convert(filenames):
 if __name__ == "__main__":
     convert(sys.argv[1:])
 
-    #original_str = "initial_countries = {\n" +
-        #",\n".join("\"" + k + "\": " +
-                #json.dumps(v, sort_keys=True) for k, v in sorted(original.items()))
-        #+ "\n}"
-
-    #maps = {}
-    #metadatas = {}
-    #time, map, metadata = parse_svg(filename)
-    #maps[time] = map
-
-
-#d = {p["code"]: {"name": p["name"], "formal": p["formal"], "code": p["code"], "d": p["d"]} for p in paths}
-#print "{\n"+ ",\n".join("\"" + k + "\": " + json.dumps(v, sort_keys=True) for k, v in sorted(d.items())) + "\n}"

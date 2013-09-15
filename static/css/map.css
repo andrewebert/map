@@ -1,5 +1,6 @@
 slider {
-  width: 99%;
+  position: absolute;
+  width: 95%;
 }
 #world {
   position: absolute;
@@ -20,7 +21,8 @@ slider {
 }
 #label {
   position: absolute;
-  right: 0px;
+  right: 8px;
+  bottom: 8px;
   z-index: 2;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;

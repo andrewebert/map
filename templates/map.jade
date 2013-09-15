@@ -5,14 +5,14 @@ html(lang = "en", ng-app = "map")
     link(rel = "stylesheet", href = "../static/css/map.css", type = "text/css")
     script(src = "../static/js/lib/angular.js", type = "text/javascript")
     script(src = "../static/js/lib/angular-slider.js", type = "text/javascript")
+    script(src = "../static/js/lib/hamster.js", type = "text/javascript")
+    script(src = "../static/js/lib/mousewheel.js", type = "text/javascript")
+    script(src = "../static/js/lib/color.js", type = "text/javascript")
 
     script(src = "../static/js/transform.js", type = "text/javascript")
 
     script(src = "../static/js/controller.js", type = "text/javascript")
     script(src = "../static/js/app.js", type = "text/javascript")
-
-    script(src = "../static/js/lib/hamster.js", type = "text/javascript")
-    script(src = "../static/js/lib/mousewheel.js", type = "text/javascript")
 
     script(src = "../static/js/data/initial.js", type = "text/javascript")
     script(src = "../static/js/data/changes.js", type = "text/javascript")
@@ -22,7 +22,7 @@ html(lang = "en", ng-app = "map")
       //-input(type = "radio" ng-model = "time" value = "2013_01")
       //-input(type = "radio" ng-model = "time" value = "1990_03")
     slider(floor="0" ceiling="276" precision="1" translate="pretty_format" ng-model="raw_time")
-    #labelmarker(ng-show="label.visible" ng-style="{'left': label.x + 'px', 'top': label.y + 'px'}")
+    #labelmarker(ng-show="label.visible" ng-style="{left: label.x + 'px', top: label.y + 'px'}")
       #label
         p {{ label.text }}
     svg#world(msd-wheel="zoom($event, $delta, $deltaX, $deltaY)",
@@ -34,10 +34,10 @@ html(lang = "en", ng-app = "map")
               ng-attr-height="{{ height }}")
       g(ng-attr-transform="scale({{ scale }}) translate({{ x_trans }}, {{ y_trans }})")
         path(ng-repeat = "(code, country) in countries[time()]",
-             ng-attr-d = "{{ country }}",
-             ng-attr-title = "{{ code }}",
-             ng-attr-style = "stroke-width:0.75;stroke-miterlimit:4;fill:{{ fill[code] }};fill-opacity:1;stroke:#000000;stroke-opacity:1"
-             ng-mouseover="label(code, $event)",
+             //-ng-attr-d = "{{ country.d }}",
+             ng-attr-d = "{{ get_d(code, country) }}",
+             ng-style = "{'stroke-width':0.75, 'stroke-miterlimit':4, fill: fill(code), 'fill-opacity':1, stroke:'#000000', 'stroke-opacity':1}"
+             ng-mouseover="select(code, $event)",
              ng-mousemove="move_label($event)",
-             ng-mouseleave="remove_label()",
+             ng-mouseleave="deselect()"
           )

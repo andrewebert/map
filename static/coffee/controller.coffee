@@ -15,14 +15,19 @@ initialize = (countries, times) ->
     for date in times[1..]
         if changes[date]?
             curr = {}
-            for k, v of prev
-                curr[k] = v
-            for k in changes[date].removed
-                delete curr[k]
-            for k, v of changes[date].added
-                curr[k] = v
-            for k, v of changes[date].changed
-                curr[k] = v
+            for code, old of prev
+                curr[code] = old
+            for code in changes[date].removed
+                delete curr[code]
+            for code, changed of changes[date].changed
+                if curr[code]?
+                    curr[code] = {d: prev[code].d, name: prev[code].name}
+                    if changed.d?
+                        curr[code].d = changed.d
+                    if changed.name?
+                        curr[code].name = changed.name
+                else
+                    curr[code] = changed
             countries[date] = curr
             prev = curr
             last_date = date
@@ -30,10 +35,10 @@ initialize = (countries, times) ->
             countries[date] = countries[last_date]
 
 MapCtrl = ($scope) ->
+    Color = net.brehaut.Color
     $scope.raw_time = 0
     $scope.countries = {}
     $scope.times = []
-    $scope.fill = fills
     $scope.x_trans = 0
     $scope.y_trans = 0
 
@@ -44,6 +49,16 @@ MapCtrl = ($scope) ->
     $scope.label = {x: 0, y: 0, visible: false}
 
     initialize($scope.countries, $scope.times)
+
+    $scope.get_d = (code, country) ->
+        if country.d?
+            return country.d
+        else
+            console.log("Missing d")
+            console.log(code)
+            console.log(country)
+            console.log($scope.time())
+            return ""
 
     $scope.date_format = (t) ->
       return "#{Math.floor(t/12) + 1990}_#{if t%12+1<10 then "0" else ""}#{(t%12) + 1}"
@@ -58,16 +73,29 @@ MapCtrl = ($scope) ->
         return "#{if month<10 then "0" else ""}#{month}-#{year}"
         #return "#{months[month]} #{year}"
 
-    $scope.label = (code, e) ->
+    $scope.select = (code, e) ->
         $scope.label.visible = true
-        $scope.label.text = code
+        $scope.label.text = $scope.countries[$scope.time()][code].name
+        $scope.selected = code
         $scope.move_label(e)
 
     $scope.move_label = (e) ->
-        $scope.label.x = e.clientX - 10
-        $scope.label.y = e.clientY - 10
+        $scope.label.x = e.clientX
+        $scope.label.y = e.clientY
 
-    $scope.remove_label = () -> $scope.label.visible = false
+    $scope.deselect = () ->
+        $scope.label.visible = false
+        $scope.selected = undefined
+
+    $scope.fill = (code) ->
+        color = fills[code]
+        if $scope.selected == code
+            color = Color(color)
+            color = color.setSaturation(Math.min(color.getSaturation() + 0.4, 1))
+            color = color.setLightness(Math.max(color.getLightness() - 0.25, 0))
+            return color.toCSS()
+        else
+            return color
 
     $scope.grab = (e) ->
         $scope.last_x = e.offsetX
