@@ -6,8 +6,8 @@ MARGIN_BOTTOM = 10
 base_width = 1000
 base_height = 506
 
-width = document.width - MARGIN_LEFT - MARGIN_RIGHT
-height = document.height - MARGIN_TOP - MARGIN_BOTTOM
+width = window.innerWidth - MARGIN_LEFT - MARGIN_RIGHT
+height = window.innerHeight - MARGIN_TOP - MARGIN_BOTTOM
 base_scale = Math.min(width/base_width, height/base_height)
 
 scale_step = 1.3

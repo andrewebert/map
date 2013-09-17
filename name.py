@@ -1,6 +1,7 @@
 from pprint import pprint
 import csv
 import codecs
+import sys
 from unicodecsv import unicodecsv
 
 import util
@@ -13,7 +14,7 @@ def extract_names(paths):
     for p in paths:
         try:
             names[p["code"]] = p["name"]
-            formals[p["formal"]] = p["formal"]
+            formals[p["code"]] = p["formal"] if p["formal"] != "" else p["name"]
         except KeyError:
             print "Missing data"
             pprint(p)
@@ -32,6 +33,7 @@ def make_csv(d, filename):
         writer.writerows(rows)
 
 if __name__ == "__main__":
-    n, f = extract_names(sys.argv[1])
+    t, paths = util.parse_svg(sys.argv[1])
+    n, f = extract_names(paths)
     make_csv(n, "names.csv")
     make_csv(f, "formal.csv")

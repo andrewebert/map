@@ -117,8 +117,8 @@ MapCtrl = ($scope) ->
         $scope.last_y = undefined
 
     $scope.zoom = (e, d, dx, dy) ->
-        x = e.originalEvent.offsetX
-        y = e.originalEvent.offsetY
+        x = e.layerX ? e.originalEvent.layerX
+        y = e.layerY ? e.originalEvent.layerY
         direction = dy
 
         [$scope.x_trans, $scope.y_trans, $scope.scale] = calculate_scale(x, y,

@@ -5,3 +5,14 @@ static/js/*.js
 static/js/*.map
 static/json
 templates/*.html
+*.pyc
+unicodecsv/*.pyc
+static/js/data/changes.js
+static/js/data/initial.js
+static/css/map.css
+static/js/*.js
+data/.*
+deploy
+formal.csv
+names.csv
+
