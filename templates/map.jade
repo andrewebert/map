@@ -18,26 +18,33 @@ html(lang = "en", ng-app = "map")
     script(src = "../static/js/data/changes.js", type = "text/javascript")
     script(src = "../static/js/data/fills.js", type = "text/javascript")
   body(ng-controller = "MapCtrl")
-    //-form(name = "form")
-      //-input(type = "radio" ng-model = "time" value = "2013_01")
-      //-input(type = "radio" ng-model = "time" value = "1990_03")
-    slider(floor="0" ceiling="276" precision="1" translate="pretty_format" ng-model="raw_time")
     #labelmarker(ng-show="label.visible" ng-style="{left: label.x + 'px', top: label.y + 'px'}")
       #label
         p {{ label.text }}
-    svg#world(msd-wheel="zoom($event, $delta, $deltaX, $deltaY)",
-              ng-mousedown="grab($event)",
-              ng-mousemove="drag($event)",
-              ng-mouseup="release()",
-              ng-mouseleave="release()",
-              ng-attr-width="{{ width }}",
-              ng-attr-height="{{ height }}")
-      g(ng-attr-transform="scale({{ scale }}) translate({{ x_trans }}, {{ y_trans }})")
-        path(ng-repeat = "(code, country) in countries[time()]",
-             //-ng-attr-d = "{{ country.d }}",
-             ng-attr-d = "{{ get_d(code, country) }}",
-             ng-style = "{'stroke-width':0.75, 'stroke-miterlimit':4, fill: fill(code), 'fill-opacity':1, stroke:'#000000', 'stroke-opacity':1}"
-             ng-mouseover="select(code, $event)",
-             ng-mousemove="move_label($event)",
-             ng-mouseleave="deselect()"
-          )
+    #map(ng-style="{width: width + 'px', height: height + 'px'}")
+      #info
+        #infobox
+        p#formal {{ formal() }}
+        #playbox
+          img#play(ng-src="{{ play_button() }}",
+                   ng-click = "play()",
+                   ng-style = "{height: '27px', width: '27px'}")
+        slider(floor="0" ceiling="{{ max_raw_time }} " precision="1" translate="pretty_format" ng-model="raw_time")
+      svg#world(msd-wheel="zoom($event, $delta, $deltaX, $deltaY)",
+                ng-mousedown="grab($event)",
+                ng-mousemove="drag($event)",
+                ng-mouseup="release()",
+                ng-mouseleave="release()",
+                ng-click="hard_select(undefined, $event)",
+                ng-attr-width="{{ width }}",
+                ng-attr-height="{{ height }}")
+        g(ng-attr-transform="scale({{ scale }}) translate({{ x_trans }}, {{ y_trans }})")
+          path(ng-repeat = "(code, country) in countries[time()]",
+               //-ng-attr-d = "{{ country.d }}",
+               ng-attr-d = "{{ get_d(code, country) }}",
+               ng-style = "{'stroke-width':0.75, 'stroke-miterlimit':4, fill: fill(code), 'fill-opacity':1, stroke:'#000000', 'stroke-opacity':1}"
+               ng-click="hard_select(code, $event)",
+               ng-mouseover="select(code, $event)",
+               ng-mousemove="move_label($event)",
+               ng-mouseleave="deselect()"
+            )

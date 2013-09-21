@@ -1,6 +1,7 @@
 changes = {}
 
 initialize = (countries, times) ->
+    attrs = ["d", "name", "formal"]
     for y in [2013..1990]
         for m in [12..1]
             if !(y >= 2013 && m >= 2)
@@ -17,30 +18,33 @@ initialize = (countries, times) ->
             curr = {}
             for code, old of prev
                 curr[code] = old
-            for code in changes[date].removed
-                delete curr[code]
-            for code, changed of changes[date].changed
-                if curr[code]?
-                    curr[code] = {d: prev[code].d, name: prev[code].name}
-                    if changed.d?
-                        curr[code].d = changed.d
-                    if changed.name?
-                        curr[code].name = changed.name
-                else
-                    curr[code] = changed
+            if changes[date].removed?
+                for code in changes[date].removed
+                    delete curr[code]
+            if changes[date].changed?
+                for code, changed of changes[date].changed
+                    if curr[code]?
+                        curr[code] = {}
+                        for attr in attrs
+                            curr[code][attr] = changed[attr] ? prev[code][attr]
+                    else
+                        curr[code] = changed
             countries[date] = curr
             prev = curr
             last_date = date
         else
             countries[date] = countries[last_date]
 
-MapCtrl = ($scope) ->
+MapCtrl = ($scope, $timeout) ->
     Color = net.brehaut.Color
+    $scope.max_raw_time = 276
+
     $scope.raw_time = 0
     $scope.countries = {}
     $scope.times = []
     $scope.x_trans = 0
     $scope.y_trans = 0
+    $scope.paused = true
 
     $scope.scale = base_scale
     $scope.width = base_scale * base_width
@@ -62,7 +66,17 @@ MapCtrl = ($scope) ->
 
     $scope.date_format = (t) ->
       return "#{Math.floor(t/12) + 1990}_#{if t%12+1<10 then "0" else ""}#{(t%12) + 1}"
+
     $scope.time = () -> $scope.date_format($scope.raw_time)
+
+    $scope.play_button = () ->
+        if $scope.paused then "../static/img/play.png" else "../static/img/pause.png" 
+
+    $scope.play = () ->
+        $scope.paused = not $scope.paused
+        if not $scope.paused and parseInt($scope.raw_time) == $scope.max_raw_time
+            $scope.raw_time = 0
+
 
     $scope.pretty_format = (t) ->
         year = Math.floor(t/12) + 1990
@@ -73,10 +87,30 @@ MapCtrl = ($scope) ->
         return "#{if month<10 then "0" else ""}#{month}-#{year}"
         #return "#{months[month]} #{year}"
 
+    $scope.country = (code) ->
+        return $scope.countries[$scope.time()][code]
+
+    $scope.formal = () ->
+        if $scope.selected()?
+            country = $scope.country($scope.selected())
+            return if country then country.formal else ""
+        else
+            return ""
+
+    $scope.hard_select = (code, e) ->
+        console.log("hard selected", code)
+        if $scope.hard_selected == code
+            $scope.hard_selected = undefined
+        else
+            $scope.hard_selected = code
+        e.stopPropagation()
+
+    $scope.selected = () -> $scope.hard_selected ? $scope.soft_selected
+
     $scope.select = (code, e) ->
         $scope.label.visible = true
-        $scope.label.text = $scope.countries[$scope.time()][code].name
-        $scope.selected = code
+        $scope.label.text = $scope.country(code).name
+        $scope.soft_selected = code
         $scope.move_label(e)
 
     $scope.move_label = (e) ->
@@ -85,11 +119,11 @@ MapCtrl = ($scope) ->
 
     $scope.deselect = () ->
         $scope.label.visible = false
-        $scope.selected = undefined
+        $scope.soft_selected = undefined
 
     $scope.fill = (code) ->
         color = fills[code]
-        if $scope.selected == code
+        if $scope.selected() == code
             color = Color(color)
             color = color.setSaturation(Math.min(color.getSaturation() + 0.4, 1))
             color = color.setLightness(Math.max(color.getLightness() - 0.25, 0))
@@ -98,12 +132,12 @@ MapCtrl = ($scope) ->
             return color
 
     $scope.grab = (e) ->
-        $scope.last_x = e.offsetX
-        $scope.last_y = e.offsetY
+        $scope.last_x = e.layerX
+        $scope.last_y = e.layerY
 
     $scope.drag = (e) ->
-        x = e.offsetX
-        y = e.offsetY
+        x = e.layerX
+        y = e.layerY
         if $scope.last_x? and $scope.last_y?
             x_trans = $scope.x_trans + (x - $scope.last_x)/$scope.scale
             y_trans = $scope.y_trans + (y - $scope.last_y)/$scope.scale
@@ -126,3 +160,12 @@ MapCtrl = ($scope) ->
             $scope.x_trans, $scope.y_trans, $scope.scale)
 
         e.preventDefault()
+
+    $scope.tick = () ->
+        if not $scope.paused
+            if $scope.raw_time < $scope.max_raw_time
+                $scope.raw_time = parseInt($scope.raw_time) + 1
+            else
+                $scope.paused = true
+        $timeout($scope.tick, 1000/12)
+    $scope.tick()
