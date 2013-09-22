@@ -72,6 +72,12 @@ slider {
   background: #eee;
   opacity: 0.8;
 }
+#flag {
+  position: absolute;
+  left: 4%;
+  top: 11%;
+  width: 23%;
+}
 #formal {
   position: absolute;
   top: 5%;

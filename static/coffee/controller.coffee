@@ -1,7 +1,7 @@
 changes = {}
 
 initialize = (countries, times) ->
-    attrs = ["d", "name", "formal", "owner"]
+    attrs = ["d", "name", "formal", "owner", "flag"]
     for y in [2013..1990]
         for m in [12..1]
             if !(y >= 2013 && m >= 2)
@@ -26,7 +26,7 @@ initialize = (countries, times) ->
                     if curr[code]?
                         curr[code] = {}
                         for attr in attrs
-                            curr[code][attr] = changed[attr] ? prev[code][attr]
+                            curr[code][attr] = changed[attr] ? prev[code][attr] ? ""
                     else
                         curr[code] = changed
             countries[date] = curr
@@ -96,7 +96,7 @@ MapCtrl = ($scope, $timeout) ->
         if $scope.selected()?
             country = $scope.country($scope.selected())
             if country.formal?
-                if country.owner?
+                if country.owner? and country.owner != ""
                     return "#{country.formal} (#{$scope.country(country.owner).name})"
                 else
                     return country.formal
@@ -104,6 +104,17 @@ MapCtrl = ($scope, $timeout) ->
                 return ""
         else
             return ""
+
+    $scope.flag = () ->
+        if $scope.selected()?
+            country = $scope.country($scope.selected())
+            if country.flag? and country.flag != ""
+                return country.flag
+            else
+                return false
+        else
+            return false
+
 
     $scope.hard_select = (code, e) ->
         console.log("hard selected", code)
