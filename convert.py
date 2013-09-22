@@ -2,6 +2,7 @@ import sys
 import json
 import re
 from unicodecsv import unicodecsv
+from IPython.core.debugger import Tracer
 
 from util import parse_svg
 
@@ -94,30 +95,36 @@ def merge_changes(changes_map, changes_names, changes_formals):
 def convert(filenames):
     original_map, changes_map, fills = get_data(filenames)
 
-    names = read_csv('data/names.csv')
-    original_names = names["2013_01"]
-    del names["2013_01"]
-    changes_names = names
- 
-    formals = read_csv('data/formal.csv')
-    original_formals = formals["2013_01"]
-    del formals["2013_01"]
-    changes_formals = formals
+    original_sources = {"d": original_map}
+    change_sources = {"d": {date: data["changed"]
+        for date, data in changes_map.items() if "changed" in data}}
 
-    original = merge_data({"d": original_map, "name": original_names, "formal": original_formals})
-    
-    changes = merge_changes(changes_map, changes_names, changes_formals)
-        #for date in set(changes_map.keys()) | set(changes_names.keys()):
-        #if date in changes_map and date in changes_names:
-            #changes[date] = {
-                             #"removed": changes_map[date]["removed"],
-                             #"changed": merge_data(changes_map[date]["changed"], changes_names[date])}
-        #elif date in changes_map:
-            #changes[date] = {"removed": changes_map[date]["removed"],
-                             #"changed": {c: {"d": d} for c, d in changes_map[date]["changed"].items()}}
-        #elif date in changes_names:
-            #changes[date] = {"removed": {},
-                             #"changed": {c: {"name": name} for c, name in changes_names[date].items()}}
+    def get_changes(tag):
+        source = read_csv('data/' + tag + '.csv')
+        original_sources[tag] = source["2013_01"]
+        del source["2013_01"]
+        change_sources[tag] = source
+
+    get_changes('name')
+    get_changes('formal')
+    #get_changes('owner')
+
+    original = merge_data(original_sources)
+
+    changes = {}
+
+    dates = list(set.union(*(set(source.keys()) for source in change_sources.values())))
+    #Tracer()()
+    for date in dates:
+        cs = merge_data({tag: source[date] if date in source else {}
+            for tag, source in change_sources.items()})
+        rs = changes_map[date]["removed"] if date in changes_map else {}
+        if cs != {} or rs != {}:
+            changes[date] = {}
+            if cs != {}:
+                changes[date]["changed"] = cs
+            if rs != {}:
+                changes[date]["removed"] = rs
 
 
     original_str =  "initial_countries = " + json.dumps(original, sort_keys=True) + ";"

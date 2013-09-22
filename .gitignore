@@ -13,6 +13,7 @@ static/css/map.css
 static/js/*.js
 data/.*
 deploy
+deploy.tar.gz
 formal.csv
 names.csv
 
