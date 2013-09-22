@@ -95,7 +95,7 @@ MapCtrl = ($scope, $timeout) ->
     $scope.formal = () ->
         if $scope.selected()?
             country = $scope.country($scope.selected())
-            if country.formal?
+            if country?.formal?
                 if country.owner? and country.owner != ""
                     return "#{country.formal} (#{$scope.country(country.owner).name})"
                 else
