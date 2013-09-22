@@ -107,7 +107,7 @@ def convert(filenames):
 
     get_changes('name')
     get_changes('formal')
-    #get_changes('owner')
+    get_changes('owner')
 
     original = merge_data(original_sources)
 

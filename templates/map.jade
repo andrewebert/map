@@ -20,7 +20,7 @@ html(lang = "en", ng-app = "map")
   body(ng-controller = "MapCtrl")
     #labelmarker(ng-show="label.visible" ng-style="{left: label.x + 'px', top: label.y + 'px'}")
       #label
-        p {{ label.text }}
+        p {{ label_text() }}
     #map(ng-style="{width: width + 'px', height: height + 'px'}")
       #info
         #infobox

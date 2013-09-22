@@ -1,7 +1,7 @@
 changes = {}
 
 initialize = (countries, times) ->
-    attrs = ["d", "name", "formal"]
+    attrs = ["d", "name", "formal", "owner"]
     for y in [2013..1990]
         for m in [12..1]
             if !(y >= 2013 && m >= 2)
@@ -74,8 +74,10 @@ MapCtrl = ($scope, $timeout) ->
 
     $scope.play = () ->
         $scope.paused = not $scope.paused
-        if not $scope.paused and parseInt($scope.raw_time) == $scope.max_raw_time
-            $scope.raw_time = 0
+        if not $scope.paused
+            if parseInt($scope.raw_time) == $scope.max_raw_time
+                $scope.raw_time = 0
+            $scope.tick()
 
 
     $scope.pretty_format = (t) ->
@@ -93,7 +95,13 @@ MapCtrl = ($scope, $timeout) ->
     $scope.formal = () ->
         if $scope.selected()?
             country = $scope.country($scope.selected())
-            return if country then country.formal else ""
+            if country.formal?
+                if country.owner?
+                    return "#{country.formal} (#{$scope.country(country.owner).name})"
+                else
+                    return country.formal
+            else
+                return ""
         else
             return ""
 
@@ -109,7 +117,6 @@ MapCtrl = ($scope, $timeout) ->
 
     $scope.select = (code, e) ->
         $scope.label.visible = true
-        $scope.label.text = $scope.country(code).name
         $scope.soft_selected = code
         $scope.move_label(e)
 
@@ -120,6 +127,12 @@ MapCtrl = ($scope, $timeout) ->
     $scope.deselect = () ->
         $scope.label.visible = false
         $scope.soft_selected = undefined
+
+    $scope.label_text = () ->
+        if $scope.soft_selected?
+            $scope.country($scope.soft_selected).name
+        else
+            ""
 
     $scope.fill = (code) ->
         color = fills[code]
@@ -167,5 +180,4 @@ MapCtrl = ($scope, $timeout) ->
                 $scope.raw_time = parseInt($scope.raw_time) + 1
             else
                 $scope.paused = true
-        $timeout($scope.tick, 1000/12)
-    $scope.tick()
+            $timeout($scope.tick, 1000/12/2)
