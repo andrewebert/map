@@ -9,14 +9,14 @@ html(lang = "en", ng-app = "map")
     script(src = "../static/js/lib/mousewheel.js", type = "text/javascript")
     script(src = "../static/js/lib/color.js", type = "text/javascript")
 
-    script(src = "../static/js/transform.js", type = "text/javascript")
-
-    script(src = "../static/js/controller.js", type = "text/javascript")
-    script(src = "../static/js/app.js", type = "text/javascript")
-
     script(src = "../static/js/data/initial.js", type = "text/javascript")
     script(src = "../static/js/data/changes.js", type = "text/javascript")
     script(src = "../static/js/data/fills.js", type = "text/javascript")
+    script(src = "../static/js/data/population.js", type = "text/javascript")
+
+    script(src = "../static/js/transform.js", type = "text/javascript")
+    script(src = "../static/js/controller.js", type = "text/javascript")
+    script(src = "../static/js/app.js", type = "text/javascript")
   body(ng-controller = "MapCtrl")
     #labelmarker(ng-show="label.visible" ng-style="{left: label.x + 'px', top: label.y + 'px'}")
       #label
@@ -24,7 +24,7 @@ html(lang = "en", ng-app = "map")
     #map(ng-style="{width: width + 'px', height: height + 'px'}")
       #info
         #infobox
-        img#flag(ng-src="{{ flag() }}", ng-show="flag() != false")
+        img#flag(ng-src="{{ flag() }}", ng-show="flag() != ''")
         p#formal {{ formal() }}
         #playbox
           img#play(ng-src="{{ play_button() }}",

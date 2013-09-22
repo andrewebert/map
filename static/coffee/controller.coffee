@@ -1,4 +1,4 @@
-changes = {}
+flags = {}
 
 initialize = (countries, times) ->
     attrs = ["d", "name", "formal", "owner", "flag"]
@@ -11,6 +11,8 @@ initialize = (countries, times) ->
                     times.push("#{y}_#{m}")
 
     countries["2013_01"] = initial_countries
+    flag_urls = (initial_countries[code].flag for code in population \
+        when initial_countries[code]?.flag?)
     prev = initial_countries
     last_date = "2013_01"
     for date in times[1..]
@@ -23,6 +25,8 @@ initialize = (countries, times) ->
                     delete curr[code]
             if changes[date].changed?
                 for code, changed of changes[date].changed
+                    if changed.flag?
+                        flag_urls.push(changed.flag)
                     if curr[code]?
                         curr[code] = {}
                         for attr in attrs
@@ -34,6 +38,23 @@ initialize = (countries, times) ->
             last_date = date
         else
             countries[date] = countries[last_date]
+    load_flags(flag_urls)
+
+
+load_image = (src, on_load) ->
+    image = new Image()
+    image.src = src
+    image.onload = -> on_load(src, image)
+    image.onerror = -> on_load(src, image)
+
+
+load_flags = (flag_urls) ->
+    store = (src, image) -> 
+        console.log(src)
+        flags[src] = image
+    for src in flag_urls
+        load_image(src, store)
+
 
 MapCtrl = ($scope, $timeout) ->
     Color = net.brehaut.Color
@@ -96,24 +117,23 @@ MapCtrl = ($scope, $timeout) ->
         if $scope.selected()?
             country = $scope.country($scope.selected())
             if country?.formal?
-                if country.owner? and country.owner != ""
+                if country.owner
                     return "#{country.formal} (#{$scope.country(country.owner).name})"
                 else
                     return country.formal
-            else
-                return ""
-        else
-            return ""
+        return ""
 
     $scope.flag = () ->
         if $scope.selected()?
             country = $scope.country($scope.selected())
-            if country.flag? and country.flag != ""
-                return country.flag
-            else
-                return false
-        else
-            return false
+            if country?
+                if country.flag
+                    return country.flag
+                else if country.owner
+                    owner = $scope.country(country.owner)
+                    if owner?.flag
+                        return owner.flag
+        return ""
 
 
     $scope.hard_select = (code, e) ->
