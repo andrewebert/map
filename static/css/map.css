@@ -1,0 +1,93 @@
+#map {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+}
+#playbox {
+  position: absolute;
+  bottom: 0px;
+  width: 17%;
+}
+.play {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 27px;
+  height: 27px;
+}
+slider {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  width: 83%;
+}
+#world {
+  position: absolute;
+  z-index: 1;
+  -webkit-transform-origin-x: 50%;
+  -webkit-transform-origin-y: 50%;
+}
+#world g {
+  -webkit-transform-origin-x: 0px;
+  -webkit-transform-origin-y: 0px;
+}
+#world:focus {
+  cursor: default;
+}
+#labelmarker {
+  position: absolute;
+}
+#label {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  z-index: 3;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #292929;
+  color: white;
+  padding: 3px;
+  border: solid 1px #cdcdcd;
+  font-family: sans-serif, Verdana;
+  font-size: smaller;
+  white-space: nowrap;
+}
+#label p {
+  margin: 0px;
+}
+#info {
+  position: absolute;
+  z-index: 2;
+  left: 30%;
+  width: 40%;
+  bottom: 0px;
+  height: 30%;
+}
+#infobox {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 7.5% 20%;
+  border-top-right-radius: 7.5% 20%;
+  background: #eee;
+  opacity: 0.8;
+}
+#flag {
+  position: absolute;
+  z-index: 10;
+  left: 4%;
+  top: 11%;
+  width: 23%;
+}
+#flag:hover {
+  left: -31%;
+  top: -24%;
+  width: 93%;
+}
+#formal {
+  position: absolute;
+  top: 5%;
+  left: 30%;
+  width: 65%;
+  font-size: 1em;
+}
