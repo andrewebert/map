@@ -14,11 +14,11 @@ for p in paths:
         print "missing code or pop"
         print p["id"]
 
-print "countries:", len(table)
-
 table.sort()
 table.reverse()
-d = [code for pop, code in table]
+d = [code for pop, code in table if pop > 400000]
+print "countries:", len(d)
+
 str = "population = " + json.dumps(d) + ";"
 with open("static/js/data/population.js", 'w') as f:
     f.write(str)

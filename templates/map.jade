@@ -27,9 +27,32 @@ html(lang = "en", ng-app = "map")
         img#flag(ng-src="{{ flag() }}", ng-show="flag() != ''")
         p#formal {{ formal() }}
         #playbox
-          img#play(ng-src="{{ play_button() }}",
-                   ng-click = "play()",
-                   ng-style = "{height: '27px', width: '27px'}")
+          svg.play(ng-show = "paused",
+                   ng-click = "play()")
+            g(transform="translate(0,11)", id="layer1")
+              path(
+                d="M 10.19748,6.5810666 5.4640851,9.3138934 0.73069048,12.04672 l 0,-5.4656535 0,-5.4656533 L 5.4640854,3.84824 z",
+                transform="matrix(2.4331777,0,0,2.4331777,-1.5768056,-13.512904)",
+                id="path4956",
+                style="fill:#000000;fill-opacity:1;stroke:#9d9d9d;stroke-width:0.16529344;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" )
+          svg.play(ng-hide = "paused",
+                   ng-click = "play()")
+            g(transform="translate(0,11)", id="layer1")
+              rect(
+                width="7.762732",
+                height="23.603754",
+                x="1.1981229",
+                y="-9.301877",
+                id="rect4958",
+                style="fill:#000000;fill-opacity:1;stroke:#9d9d9d;stroke-width:0.3962456;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none")
+              rect(
+                width="7.762732",
+                height="23.603754",
+                x="11.345233",
+                y="-9.301877",
+                id="rect4958-6",
+                style="fill:#000000;fill-opacity:1;stroke:#9d9d9d;stroke-width:0.3962456;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none")
+
         slider(floor="0" ceiling="{{ max_raw_time }} " precision="1" translate="pretty_format" ng-model="raw_time")
       svg#world(msd-wheel="zoom($event, $delta, $deltaX, $deltaY)",
                 ng-mousedown="grab($event)",
