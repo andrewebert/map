@@ -1,7 +1,7 @@
 import util
 import json
 
-time, paths = util.parse_svg("static/img/world-population.svg")
+time, paths = util.parse_svg("data/img/world-population.svg")
 
 table = []
 

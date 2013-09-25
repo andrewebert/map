@@ -17,7 +17,7 @@ def extract_map_data(paths):
         try:
             map[p["code"]] = country
         except KeyError:
-            print "Missing code:", filename
+            print "Missing code:"
             print p["id"]
             print p["style"]
         else:
