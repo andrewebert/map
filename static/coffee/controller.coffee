@@ -38,7 +38,7 @@ initialize = (countries, times) ->
             last_date = date
         else
             countries[date] = countries[last_date]
-    #load_flags(flag_urls)
+    load_flags(flag_urls)
 
 
 load_image = (src, on_load) ->

@@ -24,7 +24,7 @@ html(lang = "en", ng-app = "map")
     #map(ng-style="{width: width + 'px', height: height + 'px'}")
       #info
         #infobox
-        //-img#flag(ng-src="{{ flag() }}", ng-show="flag() != ''")
+        img#flag(ng-src="{{ flag() }}", ng-show="flag() != ''")
         p#formal {{ formal() }}
         #playbox
           svg.play(ng-show = "paused",

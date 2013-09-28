@@ -1,4 +1,5 @@
 .tup
+changes*
 macros
 Session.vim
 static/js/*.js
