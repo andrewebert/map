@@ -1,0 +1,1 @@
+: world_now.svg |> cp world_now.svg world_2013_01.svg |> world_2013_01.svg

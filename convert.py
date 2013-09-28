@@ -1,13 +1,11 @@
 import sys
 import json
 import re
+import os
 from unicodecsv import unicodecsv
 from IPython.core.debugger import Tracer
 
-from util import parse_svg
-
-def parse_fill(style):
-    return re.match(r".*fill:(.*?);.*", style).groups()[0]
+from util import parse_svg, parse_fill
 
 def extract_map_data(paths):
     map = {}
@@ -15,6 +13,8 @@ def extract_map_data(paths):
     for p in paths:
         country = p["d"]
         try:
+            if p["code"] == "-99":
+                raise KeyError
             map[p["code"]] = country
         except KeyError:
             print "Missing code:"
@@ -33,22 +33,26 @@ def get_map_difference(old, new):
     old_keys = set(old.keys())
     new_keys = set(new.keys())
     changed_keys = [k for k in new_keys if k not in old_keys or old[k] != new[k]]
+    print changed_keys
     changed = {k: new[k] for k in changed_keys}
     removed = list(old_keys - new_keys)
     return {"removed": removed, "changed": changed}
 
 
-def get_data(filenames):
-    files = list(reversed(filenames))
-    t, paths = parse_svg(files[0])
+def get_data(original_file, changed_files):
+    paths = parse_svg(original_file)
     original, fills = extract_map_data(paths)
     prev = original
     changes = {}
-    for f in files[1:]:
-        time, paths = parse_svg(f)
+    for f in reversed(changed_files):
+        time = os.path.basename(f)[6:13]
+        paths = parse_svg(f)
+        print "\n", time
         map, new_fills = extract_map_data(paths)
         changes[time] = get_map_difference(prev, map)
-        fills.update(new_fills)
+        for code, fill in new_fills.items():
+            if code not in fills:
+                fills[code] = fill
         prev = map
     return original, changes, fills
 
@@ -58,11 +62,20 @@ def read_csv(filename):
     with open(filename, 'rb') as f:
         reader = unicodecsv.reader(f)
         codes = reader.next()[1:]
-        for row in reader:
-            date = row[0]
-            changes = {codes[i]: name for i, name in enumerate(row[1:]) if name != u''}
-            if changes != {}:
-                data[date] = changes
+        i = 0
+        while True:
+            try:
+                row = reader.next()
+                i += 1
+                date = row[0]
+                changes = {codes[i]: name for i, name in enumerate(row[1:]) if name != u''}
+                if changes != {}:
+                    data[date] = changes
+            except UnicodeDecodeError as e:
+                print "Unicode error", filename, i
+                raise e
+            except StopIteration:
+                break
     return data
 
 
@@ -93,7 +106,7 @@ def merge_changes(changes_map, changes_names, changes_formals):
     return changes
 
 def convert(filenames):
-    original_map, changes_map, fills = get_data(filenames)
+    original_map, changes_map, fills = get_data(filenames[0], filenames[1:])
 
     original_sources = {"d": original_map}
     change_sources = {"d": {date: data["changed"]

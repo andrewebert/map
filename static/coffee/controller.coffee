@@ -166,10 +166,15 @@ MapCtrl = ($scope, $timeout) ->
             ""
 
     $scope.fill = (code) ->
-        color = fills[code]
+        if $scope.country(code)?.owner
+            color = fills[$scope.country(code).owner]
+        else
+            color = fills[code]
         if $scope.selected() == code
             color = Color(color)
-            color = color.setSaturation(Math.min(color.getSaturation() + 0.4, 1))
+            saturation = color.getSaturation() 
+            if saturation > 0
+                color = color.setSaturation(Math.min(saturation + 0.4, 1))
             color = color.setLightness(Math.max(color.getLightness() - 0.25, 0))
             return color.toCSS()
         else

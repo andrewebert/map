@@ -43,15 +43,13 @@ html(lang = "en", ng-app = "map")
                 height="23.603754",
                 x="1.1981229",
                 y="-9.301877",
-                id="rect4958",
-                style="fill:#000000;fill-opacity:1;stroke:#9d9d9d;stroke-width:0.3962456;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none")
+                id="rect4958")
               rect(
                 width="7.762732",
                 height="23.603754",
                 x="11.345233",
                 y="-9.301877",
-                id="rect4958-6",
-                style="fill:#000000;fill-opacity:1;stroke:#9d9d9d;stroke-width:0.3962456;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none")
+                id="rect4958-6")
 
         slider(floor="0" ceiling="{{ max_raw_time }} " precision="1" translate="pretty_format" ng-model="raw_time")
       svg#world(msd-wheel="zoom($event, $delta, $deltaX, $deltaY)",
@@ -64,9 +62,8 @@ html(lang = "en", ng-app = "map")
                 ng-attr-height="{{ height }}")
         g(ng-attr-transform="scale({{ scale }}) translate({{ x_trans }}, {{ y_trans }})")
           path(ng-repeat = "(code, country) in countries[time()]",
-               //-ng-attr-d = "{{ country.d }}",
                ng-attr-d = "{{ get_d(code, country) }}",
-               ng-style = "{'stroke-width':0.75, 'stroke-miterlimit':4, fill: fill(code), 'fill-opacity':1, stroke:'#000000', 'stroke-opacity':1}"
+               ng-style = "{fill: fill(code)}"
                ng-click="hard_select(code, $event)",
                ng-mouseover="select(code, $event)",
                ng-mousemove="move_label($event)",
