@@ -139,6 +139,7 @@ def convert(filenames):
                 changes[date]["changed"] = cs
             if rs != {}:
                 changes[date]["removed"] = rs
+                print rs
 
 
     original_str =  "initial_countries = " + json.dumps(original, sort_keys=True) + ";"

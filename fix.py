@@ -13,6 +13,9 @@ import sys
 def get_path(tree, code):
     root = tree.getroot()
     paths = root.findall('{http://www.w3.org/2000/svg}path')
+    for p in paths:
+        if "code" not in p.attrib:
+            print "missing code:", p.attrib["id"]
     return [p for p in paths if p.attrib["code"] == code][0]
 
 def get_orig(source, code, attr):
