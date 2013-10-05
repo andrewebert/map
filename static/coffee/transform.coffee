@@ -1,6 +1,6 @@
 MARGIN_LEFT = 10
 MARGIN_RIGHT = 10
-MARGIN_TOP = 25+25+7+10
+MARGIN_TOP = 10
 MARGIN_BOTTOM = 10
 
 base_width = 1000
@@ -33,14 +33,12 @@ calculate_scale = (x, y, direction, width, height, old_x, old_y, old_scale) ->
 
 adjust_trans = (x_trans_in, y_trans_in, width, height, scale) ->
     if (base_width * scale <= width)
-        # scale <= 1
         max_x_trans = (width - base_width*scale) / (2*scale)
         min_x_trans = (width - base_width*scale) / (2*scale)
     else
         max_x_trans = 0
         min_x_trans = (width - base_width*scale) / scale
     if (base_height * scale <= height)
-        # scale <= 1
         max_y_trans = (height - base_height*scale) / (2*scale)
         min_y_trans = (height - base_height*scale) / (2*scale)
     else

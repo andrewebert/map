@@ -1,4 +1,5 @@
 flags = {}
+MIN_DRAG_THRESHOLD = 10
 
 initialize = (countries, times) ->
     attrs = ["d", "name", "formal", "owner", "flag"]
@@ -38,7 +39,7 @@ initialize = (countries, times) ->
             last_date = date
         else
             countries[date] = countries[last_date]
-    load_flags(flag_urls)
+    #load_flags(flag_urls)
 
 
 load_image = (src, on_load) ->
@@ -58,6 +59,9 @@ load_flags = (flag_urls) ->
 
 MapCtrl = ($scope, $timeout) ->
     Color = net.brehaut.Color
+
+    drag_data = {drag_amount: 0}
+
     $scope.max_raw_time = 276
 
     $scope.raw_time = 0
@@ -137,12 +141,13 @@ MapCtrl = ($scope, $timeout) ->
 
 
     $scope.hard_select = (code, e) ->
-        console.log("hard selected", code)
-        if $scope.hard_selected == code
-            $scope.hard_selected = undefined
-        else
-            $scope.hard_selected = code
-        e.stopPropagation()
+        if drag_data.drag_amount < MIN_DRAG_THRESHOLD
+            console.log("hard selected", code)
+            if $scope.hard_selected == code
+                $scope.hard_selected = undefined
+            else
+                $scope.hard_selected = code
+            e.stopPropagation()
 
     $scope.selected = () -> $scope.hard_selected ? $scope.soft_selected
 
@@ -181,23 +186,29 @@ MapCtrl = ($scope, $timeout) ->
             return color
 
     $scope.grab = (e) ->
-        $scope.last_x = e.layerX
-        $scope.last_y = e.layerY
+        drag_data.grab_x = e.pageX
+        drag_data.grab_y = e.pageY
+        drag_data.last_x = e.pageX
+        drag_data.last_y = e.pageY
 
     $scope.drag = (e) ->
-        x = e.layerX
-        y = e.layerY
-        if $scope.last_x? and $scope.last_y?
-            x_trans = $scope.x_trans + (x - $scope.last_x)/$scope.scale
-            y_trans = $scope.y_trans + (y - $scope.last_y)/$scope.scale
+        drag_data.drag_amount = 0
+        if drag_data.last_x? and drag_data.last_y?
+            x = e.pageX
+            y = e.pageY
+            x_trans = $scope.x_trans + (x - drag_data.last_x)/$scope.scale
+            y_trans = $scope.y_trans + (y - drag_data.last_y)/$scope.scale
             [$scope.x_trans, $scope.y_trans] = adjust_trans(x_trans, y_trans,
                 $scope.width, $scope.height, $scope.scale)
-            $scope.last_x = x
-            $scope.last_y = y
+            drag_data.last_x = x
+            drag_data.last_y = y
 
     $scope.release = () ->
-        $scope.last_x = undefined
-        $scope.last_y = undefined
+        drag_data.drag_amount = Math.max(
+            Math.abs(drag_data.last_x - drag_data.grab_x),
+            Math.abs(drag_data.last_y - drag_data.grab_y))
+        drag_data.last_x = undefined
+        drag_data.last_y = undefined
 
     $scope.zoom = (e, d, dx, dy) ->
         x = e.layerX ? e.originalEvent.layerX

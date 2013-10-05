@@ -60,6 +60,7 @@ slider {
 
 #labelmarker {
     position: absolute;
+    display: block;
 }
 
 #label {
@@ -118,8 +119,15 @@ slider {
 
 #formal {
     position: absolute;
-    top: 5%;
+    margin-top: 0px;
+    top: 10%;
     left: 30%;
     width: 65%;
     font-size: 1em;
+}
+
+@media (min-width: 1600px) and (min-height: 800px) {
+    #formal {
+        font-size: 2em;
+    }
 }
