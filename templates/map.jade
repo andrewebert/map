@@ -14,10 +14,12 @@ html(lang = "en", ng-app = "map")
     script(src = "../static/js/data/fills.js", type = "text/javascript")
     script(src = "../static/js/data/population.js", type = "text/javascript")
 
+    script(src = "../static/js/init.js", type = "text/javascript")
     script(src = "../static/js/transform.js", type = "text/javascript")
     script(src = "../static/js/controller.js", type = "text/javascript")
     script(src = "../static/js/app.js", type = "text/javascript")
   body(ng-controller = "MapCtrl")
+    //-p#count {{ count }}
     #labelmarker(ng-show="label.visible" ng-style="{left: label.x + 'px', top: label.y + 'px'}")
       #label
         p {{ label_text() }}
@@ -58,15 +60,14 @@ html(lang = "en", ng-app = "map")
         slider(floor="0" ceiling="{{ max_raw_time }} " precision="1" translate="pretty_format" ng-model="raw_time")
 
       svg#world(msd-wheel="zoom($event, $delta, $deltaX, $deltaY)",
-                ng-click="hard_select(undefined, $event)",
                 ng-attr-width="{{ width }}",
-                ng-attr-height="{{ height }}")
+                ng-attr-height="{{ height }}",
+                ng-click="hard_select(undefined, $event)")
         g(ng-attr-transform="scale({{ scale }}) translate({{ x_trans }}, {{ y_trans }})")
           path(ng-repeat = "(code, country) in countries[time()]",
-               ng-attr-d = "{{ get_d(code, country) }}",
-               ng-style = "{fill: fill(code)}"
+               ng-attr-d = "{{ country.d }}",
+               ng-style = "{fill: fill(code)}",
                ng-click="hard_select(code, $event)",
                ng-mouseover="select(code, $event)",
                ng-mousemove="move_label($event)",
-               ng-mouseleave="deselect()"
-            )
+               ng-mouseleave="deselect()")

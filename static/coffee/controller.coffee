@@ -1,68 +1,11 @@
-flags = {}
 MIN_DRAG_THRESHOLD = 10
-
-initialize = (countries, times) ->
-    attrs = ["d", "name", "formal", "owner", "flag"]
-    for y in [2013..1990]
-        for m in [12..1]
-            if !(y >= 2013 && m >= 2)
-                if m < 10
-                    times.push("#{y}_0#{m}")
-                else
-                    times.push("#{y}_#{m}")
-
-    countries["2013_01"] = initial_countries
-    flag_urls = (initial_countries[code].flag for code in population \
-        when initial_countries[code]?.flag?)
-    prev = initial_countries
-    last_date = "2013_01"
-    for date in times[1..]
-        if changes[date]?
-            curr = {}
-            for code, old of prev
-                curr[code] = old
-            if changes[date].removed?
-                for code in changes[date].removed
-                    delete curr[code]
-            if changes[date].changed?
-                for code, changed of changes[date].changed
-                    if changed.flag?
-                        flag_urls.push(changed.flag)
-                    if curr[code]?
-                        curr[code] = {}
-                        for attr in attrs
-                            curr[code][attr] = changed[attr] ? prev[code][attr] ? ""
-                    else
-                        curr[code] = changed
-            countries[date] = curr
-            prev = curr
-            last_date = date
-        else
-            countries[date] = countries[last_date]
-    #load_flags(flag_urls)
-
-
-load_image = (src, on_load) ->
-    image = new Image()
-    image.src = src
-    image.onload = -> on_load(src, image)
-    image.onerror = -> on_load(src, image)
-
-
-load_flags = (flag_urls) ->
-    store = (src, image) -> 
-        console.log(src)
-        flags[src] = image
-    for src in flag_urls
-        load_image(src, store)
-
 
 MapCtrl = ($scope, $timeout) ->
     Color = net.brehaut.Color
 
     drag_data = {drag_amount: 0}
 
-    $scope.max_raw_time = 276
+    $scope.max_raw_time = 285
 
     $scope.raw_time = 0
     $scope.countries = {}
@@ -77,17 +20,21 @@ MapCtrl = ($scope, $timeout) ->
 
     $scope.label = {x: 0, y: 0, visible: false}
 
-    initialize($scope.countries, $scope.times)
+    #count = 0
 
-    $scope.get_d = (code, country) ->
-        if country.d?
-            return country.d
-        else
-            console.log("Missing d")
-            console.log(code)
-            console.log(country)
-            console.log($scope.time())
-            return ""
+    $scope.countries = initialize($scope.times)
+
+    #$scope.get_d = (code, country) ->
+        #count += 1
+        #document.getElementById("count").innerHTML = count
+        #if country.d?
+            #return country.d
+        #else
+            #console.log("Missing d")
+            #console.log(code)
+            #console.log(country)
+            #console.log($scope.time())
+            #return ""
 
     $scope.date_format = (t) ->
       return "#{Math.floor(t/12) + 1990}_#{if t%12+1<10 then "0" else ""}#{(t%12) + 1}"
@@ -108,11 +55,10 @@ MapCtrl = ($scope, $timeout) ->
     $scope.pretty_format = (t) ->
         year = Math.floor(t/12) + 1990
         month = t%12 + 1
-        months = {1: "January", 2:"February", 3: "March", 4: "April",\
-                  5: "May", 6: "June", 7: "July", 8: "August",\
-                  9: "September", 10: "October", 11: "November", 12: "December"}
+        #months = {1: "January", 2:"February", 3: "March", 4: "April",\
+                  #5: "May", 6: "June", 7: "July", 8: "August",\
+                  #9: "September", 10: "October", 11: "November", 12: "December"}
         return "#{if month<10 then "0" else ""}#{month}-#{year}"
-        #return "#{months[month]} #{year}"
 
     $scope.country = (code) ->
         return $scope.countries[$scope.time()][code]

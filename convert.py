@@ -7,6 +7,8 @@ from IPython.core.debugger import Tracer
 
 from util import parse_svg, parse_fill
 
+NOW = "2013_10"
+
 def extract_map_data(paths):
     map = {}
     fills = {}
@@ -44,7 +46,7 @@ def get_data(original_file, changed_files):
     original, fills = extract_map_data(paths)
     prev = original
     changes = {}
-    for f in reversed(changed_files):
+    for f in changed_files:
         time = os.path.basename(f)[6:13]
         paths = parse_svg(f)
         print "\n", time
@@ -106,7 +108,8 @@ def merge_changes(changes_map, changes_names, changes_formals):
     return changes
 
 def convert(filenames):
-    original_map, changes_map, fills = get_data(filenames[0], filenames[1:])
+    fns = list(reversed(filenames))
+    original_map, changes_map, fills = get_data(fns[0], fns[1:])
 
     original_sources = {"d": original_map}
     change_sources = {"d": {date: data["changed"]
@@ -114,14 +117,15 @@ def convert(filenames):
 
     def get_changes(tag):
         source = read_csv('data/' + tag + '.csv')
-        original_sources[tag] = source["2013_01"]
-        del source["2013_01"]
+        original_sources[tag] = source[NOW]
+        del source[NOW]
         change_sources[tag] = source
 
     get_changes('name')
     get_changes('formal')
     get_changes('owner')
     get_changes('flag')
+    get_changes('link')
 
     original = merge_data(original_sources)
 
@@ -139,7 +143,7 @@ def convert(filenames):
                 changes[date]["changed"] = cs
             if rs != {}:
                 changes[date]["removed"] = rs
-                print rs
+                #print rs
 
 
     original_str =  "initial_countries = " + json.dumps(original, sort_keys=True) + ";"
