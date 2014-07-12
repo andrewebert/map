@@ -1,0 +1,1 @@
+: foreach ../less/*.less |> lessc %f > %o |> %B.css
