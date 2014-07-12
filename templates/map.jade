@@ -5,6 +5,7 @@ html(lang = "en", ng-app = "map")
     link(rel = "stylesheet", href = "../static/css/lib/font-awesome.css", type = "text/css")
     link(rel = "stylesheet", href = "../static/css/map.css", type = "text/css")
     script(src = "../static/js/lib/angular.js", type = "text/javascript")
+    script(src = "../static/js/lib/angular-sanitize.js", type = "text/javascript")
     script(src = "../static/js/lib/angular-slider.js", type = "text/javascript")
     script(src = "../static/js/lib/hamster.js", type = "text/javascript")
     script(src = "../static/js/lib/mousewheel.js", type = "text/javascript")
@@ -41,11 +42,11 @@ html(lang = "en", ng-app = "map")
         #playbox
           span#play.fa(ng-click = "play()",
                        ng-class = "{true: 'fa-play', false: 'fa-pause'}[paused]")
-        p#time {{ pretty_format(raw_time) }}
+        //-p#time {{ pretty_format(raw_time) }}
         slider(floor="0",
                ceiling="{{ max_time }} ",
                precision="1",
-               translate-fn="pretty_format",
+               translate="pretty_format",
                ng-model="raw_time")
 
       svg#world.noselect(
