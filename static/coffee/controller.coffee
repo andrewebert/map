@@ -18,6 +18,7 @@ MapCtrl = ($scope, $timeout) ->
     $scope.selected = undefined
     $scope.formal = ""
     $scope.flag = undefined
+    $scope.loading = false
 
     $scope.zoom_level = 0
     #$scope.scale = base_scale
@@ -88,16 +89,27 @@ MapCtrl = ($scope, $timeout) ->
         return ""
 
     $scope.flag = () ->
+        flag = ""
         if selected()?
             country = $scope.country(selected())
             if country?
                 if country.flag
-                    return country.flag
+                    flag = country.flag
                 else if country.owner
                     owner = $scope.country(country.owner)
                     if owner?.flag
-                        return owner.flag
-        return ""
+                        flag = owner.flag
+        if (flag is "") or (flag of flags)
+            return flag
+        else if not $scope.loading or not ($scope.loading is flag)
+            $scope.loading = flag
+            load_image(flag, (src, image) ->
+                $scope.loading = false
+                flags[src] = image
+                console.log("loaded " + flag)
+                $scope.$apply()
+            )
+            return ""
 
 
     $scope.hard_select = (code, e) ->
@@ -196,7 +208,7 @@ MapCtrl = ($scope, $timeout) ->
         x = e.layerX ? e.originalEvent.layerX
         y = e.layerY ? e.originalEvent.layerY
         direction = dy
-        $scope.zoom(direction)
+        $scope.zoom(x, y, direction)
 
         #[$scope.x_trans, $scope.y_trans, $scope.scale] = calculate_scale(x, y,
             #direction, $scope.width, $scope.height,
@@ -204,7 +216,7 @@ MapCtrl = ($scope, $timeout) ->
 
         e.preventDefault()
 
-    $scope.zoom = (direction) ->
+    $scope.zoom = (x, y, direction) ->
         new_zoom = $scope.zoom_level + direction
         if new_zoom >= 0 and new_zoom <= 8
             $scope.zoom_level = new_zoom
