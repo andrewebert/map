@@ -1,8 +1,9 @@
 flags = {}
 NOW = "2013_10"
 
-initialize = (times) ->
+initialize = ->
     countries = {}
+    times = []
     attrs = ["d", "name", "formal", "owner", "flag"]
     for y in [2013..1990]
         for m in [12..1]
@@ -12,12 +13,13 @@ initialize = (times) ->
                 else
                     times.push("#{y}_#{m}")
 
-    countries[NOW] = initial_countries
+    last_time = times.length - 1
+    countries[last_time] = initial_countries
     flag_urls = (initial_countries[code].flag for code in population \
         when initial_countries[code]?.flag?)
     prev = initial_countries
-    last_date = NOW
-    for date in times[1..]
+    for date, i in times[1..]
+        time = times.length - i - 2
         if changes[date]?
             curr = {}
             for code, old of prev
@@ -35,13 +37,13 @@ initialize = (times) ->
                             curr[code][attr] = changed[attr] ? prev[code][attr] ? ""
                     else
                         curr[code] = changed
-            countries[date] = curr
+            countries[time] = curr
             prev = curr
-            last_date = date
+            last_time = time
         else
-            countries[date] = countries[last_date]
+            countries[time] = countries[last_time]
     #load_flags(flag_urls)
-    return countries
+    return [countries, times]
 
 
 load_image = (src, on_load) ->

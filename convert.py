@@ -5,7 +5,7 @@ import os
 from unicodecsv import unicodecsv
 from IPython.core.debugger import Tracer
 
-from util import parse_svg, parse_fill
+from util import parse_svg, parse_fill, lookup_fill
 
 NOW = "2013_10"
 
@@ -24,7 +24,12 @@ def extract_map_data(paths):
             print p["style"]
         else:
             try:
-                fills[p["code"]] = parse_fill(p["style"])
+                fill = parse_fill(p["style"])
+                try:
+                    fills[p["code"]] = lookup_fill(fill)
+                except KeyError as e:
+                    print "Invalid fill:", p["id"], p["code"]
+                    raise e
             except AttributeError:
                 print "Missing fill:", filename
                 print p["code"]
@@ -47,6 +52,7 @@ def get_data(original_file, changed_files):
     prev = original
     changes = {}
     for f in changed_files:
+        print f
         time = os.path.basename(f)[6:13]
         paths = parse_svg(f)
         print "\n", time

@@ -10,7 +10,7 @@ templates/*.html
 unicodecsv/*.pyc
 static/js/data/changes.js
 static/js/data/initial.js
-static/css/map.css
+static/css/map.css map2.css
 static/js/*.js
 data/.*
 deploy

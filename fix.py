@@ -28,7 +28,8 @@ def get_orig(source, code, attr):
     if attr == "d":
         return path
     elif attr == "fill":
-        return util.parse_fill(path.attrib["style"])
+        #return util.parse_fill(path.attrib["style"])
+        return path.attrib["style"]
         
 def set(filename, code, attr, value):
     tree = ET.parse(filename)
@@ -36,6 +37,11 @@ def set(filename, code, attr, value):
         path = get_path(tree, code)
         if attr == "d":
             path.attrib["d"] = value.attrib["d"]
+        elif attr == "fill":
+            if path.attrib["style"] != value:
+                print "fixed", filename, code
+                path.attrib["style"] = value
+
     except IndexError as e:
         if attr == "d":
             root = tree.getroot()

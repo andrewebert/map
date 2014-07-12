@@ -5,24 +5,31 @@ MapCtrl = ($scope, $timeout) ->
 
     drag_data = {drag_amount: 0}
 
-    $scope.max_raw_time = 285
+    $scope.max_time = 285
 
     $scope.raw_time = 0
+    $scope.time = 0
     $scope.countries = {}
     $scope.times = []
     $scope.x_trans = 0
     $scope.y_trans = 0
     $scope.paused = true
 
-    $scope.scale = base_scale
-    $scope.width = base_scale * base_width
-    $scope.height = base_scale * base_height
+    $scope.selected = undefined
+    $scope.formal = ""
+    $scope.flag = undefined
+
+    $scope.zoom_level = 0
+    #$scope.scale = base_scale
+    #$scope.width = base_scale * base_width
+    #$scope.height = base_scale * base_height
 
     $scope.label = {x: 0, y: 0, visible: false}
+    $scope.fills = fills
 
     #count = 0
 
-    $scope.countries = initialize($scope.times)
+    [$scope.countries, $scope.times] = initialize($scope.times)
 
     #$scope.get_d = (code, country) ->
         #count += 1
@@ -39,33 +46,40 @@ MapCtrl = ($scope, $timeout) ->
     $scope.date_format = (t) ->
       return "#{Math.floor(t/12) + 1990}_#{if t%12+1<10 then "0" else ""}#{(t%12) + 1}"
 
-    $scope.time = () -> $scope.date_format($scope.raw_time)
-
+    #$scope.time = () -> $scope.date_format($scope.raw_time)
+    $scope.$watch 'raw_time', (value) ->
+        $scope.time = parseInt(value)
+    
     $scope.play_button = () ->
         if $scope.paused then "../static/img/play.png" else "../static/img/pause.png" 
 
     $scope.play = () ->
         $scope.paused = not $scope.paused
         if not $scope.paused
-            if parseInt($scope.raw_time) == $scope.max_raw_time
-                $scope.raw_time = 0
+            if $scope.time == $scope.max_time
+                $scope.raw_time = "0"
             $scope.tick()
 
-
     $scope.pretty_format = (t) ->
-        year = Math.floor(t/12) + 1990
-        month = t%12 + 1
+        time = parseInt(t)
+        year = Math.floor(time/12) + 1990
+        month = time%12 + 1
         #months = {1: "January", 2:"February", 3: "March", 4: "April",\
                   #5: "May", 6: "June", 7: "July", 8: "August",\
                   #9: "September", 10: "October", 11: "November", 12: "December"}
         return "#{if month<10 then "0" else ""}#{month}-#{year}"
 
     $scope.country = (code) ->
-        return $scope.countries[$scope.time()][code]
+        if $scope.countries[$scope.time]? and $scope.countries[$scope.time][code]?
+            return $scope.countries[$scope.time][code]
+        else
+            console.log("invalid country #{$scope.time} (#{typeof $scope.time}) #{code}")
+
+    selected = () -> $scope.hard_selected ? $scope.soft_selected
 
     $scope.formal = () ->
-        if $scope.selected()?
-            country = $scope.country($scope.selected())
+        if selected()?
+            country = $scope.country(selected())
             if country?.formal?
                 if country.owner
                     return "#{country.formal} (#{$scope.country(country.owner).name})"
@@ -74,8 +88,8 @@ MapCtrl = ($scope, $timeout) ->
         return ""
 
     $scope.flag = () ->
-        if $scope.selected()?
-            country = $scope.country($scope.selected())
+        if selected()?
+            country = $scope.country(selected())
             if country?
                 if country.flag
                     return country.flag
@@ -93,14 +107,36 @@ MapCtrl = ($scope, $timeout) ->
                 $scope.hard_selected = undefined
             else
                 $scope.hard_selected = code
+                $scope.select(code, true)
             e.stopPropagation()
 
-    $scope.selected = () -> $scope.hard_selected ? $scope.soft_selected
-
-    $scope.select = (code, e) ->
+    $scope.soft_select = (code, e) ->
         $scope.label.visible = true
         $scope.soft_selected = code
-        $scope.move_label(e)
+        $scope.select(code, false)
+        #$scope.move_label(e)
+
+    $scope.select = (code, hard=false) ->
+        if hard or !$scope.hard_selected?
+            $scope.selected = code
+        #if code != undefined
+            #country = $scope.country(code)
+            #if country?
+                #if country.flag
+                    #$scope.flag = country.flag
+                #else if country.owner
+                    #owner = $scope.country(country.owner)
+                    #if owner?.flag
+                        #$scope.flag = owner.flag
+            #if country?.formal?
+                #if country.owner
+                    #$scope.formal = "#{country.formal} (#{$scope.country(country.owner).name})"
+                #else
+                    #$scope.formal = country.formal
+
+        #else
+            #$scope.flag = undefined
+            #$scope.formal = ""
 
     $scope.move_label = (e) ->
         $scope.label.x = e.clientX
@@ -109,6 +145,7 @@ MapCtrl = ($scope, $timeout) ->
     $scope.deselect = () ->
         $scope.label.visible = false
         $scope.soft_selected = undefined
+        $scope.select(undefined, false)
 
     $scope.label_text = () ->
         if $scope.soft_selected?
@@ -121,7 +158,7 @@ MapCtrl = ($scope, $timeout) ->
             color = fills[$scope.country(code).owner]
         else
             color = fills[code]
-        if $scope.selected() == code
+        if selected() == code
             color = Color(color)
             saturation = color.getSaturation() 
             if saturation > 0
@@ -142,10 +179,9 @@ MapCtrl = ($scope, $timeout) ->
         if drag_data.last_x? and drag_data.last_y?
             x = e.pageX
             y = e.pageY
-            x_trans = $scope.x_trans + (x - drag_data.last_x)/$scope.scale
-            y_trans = $scope.y_trans + (y - drag_data.last_y)/$scope.scale
-            [$scope.x_trans, $scope.y_trans] = adjust_trans(x_trans, y_trans,
-                $scope.width, $scope.height, $scope.scale)
+            $scope.x_trans += (x - drag_data.last_x)/$scope.scale
+            $scope.y_trans += (y - drag_data.last_y)/$scope.scale
+            adjust_trans($scope)
             drag_data.last_x = x
             drag_data.last_y = y
 
@@ -156,21 +192,28 @@ MapCtrl = ($scope, $timeout) ->
         drag_data.last_x = undefined
         drag_data.last_y = undefined
 
-    $scope.zoom = (e, d, dx, dy) ->
+    $scope.mousewheel = (e, d, dx, dy) ->
         x = e.layerX ? e.originalEvent.layerX
         y = e.layerY ? e.originalEvent.layerY
         direction = dy
+        $scope.zoom(direction)
 
-        [$scope.x_trans, $scope.y_trans, $scope.scale] = calculate_scale(x, y,
-            direction, $scope.width, $scope.height,
-            $scope.x_trans, $scope.y_trans, $scope.scale)
+        #[$scope.x_trans, $scope.y_trans, $scope.scale] = calculate_scale(x, y,
+            #direction, $scope.width, $scope.height,
+            #$scope.x_trans, $scope.y_trans, $scope.scale)
 
         e.preventDefault()
 
+    $scope.zoom = (direction) ->
+        new_zoom = $scope.zoom_level + direction
+        if new_zoom >= 0 and new_zoom <= 8
+            $scope.zoom_level = new_zoom
+            calculate_scale($scope, x, y, direction)
+
     $scope.tick = () ->
         if not $scope.paused
-            if $scope.raw_time < $scope.max_raw_time
-                $scope.raw_time = parseInt($scope.raw_time) + 1
+            if $scope.time < $scope.max_time
+                $scope.raw_time = ($scope.time + 1).toString()
             else
                 $scope.paused = true
             $timeout($scope.tick, 1000/12/2)
