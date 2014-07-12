@@ -3,12 +3,12 @@ MIN_DRAG_THRESHOLD = 10
 MapCtrl = ($scope, $timeout) ->
     Color = net.brehaut.Color
 
-    drag_data = {drag_amount: 0}
+    drag_data = {drag_amount: 0, dragging: false}
 
     $scope.max_time = 285
 
-    $scope.raw_time = 0
-    $scope.time = 0
+    $scope.time = $scope.max_time
+    $scope.raw_time = $scope.time.toString()
     $scope.countries = {}
     $scope.times = []
     $scope.x_trans = 0
@@ -47,28 +47,26 @@ MapCtrl = ($scope, $timeout) ->
     $scope.date_format = (t) ->
       return "#{Math.floor(t/12) + 1990}_#{if t%12+1<10 then "0" else ""}#{(t%12) + 1}"
 
-    #$scope.time = () -> $scope.date_format($scope.raw_time)
     $scope.$watch 'raw_time', (value) ->
         $scope.time = parseInt(value)
     
-    $scope.play_button = () ->
-        if $scope.paused then "../static/img/play.png" else "../static/img/pause.png" 
-
     $scope.play = () ->
         $scope.paused = not $scope.paused
         if not $scope.paused
             if $scope.time == $scope.max_time
                 $scope.raw_time = "0"
+                $scope.time = 0
             $scope.tick()
 
     $scope.pretty_format = (t) ->
         time = parseInt(t)
         year = Math.floor(time/12) + 1990
         month = time%12 + 1
-        #months = {1: "January", 2:"February", 3: "March", 4: "April",\
-                  #5: "May", 6: "June", 7: "July", 8: "August",\
-                  #9: "September", 10: "October", 11: "November", 12: "December"}
-        return "#{if month<10 then "0" else ""}#{month}-#{year}"
+        months = {1: "Jan", 2:"Feb", 3: "Mar", 4: "Apr",\
+                  5: "May", 6: "Jun", 7: "Jul", 8: "Aug",\
+                  9: "Sep", 10: "Oct", 11: "Nov", 12: "Dec"}
+        #return "#{if month<10 then "0" else ""}#{month}-#{year}"
+        return "#{months[month]} #{year}"
 
     $scope.country = (code) ->
         if $scope.countries[$scope.time]? and $scope.countries[$scope.time][code]?
@@ -123,10 +121,10 @@ MapCtrl = ($scope, $timeout) ->
             e.stopPropagation()
 
     $scope.soft_select = (code, e) ->
-        $scope.label.visible = true
-        $scope.soft_selected = code
-        $scope.select(code, false)
-        #$scope.move_label(e)
+        if not drag_data.dragging
+            $scope.label.visible = true
+            $scope.soft_selected = code
+            $scope.select(code, false)
 
     $scope.select = (code, hard=false) ->
         if hard or !$scope.hard_selected?
@@ -155,9 +153,10 @@ MapCtrl = ($scope, $timeout) ->
         $scope.label.y = e.clientY
 
     $scope.deselect = () ->
-        $scope.label.visible = false
-        $scope.soft_selected = undefined
-        $scope.select(undefined, false)
+        if not drag_data.dragging
+            $scope.label.visible = false
+            $scope.soft_selected = undefined
+            $scope.select(undefined, false)
 
     $scope.label_text = () ->
         if $scope.soft_selected?
@@ -181,6 +180,7 @@ MapCtrl = ($scope, $timeout) ->
             return color
 
     $scope.grab = (e) ->
+        drag_data.dragging = true
         drag_data.grab_x = e.pageX
         drag_data.grab_y = e.pageY
         drag_data.last_x = e.pageX
@@ -198,6 +198,7 @@ MapCtrl = ($scope, $timeout) ->
             drag_data.last_y = y
 
     $scope.release = () ->
+        drag_data.dragging =false
         drag_data.drag_amount = Math.max(
             Math.abs(drag_data.last_x - drag_data.grab_x),
             Math.abs(drag_data.last_y - drag_data.grab_y))

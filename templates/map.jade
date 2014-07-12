@@ -32,16 +32,23 @@ html(lang = "en", ng-app = "map")
          ng-mouseup="release()",
          ng-mouseleave="release()")
 
-      #info
+      #info.noselect
         #infobox
-        img#flag(ng-src="{{ flag() }}", ng-show="flag()")
+        img#flag(ng-src="{{ flag() }}",
+                 ng-show="flag()",
+                 ng-class="{hoverable: !drag_data.dragging}")
         p#formal {{ formal() }}
         #playbox
-          span.play.fa(ng-click = "play()",
+          span#play.fa(ng-click = "play()",
                        ng-class = "{true: 'fa-play', false: 'fa-pause'}[paused]")
-        slider(floor="0" ceiling="{{ max_time }} " precision="1" translate="pretty_format" ng-model="raw_time")
+        p#time {{ pretty_format(raw_time) }}
+        slider(floor="0",
+               ceiling="{{ max_time }} ",
+               precision="1",
+               translate-fn="pretty_format",
+               ng-model="raw_time")
 
-      svg#world(
+      svg#world.noselect(
             resizeable,
             msd-wheel="mousewheel($event, $delta, $deltaX, $deltaY)",
             ng-attr-width="{{ mapWidth }}",

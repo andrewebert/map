@@ -1,8 +1,16 @@
+body {
+    background-color: #d8d8d8;
+}
 
 #map {
-    position: absolute;
+    background-color: #ffffff;
+    position: relative;
+    display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px #555;
 }
 
 #playbox {
@@ -11,7 +19,7 @@
     width: 17%;
 }
 
-.play {
+#play {
     position: absolute;
     bottom: 17px;
     right: 17px;
@@ -25,6 +33,12 @@
         stroke-opacity:1;
         stroke-dasharray:none;
     }
+}
+
+#time {
+    position: absolute;
+    bottom: 33px;
+    right: 13px;
 }
 
 slider {
@@ -109,14 +123,15 @@ slider {
     z-index: 10;
     left: 4%;
     top: 11%;
-    width: 23%;
-    pointer-events: none;
+    max-width: 23%;
+    max-height: 50%;
 }
 
-#flag:hover {
+#flag.hoverable:hover {
     left: -31%;
-    top: -24%;
-    width: 93%;
+    top: -75%;
+    max-width: 93%;
+    max-height: 169%;
 }
 
 #formal {
@@ -125,8 +140,14 @@ slider {
     top: 10%;
     left: 30%;
     width: 65%;
-    font-size: 1em;
+    /*font-size: 1em;*/
     pointer-events: none;
+}
+
+@media (min-width: 1200px) and (min-height: 600px) {
+    #formal {
+        font-size: 1.5em;
+    }
 }
 
 @media (min-width: 1600px) and (min-height: 800px) {
@@ -164,3 +185,11 @@ slider {
 .color12.selected { fill: #af0b68; }
 .color13.selected { fill: #5d5d5d; }
 
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

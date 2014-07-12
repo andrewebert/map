@@ -10,7 +10,8 @@ app.directive 'resizeable', ($window) ->
 
             width = window.innerWidth - MARGIN_LEFT - MARGIN_RIGHT
             height = window.innerHeight - MARGIN_TOP - MARGIN_BOTTOM
-            $scope.base_scale = Math.min(width/BASE_WIDTH, height/BASE_HEIGHT)
+            $scope.base_scale = Math.max(
+                Math.min(width/BASE_WIDTH, height/BASE_HEIGHT), 1)
             $scope.mapWidth = BASE_WIDTH * $scope.base_scale
             $scope.mapHeight = BASE_HEIGHT * $scope.base_scale 
             calculate_scale($scope, 0, 0, 0)
