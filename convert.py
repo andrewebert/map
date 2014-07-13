@@ -131,6 +131,7 @@ def convert(filenames):
     get_changes('owner')
     get_changes('flag')
     get_changes('link')
+    get_changes('disputed')
 
     original = merge_data(original_sources)
 

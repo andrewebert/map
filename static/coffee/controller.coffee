@@ -83,18 +83,29 @@ MapCtrl = ($scope, $timeout) ->
         if selected()?
             country = $scope.country(selected())
             if country?.formal?
-                if country.owner
-                    owners = country.owner.split(" ")
-                    owners = ($scope.country(o).name for o in owners)
-                    owners = owners.join(" and ")
-                    return "#{country.formal} (#{owners})"
-                else
-                    return country.formal
+                return country.formal
+        return ""
+
+    $scope.owner = () ->
+        if selected()
+            country = $scope.country(selected())
+            owners = country?.owner
+            if owners?
+                owners = country.owner.split(" ")
+                owners = ($scope.country(o).name for o in owners)
+                owners = owners.join(" and ")
+                return "(#{owners})"
         return ""
 
     $scope.link = () ->
         if selected()
             return $scope.country(selected()).link
+        else
+            return ""
+
+    $scope.disputed = () ->
+        if selected()
+            return $scope.country(selected()).disputed ? ""
         else
             return ""
 
