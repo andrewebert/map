@@ -38,7 +38,10 @@ html(lang = "en", ng-app = "map")
         img#flag(ng-src="{{ flag() }}",
                  ng-show="flag()",
                  ng-class="{hoverable: !drag_data.dragging}")
-        p#formal {{ formal() }}
+        a#formal(ng-class = "{nopoint: drag_data.dragging}",
+                 ng-attr-href = "{{ link() }}",
+                 target="_blank")
+          {{ formal() }}
         #playbox
           span#play.fa(ng-click = "play()",
                        ng-class = "{true: 'fa-play', false: 'fa-pause'}[paused]")

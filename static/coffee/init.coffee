@@ -8,7 +8,7 @@ NOW = "#{NOW_YEAR}_#{NOW_MONTH}"
 initialize = ->
     countries = {}
     times = []
-    attrs = ["d", "name", "formal", "owner", "flag"]
+    attrs = ["d", "name", "formal", "owner", "flag", "link"]
     for y in [NOW_YEAR..START_YEAR]
         for m in [12..1]
             if !(y >= NOW_YEAR && m > NOW_MONTH)
@@ -16,6 +16,10 @@ initialize = ->
                     times.push("#{y}_0#{m}")
                 else
                     times.push("#{y}_#{m}")
+
+    for country, data of initial_countries
+        if not data.d
+            console.log "error", country, data
 
     last_time = times.length - 1
     countries[last_time] = initial_countries
