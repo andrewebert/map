@@ -1,13 +1,15 @@
 flags = {}
-NOW = "2013_10"
+NOW_YEAR = "2014"
+NOW_MONTH = "07"
+NOW = "#{NOW_YEAR}_#{NOW_MONTH}"
 
 initialize = ->
     countries = {}
     times = []
     attrs = ["d", "name", "formal", "owner", "flag"]
-    for y in [2013..1990]
+    for y in [NOW_YEAR..1990]
         for m in [12..1]
-            if !(y >= 2013 && m > 10)
+            if !(y >= NOW_YEAR && m > NOW_MONTH)
                 if m < 10
                     times.push("#{y}_0#{m}")
                 else

@@ -5,7 +5,8 @@ Session.vim
 static/js/*.js
 static/js/*.map
 static/json
-templates/*.html
+map.html
+templates/*
 *.pyc
 unicodecsv/*.pyc
 static/js/data/changes.js

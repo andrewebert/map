@@ -5,7 +5,7 @@ MapCtrl = ($scope, $timeout) ->
 
     drag_data = {drag_amount: 0, dragging: false}
 
-    $scope.max_time = 285
+    $scope.max_time = 294
 
     $scope.time = $scope.max_time
     $scope.raw_time = $scope.time.toString()

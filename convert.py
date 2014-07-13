@@ -7,7 +7,7 @@ from IPython.core.debugger import Tracer
 
 from util import parse_svg, parse_fill, lookup_fill
 
-NOW = "2013_10"
+NOW = "2014_07"
 
 def extract_map_data(paths):
     map = {}
@@ -28,11 +28,10 @@ def extract_map_data(paths):
                 try:
                     fills[p["code"]] = lookup_fill(fill)
                 except KeyError as e:
-                    print "Invalid fill:", p["id"], p["code"]
+                    print "Invalid fill:", p["id"], p["code"], p["style"]
                     raise e
             except AttributeError:
-                print "Missing fill:", filename
-                print p["code"]
+                print "Missing fill:", p["code"], p["style"]
     return map, fills
 
 
@@ -165,5 +164,7 @@ def convert(filenames):
 
 
 if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        print "usage: python convert.py data/img/*.svg"
     convert(sys.argv[1:])
 
