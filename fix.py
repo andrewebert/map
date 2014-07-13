@@ -1,14 +1,17 @@
 #!/bin/python
 
 """
-Usage: fix.py [d fill] code source dest1 dest2 ...
+Usage: fix.py [d fill] code fixed start end
+e.g fix.py d AZ 2014_03 1991_09 2011_07
 
-Replaces the given attribute in all dest svg files with the attribute from source
+d will change the border shape or add a new country
+fill will change the color
 """
 
 import xml.etree.ElementTree as ET
 import util
 import sys
+import os
 
 def get_path(tree, code):
     root = tree.getroot()
@@ -25,7 +28,7 @@ def get_orig(source, code, attr):
     except IndexError as e:
         print "Can't find", code, "in", source
         raise e
-    if attr == "d":
+    if attr == "d" or attr == "new":
         return path
     elif attr == "fill":
         #return util.parse_fill(path.attrib["style"])
@@ -44,20 +47,31 @@ def set(filename, code, attr, value):
 
     except IndexError as e:
         if attr == "d":
+            # We need to add the country
             root = tree.getroot()
             root.append(value)
-            # We need to add the country
-            pass
         else:
             raise e
     finally:
         tree.write(filename)
 
+def get_filenames(fixed, start, end):
+    img_dir = "data/img/"
+    def format_filename(date):
+        return "world_" + date + ".svg"
+    
+    source = img_dir + format_filename(fixed)
+    svgs = os.listdir(img_dir)
+    destinations = sorted([img_dir + s for s in svgs
+            if s >= format_filename(start) and 
+               s <= format_filename(end)])
+
+    return source, destinations
+
 if __name__ == "__main__":
     attr = sys.argv[1]
     code = sys.argv[2]
-    source = sys.argv[3]
-    destinations = sys.argv[4:]
+    source, destinations = get_filenames(*sys.argv[3:6])
     value = get_orig(source, code, attr)
     for dest in destinations:
         set(dest, code, attr, value)
