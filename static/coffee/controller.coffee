@@ -1,11 +1,14 @@
 MIN_DRAG_THRESHOLD = 10
+MAX_ZOOM = 12
 
 MapCtrl = ($scope, $timeout) ->
     Color = net.brehaut.Color
 
     drag_data = {drag_amount: 0, dragging: false}
 
-    $scope.max_time = 294
+    #$scope.max_time = 294
+    $scope.max_time = (parseInt(NOW_YEAR) - parseInt(START_YEAR)) * 12 +
+        parseInt(NOW_MONTH) - parseInt(START_MONTH)
 
     $scope.time = $scope.max_time
     $scope.raw_time = $scope.time.toString()
@@ -45,7 +48,7 @@ MapCtrl = ($scope, $timeout) ->
             #return ""
 
     $scope.date_format = (t) ->
-      return "#{Math.floor(t/12) + 1990}_#{if t%12+1<10 then "0" else ""}#{(t%12) + 1}"
+      return "#{Math.floor(t/12) + START_YEAR}_#{if t%12+1<10 then "0" else ""}#{(t%12) + 1}"
 
     $scope.$watch 'raw_time', (value) ->
         $scope.time = parseInt(value)
@@ -60,7 +63,7 @@ MapCtrl = ($scope, $timeout) ->
 
     $scope.pretty_format = (t) ->
         time = parseInt(t)
-        year = Math.floor(time/12) + 1990
+        year = Math.floor(time/12) + parseInt(START_YEAR)
         month = time%12 + 1
         months = {1: "Jan", 2:"Feb", 3: "Mar", 4: "Apr",\
                   5: "May", 6: "Jun", 7: "Jul", 8: "Aug",\
@@ -219,7 +222,7 @@ MapCtrl = ($scope, $timeout) ->
 
     $scope.zoom = (x, y, direction) ->
         new_zoom = $scope.zoom_level + direction
-        if new_zoom >= 0 and new_zoom <= 8
+        if new_zoom >= 0 and new_zoom <= MAX_ZOOM
             $scope.zoom_level = new_zoom
             calculate_scale($scope, x, y, direction)
 

@@ -1,7 +1,7 @@
 #!/bin/python
 
 """
-Usage: fix.py [d fill] code fixed start end
+Usage: fix.py [d fill delete] code fixed start end
 e.g fix.py d AZ 2014_03 1991_09 2011_07
 
 d will change the border shape or add a new country
@@ -44,6 +44,8 @@ def set(filename, code, attr, value):
             if path.attrib["style"] != value:
                 print "fixed", filename, code
                 path.attrib["style"] = value
+        elif attr == "delete":
+            tree.getroot().remove(path)
 
     except IndexError as e:
         if attr == "d":
@@ -72,6 +74,9 @@ if __name__ == "__main__":
     attr = sys.argv[1]
     code = sys.argv[2]
     source, destinations = get_filenames(*sys.argv[3:6])
-    value = get_orig(source, code, attr)
+    if attr == "delete":
+        value = None
+    else:
+        value = get_orig(source, code, attr)
     for dest in destinations:
         set(dest, code, attr, value)

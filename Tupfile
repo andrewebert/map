@@ -1,0 +1,1 @@
+: map.jade |> jade < %f > %o |> map.html
