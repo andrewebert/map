@@ -1,5 +1,5 @@
 flags = {}
-START_YEAR = "1986"
+START_YEAR = "1980"
 START_MONTH = "01"
 NOW_YEAR = "2014"
 NOW_MONTH = "07"

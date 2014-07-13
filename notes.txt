@@ -1,0 +1,5 @@
+- Fix Afghanistan/Northern Alliance
+- Bantustans
+
+- Alliances mode: NATO/Warsaw Pact, etc.
+- Detail borders in civil wars
