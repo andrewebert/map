@@ -1,1 +1,1 @@
-app = angular.module('map', ["uiSlider", "monospaced.mousewheel", "ngSanitize"])
+app = angular.module('map', ["uiSlider", "monospaced.mousewheel", "ngSanitize", "cfp.hotkeys"])

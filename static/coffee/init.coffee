@@ -1,9 +1,12 @@
 flags = {}
-START_YEAR = "1980"
-START_MONTH = "01"
-NOW_YEAR = "2014"
-NOW_MONTH = "07"
-NOW = "#{NOW_YEAR}_#{NOW_MONTH}"
+START_YEAR = 1980
+START_MONTH = 1
+NOW_YEAR = 2014
+NOW_MONTH = 7
+
+format_month = (m) -> (if m < 10 then "0" else "") + m.toString()
+
+NOW = "#{NOW_YEAR}_#{format_month(NOW_MONTH)}"
 
 initialize = ->
     countries = {}

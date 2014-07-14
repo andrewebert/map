@@ -1,14 +1,13 @@
 MIN_DRAG_THRESHOLD = 10
 MAX_ZOOM = 12
 
-MapCtrl = ($scope, $timeout) ->
+MapCtrl = ($scope, $timeout, hotkeys) ->
     Color = net.brehaut.Color
 
     drag_data = {drag_amount: 0, dragging: false}
 
     #$scope.max_time = 294
-    $scope.max_time = (parseInt(NOW_YEAR) - parseInt(START_YEAR)) * 12 +
-        parseInt(NOW_MONTH) - parseInt(START_MONTH)
+    $scope.max_time = (NOW_YEAR - START_YEAR) * 12 + NOW_MONTH - START_MONTH
 
     $scope.time = $scope.max_time
     $scope.raw_time = $scope.time.toString()
@@ -48,7 +47,7 @@ MapCtrl = ($scope, $timeout) ->
             #return ""
 
     $scope.date_format = (t) ->
-      return "#{Math.floor(t/12) + START_YEAR}_#{if t%12+1<10 then "0" else ""}#{(t%12) + 1}"
+      return "#{Math.floor(t/12) + START_YEAR}_#{format_month(t%12 + 1)}"
 
     $scope.$watch 'raw_time', (value) ->
         $scope.time = parseInt(value)
@@ -63,12 +62,11 @@ MapCtrl = ($scope, $timeout) ->
 
     $scope.pretty_format = (t) ->
         time = parseInt(t)
-        year = Math.floor(time/12) + parseInt(START_YEAR)
+        year = Math.floor(time/12) + START_YEAR
         month = time%12 + 1
         months = {1: "Jan", 2:"Feb", 3: "Mar", 4: "Apr",\
                   5: "May", 6: "Jun", 7: "Jul", 8: "Aug",\
                   9: "Sep", 10: "Oct", 11: "Nov", 12: "Dec"}
-        #return "#{if month<10 then "0" else ""}#{month}-#{year}"
         return "#{months[month]} #{year}"
 
     $scope.country = (code) ->
@@ -227,6 +225,47 @@ MapCtrl = ($scope, $timeout) ->
             Math.abs(drag_data.last_y - drag_data.grab_y))
         drag_data.last_x = undefined
         drag_data.last_y = undefined
+
+    add_direction = (key, dx, dy) ->
+        hotkeys.add
+            combo: key
+            callback: (e) -> shift(e, dx, dy)
+
+    add_direction(key, -1, 0) for key in ["left", "a", "h"]
+    add_direction(key, 0, 1)  for key in ["down", "s", "j"]
+    add_direction(key, 0, -1) for key in ["up", "w", "k"]
+    add_direction(key, 1, 0)  for key in ["right", "l", "d"]
+        
+    hotkeys.add
+        combo: "i"
+        callback: (e) -> $scope.zoom(1)
+    hotkeys.add
+        combo: "o"
+        callback: (e) -> $scope.zoom(-1)
+
+    set_time_key = (key, dt) ->
+        hotkeys.add
+            combo: key
+            callback: ->
+                new_time = $scope.time + dt
+                if new_time < 0
+                    $scope.raw_time = "0"
+                else if new_time > $scope.max_time
+                    $scope.raw_time = $scope.max_time.toString()
+                else
+                    $scope.raw_time = new_time.toString()
+
+    set_time_key("u", -1)
+    set_time_key("p", +1)
+    set_time_key("U", -12)
+    set_time_key("P", +12)
+
+    shift = (e, dx, dy) ->
+        amount = 50
+        $scope.x_trans -= dx*amount/$scope.scale
+        $scope.y_trans -= dy*amount/$scope.scale
+        adjust_trans($scope)
+        e.preventDefault()
 
     $scope.mousewheel = (e, d, dx, dy) ->
         x = e.layerX ? e.originalEvent.layerX
