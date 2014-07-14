@@ -5,14 +5,14 @@ MIN_DRAG_THRESHOLD = 10;
 
 MAX_ZOOM = 12;
 
-MapCtrl = function($scope, $timeout) {
-  var Color, drag_data, selected, _ref;
+MapCtrl = function($scope, $timeout, hotkeys) {
+  var Color, add_direction, drag_data, key, selected, set_time_key, shift, _i, _j, _k, _l, _len, _len1, _len2, _len3, _ref, _ref1, _ref2, _ref3, _ref4;
   Color = net.brehaut.Color;
   drag_data = {
     drag_amount: 0,
     dragging: false
   };
-  $scope.max_time = (parseInt(NOW_YEAR) - parseInt(START_YEAR)) * 12 + parseInt(NOW_MONTH) - parseInt(START_MONTH);
+  $scope.max_time = (NOW_YEAR - START_YEAR) * 12 + NOW_MONTH - START_MONTH;
   $scope.time = $scope.max_time;
   $scope.raw_time = $scope.time.toString();
   $scope.countries = {};
@@ -33,7 +33,7 @@ MapCtrl = function($scope, $timeout) {
   $scope.fills = fills;
   _ref = initialize($scope.times), $scope.countries = _ref[0], $scope.times = _ref[1];
   $scope.date_format = function(t) {
-    return "" + (Math.floor(t / 12) + START_YEAR) + "_" + (t % 12 + 1 < 10 ? "0" : "") + ((t % 12) + 1);
+    return "" + (Math.floor(t / 12) + START_YEAR) + "_" + (format_month(t % 12 + 1));
   };
   $scope.$watch('raw_time', function(value) {
     return $scope.time = parseInt(value);
@@ -51,7 +51,7 @@ MapCtrl = function($scope, $timeout) {
   $scope.pretty_format = function(t) {
     var month, months, time, year;
     time = parseInt(t);
-    year = Math.floor(time / 12) + parseInt(START_YEAR);
+    year = Math.floor(time / 12) + START_YEAR;
     month = time % 12 + 1;
     months = {
       1: "Jan",
@@ -203,7 +203,7 @@ MapCtrl = function($scope, $timeout) {
   };
   $scope.fill = function(code) {
     var color, saturation, _ref1;
-    if ((_ref1 = $scope.country(code)) != null ? _ref1.owner : void 0) {
+    if (((_ref1 = $scope.country(code)) != null ? _ref1.owner : void 0) != null) {
       color = fills[$scope.country(code).owner];
     } else {
       color = fills[code];
@@ -246,16 +246,90 @@ MapCtrl = function($scope, $timeout) {
     drag_data.last_x = void 0;
     return drag_data.last_y = void 0;
   };
-  $scope.mousewheel = function(e, d, dx, dy) {
-    var direction, x, y, _ref1, _ref2;
-    x = (_ref1 = e.layerX) != null ? _ref1 : e.originalEvent.layerX;
-    y = (_ref2 = e.layerY) != null ? _ref2 : e.originalEvent.layerY;
-    direction = dy;
-    $scope.zoom(x, y, direction);
+  add_direction = function(key, dx, dy) {
+    return hotkeys.add({
+      combo: key,
+      callback: function(e) {
+        return shift(e, dx, dy);
+      }
+    });
+  };
+  _ref1 = ["left", "a", "h"];
+  for (_i = 0, _len = _ref1.length; _i < _len; _i++) {
+    key = _ref1[_i];
+    add_direction(key, -1, 0);
+  }
+  _ref2 = ["down", "s", "j"];
+  for (_j = 0, _len1 = _ref2.length; _j < _len1; _j++) {
+    key = _ref2[_j];
+    add_direction(key, 0, 1);
+  }
+  _ref3 = ["up", "w", "k"];
+  for (_k = 0, _len2 = _ref3.length; _k < _len2; _k++) {
+    key = _ref3[_k];
+    add_direction(key, 0, -1);
+  }
+  _ref4 = ["right", "l", "d"];
+  for (_l = 0, _len3 = _ref4.length; _l < _len3; _l++) {
+    key = _ref4[_l];
+    add_direction(key, 1, 0);
+  }
+  hotkeys.add({
+    combo: "i",
+    callback: function(e) {
+      return $scope.zoom(1);
+    }
+  });
+  hotkeys.add({
+    combo: "o",
+    callback: function(e) {
+      return $scope.zoom(-1);
+    }
+  });
+  set_time_key = function(key, dt) {
+    return hotkeys.add({
+      combo: key,
+      callback: function() {
+        var new_time;
+        new_time = $scope.time + dt;
+        if (new_time < 0) {
+          return $scope.raw_time = "0";
+        } else if (new_time > $scope.max_time) {
+          return $scope.raw_time = $scope.max_time.toString();
+        } else {
+          return $scope.raw_time = new_time.toString();
+        }
+      }
+    });
+  };
+  set_time_key("u", -1);
+  set_time_key("p", +1);
+  set_time_key("U", -12);
+  set_time_key("P", +12);
+  shift = function(e, dx, dy) {
+    var amount;
+    amount = 50;
+    $scope.x_trans -= dx * amount / $scope.scale;
+    $scope.y_trans -= dy * amount / $scope.scale;
+    adjust_trans($scope);
     return e.preventDefault();
   };
-  $scope.zoom = function(x, y, direction) {
+  $scope.mousewheel = function(e, d, dx, dy) {
+    var direction, x, y, _ref5, _ref6;
+    x = (_ref5 = e.layerX) != null ? _ref5 : e.originalEvent.layerX;
+    y = (_ref6 = e.layerY) != null ? _ref6 : e.originalEvent.layerY;
+    direction = dy;
+    $scope.zoom(direction, x, y);
+    return e.preventDefault();
+  };
+  $scope.zoom = function(direction, x, y) {
     var new_zoom;
+    if (x == null) {
+      x = $scope.mapWidth / 2;
+    }
+    if (y == null) {
+      y = $scope.mapHeight / 2;
+    }
     new_zoom = $scope.zoom_level + direction;
     if (new_zoom >= 0 && new_zoom <= MAX_ZOOM) {
       $scope.zoom_level = new_zoom;
