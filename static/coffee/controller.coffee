@@ -188,7 +188,7 @@ MapCtrl = ($scope, $timeout) ->
             ""
 
     $scope.fill = (code) ->
-        if $scope.country(code)?.owner
+        if $scope.country(code)?.owner?
             color = fills[$scope.country(code).owner]
         else
             color = fills[code]
@@ -232,7 +232,7 @@ MapCtrl = ($scope, $timeout) ->
         x = e.layerX ? e.originalEvent.layerX
         y = e.layerY ? e.originalEvent.layerY
         direction = dy
-        $scope.zoom(x, y, direction)
+        $scope.zoom(direction, x, y)
 
         #[$scope.x_trans, $scope.y_trans, $scope.scale] = calculate_scale(x, y,
             #direction, $scope.width, $scope.height,
@@ -240,7 +240,7 @@ MapCtrl = ($scope, $timeout) ->
 
         e.preventDefault()
 
-    $scope.zoom = (x, y, direction) ->
+    $scope.zoom = (direction, x = $scope.mapWidth/2, y = $scope.mapHeight/2) ->
         new_zoom = $scope.zoom_level + direction
         if new_zoom >= 0 and new_zoom <= MAX_ZOOM
             $scope.zoom_level = new_zoom
