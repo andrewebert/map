@@ -1,5 +1,6 @@
-- Fix Afghanistan/Northern Alliance
-- Bantustans
+- Use disputed to mark countries as grey
+- Jan 1976: Gilbert and Ellice Islands
 
 - Alliances mode: NATO/Warsaw Pact, etc.
 - Detail borders in civil wars
+- Fix hover-flag positioning

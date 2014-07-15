@@ -88,7 +88,7 @@ MapCtrl = ($scope, $timeout, hotkeys) ->
         if selected()
             country = $scope.country(selected())
             owners = country?.owner
-            if owners?
+            if owners and owners != "-"
                 owners = country.owner.split(" ")
                 owners = ($scope.country(o).name for o in owners)
                 owners = owners.join(" and ")
