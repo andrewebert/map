@@ -37,9 +37,10 @@ html(lang = "en", ng-app = "map")
 
       #info.noselect
         #infobox
-        img#flag(ng-src="{{ flag() }}",
-                 ng-show="flag()",
-                 ng-class="{hoverable: !drag_data.dragging}")
+        #flagbox
+          img#flag(ng-src="{{ flag() }}",
+                  ng-show="flag()",
+                  ng-class="{hoverable: !drag_data.dragging}")
         #text
           a#formal(ng-class = "{nopoint: drag_data.dragging}",
                   ng-attr-href = "{{ link() }}",
