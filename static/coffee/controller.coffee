@@ -30,7 +30,7 @@ MapCtrl = ($scope, $timeout, hotkeys) ->
     $scope.label = {x: 0, y: 0, visible: false}
     $scope.fills = (code) ->
         country = $scope.country(code)
-        if country.disputed and country.disputed != ""
+        if country.disputed and country.disputed != "-"
             "color13"
         else if country.owner
             fills[country.owner.split(" ")[0]]
@@ -94,7 +94,7 @@ MapCtrl = ($scope, $timeout, hotkeys) ->
         return ""
 
     $scope.owner = () ->
-        if selected()
+        if selected()?
             country = $scope.country(selected())
             owners = country?.owner
             if owners and owners != "-"
@@ -111,8 +111,8 @@ MapCtrl = ($scope, $timeout, hotkeys) ->
             return ""
 
     $scope.disputed = () ->
-        if selected()
-            disputed = $scope.country(selected()).disputed
+        if selected()?
+            disputed = $scope.country(selected())?.disputed
             if disputed and disputed != "-"
                 return disputed
         return ""

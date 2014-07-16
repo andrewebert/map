@@ -39,12 +39,12 @@ html(lang = "en", ng-app = "map")
         #infobox
         #flagbox
           img#flag(ng-src="{{ flag() }}",
-                  ng-show="flag()",
-                  ng-class="{hoverable: !drag_data.dragging}")
+                   ng-show="flag()",
+                   ng-class="{hoverable: !drag_data.dragging}")
         #text
           a#formal(ng-class = "{nopoint: drag_data.dragging}",
-                  ng-attr-href = "{{ link() }}",
-                  target="_blank")
+                   ng-attr-href = "{{ link() }}",
+                   target="_blank")
             {{ formal() }}
           span#owner &ensp;{{ owner() }}
           p#disputed {{ disputed() }}
