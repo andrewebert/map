@@ -1,5 +1,5 @@
 flags = {}
-START_YEAR = 1979
+START_YEAR = 1970
 START_MONTH = 1
 NOW_YEAR = 2014
 NOW_MONTH = 7
@@ -48,6 +48,13 @@ initialize = ->
                             curr[code][attr] = changed[attr] ? prev[code][attr] ? ""
                     else
                         curr[code] = changed
+            #curr[code]["fill"] =
+                #if curr[code].disputed and curr[code].disputed != "-"
+                    #"color13"
+                #else if curr[code].owner
+                    #fills[curr[code].owner.split(" ")[0]]
+                #else
+                    #fills[code]
             countries[time] = curr
             prev = curr
             last_time = time

@@ -3,4 +3,3 @@
 
 - Alliances mode: NATO/Warsaw Pact, etc.
 - Detail borders in civil wars
-- Fix hover-flag positioning

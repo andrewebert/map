@@ -28,7 +28,16 @@ MapCtrl = ($scope, $timeout, hotkeys) ->
     #$scope.height = base_scale * base_height
 
     $scope.label = {x: 0, y: 0, visible: false}
-    $scope.fills = fills
+    $scope.fills = (code) ->
+        country = $scope.country(code)
+        if country.disputed and country.disputed != ""
+            "color13"
+        else if country.owner
+            fills[country.owner.split(" ")[0]]
+        else
+            fills[code]
+
+    #$scope.fills = fills
 
     #count = 0
 
@@ -103,9 +112,10 @@ MapCtrl = ($scope, $timeout, hotkeys) ->
 
     $scope.disputed = () ->
         if selected()
-            return $scope.country(selected()).disputed ? ""
-        else
-            return ""
+            disputed = $scope.country(selected()).disputed
+            if disputed and disputed != "-"
+                return disputed
+        return ""
 
     $scope.flag = () ->
         flag = ""

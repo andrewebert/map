@@ -71,7 +71,7 @@ html(lang = "en", ng-app = "map")
         g(ng-attr-transform="scale({{ scale }}) translate({{ x_trans }}, {{ y_trans }})")
           path(ng-repeat = "(code, country) in countries[time]",
                ng-attr-d = "{{ country.d }}",
-               ng-class = "fills[code] + {true: ' selected', false: ''}[code == selected]",
+               ng-class = "fills(code) + {true: ' selected', false: ''}[code == selected]",
                ng-click="hard_select(code, $event)",
                ng-mouseover="soft_select(code, $event)",
                ng-mousemove="move_label($event)",
