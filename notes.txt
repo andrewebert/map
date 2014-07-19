@@ -1,5 +1,5 @@
-- Use disputed to mark countries as grey
-- Jan 1976: Gilbert and Ellice Islands
+- Replace "-" with "" in initialization
 
 - Alliances mode: NATO/Warsaw Pact, etc.
 - Detail borders in civil wars
+- Have a country merger table
