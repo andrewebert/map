@@ -52,6 +52,8 @@ def set(filename, code, attr, value):
             # We need to add the country
             root = tree.getroot()
             root.append(value)
+        elif attr == "delete":
+            print "Can't find", code, "in", filename
         else:
             raise e
     finally:
