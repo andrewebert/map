@@ -1,5 +1,15 @@
 import xml.etree.ElementTree as ET
 import re
+import os
+
+img_dir = "data/img/"
+
+def format_filename(date):
+    return img_dir + "world_" + date + ".svg"
+
+def get_images():
+    images = os.listdir(img_dir)
+    return sorted([img_dir + i for i in images])
 
 def parse_svg(filename):
     tree = ET.parse(filename)

@@ -11,7 +11,7 @@ NOW = "#{NOW_YEAR}_#{format_month(NOW_MONTH)}"
 initialize = ->
     countries = {}
     times = []
-    attrs = ["d", "name", "formal", "owner", "flag", "link", "disputed"]
+    attrs = ["d", "name", "formal", "owner", "flag", "link", "disputed", "fill"]
     for y in [NOW_YEAR..START_YEAR]
         for m in [12..1]
             if !(y >= NOW_YEAR && m > NOW_MONTH)

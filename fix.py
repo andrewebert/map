@@ -65,15 +65,11 @@ def set(filename, code, attr, value):
         tree.write(filename)
 
 def get_filenames(fixed, start, end):
-    img_dir = "data/img/"
-    def format_filename(date):
-        return "world_" + date + ".svg"
-    
-    source = img_dir + format_filename(fixed)
-    svgs = os.listdir(img_dir)
-    destinations = sorted([img_dir + s for s in svgs
-            if s >= format_filename(start) and 
-               s <= format_filename(end)])
+    source = util.format_filename(fixed)
+    svgs = util.get_images()
+    destinations = sorted([s for s in svgs
+            if s >= util.format_filename(start) and 
+               s <= util.format_filename(end)])
 
     return source, destinations
 
