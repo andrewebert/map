@@ -21,7 +21,7 @@ initialize = ->
                     times.push("#{y}_#{m}")
 
     for country, data of initial_countries
-        if not data.d
+        if not data.d or data.d == ""
             console.log "error", country, data
             delete initial_countries[country]
 
@@ -47,15 +47,10 @@ initialize = ->
                         curr[code] = {}
                         for attr in attrs
                             curr[code][attr] = changed[attr] ? prev[code][attr] ? ""
+                            if curr[code][attr] == "-"
+                                curr[code][attr] = ""
                     else
                         curr[code] = changed
-            #curr[code]["fill"] =
-                #if curr[code].disputed and curr[code].disputed != "-"
-                    #"color13"
-                #else if curr[code].owner
-                    #fills[curr[code].owner.split(" ")[0]]
-                #else
-                    #fills[code]
             countries[time] = curr
             prev = curr
             last_time = time

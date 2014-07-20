@@ -131,7 +131,7 @@ def update_fills(original, changes):
                     data["fill"] = "color13"
                 else:
                     data["fill"] = default_fills[country]
-            elif "owner" in data:
+            if ("disputed" not in data or data["disputed"] == "-") and "owner" in data:
                 if data["owner"] != "-":
                     data["fill"] = default_fills[data["owner"].split(" ")[0]]
                 else:

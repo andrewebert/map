@@ -6,7 +6,6 @@ MapCtrl = ($scope, $timeout, hotkeys) ->
 
     drag_data = {drag_amount: 0, dragging: false}
 
-    #$scope.max_time = 294
     $scope.max_time = (NOW_YEAR - START_YEAR) * 12 + NOW_MONTH - START_MONTH
 
     $scope.time = $scope.max_time
@@ -23,37 +22,19 @@ MapCtrl = ($scope, $timeout, hotkeys) ->
     $scope.loading = false
 
     $scope.zoom_level = 0
-    #$scope.scale = base_scale
-    #$scope.width = base_scale * base_width
-    #$scope.height = base_scale * base_height
 
     $scope.label = {x: 0, y: 0, visible: false}
-    $scope.fills = (code) ->
-        country = $scope.country(code)
-        if country.disputed and country.disputed != "-"
-            return "color13"
-        if country.owner
-            fill = fills[country.owner.split(" ")[0]]
-            if fill
-                return fill
-        return fills[code]
-
-    #$scope.fills = fills
-
-    #count = 0
 
     [$scope.countries, $scope.times] = initialize($scope.times)
 
     $scope.get_d = (code, country) ->
-        count += 1
-        document.getElementById("count").innerHTML = count
         if country.d?
             return country.d
         else
             console.log("Missing d")
             console.log(code)
             console.log(country)
-            console.log($scope.time())
+            console.log($scope.time)
             return ""
 
     $scope.date_format = (t) ->
@@ -98,7 +79,7 @@ MapCtrl = ($scope, $timeout, hotkeys) ->
         if selected()?
             country = $scope.country(selected())
             owners = country?.owner
-            if owners and owners != "-"
+            if owners
                 owners = country.owner.split(" ")
                 owners = ($scope.country(o).name for o in owners)
                 owners = owners.join(" and ")
@@ -114,7 +95,7 @@ MapCtrl = ($scope, $timeout, hotkeys) ->
     $scope.disputed = () ->
         if selected()?
             disputed = $scope.country(selected())?.disputed
-            if disputed and disputed != "-"
+            if disputed
                 return disputed
         return ""
 
@@ -161,25 +142,7 @@ MapCtrl = ($scope, $timeout, hotkeys) ->
     $scope.select = (code, hard=false) ->
         if hard or !$scope.hard_selected?
             $scope.selected = code
-        #if code != undefined
-            #country = $scope.country(code)
-            #if country?
-                #if country.flag
-                    #$scope.flag = country.flag
-                #else if country.owner
-                    #owner = $scope.country(country.owner)
-                    #if owner?.flag
-                        #$scope.flag = owner.flag
-            #if country?.formal?
-                #if country.owner
-                    #$scope.formal = "#{country.formal} (#{$scope.country(country.owner).name})"
-                #else
-                    #$scope.formal = country.formal
-
-        #else
-            #$scope.flag = undefined
-            #$scope.formal = ""
-
+        
     $scope.move_label = (e) ->
         $scope.label.x = e.clientX
         $scope.label.y = e.clientY
@@ -195,21 +158,6 @@ MapCtrl = ($scope, $timeout, hotkeys) ->
             $scope.country($scope.soft_selected).name
         else
             ""
-
-    $scope.fill = (code) ->
-        if $scope.country(code)?.owner?
-            color = fills[$scope.country(code).owner]
-        else
-            color = fills[code]
-        if selected() == code
-            color = Color(color)
-            saturation = color.getSaturation() 
-            if saturation > 0
-                color = color.setSaturation(Math.min(saturation + 0.4, 1))
-            color = color.setLightness(Math.max(color.getLightness() - 0.25, 0))
-            return color.toCSS()
-        else
-            return color
 
     $scope.grab = (e) ->
         drag_data.dragging = true
@@ -283,10 +231,6 @@ MapCtrl = ($scope, $timeout, hotkeys) ->
         y = e.layerY ? e.originalEvent.layerY
         direction = dy
         $scope.zoom(direction, x, y)
-
-        #[$scope.x_trans, $scope.y_trans, $scope.scale] = calculate_scale(x, y,
-            #direction, $scope.width, $scope.height,
-            #$scope.x_trans, $scope.y_trans, $scope.scale)
 
         e.preventDefault()
 
