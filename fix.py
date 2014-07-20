@@ -18,7 +18,8 @@ def get_path(tree, code):
     paths = root.findall('{http://www.w3.org/2000/svg}path')
     for p in paths:
         if "code" not in p.attrib:
-            print "missing code:", p.attrib["id"]
+            print "missing code:", p.attrib["id"],
+            raise KeyError
     return [p for p in paths if p.attrib["code"] == code][0]
 
 def get_orig(source, code, attr):
@@ -27,6 +28,9 @@ def get_orig(source, code, attr):
         path = get_path(tree, code)
     except IndexError as e:
         print "Can't find", code, "in", source
+        raise e
+    except KeyError as e:
+        print source
         raise e
     if attr == "d" or attr == "new":
         return path
@@ -52,10 +56,11 @@ def set(filename, code, attr, value):
             # We need to add the country
             root = tree.getroot()
             root.append(value)
-        elif attr == "delete":
-            print "Can't find", code, "in", filename
         else:
-            raise e
+            print "Can't find", code, "in", filename
+    except KeyError as e:
+        print filename
+        raise e
     finally:
         tree.write(filename)
 
@@ -75,7 +80,16 @@ def get_filenames(fixed, start, end):
 if __name__ == "__main__":
     attr = sys.argv[1]
     code = sys.argv[2]
-    source, destinations = get_filenames(*sys.argv[3:6])
+    fixed = sys.argv[3]
+    if len(sys.argv) > 4:
+        start = sys.argv[4]
+    else:
+        start = "1900_01"
+    if len(sys.argv) > 5:
+        end = sys.argv[5]
+    else:
+        end = fixed
+    source, destinations = get_filenames(fixed, start, end)
     if attr == "delete":
         value = None
     else:

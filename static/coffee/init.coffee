@@ -23,6 +23,7 @@ initialize = ->
     for country, data of initial_countries
         if not data.d
             console.log "error", country, data
+            delete initial_countries[country]
 
     last_time = times.length - 1
     countries[last_time] = initial_countries

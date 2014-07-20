@@ -1,4 +1,5 @@
 - Replace "-" with "" in initialization
+- Kashmir
 
 - Alliances mode: NATO/Warsaw Pact, etc.
 - Detail borders in civil wars

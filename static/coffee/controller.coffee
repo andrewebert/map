@@ -31,11 +31,12 @@ MapCtrl = ($scope, $timeout, hotkeys) ->
     $scope.fills = (code) ->
         country = $scope.country(code)
         if country.disputed and country.disputed != "-"
-            "color13"
-        else if country.owner
-            fills[country.owner.split(" ")[0]]
-        else
-            fills[code]
+            return "color13"
+        if country.owner
+            fill = fills[country.owner.split(" ")[0]]
+            if fill
+                return fill
+        return fills[code]
 
     #$scope.fills = fills
 
@@ -43,17 +44,17 @@ MapCtrl = ($scope, $timeout, hotkeys) ->
 
     [$scope.countries, $scope.times] = initialize($scope.times)
 
-    #$scope.get_d = (code, country) ->
-        #count += 1
-        #document.getElementById("count").innerHTML = count
-        #if country.d?
-            #return country.d
-        #else
-            #console.log("Missing d")
-            #console.log(code)
-            #console.log(country)
-            #console.log($scope.time())
-            #return ""
+    $scope.get_d = (code, country) ->
+        count += 1
+        document.getElementById("count").innerHTML = count
+        if country.d?
+            return country.d
+        else
+            console.log("Missing d")
+            console.log(code)
+            console.log(country)
+            console.log($scope.time())
+            return ""
 
     $scope.date_format = (t) ->
       return "#{Math.floor(t/12) + START_YEAR}_#{format_month(t%12 + 1)}"
