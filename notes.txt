@@ -4,3 +4,4 @@
 - Alliances mode: NATO/Warsaw Pact, etc.
 - Detail borders in civil wars
 - Have a country merger table
+- Default flags

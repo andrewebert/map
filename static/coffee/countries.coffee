@@ -1,37 +1,21 @@
-flags = {}
-START_YEAR = 1960
-START_MONTH = 1
-NOW_YEAR = 2014
-NOW_MONTH = 7
+app.directive 'countries', -> ($scope) ->
+    $scope.flags = {}
 
-format_month = (m) -> (if m < 10 then "0" else "") + m.toString()
-
-NOW = "#{NOW_YEAR}_#{format_month(NOW_MONTH)}"
-
-initialize = ->
-    countries = {}
-    times = []
     attrs = ["d", "name", "formal", "owner", "flag", "link", "disputed", "fill"]
-    for y in [NOW_YEAR..START_YEAR]
-        for m in [12..1]
-            if !(y >= NOW_YEAR && m > NOW_MONTH)
-                if m < 10
-                    times.push("#{y}_0#{m}")
-                else
-                    times.push("#{y}_#{m}")
 
+    countries = {}
     for country, data of initial_countries
         if not data.d or data.d == ""
             console.log "error", country, data
             delete initial_countries[country]
 
-    last_time = times.length - 1
+    last_time = $scope.times.length - 1
     countries[last_time] = initial_countries
     flag_urls = (initial_countries[code].flag for code in population \
         when initial_countries[code]?.flag?)
     prev = initial_countries
-    for date, i in times[1..]
-        time = times.length - i - 2
+    for date, i in $scope.times[1..]
+        time = $scope.times.length - i - 2
         if changes[date]?
             curr = {}
             for code, old of prev
@@ -57,21 +41,20 @@ initialize = ->
         else
             countries[time] = countries[last_time]
     #load_flags(flag_urls)
-    return [countries, times]
 
+    $scope.countries = countries
 
-load_image = (src, on_load) ->
-    image = new Image()
-    image.src = src
-    image.onload = -> on_load(src, image)
-    image.onerror = -> on_load(src, image)
+    $scope.load_image = (src, on_load) ->
+        image = new Image()
+        image.src = src
+        image.onload = -> on_load(src, image)
+        image.onerror = -> on_load(src, image)
 
-
-load_flags = (flag_urls) ->
-    store = (src, image) -> 
-        console.log(src)
-        flags[src] = image
-    for src in flag_urls
-        load_image(src, store)
+    load_flags = (flag_urls) ->
+        store = (src, image) -> 
+            console.log(src)
+            $scope.flags[src] = image
+        for src in flag_urls
+            $scope.load_image(src, store)
 
 

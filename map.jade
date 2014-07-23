@@ -17,17 +17,18 @@ html(lang = "en", ng-app = "map")
     script(src = "static/js/data/changes.js", type = "text/javascript")
     script(src = "static/js/data/population.js", type = "text/javascript")
 
-    script(src = "static/js/init.js", type = "text/javascript")
-    script(src = "static/js/transform.js", type = "text/javascript")
     script(src = "static/js/controller.js", type = "text/javascript")
     script(src = "static/js/app.js", type = "text/javascript")
-    script(src = "static/js/directives.js", type = "text/javascript")
+    script(src = "static/js/time.js", type = "text/javascript")
+    script(src = "static/js/transform.js", type = "text/javascript")
+    script(src = "static/js/countries.js", type = "text/javascript")
+    script(src = "static/js/hotkeys.js", type = "text/javascript")
   body(ng-controller = "MapCtrl", ng-keydown="keydown")
     //-p#count {{ count }}
     #labelmarker(ng-show="label.visible" ng-style="{left: label.x + 'px', top: label.y + 'px'}")
       #label
         p {{ label_text() }}
-    #map(resizeable,
+    #map(transformable, countries, time, hotkeys,
          ng-style="{width: mapWidth + 'px', height: mapHeight + 'px'}",
          ng-mousedown="grab($event)",
          ng-mousemove="drag($event)",
@@ -62,7 +63,6 @@ html(lang = "en", ng-app = "map")
         span.fa.fa-minus
 
       svg#world.noselect(
-            resizeable,
             msd-wheel="mousewheel($event, $delta, $deltaX, $deltaY)",
             ng-attr-width="{{ mapWidth }}",
             ng-attr-height="{{ mapHeight }}",
