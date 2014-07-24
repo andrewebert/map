@@ -48,12 +48,7 @@ def get_map_difference(old, new):
     changed.update({k: new[k] for k in added_keys})
     removed = list(old_keys - new_keys)
 
-    if added_keys != []:
-        print "Added:", added_keys
-    if changed_keys != []:
-        print "Changed:", changed_keys
-    if removed != []:
-        print "Removed:", removed
+    print "Added:", added_keys, "Changed:", changed_keys, "Removed:", removed
     return {"removed": removed, "changed": changed}
 
 
@@ -65,7 +60,7 @@ def get_data(original_file, changed_files):
     for f in changed_files:
         time = os.path.basename(f)[6:13]
         paths = util.parse_svg(f)
-        print "\n", time
+        print "\n", time,
         new = extract_map_data(paths)
         changes[time] = get_map_difference(prev, new)
         prev = new
@@ -139,8 +134,8 @@ def update_fills(original, changes):
     
     update(original)
     for date, change_data in changes.items():
-        if change_data["changed"]:
-            update(change_data["changed"])
+        if change_data:
+            update(change_data)
 
 
 def convert(original_file, change_files):
@@ -191,6 +186,7 @@ def convert(original_file, change_files):
     get_changes('flag')
     get_changes('link')
     get_changes('disputed')
+    get_changes('is')
 
     original = merge_data(original_sources)
 
@@ -201,13 +197,11 @@ def convert(original_file, change_files):
     for date in dates:
         cs = merge_data({tag: source[date] if date in source else {}
             for tag, source in change_sources.items()})
-        rs = changes_map[date]["removed"] if date in changes_map else {}
-        if cs != {} or rs != {}:
-            changes[date] = {}
-            if cs != {}:
-                changes[date]["changed"] = cs
-            if rs != {}:
-                changes[date]["removed"] = rs
+        #rs = changes_map[date]["removed"] if date in changes_map else {}
+        if cs != {}:
+            changes[date] = cs
+            #if rs != {}:
+                #changes[date]["removed"] = rs
 
     update_fills(original, changes)
 

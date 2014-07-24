@@ -19,10 +19,15 @@ MapCtrl = ($scope, $timeout) ->
             return ""
 
     $scope.country = (code) ->
-        if $scope.countries[$scope.time]? and $scope.countries[$scope.time][code]?
-            return $scope.countries[$scope.time][code]
-        else
-            console.log("invalid country #{$scope.time} (#{typeof $scope.time}) #{code}")
+        countries = $scope.countries[$scope.time]
+        if countries?
+            if countries[code]?
+                return countries[code]
+            else
+                replacement = $scope.replacements[$scope.time][code]
+                if replacement? and countries[replacement]
+                    return countries[replacement]
+        console.log("invalid country #{$scope.time} (#{typeof $scope.time}) #{code}")
 
     selected = () -> $scope.hard_selected ? $scope.soft_selected
 
