@@ -46,7 +46,7 @@ MapCtrl = ($scope, $timeout) ->
 
     $scope.link = () ->
         if selected()
-            return $scope.country(selected()).link
+            return $scope.country(selected())?.link ? ""
         else
             return ""
 
@@ -75,7 +75,7 @@ MapCtrl = ($scope, $timeout) ->
             $scope.load_image(flag, (src, image) ->
                 $scope.loading = false
                 $scope.flags[src] = image
-                console.log("loaded " + flag)
+                #console.log("loaded " + flag)
                 $scope.$apply()
             )
             return ""

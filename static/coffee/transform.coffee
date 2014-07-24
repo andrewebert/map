@@ -31,18 +31,15 @@ app.directive 'transformable', ($window) -> ($scope) ->
     $scope.calculate_scale = (x, y, direction) ->
         $scope.scale = $scope.base_scale * Math.pow(scale_step, $scope.zoom_level)
 
-        translation_factor = (Math.pow(scale_step,direction) - 1) / $scope.scale
-        $scope.x_trans -= translation_factor * x
-        $scope.y_trans -= translation_factor * y
-
+        translation_factor = 1 - Math.pow(scale_step,direction)
+        $scope.translate(translation_factor * x, translation_factor * y)
 
     $scope.translate = (dx, dy) ->
         $scope.x_trans += dx/$scope.scale
         $scope.y_trans += dy/$scope.scale
         max_x_trans = 0
         max_y_trans = 0
-        scale_factor = ($scope.base_scale - $scope.scale) /
-            ($scope.base_scale * $scope.scale)
+        scale_factor = 1/$scope.scale - 1/$scope.base_scale
         min_x_trans = $scope.mapWidth * scale_factor
         min_y_trans = $scope.mapHeight * scale_factor
 
