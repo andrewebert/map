@@ -1,21 +1,26 @@
 app.directive 'countries', -> ($scope) ->
+    replace_countries = (countries, replacements) ->
+        for country, replacement_country of replacements
+            countries[country] = countries[replacement_country]
+
     $scope.flags = {}
 
-    attrs = ["d", "name", "formal", "owner", "flag", "link", "disputed", "fill", "is"]
+    attrs = ["d", "name", "formal", "owner", "flag", "link", "disputed",
+        "fill", "is", "code"]
 
     last_time = $scope.times.length - 1
     countries = {}
     countries[last_time] = {}
     replacements = {}
-    replacements[last_time] = {}
     for country, data of initial_countries
         if data.d 
             countries[last_time][country] = data
         else if data.is
-            replacements[last_time][country] = data.is
+            replacements[country] = data.is
         else
             console.log "error", country, data
             #delete initial_countries[country]
+    replace_countries(countries[last_time], replacements)
 
     flag_urls = (initial_countries[code].flag for code in population \
         when initial_countries[code]?.flag?)
@@ -25,18 +30,15 @@ app.directive 'countries', -> ($scope) ->
         time = $scope.times.length - i - 2
         if changes[date]?
             curr = {}
-            curr_replacement = {}
+            replacements = {}
             for code, old of prev
                 curr[code] = old
-            for code, old of prev_replacement
-                curr_replacement[code] = old
             #if changes[date].removed?
                 #for code in changes[date].removed
                     #delete curr[code]
             for code, changed of changes[date]
                 if changed.is?
-                    curr_replacement[code] = changed.is
-                    delete curr[code]
+                    replacements[code] = changed.is
                 else
                     if changed.flag?
                         flag_urls.push(changed.flag)
@@ -48,19 +50,15 @@ app.directive 'countries', -> ($scope) ->
                                 curr[code][attr] = ""
                     else
                         curr[code] = changed
-                    delete curr_replacement[code]
+            replace_countries(curr, replacements)
             countries[time] = curr
-            replacements[time] = curr_replacement
             prev = curr
-            prev_replacement = curr_replacement
             last_time = time
         else
             countries[time] = countries[last_time]
-            replacements[time] = replacements[last_time]
     #load_flags(flag_urls)
 
     $scope.countries = countries
-    $scope.replacements = replacements
 
     $scope.load_image = (src, on_load) ->
         image = new Image()

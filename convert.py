@@ -45,7 +45,7 @@ def get_map_difference(old, new):
     added_keys = [k for k in new_keys if k not in old_keys]
     changed_keys = [k for k in new_keys if k in old_keys and old[k] != new[k]]
     changed = {k: {"d": new[k]["d"]} for k in changed_keys}
-    changed.update({k: new[k] for k in added_keys})
+    changed.update({k: dict(code = k, **new[k]) for k in added_keys})
     removed = list(old_keys - new_keys)
 
     print "Added:", added_keys, "Changed:", changed_keys, "Removed:", removed
@@ -143,6 +143,7 @@ def convert(original_file, change_files):
 
     original_sources = transpose_dict(original_map)
 
+
     # changes_map: {date: 
     #                {"changed":
     #                    {code: 
@@ -204,6 +205,8 @@ def convert(original_file, change_files):
                 #changes[date]["removed"] = rs
 
     update_fills(original, changes)
+    for code, data in original.items():
+        data["code"] = code
 
     def write_js(var, dict):
         return "{0} = {1};".format(var, json.dumps(dict, sort_keys=True,

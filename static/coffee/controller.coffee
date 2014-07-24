@@ -8,28 +8,25 @@ MapCtrl = ($scope, $timeout) ->
 
     $scope.label = {x: 0, y: 0, visible: false}
 
-    $scope.get_d = (code, country) ->
+    $scope.get_d = (country) ->
         if country.d?
             return country.d
         else
             console.log("Missing d")
-            console.log(code)
             console.log(country)
             console.log($scope.time)
             return ""
 
     $scope.country = (code) ->
         countries = $scope.countries[$scope.time]
-        if countries?
-            if countries[code]?
-                return countries[code]
-            else
-                replacement = $scope.replacements[$scope.time][code]
-                if replacement? and countries[replacement]
-                    return countries[replacement]
+        if countries? and countries[code]?
+            return countries[code]
         console.log("invalid country #{$scope.time} (#{typeof $scope.time}) #{code}")
 
-    selected = () -> $scope.hard_selected ? $scope.soft_selected
+    selected = () -> 
+        code = $scope.hard_selected ? $scope.soft_selected
+        if code
+            return $scope.country(code).code
 
     $scope.formal = () ->
         if selected()?
