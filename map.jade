@@ -68,9 +68,10 @@ html(lang = "en", ng-app = "map")
             ng-attr-height="{{ mapHeight }}",
             ng-click="hard_select(undefined, $event)")
         g(ng-attr-transform="scale({{ scale }}) translate({{ x_trans }}, {{ y_trans }})")
-          path(ng-repeat = '(code, country) in countries[time]'
-               ng-attr-d = "{{ get_d(country) }}",
-               ng-class = "country.fill + {true: ' selected', false: ''}[code == selected]",
+          path(ng-repeat = "(code, country) in countries[time]",
+               ng-show = "code == country.code",
+               ng-attr-d = "{{ get_d(code, country) }}",
+               ng-class = "country.fill + {true: ' selected', false: ''}[code == selected()]",
                ng-click="hard_select(code, $event)",
                ng-mouseover="soft_select(code, $event)",
                ng-mousemove="move_label($event)",

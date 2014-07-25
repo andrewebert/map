@@ -1,43 +1,45 @@
 MapCtrl = ($scope, $timeout) ->
     Color = net.brehaut.Color
 
-    $scope.selected = undefined
     $scope.formal = ""
     $scope.flag = undefined
     $scope.loading = false
 
     $scope.label = {x: 0, y: 0, visible: false}
 
-    $scope.get_d = (country) ->
-        if country.d?
+    $scope.get_d = (code, country) ->
+        if country?.d?
             return country.d
         else
             console.log("Missing d")
-            console.log(country)
-            console.log($scope.time)
+            console.log($scope.time, code, country)
             return ""
 
     $scope.country = (code) ->
         countries = $scope.countries[$scope.time]
-        if countries? and countries[code]?
+        if countries?
             return countries[code]
-        console.log("invalid country #{$scope.time} (#{typeof $scope.time}) #{code}")
+        #countries = $scope.countries[$scope.time]
+        #if countries? and countries[code]?
+            #return countries[code]
+        #console.log("invalid country #{$scope.time} (#{typeof $scope.time}) #{code}")
 
-    selected = () -> 
+
+    $scope.selected = ->
         code = $scope.hard_selected ? $scope.soft_selected
         if code
-            return $scope.country(code).code
+            return $scope.country(code)?.code
 
-    $scope.formal = () ->
-        if selected()?
-            country = $scope.country(selected())
-            if country?.formal?
-                return country.formal
-        return ""
+    $scope.curr = ->
+        selected = $scope.selected()
+        if selected
+            return $scope.country(selected)
 
-    $scope.owner = () ->
-        if selected()?
-            country = $scope.country(selected())
+    $scope.formal = -> $scope.curr()?.formal
+
+    $scope.owner = ->
+        country = $scope.curr()
+        if country
             owners = country?.owner
             if owners
                 owners = country.owner.split(" ")
@@ -46,31 +48,13 @@ MapCtrl = ($scope, $timeout) ->
                 return "(#{owners})"
         return ""
 
-    $scope.link = () ->
-        if selected()
-            return $scope.country(selected())?.link ? ""
-        else
-            return ""
+    $scope.link = -> $scope.curr()?.link
 
-    $scope.disputed = () ->
-        if selected()?
-            disputed = $scope.country(selected())?.disputed
-            if disputed
-                return disputed
-        return ""
+    $scope.disputed = -> $scope.curr()?.disputed
 
-    $scope.flag = () ->
-        flag = ""
-        if selected()?
-            country = $scope.country(selected())
-            if country?
-                if country.flag
-                    flag = country.flag
-                else if country.owner
-                    owner = $scope.country(country.owner)
-                    if owner?.flag
-                        flag = owner.flag
-        if (flag is "") or (flag of $scope.flags)
+    $scope.flag = ->
+        flag = $scope.curr()?.flag
+        if (not flag) or (flag of $scope.flags)
             return flag
         else if not $scope.loading or not ($scope.loading is flag)
             $scope.loading = flag
@@ -91,31 +75,21 @@ MapCtrl = ($scope, $timeout) ->
                 $scope.hard_selected = undefined
             else
                 $scope.hard_selected = code
-                $scope.select(code, true)
             e.stopPropagation()
 
     $scope.soft_select = (code, e) ->
         if not $scope.dragging
             $scope.label.visible = true
             $scope.soft_selected = code
-            $scope.select(code, false)
 
-    $scope.select = (code, hard=false) ->
-        if hard or !$scope.hard_selected?
-            $scope.selected = code
-        
-    $scope.move_label = (e) ->
-        $scope.label.x = e.clientX
-        $scope.label.y = e.clientY
-
-    $scope.deselect = () ->
+    $scope.deselect = ->
         if not $scope.dragging
             $scope.label.visible = false
             $scope.soft_selected = undefined
-            $scope.select(undefined, false)
 
-    $scope.label_text = () ->
+    $scope.label_text = ->
         if $scope.soft_selected?
             $scope.country($scope.soft_selected).name
         else
             ""
+

@@ -15,7 +15,7 @@ app.directive 'countries', -> ($scope) ->
     for country, data of initial_countries
         if data.d 
             countries[last_time][country] = data
-        else if data.is
+        else if data.is and data.is != "-"
             replacements[country] = data.is
         else
             console.log "error", country, data
@@ -37,7 +37,7 @@ app.directive 'countries', -> ($scope) ->
                 #for code in changes[date].removed
                     #delete curr[code]
             for code, changed of changes[date]
-                if changed.is?
+                if changed.is? and changed.is != "-"
                     replacements[code] = changed.is
                 else
                     if changed.flag?
@@ -61,6 +61,9 @@ app.directive 'countries', -> ($scope) ->
     $scope.countries = countries
 
     $scope.load_image = (src, on_load) ->
+        if not src?
+            console.log("image load error")
+            return
         image = new Image()
         image.src = src
         image.onload = -> on_load(src, image)
