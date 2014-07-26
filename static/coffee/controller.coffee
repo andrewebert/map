@@ -40,14 +40,20 @@ MapCtrl = ($scope, $timeout) ->
     $scope.owner = ->
         owners = $scope.get_owners($scope.curr())
         if owners
-            owners = ($scope.country(o).name for o in owners)
+            #for o in owners
+                #if not $scope.country(o)
+                    #console.log("invalid owner", o, "of", $scope.curr().code)
+            owners = ($scope.country(o)?.name for o in owners)
             if owners.length > 1
                 owners = owners[0..-2].join(", ") + " and " + owners[owners.length-1]
             else
                 owners = owners[0]
             return "(#{owners})"
 
-    $scope.get_owners = (country) -> country?.owner?.split(" ")
+    $scope.get_owners = (country) ->
+        owner = country?.owner
+        if owner
+            return owner.split(" ")
 
     $scope.link = -> $scope.curr()?.link
 
