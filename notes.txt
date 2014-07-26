@@ -1,7 +1,9 @@
-- Replace "-" with "" in initialization
 - Kashmir
+- Albania 1913-1914, 1912
+- Bahamas 1964-1973
+- Belize 1870-1919
 
+- Have colonies be darker versions of their owner
 - Alliances mode: NATO/Warsaw Pact, etc.
 - Detail borders in civil wars
-- Have a country merger table
 - Default flags

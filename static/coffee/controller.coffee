@@ -38,25 +38,29 @@ MapCtrl = ($scope, $timeout) ->
     $scope.formal = -> $scope.curr()?.formal
 
     $scope.owner = ->
-        country = $scope.curr()
-        if country
-            owners = country?.owner
-            if owners
-                owners = country.owner.split(" ")
-                owners = ($scope.country(o).name for o in owners)
-                if owners.length > 1
-                    owners = owners[0..-2].join(", ") + " and " + owners[owners.length-1]
-                else
-                    owners = owners[0]
-                return "(#{owners})"
-        return ""
+        owners = $scope.get_owners($scope.curr())
+        if owners
+            owners = ($scope.country(o).name for o in owners)
+            if owners.length > 1
+                owners = owners[0..-2].join(", ") + " and " + owners[owners.length-1]
+            else
+                owners = owners[0]
+            return "(#{owners})"
+
+    $scope.get_owners = (country) -> country?.owner?.split(" ")
 
     $scope.link = -> $scope.curr()?.link
 
     $scope.disputed = -> $scope.curr()?.disputed
 
-    $scope.flag = ->
-        flag = $scope.curr()?.flag
+    $scope.flag = -> $scope.get_flag($scope.curr())
+
+    $scope.get_flag = (country) ->
+        flag = country?.flag
+        if flag == ""
+            owners = $scope.get_owners(country)
+            if owners
+                return $scope.get_flag($scope.country(owners[0]))
         if (not flag) or (flag of $scope.flags)
             return flag
         else if not $scope.loading or not ($scope.loading is flag)

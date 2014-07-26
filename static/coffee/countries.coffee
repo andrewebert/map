@@ -39,6 +39,8 @@ app.directive 'countries', -> ($scope) ->
             for code, changed of changes[date]
                 if changed.is? and changed.is != "-"
                     replacements[code] = changed.is
+                else if changed.is == "-" and not changed.d
+                    delete curr[code]
                 else
                     #if changed.flag?
                         #flag_urls.push(changed.flag)

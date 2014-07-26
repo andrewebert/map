@@ -113,24 +113,35 @@ def transpose_dict(d):
     return result
 
 
-def update_fills(original, changes):
-    default_fills = {code: data["fill"] for code, data in original.items() if "fill" in data}
-    default_fills["UNA"] = "color11"
+def update_data(original, changes):
+    attrs = ["flag", "fill", "owner"]
+    defaults = {attr: {code: data[attr] for code, data in original.items() if attr in data}
+            for attr in attrs}
+    defaults["fill"]["UNA"] = "color11"
+    defaults["flag"]["UNA"] = \
+        "http://upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_the_United_Nations.svg"
 
     def update(countries):
         for country, data in countries.items():
-            if "fill" in data:
-                default_fills[country] = data["fill"]
+            for attr in attrs:
+                if attr in data:
+                    defaults[attr][country] = data[attr]
             if "disputed" in data:
                 if data["disputed"] != "-":
                     data["fill"] = "color13"
                 else:
-                    data["fill"] = default_fills[country]
+                    data["fill"] = defaults["fill"][country]
             if ("disputed" not in data or data["disputed"] == "-") and "owner" in data:
                 if data["owner"] != "-":
-                    data["fill"] = default_fills[data["owner"].split(" ")[0]]
+                    data["fill"] = defaults["fill"][data["owner"].split(" ")[0]]
                 else:
-                    data["fill"] = default_fills[country]
+                    data["fill"] = defaults["fill"][country]
+            #if "flag" in data and data["flag"] == "-":
+                #try:
+                    #data["flag"] = defaults["flag"][defaults["country"][country]]
+                #except:
+                    #print "default flag error ", country
+
     
     update(original)
     for date, change_data in changes.items():
@@ -204,9 +215,16 @@ def convert(original_file, change_files):
             #if rs != {}:
                 #changes[date]["removed"] = rs
 
-    update_fills(original, changes)
+    update_data(original, changes)
     for code, data in original.items():
         data["code"] = code
+
+    for code, data in sorted(original.items()):
+        name = data["name"] if "name" in data else ""
+        print code, name
+        for date, data in reversed(sorted(changes.items())):
+            if code in data and "flag" in data[code]:
+                print "    " + date
 
     def write_js(var, dict):
         return "{0} = {1};".format(var, json.dumps(dict, sort_keys=True,
