@@ -219,12 +219,12 @@ def convert(original_file, change_files):
     for code, data in original.items():
         data["code"] = code
 
-    for code, data in sorted(original.items()):
-        name = data["name"] if "name" in data else ""
-        print code, name
-        for date, data in reversed(sorted(changes.items())):
-            if code in data and "flag" in data[code]:
-                print "    " + date
+    #for code, data in sorted(original.items()):
+        #name = data["name"] if "name" in data else ""
+        #print code, name
+        #for date, data in reversed(sorted(changes.items())):
+            #if code in data and "flag" in data[code]:
+                #print "    " + date
 
     def write_js(var, dict):
         return "{0} = {1};".format(var, json.dumps(dict, sort_keys=True,

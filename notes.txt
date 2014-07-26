@@ -7,8 +7,10 @@
 - Greece 1900-1970
 - Honduras 1949
 - IO 1965-1976
-- Jordan 1921-1928
+- Turks and Caicos 1968
+- Vanuatu 1906
 
+- United Nations
 - Gagauzia
 
 - Fix label positioning when scrolled
