@@ -40,8 +40,8 @@ app.directive 'countries', -> ($scope) ->
                 if changed.is? and changed.is != "-"
                     replacements[code] = changed.is
                 else
-                    if changed.flag?
-                        flag_urls.push(changed.flag)
+                    #if changed.flag?
+                        #flag_urls.push(changed.flag)
                     if curr[code]?
                         curr[code] = {}
                         for attr in attrs
@@ -51,6 +51,10 @@ app.directive 'countries', -> ($scope) ->
                     else
                         curr[code] = changed
             replace_countries(curr, replacements)
+            #FLAG TEST
+            #for code, data of curr
+                #if data.flag == curr[data.owner]?.flag
+                    #console.log("flag match", time, code, data.owner)
             countries[time] = curr
             prev = curr
             last_time = time

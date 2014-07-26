@@ -44,7 +44,10 @@ MapCtrl = ($scope, $timeout) ->
             if owners
                 owners = country.owner.split(" ")
                 owners = ($scope.country(o).name for o in owners)
-                owners = owners.join(" and ")
+                if owners.length > 1
+                    owners = owners[0..-2].join(", ") + " and " + owners[owners.length-1]
+                else
+                    owners = owners[0]
                 return "(#{owners})"
         return ""
 
@@ -86,6 +89,10 @@ MapCtrl = ($scope, $timeout) ->
         if not $scope.dragging
             $scope.label.visible = false
             $scope.soft_selected = undefined
+
+    $scope.move_label = (e) ->
+        $scope.label.x = e.clientX
+        $scope.label.y = e.clientY
 
     $scope.label_text = ->
         if $scope.soft_selected?
