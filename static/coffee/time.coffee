@@ -1,4 +1,4 @@
-app.directive 'time', -> ($scope) ->
+app.directive 'time', ($timeout) -> ($scope) ->
     format_month = (m) -> (if m < 10 then "0" else "") + m.toString()
 
     START_YEAR = 1950
@@ -47,7 +47,7 @@ app.directive 'time', -> ($scope) ->
         else
             $scope.raw_time = new_time.toString()
        
-    $scope.play = () ->
+    $scope.play = ->
         $scope.paused = not $scope.paused
         if not $scope.paused
             if $scope.time == $scope.max_time
@@ -55,7 +55,7 @@ app.directive 'time', -> ($scope) ->
                 $scope.time = 0
             $scope.tick()
 
-    $scope.tick = () ->
+    $scope.tick = ->
         if not $scope.paused
             if $scope.time < $scope.max_time
                 $scope.raw_time = ($scope.time + 1).toString()

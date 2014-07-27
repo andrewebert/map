@@ -1,4 +1,3 @@
-- Kashmir
 - Albania 1913-1914, 1912
 - Bahamas 1964-1973
 - Belize 1870-1919
@@ -10,11 +9,11 @@
 - Turks and Caicos 1968
 - Vanuatu 1906
 
+- Kashmir
+- Puntland
 - United Nations
 - Gagauzia
 
-- Fix label positioning when scrolled
 - Have colonies be darker versions of their owner
 - Alliances mode: NATO/Warsaw Pact, etc.
 - Detail borders in civil wars
-- Default flags

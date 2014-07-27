@@ -1,11 +1,11 @@
-MapCtrl = ($scope, $timeout) ->
+MapCtrl = ($scope) ->
     Color = net.brehaut.Color
 
     $scope.formal = ""
     $scope.flag = undefined
     $scope.loading = false
 
-    $scope.label = {x: 0, y: 0, visible: false}
+    $scope.label = {x: 0, y: 0, visible: false, flip: "noflip"}
 
     $scope.get_d = (code, country) ->
         if country?.d?
@@ -100,13 +100,8 @@ MapCtrl = ($scope, $timeout) ->
             $scope.label.visible = false
             $scope.soft_selected = undefined
 
-    $scope.move_label = (e) ->
-        $scope.label.x = e.clientX
-        $scope.label.y = e.clientY
-
-    $scope.label_text = ->
+    $scope.label.text = ->
         if $scope.soft_selected?
             $scope.country($scope.soft_selected).name
         else
             ""
-

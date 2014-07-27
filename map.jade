@@ -26,16 +26,18 @@ html(lang = "en", ng-app = "map")
   body(ng-controller = "MapCtrl", ng-keydown="keydown")
     //-p#count {{ count }}
     #labelmarker(ng-show="label.visible" ng-style="{left: label.x + 'px', top: label.y + 'px'}")
-      #label
-        p {{ label_text() }}
+      #label(ng-class="label.flip")
+        p {{ label.text() }}
     #map(transformable, countries, time, hotkeys,
-         ng-style="{width: mapWidth + 'px', height: mapHeight + 'px'}",
+         ng-style="{width: mapWidth + 'px', height: (mapHeight+57) + 'px'}",
          ng-mousedown="grab($event)",
          ng-mousemove="drag($event)",
          ng-mouseup="release()",
          ng-mouseleave="release()")
 
-      #info.noselect
+      #info.noselect(ng-show = "selected() || infohover",
+                     ng-mouseover="infohover=true",
+                     ng-mouseleave="infohover=false")
         #infobox
         #flagbox
           img#flag(ng-src="{{ flag() }}",
@@ -48,14 +50,6 @@ html(lang = "en", ng-app = "map")
             {{ formal() }}
           span#owner &ensp;{{ owner() }}
           p#disputed {{ disputed() }}
-        #playbox
-          span#play.fa(ng-click = "play()",
-                       ng-class = "{true: 'fa-play', false: 'fa-pause'}[paused]")
-        slider(floor="0",
-               ceiling="{{ max_time }} ",
-               precision="1",
-               translate="pretty_format",
-               ng-model="raw_time")
 
       #zoomin.zoom.noselect(ng-click = "zoom(1)")
         span.fa.fa-plus
@@ -77,3 +71,12 @@ html(lang = "en", ng-app = "map")
                ng-mousemove="move_label($event)",
                ng-mouseleave="deselect()")
                //-ng-attr-d = "{{ country.d }}",
+      #timeline
+        #playbox
+          span#play.fa(ng-click = "play()",
+                       ng-class = "{true: 'fa-play', false: 'fa-pause'}[paused]")
+        slider(floor="0",
+               ceiling="{{ max_time }} ",
+               precision="1",
+               translate="pretty_format",
+               ng-model="raw_time")

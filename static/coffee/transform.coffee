@@ -15,9 +15,10 @@ app.directive 'transformable', ($window) -> ($scope) ->
         MARGIN_BOTTOM = 10
         BASE_WIDTH = 1000
         BASE_HEIGHT = 506
+        TIMELINE_HEIGHT = 57
 
         width = window.innerWidth - MARGIN_LEFT - MARGIN_RIGHT
-        height = window.innerHeight - MARGIN_TOP - MARGIN_BOTTOM
+        height = window.innerHeight - MARGIN_TOP - MARGIN_BOTTOM - TIMELINE_HEIGHT
         $scope.base_scale = Math.max(
             Math.min(width/BASE_WIDTH, height/BASE_HEIGHT), 1)
         $scope.mapWidth = BASE_WIDTH * $scope.base_scale
@@ -83,5 +84,15 @@ app.directive 'transformable', ($window) -> ($scope) ->
             Math.abs($scope.last_y - $scope.grab_y))
         $scope.last_x = undefined
         $scope.last_y = undefined
+
+    $scope.move_label = (e) ->
+        $scope.label.x = e.clientX + $window.scrollX
+        $scope.label.y = e.clientY + $window.scrollY
+        l = document.getElementById("label")
+        left_edge = if $scope.label.y < 168 then 80 else 15
+        if e.clientX - l.offsetWidth < left_edge
+            $scope.label.flip = "flip"
+        else
+            $scope.label.flip = "noflip"
 
     $scope.initializeWindowSize()
