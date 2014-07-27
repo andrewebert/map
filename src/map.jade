@@ -1,0 +1,82 @@
+doctype html
+html(lang = "en", ng-app = "map")
+  head
+    link(rel = "stylesheet", href = "static/css/lib/angular-slider.css", type = "text/css")
+    link(rel = "stylesheet", href = "static/css/lib/font-awesome.css", type = "text/css")
+    link(rel = "stylesheet", href = "static/css/map.css", type = "text/css")
+    script(src = "static/js/lib/angular.js", type = "text/javascript")
+    script(src = "static/js/lib/angular-sanitize.js", type = "text/javascript")
+    script(src = "static/js/lib/angular-slider.js", type = "text/javascript")
+    script(src = "static/js/lib/mousetrap.js", type = "text/javascript")
+    script(src = "static/js/lib/angular-hotkeys.js", type = "text/javascript")
+    script(src = "static/js/lib/hamster.js", type = "text/javascript")
+    script(src = "static/js/lib/mousewheel.js", type = "text/javascript")
+    script(src = "static/js/lib/color.js", type = "text/javascript")
+
+    script(src = "static/js/data/initial.js", type = "text/javascript")
+    script(src = "static/js/data/changes.js", type = "text/javascript")
+    script(src = "static/js/data/population.js", type = "text/javascript")
+
+    script(src = "static/js/app.js", type = "text/javascript")
+    script(src = "static/js/controller.js", type = "text/javascript")
+    script(src = "static/js/time.js", type = "text/javascript")
+    script(src = "static/js/transform.js", type = "text/javascript")
+    script(src = "static/js/countries.js", type = "text/javascript")
+    script(src = "static/js/hotkeys.js", type = "text/javascript")
+  body(ng-controller = "MapCtrl", ng-keydown="keydown")
+    //-p#count {{ count }}
+    #labelmarker(ng-show="label.visible" ng-style="{left: label.x + 'px', top: label.y + 'px'}")
+      #label(ng-class="label.flip")
+        p {{ label.text() }}
+    #map(transformable, countries, time, hotkeys,
+         ng-style="{width: mapWidth + 'px', height: (mapHeight+57) + 'px'}",
+         ng-mousedown="grab($event)",
+         ng-mousemove="drag($event)",
+         ng-mouseup="release()",
+         ng-mouseleave="release()")
+
+      #info.noselect(ng-show = "selected() || infohover",
+                     ng-mouseover="infohover=true",
+                     ng-mouseleave="infohover=false")
+        #infobox
+        #flagbox
+          img#flag(ng-src="{{ flag() }}",
+                   ng-show="flag()",
+                   ng-class="{hoverable: !drag_data.dragging}")
+        #text
+          a#formal(ng-class = "{nopoint: drag_data.dragging}",
+                   ng-attr-href = "{{ link() }}",
+                   target="_blank")
+            {{ formal() }}
+          span#owner &ensp;{{ owner() }}
+          p#disputed {{ disputed() }}
+
+      #zoomin.zoom.noselect(ng-click = "zoom(1)")
+        span.fa.fa-plus
+      #zoomout.zoom.noselect(ng-click = "zoom(-1)")
+        span.fa.fa-minus
+
+      svg#world.noselect(
+            msd-wheel="mousewheel($event, $delta, $deltaX, $deltaY)",
+            ng-attr-width="{{ mapWidth }}",
+            ng-attr-height="{{ mapHeight }}",
+            ng-click="hard_select(undefined, $event)")
+        g(ng-attr-transform="scale({{ scale }}) translate({{ x_trans }}, {{ y_trans }})")
+          path(ng-repeat = "(code, country) in countries[time]",
+               ng-show = "code == country.code",
+               ng-attr-d = "{{ get_d(code, country) }}",
+               ng-class = "country.fill + {true: ' selected', false: ''}[code == selected()]",
+               ng-click="hard_select(code, $event)",
+               ng-mouseover="soft_select(code, $event)",
+               ng-mousemove="move_label($event)",
+               ng-mouseleave="deselect()")
+               //-ng-attr-d = "{{ country.d }}",
+      #timeline
+        #playbox
+          span#play.fa(ng-click = "play()",
+                       ng-class = "{true: 'fa-play', false: 'fa-pause'}[paused]")
+        slider(floor="0",
+               ceiling="{{ max_time }} ",
+               precision="1",
+               translate="pretty_format",
+               ng-model="raw_time")

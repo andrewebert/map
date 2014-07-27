@@ -1,0 +1,258 @@
+body {
+    background-color: #d8d8d8;
+}
+
+#map {
+    background-color: #ffffff;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px #555;
+}
+
+#playbox {
+    position: absolute;
+    bottom: 0px;
+    width: 5%;
+    left: 2%;
+}
+
+#play {
+    position: absolute;
+    bottom: 17px;
+    right: 17px;
+    font-size: 1.5em;
+    rect {
+        fill:#000000;
+        fill-opacity:1;
+        stroke:#9d9d9d;
+        stroke-width:0.4;
+        stroke-miterlimit:4;
+        stroke-opacity:1;
+        stroke-dasharray:none;
+    }
+}
+
+slider {
+    position: absolute;
+    right: 2%;
+    bottom: 0%;
+    width: 91%;
+
+    .bubble.limit {
+        display: none;
+    }
+}
+
+#world {
+    position: absolute;
+    z-index: 1;
+    -webkit-transform-origin-x: 50%;
+    -webkit-transform-origin-y: 50%;
+    g {
+        -webkit-transform-origin-x: 0px;
+        -webkit-transform-origin-y: 0px;
+    }
+    path {
+        stroke-width: 0.5;
+        stroke-miterlimit: 4;
+        fill-opacity: 1;
+        stroke: #000000;
+        stroke-opacity: 1;
+        stroke-linejoin: round;
+    }
+}
+
+#world:focus {
+    cursor: default;
+}
+
+#labelmarker {
+    position: absolute;
+    display: block;
+    pointer-events: none;
+}
+
+#label {
+    // Styles copied from jvectormap
+    position: absolute;
+    bottom: 4px;
+    z-index: 3;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #292929;
+    color: white;
+    padding: 3px;
+    border: solid 1px #cdcdcd;
+    font-family: sans-serif, Verdana;
+    font-size: smaller;
+    white-space: nowrap;
+
+    p {
+        margin: 0px;
+    }
+}
+
+#label.noflip {
+    right: 4px;
+}
+
+#label.flip {
+    left: 4px;
+}
+
+.zoom {
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 17px;
+    background: #ddd;
+    opacity: 0.9;
+    position: absolute;
+    left: 15px;
+    font-size: 22px;
+    text-align: center;
+    z-index: 5;
+}
+
+.zoom:hover {
+    background-color: #aaa;
+}
+
+#zoomin {
+    top: 15px;
+}
+
+#zoomout {
+    top: 80px;
+}
+
+.cfp-hotkeys-container {
+    display: none;
+}
+
+#info {
+    position: absolute;
+    z-index: 2;
+    left: 30%;
+    width: 40%;
+    bottom: 57px;
+    height: 30%;
+}
+
+#infobox {
+    width: 100%;
+    height: 100%;
+    border-radius: 7.5% 20%;
+    background: #eee;
+    opacity: 0.9;
+    pointer-events: none;
+}
+
+#flagbox {
+    position: absolute;
+    left: -31%;
+    top: -40%;
+    width: 92%;
+    height: 140%;
+    pointer-events: none;
+}
+
+
+#flag {
+    position: absolute;
+    z-index: 10;
+    /*left: 4%;*/
+    /*top: 11%;*/
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    max-width: 25%;
+    max-height: 30%;
+    pointer-events: auto;
+}
+
+#flag.hoverable:hover {
+    left: 0%;
+    top: 0%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#text {
+    position: absolute;
+    margin-top: 0px;
+    top: 10%;
+    left: 30%;
+    width: 65%;
+}
+
+#formal {
+    text-decoration: none;
+}
+
+.nopoint {
+    pointer-events: none;
+}
+
+@media (min-width: 1200px) and (min-height: 600px) {
+    #formal, #owner {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 1600px) and (min-height: 800px) {
+    #formal, #owner {
+        font-size: 2em;
+    }
+}
+
+#disputed {
+    font-size: 1em !important;
+}
+
+.color1 { fill: #cc6e6e; }
+.color2 { fill: #cc916e; }
+.color3 { fill: #ccb76e; }
+.color4 { fill: #b7cc6e; }
+.color5 { fill: #86cc6e; }
+.color6 { fill: #6ecc9a; }
+.color7 { fill: #6eccc9; }
+.color8 { fill: #6ea1cc; }
+.color9 { fill: #6e72cc; }
+.color10 { fill: #986ecc; }
+.color11 { fill: #c66ecc; }
+.color12 { fill: #cc6ea3; }
+.color13 { fill: #9d9d9d; }
+.color14 { fill: #ffffff; }
+
+.color1.selected { fill: #af0b0b; }
+.color2.selected { fill: #af480b; }
+.color3.selected { fill: #af8b0b; }
+.color4.selected { fill: #8baf0b; }
+.color5.selected { fill: #35af0b; }
+.color6.selected { fill: #0baf58; }
+.color7.selected { fill: #0bafaa; }
+.color8.selected { fill: #0b64af; }
+.color9.selected { fill: #0b12af; }
+.color10.selected { fill: #550baf; }
+.color11.selected { fill: #a50baf; }
+.color12.selected { fill: #af0b68; }
+.color13.selected { fill: #5d5d5d; }
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
