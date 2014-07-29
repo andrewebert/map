@@ -35,6 +35,15 @@ html(lang = "en", ng-app = "map")
          ng-mouseup="release()",
          ng-mouseleave="release()")
 
+      #timeline
+        #playbox
+          span#play.fa(ng-click = "play()",
+                       ng-class = "{true: 'fa-play', false: 'fa-pause'}[paused]")
+        slider(floor="0",
+               ceiling="{{ max_time }} ",
+               precision="1",
+               translate="pretty_format",
+               ng-model="raw_time")
       #info.noselect(ng-show = "selected() || infohover",
                      ng-mouseover="infohover=true",
                      ng-mouseleave="infohover=false")
@@ -71,12 +80,3 @@ html(lang = "en", ng-app = "map")
                ng-mousemove="move_label($event)",
                ng-mouseleave="deselect()")
                //-ng-attr-d = "{{ country.d }}",
-      #timeline
-        #playbox
-          span#play.fa(ng-click = "play()",
-                       ng-class = "{true: 'fa-play', false: 'fa-pause'}[paused]")
-        slider(floor="0",
-               ceiling="{{ max_time }} ",
-               precision="1",
-               translate="pretty_format",
-               ng-model="raw_time")
