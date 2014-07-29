@@ -1,29 +1,23 @@
-body {
-  background-color: #d8d8d8;
-}
-#map {
-  background-color: #ffffff;
-  position: relative;
-  display: block;
+#everything {
+  position: absolute;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  box-shadow: 0px 0px 10px #555;
+  width: 100%;
+  height: 100%;
 }
 #playbox {
   position: absolute;
   bottom: 0px;
-  width: 5%;
-  left: 2%;
+  width: 17%;
 }
-#play {
+.play {
   position: absolute;
-  bottom: 17px;
-  right: 17px;
-  font-size: 1.5em;
+  bottom: 15px;
+  right: 15px;
+  width: 27px;
+  height: 27px;
 }
-#play rect {
+.play rect {
   fill: #000000;
   fill-opacity: 1;
   stroke: #9d9d9d;
@@ -32,14 +26,12 @@ body {
   stroke-opacity: 1;
   stroke-dasharray: none;
 }
-slider {
+#date {
   position: absolute;
-  right: 2%;
+  z-index: 3;
+  right: 9%;
   bottom: 0%;
-  width: 91%;
-}
-slider .bubble.limit {
-  display: none;
+  width: 83%;
 }
 #world {
   position: absolute;
@@ -65,11 +57,11 @@ slider .bubble.limit {
 #labelmarker {
   position: absolute;
   display: block;
-  pointer-events: none;
 }
 #label {
   position: absolute;
-  bottom: 4px;
+  right: 8px;
+  bottom: 8px;
   z-index: 3;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -85,113 +77,46 @@ slider .bubble.limit {
 #label p {
   margin: 0px;
 }
-#label.noflip {
-  right: 4px;
-}
-#label.flip {
-  left: 4px;
-}
-.zoom {
-  height: 50px;
-  line-height: 50px;
-  width: 50px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 17px;
-  background: #ddd;
-  opacity: 0.9;
-  position: absolute;
-  left: 15px;
-  font-size: 22px;
-  text-align: center;
-  z-index: 5;
-}
-.zoom:hover {
-  background-color: #aaa;
-}
-#zoomin {
-  top: 15px;
-}
-#zoomout {
-  top: 80px;
-}
-.cfp-hotkeys-container {
-  display: none;
-}
 #info {
   position: absolute;
   z-index: 2;
   left: 30%;
   width: 40%;
-  bottom: 57px;
-  height: 20%;
+  bottom: 0px;
+  height: 30%;
 }
 #infobox {
   width: 100%;
   height: 100%;
   border-top-left-radius: 7.5% 20%;
   border-top-right-radius: 7.5% 20%;
-  border-bottom-left-radius: 7.5% 20%;
-  border-bottom-right-radius: 7.5% 20%;
   background: #eee;
-  opacity: 0.9;
-  pointer-events: none;
-}
-#flagbox {
-  position: absolute;
-  left: -42%;
-  top: -63%;
-  width: 115%;
-  height: 205%;
-  pointer-events: none;
+  opacity: 0.8;
 }
 #flag {
   position: absolute;
   z-index: 10;
-  /*left: 4%;*/
-  /*top: 11%;*/
-  margin: auto;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
-  max-width: 20%;
-  max-height: 30%;
-  pointer-events: auto;
+  left: 4%;
+  top: 11%;
+  width: 23%;
 }
-#flag.hoverable:hover {
-  left: 0%;
-  top: 0%;
-  max-width: 100%;
-  max-height: 100%;
+#flag:hover {
+  left: -31%;
+  top: -24%;
+  width: 93%;
 }
-#text {
+#formal {
   position: absolute;
   margin-top: 0px;
   top: 10%;
   left: 30%;
   width: 65%;
-}
-#formal {
-  text-decoration: none;
-}
-.nopoint {
-  pointer-events: none;
-}
-@media (min-width: 1200px) and (min-height: 600px) {
-  #formal,
-  #owner {
-    font-size: 1.5em;
-  }
+  font-size: 1em;
 }
 @media (min-width: 1600px) and (min-height: 800px) {
-  #formal,
-  #owner {
+  #formal {
     font-size: 2em;
   }
-}
-#disputed {
-  font-size: 1em !important;
 }
 .color1 {
   fill: #cc6e6e;
@@ -273,12 +198,4 @@ slider .bubble.limit {
 }
 .color13.selected {
   fill: #5d5d5d;
-}
-.noselect {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }

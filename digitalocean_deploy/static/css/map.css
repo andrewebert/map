@@ -14,8 +14,7 @@ body {
 #playbox {
   position: absolute;
   bottom: 0px;
-  width: 5%;
-  left: 2%;
+  width: 17%;
 }
 #play {
   position: absolute;
@@ -32,14 +31,16 @@ body {
   stroke-opacity: 1;
   stroke-dasharray: none;
 }
+#time {
+  position: absolute;
+  bottom: 33px;
+  right: 13px;
+}
 slider {
   position: absolute;
-  right: 2%;
+  right: 0%;
   bottom: 0%;
-  width: 91%;
-}
-slider .bubble.limit {
-  display: none;
+  width: 83%;
 }
 #world {
   position: absolute;
@@ -69,7 +70,8 @@ slider .bubble.limit {
 }
 #label {
   position: absolute;
-  bottom: 4px;
+  right: 8px;
+  bottom: 8px;
   z-index: 3;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -85,113 +87,55 @@ slider .bubble.limit {
 #label p {
   margin: 0px;
 }
-#label.noflip {
-  right: 4px;
-}
-#label.flip {
-  left: 4px;
-}
-.zoom {
-  height: 50px;
-  line-height: 50px;
-  width: 50px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 17px;
-  background: #ddd;
-  opacity: 0.9;
-  position: absolute;
-  left: 15px;
-  font-size: 22px;
-  text-align: center;
-  z-index: 5;
-}
-.zoom:hover {
-  background-color: #aaa;
-}
-#zoomin {
-  top: 15px;
-}
-#zoomout {
-  top: 80px;
-}
-.cfp-hotkeys-container {
-  display: none;
-}
 #info {
   position: absolute;
   z-index: 2;
   left: 30%;
   width: 40%;
-  bottom: 57px;
-  height: 20%;
+  bottom: 0px;
+  height: 30%;
 }
 #infobox {
   width: 100%;
   height: 100%;
   border-top-left-radius: 7.5% 20%;
   border-top-right-radius: 7.5% 20%;
-  border-bottom-left-radius: 7.5% 20%;
-  border-bottom-right-radius: 7.5% 20%;
   background: #eee;
-  opacity: 0.9;
-  pointer-events: none;
-}
-#flagbox {
-  position: absolute;
-  left: -42%;
-  top: -63%;
-  width: 115%;
-  height: 205%;
+  opacity: 0.8;
   pointer-events: none;
 }
 #flag {
   position: absolute;
   z-index: 10;
-  /*left: 4%;*/
-  /*top: 11%;*/
-  margin: auto;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
-  max-width: 20%;
-  max-height: 30%;
-  pointer-events: auto;
+  left: 4%;
+  top: 11%;
+  max-width: 23%;
+  max-height: 50%;
 }
 #flag.hoverable:hover {
-  left: 0%;
-  top: 0%;
-  max-width: 100%;
-  max-height: 100%;
+  left: -31%;
+  top: -75%;
+  max-width: 93%;
+  max-height: 169%;
 }
-#text {
+#formal {
   position: absolute;
   margin-top: 0px;
   top: 10%;
   left: 30%;
   width: 65%;
-}
-#formal {
-  text-decoration: none;
-}
-.nopoint {
+  /*font-size: 1em;*/
   pointer-events: none;
 }
 @media (min-width: 1200px) and (min-height: 600px) {
-  #formal,
-  #owner {
+  #formal {
     font-size: 1.5em;
   }
 }
 @media (min-width: 1600px) and (min-height: 800px) {
-  #formal,
-  #owner {
+  #formal {
     font-size: 2em;
   }
-}
-#disputed {
-  font-size: 1em !important;
 }
 .color1 {
   fill: #cc6e6e;
