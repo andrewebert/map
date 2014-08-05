@@ -7,18 +7,23 @@ MapCtrl = ($scope) ->
 
     $scope.label = {x: 0, y: 0, visible: false, flip: "noflip"}
 
-    $scope.get_d = (code, country) ->
+    $scope.get_d = (country) ->
         if country?.d?
             return country.d
-        else
+        else if not country?.removed
             console.log("Missing d")
-            console.log($scope.time, code, country)
+            console.log($scope.time, country)
             return ""
 
-    $scope.country = (code) ->
-        countries = $scope.countries[$scope.time]
-        if countries?
-            return countries[code]
+    $scope.$watch 'time', (time) ->
+        $scope.countries = $scope.data[time]
+        $scope.visible_countries = (country for _, country of $scope.countries \
+            when not country.removed)
+
+    #$scope.country = (code) ->
+        #countries = $scope.countries[$scope.time]
+        #if countries?
+            #return countries[code]
         #countries = $scope.countries[$scope.time]
         #if countries? and countries[code]?
             #return countries[code]
@@ -28,45 +33,45 @@ MapCtrl = ($scope) ->
     $scope.selected = ->
         code = $scope.hard_selected ? $scope.soft_selected
         if code
-            return $scope.country(code)?.code
+            return $scope.countries[code]?.code
 
     $scope.curr = ->
         selected = $scope.selected()
         if selected
-            return $scope.country(selected)
+            return $scope.countries[selected]
 
     $scope.formal = -> $scope.curr()?.formal
 
-    $scope.owner = ->
-        owners = $scope.get_owners($scope.curr())
-        if owners
-            #for o in owners
-                #if not $scope.country(o)
-                    #console.log("invalid owner", o, "of", $scope.curr().code)
-            owners = ($scope.country(o)?.name for o in owners)
-            if owners.length > 1
-                owners = owners[0..-2].join(", ") + " and " + owners[owners.length-1]
-            else
-                owners = owners[0]
-            return "(#{owners})"
+    #$scope.owner = ->
+        #owners = $scope.get_owners($scope.curr())
+        #if owners
+            ##for o in owners
+                ##if not $scope.country(o)
+                    ##console.log("invalid owner", o, "of", $scope.curr().code)
+            #owners = ($scope.country(o)?.name for o in owners)
+            #if owners.length > 1
+                #owners = owners[0..-2].join(", ") + " and " + owners[owners.length-1]
+            #else
+                #owners = owners[0]
+            #return "(#{owners})"
 
-    $scope.get_owners = (country) ->
-        owner = country?.owner
-        if owner
-            return owner.split(" ")
+    #$scope.get_owners = (country) ->
+        #owner = country?.owner
+        #if owner
+            #return owner.split(" ")
 
     $scope.link = -> $scope.curr()?.link
 
-    $scope.disputed = -> $scope.curr()?.disputed
+    $scope.description = -> $scope.curr()?.description
 
     $scope.flag = -> $scope.get_flag($scope.curr())
 
     $scope.get_flag = (country) ->
         flag = country?.flag
-        if flag == ""
-            owners = $scope.get_owners(country)
-            if owners
-                return $scope.get_flag($scope.country(owners[0]))
+        #if flag == ""
+            #owners = $scope.get_owners(country)
+            #if owners
+                #return $scope.get_flag($scope.country(owners[0]))
         if (not flag) or (flag of $scope.flags)
             return flag
         else if not $scope.loading or not ($scope.loading is flag)
@@ -102,6 +107,6 @@ MapCtrl = ($scope) ->
 
     $scope.label.text = ->
         if $scope.soft_selected?
-            $scope.country($scope.soft_selected).name
+            $scope.countries[$scope.soft_selected]?.name
         else
             ""

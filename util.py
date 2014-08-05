@@ -1,3 +1,4 @@
+from unicodecsv import unicodecsv
 import xml.etree.ElementTree as ET
 import re
 import os
@@ -16,6 +17,27 @@ def parse_svg(filename):
     root = tree.getroot()
     paths = [p.attrib for p in root.findall('{http://www.w3.org/2000/svg}path')]
     return paths
+
+def read_csv(filename):
+    data = {}
+    with open(filename, 'rb') as f:
+        reader = unicodecsv.reader(f)
+        codes = reader.next()[1:]
+        i = 0
+        while True:
+            try:
+                row = reader.next()
+                i += 1
+                date = row[0]
+                changes = {codes[i]: name for i, name in enumerate(row[1:]) if name != u''}
+                if changes != {}:
+                    data[date] = changes
+            except UnicodeDecodeError as e:
+                print "Unicode error", filename, i
+                raise e
+            except StopIteration:
+                break
+    return data
 
 def parse_fill(style):
     return re.match(r".*fill:(.*?);.*", style).groups()[0]

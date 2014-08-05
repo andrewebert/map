@@ -57,8 +57,8 @@ html(lang = "en", ng-app = "map")
                    ng-attr-href = "{{ link() }}",
                    target="_blank")
             {{ formal() }}
-          span#owner &ensp;{{ owner() }}
-          p#disputed {{ disputed() }}
+          //-span#owner &ensp;{{ owner() }}
+          p#description {{ description() }}
 
       #zoomin.zoom.noselect(ng-click = "zoom(1)")
         span.fa.fa-plus
@@ -71,12 +71,11 @@ html(lang = "en", ng-app = "map")
             ng-attr-height="{{ mapHeight }}",
             ng-click="hard_select(undefined, $event)")
         g(ng-attr-transform="scale({{ scale }}) translate({{ x_trans }}, {{ y_trans }})")
-          path(ng-repeat = "(code, country) in countries[time]",
-               ng-show = "code == country.code",
-               ng-attr-d = "{{ get_d(code, country) }}",
-               ng-class = "country.fill + {true: ' selected', false: ''}[code == selected()]",
-               ng-click="hard_select(code, $event)",
-               ng-mouseover="soft_select(code, $event)",
+          path(ng-repeat = "country in visible_countries",
+               ng-attr-d = "{{ country.d }}",
+               ng-class = "country.fill + {true: ' selected', false: ''}[country.code == selected()]",
+               ng-click="hard_select(country.code, $event)",
+               ng-mouseover="soft_select(country.code, $event)",
                ng-mousemove="move_label($event)",
                ng-mouseleave="deselect()")
                //-ng-attr-d = "{{ country.d }}",
