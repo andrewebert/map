@@ -29,18 +29,23 @@ MapCtrl = ($scope) ->
             #return countries[code]
         #console.log("invalid country #{$scope.time} (#{typeof $scope.time}) #{code}")
 
+    $scope.curr_code = -> $scope.hard_selected ? $scope.soft_selected
+    curr = ->
+        if $scope.countries then $scope.countries[$scope.curr_code()]
+        #selected = $scope.curr_code()
+        #if selected
+            #return $scope.countries[selected]
 
-    $scope.selected = ->
-        code = $scope.hard_selected ? $scope.soft_selected
-        if code
-            return $scope.countries[code]?.code
+    $scope.selected = (country) ->
+        if country.code == curr()?.code then " selected" else ""
 
-    $scope.curr = ->
-        selected = $scope.selected()
-        if selected
-            return $scope.countries[selected]
+        #if $scope.curr_code() == country?.code or 
+                #(country?.replacing? and $scope.curr_code() in country.replacing)
+            #" selected"
+        #else
+            #""
 
-    $scope.formal = -> $scope.curr()?.formal
+    $scope.formal = -> curr()?.formal
 
     #$scope.owner = ->
         #owners = $scope.get_owners($scope.curr())
@@ -60,11 +65,11 @@ MapCtrl = ($scope) ->
         #if owner
             #return owner.split(" ")
 
-    $scope.link = -> $scope.curr()?.link
+    $scope.link = -> curr()?.link
 
-    $scope.description = -> $scope.curr()?.description
+    $scope.description = -> curr()?.description
 
-    $scope.flag = -> $scope.get_flag($scope.curr())
+    $scope.flag = -> $scope.get_flag(curr())
 
     $scope.get_flag = (country) ->
         flag = country?.flag

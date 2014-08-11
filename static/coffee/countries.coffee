@@ -19,12 +19,7 @@ app.directive 'countries', -> ($scope) ->
             curr = {}
             for code, old of prev
                 curr[code] = old
-            #if changes[date].removed?
-                #for code in changes[date].removed
-                    #delete curr[code]
             for code, changed of changes[date]
-                  #if changed.flag?
-                      #flag_urls.push(changed.flag)
                   if curr[code]?
                       curr[code] = {}
                       for attr in attrs
@@ -33,10 +28,6 @@ app.directive 'countries', -> ($scope) ->
                               curr[code][attr] = ""
                   else
                       curr[code] = changed
-            #FLAG TEST
-            #for code, data of curr
-                #if data.flag == curr[data.owner]?.flag
-                    #console.log("flag match", time, code, data.owner)
             countries[time] = curr
             prev = curr
             last_time = time

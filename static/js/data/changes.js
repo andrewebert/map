@@ -1620,6 +1620,9 @@ changes = {
             "description": "Military administration under the United Kingdom"
         },
         "SML": {
+            "code": "ID",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg",
             "formal": "Republic of the United States of Indonesia",
             "link": "http://en.wikipedia.org/wiki/Republic_of_the_United_States_of_Indonesia",
@@ -2069,6 +2072,7 @@ changes = {
             "flag": "http://upload.wikimedia.org/wikipedia/commons/5/58/Flag_of_the_Soviet_Union_%281923-1955%29.svg"
         },
         "TF": {
+            "code": "MG",
             "description": "Overseas territory of France",
             "fill": "color9",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
@@ -2105,6 +2109,7 @@ changes = {
     },
     "1956_01": {
         "BIR": {
+            "code": "SD",
             "description": "Condominium of the United Kingdom and Egypt",
             "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/6/6a/Flag_of_Anglo-Egyptian_Sudan.svg",
@@ -2122,6 +2127,9 @@ changes = {
             ]
         },
         "HAL": {
+            "code": "EG",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/0/0e/Flag_of_Egypt_%281952-1958%29.svg",
             "formal": "Republic of Egypt",
             "link": "http://en.wikipedia.org/wiki/Republic_of_Egypt_(1953%E2%80%931958)",
@@ -2345,6 +2353,7 @@ changes = {
     },
     "1957_11": {
         "COC": {
+            "code": "SG",
             "description": "Crown colony of the United Kingdom",
             "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg",
@@ -2377,6 +2386,7 @@ changes = {
             ]
         },
         "AI": {
+            "code": "AG",
             "description": "Colony of the United Kingdom",
             "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Leeward_Islands_1871-1956.gif",
@@ -2396,6 +2406,7 @@ changes = {
             "removed": false
         },
         "CHR": {
+            "code": "SG",
             "description": "Crown colony of the United Kingdom",
             "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg",
@@ -2404,6 +2415,7 @@ changes = {
             "removed": true
         },
         "DM": {
+            "code": "GD",
             "description": "Colony of the United Kingdom",
             "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/3/3b/Flag_of_the_British_Windward_Islands_%281903-1958%29.png",
@@ -2447,6 +2459,7 @@ changes = {
             ]
         },
         "KN": {
+            "code": "AG",
             "description": "Colony of the United Kingdom",
             "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Leeward_Islands_1871-1956.gif",
@@ -2455,6 +2468,7 @@ changes = {
             "removed": true
         },
         "KY": {
+            "code": "JM",
             "description": "Crown colony of the United Kingdom",
             "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/aa/Flag_of_Jamaica_%281957-1962%29.svg",
@@ -2463,6 +2477,7 @@ changes = {
             "removed": true
         },
         "LC": {
+            "code": "GD",
             "description": "Colony of the United Kingdom",
             "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/3/3b/Flag_of_the_British_Windward_Islands_%281903-1958%29.png",
@@ -2471,6 +2486,7 @@ changes = {
             "removed": true
         },
         "MS": {
+            "code": "AG",
             "description": "Colony of the United Kingdom",
             "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Leeward_Islands_1871-1956.gif",
@@ -2491,6 +2507,7 @@ changes = {
             ]
         },
         "TC": {
+            "code": "JM",
             "description": "Crown colony of the United Kingdom",
             "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/aa/Flag_of_Jamaica_%281957-1962%29.svg",
@@ -2509,6 +2526,7 @@ changes = {
             "name": "Trinidad and Tobago"
         },
         "VC": {
+            "code": "GD",
             "description": "Colony of the United Kingdom",
             "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/3/3b/Flag_of_the_British_Windward_Islands_%281903-1958%29.png",
@@ -2517,6 +2535,7 @@ changes = {
             "removed": true
         },
         "VG": {
+            "code": "JM",
             "description": "Crown colony of the United Kingdom",
             "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/aa/Flag_of_Jamaica_%281957-1962%29.svg",
@@ -2593,6 +2612,9 @@ changes = {
             "replacing": []
         },
         "JO": {
+            "code": "IQ",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/c/c5/Flag_of_the_Arab_Federation.svg",
             "formal": "Arab Federation of Iraq and Jordan",
             "link": "http://en.wikipedia.org/wiki/Arab_Federation",
@@ -2618,6 +2640,7 @@ changes = {
             ]
         },
         "GN": {
+            "code": "FWA",
             "description": "Federation of colonies of France",
             "fill": "color9",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
@@ -2637,6 +2660,7 @@ changes = {
     },
     "1958_11": {
         "CG": {
+            "code": "FEA",
             "description": "Federation of colonies of France",
             "fill": "color9",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
@@ -2667,6 +2691,7 @@ changes = {
             ]
         },
         "GA": {
+            "code": "FEA",
             "description": "Federation of colonies of France",
             "fill": "color9",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
@@ -2678,6 +2703,7 @@ changes = {
             "flag": ""
         },
         "ML": {
+            "code": "FWA",
             "description": "Federation of colonies of France",
             "fill": "color9",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
@@ -2686,6 +2712,7 @@ changes = {
             "removed": true
         },
         "MR": {
+            "code": "FWA",
             "description": "Federation of colonies of France",
             "fill": "color9",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
@@ -2694,6 +2721,7 @@ changes = {
             "removed": true
         },
         "SN": {
+            "code": "FWA",
             "description": "Federation of colonies of France",
             "fill": "color9",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
@@ -2702,6 +2730,7 @@ changes = {
             "removed": true
         },
         "TD": {
+            "code": "FEA",
             "description": "Federation of colonies of France",
             "fill": "color9",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
@@ -2712,6 +2741,7 @@ changes = {
     },
     "1958_12": {
         "BF": {
+            "code": "FWA",
             "description": "Federation of colonies of France",
             "fill": "color9",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
@@ -2720,6 +2750,7 @@ changes = {
             "removed": true
         },
         "BJ": {
+            "code": "FWA",
             "description": "Federation of colonies of France",
             "fill": "color9",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
@@ -2728,6 +2759,7 @@ changes = {
             "removed": true
         },
         "CF": {
+            "code": "FEA",
             "description": "Federation of colonies of France",
             "fill": "color9",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
@@ -2736,6 +2768,7 @@ changes = {
             "removed": true
         },
         "CI": {
+            "code": "FWA",
             "description": "Federation of colonies of France",
             "fill": "color9",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
@@ -2782,6 +2815,7 @@ changes = {
             ]
         },
         "NE": {
+            "code": "FWA",
             "description": "Federation of colonies of France",
             "fill": "color9",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
@@ -2815,6 +2849,7 @@ changes = {
             ]
         },
         "SUV": {
+            "code": "MV",
             "description": "Protectorate of the United Kingdom",
             "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/0/07/Flag_of_the_Maldives_1953.svg",
@@ -3030,6 +3065,7 @@ changes = {
             ]
         },
         "KAT": {
+            "code": "CD",
             "description": "Colony of Belgium",
             "fill": "color4",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/d/d8/Flag_of_Congo_Free_State.svg",
@@ -3110,6 +3146,9 @@ changes = {
             "fill": "color9"
         },
         "SN": {
+            "code": "ML",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Mali_1959-1961.svg",
             "formal": "Mali Federation",
             "link": "http://en.wikipedia.org/wiki/Mali_Federation",
@@ -3223,6 +3262,9 @@ changes = {
             "flag": "http://upload.wikimedia.org/wikipedia/commons/e/ee/Flag_of_Kuwait_1956-1961_For_maritime_use_style_1.png"
         },
         "SY": {
+            "code": "EG",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/5/58/Flag_of_United_Arab_Republic.svg",
             "formal": "United Arab Republic",
             "link": "http://en.wikipedia.org/wiki/United_Arab_Republic",
@@ -3288,6 +3330,7 @@ changes = {
     },
     "1962_04": {
         "JM": {
+            "code": "TT",
             "description": "Federation of colonies of the United Kingdom",
             "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_the_West_Indies_Federation.svg",
@@ -3314,6 +3357,7 @@ changes = {
     },
     "1962_05": {
         "AG": {
+            "code": "TT",
             "description": "Federation of colonies of the United Kingdom",
             "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_the_West_Indies_Federation.svg",
@@ -3322,6 +3366,7 @@ changes = {
             "removed": true
         },
         "AI": {
+            "code": "TT",
             "description": "Federation of colonies of the United Kingdom",
             "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_the_West_Indies_Federation.svg",
@@ -3330,6 +3375,7 @@ changes = {
             "removed": true
         },
         "BB": {
+            "code": "TT",
             "description": "Federation of colonies of the United Kingdom",
             "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_the_West_Indies_Federation.svg",
@@ -3338,6 +3384,7 @@ changes = {
             "removed": true
         },
         "DM": {
+            "code": "TT",
             "description": "Federation of colonies of the United Kingdom",
             "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_the_West_Indies_Federation.svg",
@@ -3346,6 +3393,7 @@ changes = {
             "removed": true
         },
         "GD": {
+            "code": "TT",
             "description": "Federation of colonies of the United Kingdom",
             "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_the_West_Indies_Federation.svg",
@@ -3354,6 +3402,7 @@ changes = {
             "removed": true
         },
         "KY": {
+            "code": "TT",
             "description": "Federation of colonies of the United Kingdom",
             "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_the_West_Indies_Federation.svg",
@@ -3362,6 +3411,7 @@ changes = {
             "removed": true
         },
         "LC": {
+            "code": "TT",
             "description": "Federation of colonies of the United Kingdom",
             "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_the_West_Indies_Federation.svg",
@@ -3370,6 +3420,7 @@ changes = {
             "removed": true
         },
         "MS": {
+            "code": "TT",
             "description": "Federation of colonies of the United Kingdom",
             "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_the_West_Indies_Federation.svg",
@@ -3378,6 +3429,7 @@ changes = {
             "removed": true
         },
         "TC": {
+            "code": "TT",
             "description": "Federation of colonies of the United Kingdom",
             "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_the_West_Indies_Federation.svg",
@@ -3404,6 +3456,7 @@ changes = {
             ]
         },
         "VC": {
+            "code": "TT",
             "description": "Federation of colonies of the United Kingdom",
             "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_the_West_Indies_Federation.svg",
@@ -3426,6 +3479,9 @@ changes = {
             ]
         },
         "DZ": {
+            "code": "FR",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
             "formal": "French Republic",
             "link": "http://en.wikipedia.org/wiki/France",
@@ -3441,6 +3497,7 @@ changes = {
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/aa/Flag_of_Jamaica_%281957-1962%29.svg"
         },
         "RW": {
+            "code": "BI",
             "description": "United Nations trust territory under Belgium",
             "fill": "color4",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Belgium.svg",
@@ -3700,6 +3757,7 @@ changes = {
             "flag": "http://upload.wikimedia.org/wikipedia/commons/e/e2/Flag_of_British_East_Africa.svg"
         },
         "MW": {
+            "code": "ZW",
             "description": "Self-governing colony of the United Kingdom",
             "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/4/42/Flag_of_the_Federation_of_Rhodesia_and_Nyasaland.svg",
@@ -3716,6 +3774,7 @@ changes = {
             "flag": "http://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Zanzibar_Under_British_Rule.svg"
         },
         "ZM": {
+            "code": "ZW",
             "description": "Self-governing colony of the United Kingdom",
             "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/4/42/Flag_of_the_Federation_of_Rhodesia_and_Nyasaland.svg",
@@ -3864,6 +3923,9 @@ changes = {
     },
     "1965_08": {
         "CK": {
+            "code": "NZ",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg",
             "formal": "New Zealand",
             "link": "http://en.wikipedia.org/wiki/New_Zealand",
@@ -3885,6 +3947,9 @@ changes = {
             "formal": "Romanian People's Republic"
         },
         "SG": {
+            "code": "MY",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg",
             "formal": "Malaysia",
             "link": "http://en.wikipedia.org/wiki/Malaysia",
@@ -3896,6 +3961,7 @@ changes = {
             "flag": "http://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_Dominica%2C_1955-1965.png"
         },
         "IO": {
+            "code": "MU",
             "description": "Colony of the United Kingdom",
             "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/b/b3/Flag_of_Mauritius_1923.svg",
@@ -4025,6 +4091,9 @@ changes = {
     },
     "1967_05": {
         "BIA": {
+            "code": "NG",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg",
             "formal": "Federal Republic of Nigeria",
             "link": "http://en.wikipedia.org/wiki/Nigeria",
@@ -4054,6 +4123,7 @@ changes = {
     },
     "1967_07": {
         "AI": {
+            "code": "KN",
             "description": "Associated state of the United Kingdom",
             "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/b/b6/Flag_of_Saint_Christopher-Nevis-Anguilla.svg",
@@ -4078,6 +4148,9 @@ changes = {
     },
     "1967_08": {
         "BEN2": {
+            "code": "NG",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg",
             "formal": "Federal Republic of Nigeria",
             "link": "http://en.wikipedia.org/wiki/Nigeria",
@@ -4365,6 +4438,9 @@ changes = {
     },
     "1971_03": {
         "BD": {
+            "code": "PK",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg",
             "formal": "Islamic Republic of Pakistan",
             "link": "http://en.wikipedia.org/wiki/Pakistan",
@@ -4450,6 +4526,7 @@ changes = {
             "flag": "http://upload.wikimedia.org/wikipedia/commons/c/c4/Flag_of_Libya_%281969%E2%80%931972%29.svg"
         },
         "RAK": {
+            "code": "AE",
             "description": "Protectorate of the United Kingdom",
             "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_the_Trucial_States.svg",
@@ -4625,6 +4702,9 @@ changes = {
     },
     "1974_10": {
         "NU": {
+            "code": "NZ",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg",
             "formal": "New Zealand",
             "link": "http://en.wikipedia.org/wiki/New_Zealand",
@@ -4732,6 +4812,7 @@ changes = {
             ]
         },
         "CAB": {
+            "code": "AO",
             "description": "Overseas province of Portugal",
             "fill": "color11",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg",
@@ -4742,6 +4823,7 @@ changes = {
     },
     "1975_09": {
         "BOU": {
+            "code": "PG",
             "description": "United Nations trust territory under Australia",
             "fill": "color8",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/e/e3/Flag_of_Papua_New_Guinea.svg",
@@ -4861,6 +4943,7 @@ changes = {
             ]
         },
         "TV": {
+            "code": "KI",
             "description": "Crown colony of the United Kingdom",
             "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/4/4d/Flag_of_Gilbert_and_Ellice_Islands.svg",
@@ -4942,6 +5025,9 @@ changes = {
     },
     "1976_10": {
         "TRN": {
+            "code": "ZA",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/6/67/Flag_of_South_Africa_1928-1994.svg",
             "formal": "Republic of South Africa",
             "link": "http://en.wikipedia.org/wiki/South_Africa",
@@ -5012,6 +5098,9 @@ changes = {
     },
     "1977_12": {
         "BOP": {
+            "code": "ZA",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/6/67/Flag_of_South_Africa_1928-1994.svg",
             "formal": "Republic of South Africa",
             "link": "http://en.wikipedia.org/wiki/South_Africa",
@@ -5047,6 +5136,9 @@ changes = {
     },
     "1978_07": {
         "ACI": {
+            "code": "AU",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/en/b/b9/Flag_of_Australia.svg",
             "formal": "Commonwealth of Australia",
             "link": "http://en.wikipedia.org/wiki/Australia",
@@ -5176,6 +5268,9 @@ changes = {
             "name": "Central African Empire"
         },
         "VEN": {
+            "code": "ZA",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/6/67/Flag_of_South_Africa_1928-1994.svg",
             "formal": "Republic of South Africa",
             "link": "http://en.wikipedia.org/wiki/South_Africa",
@@ -5351,6 +5446,9 @@ changes = {
     },
     "1981_12": {
         "CIS": {
+            "code": "ZA",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/6/67/Flag_of_South_Africa_1928-1994.svg",
             "formal": "Republic of South Africa",
             "link": "http://en.wikipedia.org/wiki/South_Africa",
@@ -5487,6 +5585,9 @@ changes = {
             ]
         },
         "NCY": {
+            "code": "CY",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/6/63/Flag_of_Cyprus_%281960-2006%29.svg",
             "formal": "Republic of Cyprus",
             "link": "http://en.wikipedia.org/wiki/Cyprus",
@@ -5574,6 +5675,7 @@ changes = {
     },
     "1986_01": {
         "AW": {
+            "code": "NAN",
             "description": "Constituent country of the Kingdom of the Netherlands",
             "fill": "color10",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_the_Netherlands_Antilles_%281959-1986%29.svg",
@@ -5624,6 +5726,7 @@ changes = {
     },
     "1986_11": {
         "FM": {
+            "code": "PW",
             "description": "United Nations trust territory under the United States",
             "fill": "color6",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_the_Trust_Territory_of_the_Pacific_Islands.svg",
@@ -5632,6 +5735,7 @@ changes = {
             "removed": true
         },
         "MH": {
+            "code": "PW",
             "description": "United Nations trust territory under the United States",
             "fill": "color6",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_the_Trust_Territory_of_the_Pacific_Islands.svg",
@@ -5640,6 +5744,7 @@ changes = {
             "removed": true
         },
         "MP": {
+            "code": "PW",
             "description": "United Nations trust territory under the United States",
             "fill": "color6",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_the_Trust_Territory_of_the_Pacific_Islands.svg",
@@ -5722,6 +5827,9 @@ changes = {
             ]
         },
         "PS": {
+            "code": "IL",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Israel.svg",
             "formal": "State of Israel",
             "link": "http://en.wikipedia.org/wiki/Israel",
@@ -5783,12 +5891,18 @@ changes = {
             "formal": "Czechoslovak Socialist Republic"
         },
         "LT": {
+            "code": "RU",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
             "removed": true
         },
         "NA": {
+            "code": "ZA",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/6/67/Flag_of_South_Africa_1928-1994.svg",
             "formal": "Republic of South Africa",
             "link": "http://en.wikipedia.org/wiki/South_Africa",
@@ -5846,12 +5960,18 @@ changes = {
             "flag": "http://upload.wikimedia.org/wikipedia/commons/5/50/Flag_of_Anguilla_%281967-1969%29.svg"
         },
         "BOU": {
+            "code": "PG",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/e/e3/Flag_of_Papua_New_Guinea.svg",
             "formal": "Independent State of Papua New Guinea",
             "link": "http://en.wikipedia.org/wiki/Papua_New_Guinea",
             "removed": true
         },
         "LV": {
+            "code": "RU",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -5912,6 +6032,9 @@ changes = {
     },
     "1990_07": {
         "BY": {
+            "code": "RU",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -6020,6 +6143,9 @@ changes = {
             "replacing": []
         },
         "KW": {
+            "code": "IQ",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/7/7b/Flag_of_Iraq_%281991-2004%29.svg",
             "formal": "Republic of Iraq",
             "link": "http://en.wikipedia.org/wiki/Iraq",
@@ -6028,6 +6154,9 @@ changes = {
     },
     "1991_04": {
         "ABK": {
+            "code": "RU",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -6037,6 +6166,9 @@ changes = {
             "formal": "People's Socialist Republic of Albania"
         },
         "GE": {
+            "code": "RU",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -6068,6 +6200,9 @@ changes = {
             ]
         },
         "SOT": {
+            "code": "RU",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -6076,6 +6211,9 @@ changes = {
     },
     "1991_05": {
         "ER": {
+            "code": "ET",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/8/8a/Flag_of_Ethiopia_%281987%E2%80%931991%29.svg",
             "formal": "People's Democratic Republic of Ethiopia",
             "link": "http://en.wikipedia.org/wiki/People's_Democratic_Republic_of_Ethiopia",
@@ -6094,6 +6232,9 @@ changes = {
             ]
         },
         "SO2": {
+            "code": "SO",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_Somalia.svg",
             "formal": "Federal Republic of Somalia",
             "link": "http://en.wikipedia.org/wiki/Somalia",
@@ -6105,6 +6246,9 @@ changes = {
             "formal": "People's Republic of the Congo"
         },
         "HR": {
+            "code": "RS",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/7/71/Flag_of_SFR_Yugoslavia.svg",
             "formal": "Socialist Federal Republic of Yugoslavia",
             "link": "http://en.wikipedia.org/wiki/Socialist_Federal_Republic_of_Yugoslavia",
@@ -6125,6 +6269,9 @@ changes = {
             ]
         },
         "SI": {
+            "code": "RS",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/7/71/Flag_of_SFR_Yugoslavia.svg",
             "formal": "Socialist Federal Republic of Yugoslavia",
             "link": "http://en.wikipedia.org/wiki/Socialist_Federal_Republic_of_Yugoslavia",
@@ -6144,36 +6291,54 @@ changes = {
             "link": "http://en.wikipedia.org/wiki/People%27s_Republic_of_Bulgaria"
         },
         "CRI": {
+            "code": "RU",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
             "removed": true
         },
         "EE": {
+            "code": "RU",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
             "removed": true
         },
         "GAG": {
+            "code": "RU",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
             "removed": true
         },
         "KG": {
+            "code": "RU",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
             "removed": true
         },
         "MD": {
+            "code": "RU",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
             "removed": true
         },
         "NVR": {
+            "code": "RU",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -6205,12 +6370,18 @@ changes = {
             ]
         },
         "TRA": {
+            "code": "RU",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
             "removed": true
         },
         "UA": {
+            "code": "RU",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -6219,12 +6390,18 @@ changes = {
     },
     "1991_09": {
         "AM": {
+            "code": "RU",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
             "removed": true
         },
         "MK": {
+            "code": "RS",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/7/71/Flag_of_SFR_Yugoslavia.svg",
             "formal": "Socialist Federal Republic of Yugoslavia",
             "link": "http://en.wikipedia.org/wiki/Socialist_Federal_Republic_of_Yugoslavia",
@@ -6267,6 +6444,9 @@ changes = {
             ]
         },
         "TJ": {
+            "code": "RU",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -6276,6 +6456,9 @@ changes = {
             "d": "m 576.1855,83.098534 -2.02399,0.180517 -0.6163,0.6686 0.12265,1.53602 -1.01117,-0.295278 -2.14905,0.146354 -0.75356,-0.713925 -0.81298,0.532213 -0.9792,-0.441224 -1.90513,-0.06127 -2.79987,-0.731789 -2.46226,-0.238742 -1.84956,0.06761 -1.19775,0.826216 -1.13337,0.118973 1.58322,2.671379 -0.14264,0.861433 -1.15705,0.357813 -1.88662,2.564947 0.8005,1.390612 -0.55663,-0.180696 -0.58367,0.80664 -0.33394,1.250375 1.46532,0.844427 0.26924,0.832435 0.98662,-0.665073 1.56763,0.343911 1.58324,0.01156 1.24232,0.758978 0.78217,-0.476898 1.78268,-0.29845 0.52231,-0.725788 1.03941,4.81e-4 0.52361,-0.45782 1.5919,-0.306952 1.95484,0.967094 1.03102,0.116172 1.23907,0.835598 -0.0213,1.052662 0.9773,0.508161 0.55132,1.298424 0.98532,0.789181 -0.10707,0.462455 0.5112,0.3145 -0.6257,0.22932 -1.48225,-0.0908 -0.30759,-0.42932 -0.48534,0.2475 0.25588,0.55522 -0.54302,0.9878 -0.28805,1.06141 -0.58394,0.33568 1.19816,0.56895 1.10813,-0.49679 1.21362,0.52988 1.60193,-2.28534 0.66701,-1.70728 2.24622,-0.382161 0.35375,1.156831 4.00446,0.78334 0.8405,0.70919 -2.22923,1.0279 -0.34846,0.5921 2.88917,0.90264 -0.31921,1.44566 1.50421,0.62471 3.11977,-1.77849 2.6578,-0.53363 0.29375,-1.10099 -2.52421,0.1853 -1.35457,-0.74542 -0.47811,-1.92582 1.94261,-1.15624 2.29955,-0.163665 1.46683,-1.004408 1.93434,-0.248353 -0.18859,-1.379839 1.10378,-0.867334 2.34365,-0.227766 0.17526,-1.035538 -0.8996,-1.710816 0.65003,-1.62173 -0.22582,-0.907768 -3.81073,-1.004323 -1.41611,0.0333 -1.80404,-1.441868 -1.76233,0.487101 -3.30206,-1.080828 -0.069,-0.603781 -1.12985,-1.328016 -1.95358,-0.148077 -0.3899,-0.948273 0.47516,-0.617552 -1.88491,-1.723066 -2.42274,0.293606 -0.75711,-0.152674 -0.47049,0.691625 -0.91879,-0.122959 z"
         },
         "UZ": {
+            "code": "RU",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -6284,6 +6467,9 @@ changes = {
     },
     "1991_10": {
         "CHE": {
+            "code": "RU",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -6315,6 +6501,9 @@ changes = {
             ]
         },
         "TM": {
+            "code": "RU",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -6323,6 +6512,9 @@ changes = {
     },
     "1991_11": {
         "KZ": {
+            "code": "RU",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -6365,6 +6557,9 @@ changes = {
             ]
         },
         "NKR": {
+            "code": "AZ",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Azerbaijan.svg",
             "formal": "Republic of Azerbaijan",
             "link": "http://en.wikipedia.org/wiki/Azerbaijan",
@@ -6424,6 +6619,9 @@ changes = {
             "flag": "http://upload.wikimedia.org/wikipedia/commons/2/2b/Flag_of_Albania_%281946-1992%29.svg"
         },
         "BA": {
+            "code": "RS",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/7/71/Flag_of_SFR_Yugoslavia.svg",
             "formal": "Socialist Federal Republic of Yugoslavia",
             "link": "http://en.wikipedia.org/wiki/Socialist_Federal_Republic_of_Yugoslavia",
@@ -6524,6 +6722,9 @@ changes = {
             "link": "http://en.wikipedia.org/wiki/Socialist_Federal_Republic_of_Yugoslavia"
         },
         "SK": {
+            "code": "CZ",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg",
             "formal": "Czech and Slovak Federal Republic",
             "link": "http://en.wikipedia.org/wiki/Czechoslovakia",
@@ -6705,6 +6906,7 @@ changes = {
             ]
         },
         "AFN": {
+            "code": "AF",
             "description": "-",
             "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Afghanistan_%281992-1996%3B_2001%29.svg",
@@ -6795,6 +6997,9 @@ changes = {
     },
     "1998_08": {
         "PUN": {
+            "code": "SO",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_Somalia.svg",
             "formal": "Federal Republic of Somalia",
             "link": "http://en.wikipedia.org/wiki/Somalia",
@@ -6854,8 +7059,9 @@ changes = {
             "flag": "http://upload.wikimedia.org/wikipedia/commons/7/79/Merchant_flag_of_Japan_%281870%29.svg"
         },
         "TL": {
-            "description": "-",
-            "fill": "color10",
+            "code": "ID",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg",
             "formal": "Republic of Indonesia",
             "link": "http://en.wikipedia.org/wiki/Indonesia",
@@ -7170,6 +7376,9 @@ changes = {
             "formal": "State Union of Serbia and Montenegro"
         },
         "ME": {
+            "code": "RS",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/9/90/Flag_of_Serbia_and_Montenegro.svg",
             "formal": "State Union of Serbia and Montenegro",
             "link": "http://en.wikipedia.org/wiki/Serbia_and_Montenegro",
@@ -7215,6 +7424,9 @@ changes = {
     },
     "2008_02": {
         "KOS": {
+            "code": "RS",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/6/6d/Flag_of_Serbia_%282004-2010%29.svg",
             "formal": "Republic of Serbia",
             "link": "http://en.wikipedia.org/wiki/Serbia",
@@ -7234,6 +7446,9 @@ changes = {
     },
     "2008_08": {
         "ABK": {
+            "code": "GE",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Georgia.svg",
             "formal": "Georgia",
             "link": "http://en.wikipedia.org/wiki/Georgia",
@@ -7247,6 +7462,9 @@ changes = {
             ]
         },
         "SOT": {
+            "code": "GE",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Georgia.svg",
             "formal": "Georgia",
             "link": "http://en.wikipedia.org/wiki/Georgia",
@@ -7283,6 +7501,7 @@ changes = {
     },
     "2010_10": {
         "CW": {
+            "code": "NAN",
             "description": "Constituent country of the Kingdom of the Netherlands",
             "fill": "color10",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_the_Netherlands_Antilles_%281986-2010%29.svg",
@@ -7313,6 +7532,7 @@ changes = {
             "d": "m 514.39911,78.829653 -3.20612,1.265039 -1.97895,4.469684 -1.22326,0.839064 1.77042,0.239943 2.21714,-0.634834 1.56815,1.338422 1.35343,0.715674 -0.51883,-3.202777 1.44256,-0.0013 0.56161,-1.145588 0.47587,-2.77637 -0.4885,-1.021741 -1.97352,-0.08526 z"
         },
         "SX": {
+            "code": "NAN",
             "description": "Constituent country of the Kingdom of the Netherlands",
             "fill": "color10",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_the_Netherlands_Antilles_%281986-2010%29.svg",
@@ -7346,6 +7566,9 @@ changes = {
             ]
         },
         "SS": {
+            "code": "SD",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Sudan.svg",
             "formal": "Republic of the Sudan",
             "link": "http://en.wikipedia.org/wiki/Sudan",
@@ -7397,6 +7620,9 @@ changes = {
     },
     "2013_10": {
         "CRI": {
+            "code": "UA",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg",
             "formal": "Ukraine",
             "link": "http://en.wikipedia.org/wiki/Ukraine",
@@ -7412,6 +7638,9 @@ changes = {
     },
     "2014_04": {
         "NVR": {
+            "code": "UA",
+            "description": "",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg",
             "formal": "Ukraine",
             "link": "http://en.wikipedia.org/wiki/Ukraine",
@@ -7457,6 +7686,7 @@ changes = {
             "d": "m 619.60028,133.39037 -2.31333,-3.85935 -1.16867,0.54656 -1.05069,-0.82403 -3.1104,-0.41726 -1.04715,0.5025 -1.04151,2.01924 -1.32187,0.79938 0.58403,2.36085 -0.4636,3.88504 -5.45027,3.31811 1.54262,3.86142 3.32365,0.8575 4.25892,2.21316 8.33885,6.36339 5.04864,0.25318 1.60255,-3.04077 1.84287,0.26342 1.61823,0.15521 -1.70867,-1.66292 -0.25442,-1.68395 -0.85708,9e-4 0.12066,-2.28976 -1.721,-2.40501 -3.5199,-1.73785 -2.28373,-3.02367 0.24148,-2.49535 1.16154,-1.10824 -0.49224,-1.88217 -1.87951,-0.96953 z"
         },
         "ISIS": {
+            "code": "",
             "description": "",
             "fill": "color13",
             "flag": "",

@@ -44,7 +44,7 @@ html(lang = "en", ng-app = "map")
                precision="1",
                translate="pretty_format",
                ng-model="raw_time")
-      #info.noselect(ng-show = "selected() || infohover",
+      #info.noselect(ng-show = "curr_code() || infohover",
                      ng-mouseover="infohover=true",
                      ng-mouseleave="infohover=false")
         #infobox
@@ -73,7 +73,7 @@ html(lang = "en", ng-app = "map")
         g(ng-attr-transform="scale({{ scale }}) translate({{ x_trans }}, {{ y_trans }})")
           path(ng-repeat = "country in visible_countries",
                ng-attr-d = "{{ country.d }}",
-               ng-class = "country.fill + {true: ' selected', false: ''}[country.code == selected()]",
+               ng-class = "country.fill + selected(country)"
                ng-click="hard_select(country.code, $event)",
                ng-mouseover="soft_select(country.code, $event)",
                ng-mousemove="move_label($event)",

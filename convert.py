@@ -92,8 +92,8 @@ def transpose_dict(d):
 
 
 def update_data(original, changes):
-    attrs = ["flag", "fill", "owner", "name", "formal", "link", "description", "replacing", "replaced_by"]
-    info_attrs = ["flag", "formal", "link", "description", "link"]
+    attrs = ["flag", "fill", "owner", "name", "formal", "link", "description", "replacing", "replaced_by", "code"]
+    info_attrs = ["flag", "formal", "link", "description", "link", "code"]
     defaults = {attr: {code: data[attr] for code, data in original.items() if attr in data}
             for attr in attrs}
     defaults["fill"]["UNA"] = "color11"
@@ -149,6 +149,9 @@ def update_data(original, changes):
                     for attr in info_attrs:
                         if replacement in defaults[attr]:
                             data[attr] = defaults[attr][replacement]
+                        else:
+                            print "missing replacement", attr, "of", replacement, "replacing", code
+                            data[attr] = ""
                 del data["is"]
 
         for code, data in change.items():
@@ -269,9 +272,9 @@ def convert(original_file, change_files):
             #if rs != {}:
                 #changes[date]["removed"] = rs
 
-    update_data(original, changes)
     for code, data in original.items():
         data["code"] = code
+    update_data(original, changes)
 
     #for code, data in sorted(original.items()):
         #name = data["name"] if "name" in data else ""
