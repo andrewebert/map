@@ -140,9 +140,9 @@ slider .bubble.limit {
 #flagbox {
   position: absolute;
   left: -42%;
-  top: -55%;
+  top: -30%;
   width: 115%;
-  height: 190%;
+  height: 140%;
   pointer-events: none;
 }
 #flag {
@@ -156,7 +156,7 @@ slider .bubble.limit {
   top: 0px;
   bottom: 0px;
   max-width: 20%;
-  max-height: 32%;
+  max-height: 44%;
   pointer-events: auto;
 }
 #flag.hoverable:hover {
