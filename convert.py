@@ -2,7 +2,6 @@ import sys
 import json
 import re
 import os
-from unicodecsv import unicodecsv
 from IPython.core.debugger import Tracer
 
 import util
@@ -49,7 +48,7 @@ def get_map_difference(old, new):
     removed = list(old_keys - new_keys)
 
     print "Added:", added_keys, "Changed:", changed_keys, "Removed:", removed
-    return {"removed": removed, "changed": changed}
+    return changed
 
 
 def get_data(original_file, changed_files):
@@ -66,27 +65,6 @@ def get_data(original_file, changed_files):
         prev = new
     return original, changes
 
-
-def read_csv(filename):
-    data = {}
-    with open(filename, 'rb') as f:
-        reader = unicodecsv.reader(f)
-        codes = reader.next()[1:]
-        i = 0
-        while True:
-            try:
-                row = reader.next()
-                i += 1
-                date = row[0]
-                changes = {codes[i]: name for i, name in enumerate(row[1:]) if name != u''}
-                if changes != {}:
-                    data[date] = changes
-            except UnicodeDecodeError as e:
-                print "Unicode error", filename, i
-                raise e
-            except StopIteration:
-                break
-    return data
 
 
 # sources: {tag: {code: value}}
@@ -114,39 +92,126 @@ def transpose_dict(d):
 
 
 def update_data(original, changes):
-    attrs = ["flag", "fill", "owner"]
+    attrs = ["flag", "fill", "owner", "name", "formal", "link", "description", "replacing", "replaced_by", "code"]
+    info_attrs = ["flag", "formal", "link", "description", "link", "code"]
     defaults = {attr: {code: data[attr] for code, data in original.items() if attr in data}
             for attr in attrs}
     defaults["fill"]["UNA"] = "color11"
     defaults["flag"]["UNA"] = \
         "http://upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_the_United_Nations.svg"
+    defaults["name"]["UNA"] = "United Nations"
+    colonies = {code: [] for code in original.keys()}
+    main_owners = {}
+    colony_names = {
+            "GB": "the United Kingdom",
+            "US": "the United States",
+            "NL": "the Kingdom of the Netherlands",
+            "DK": "the Kingdom of Denmark"
+            }
+    flagless = []
 
-    def update(countries):
-        for country, data in countries.items():
+    def update(date, change):
+        for code, data in change.items():
             for attr in attrs:
                 if attr in data:
-                    defaults[attr][country] = data[attr]
-            if "disputed" in data:
-                if data["disputed"] != "-":
-                    data["fill"] = "color13"
-                else:
-                    data["fill"] = defaults["fill"][country]
-            if ("disputed" not in data or data["disputed"] == "-") and "owner" in data:
-                if data["owner"] != "-":
-                    data["fill"] = defaults["fill"][data["owner"].split(" ")[0]]
-                else:
-                    data["fill"] = defaults["fill"][country]
-            #if "flag" in data and data["flag"] == "-":
-                #try:
-                    #data["flag"] = defaults["flag"][defaults["country"][country]]
-                #except:
-                    #print "default flag error ", country
+                    defaults[attr][code] = data[attr]
 
-    
-    update(original)
-    for date, change_data in changes.items():
+        for code, data in change.items():
+            if ("is" in data and data["is"] == "-") or "d" in data:
+                if code in defaults["replaced_by"]:
+                    data["removed"] = False
+                    print date, "unremoving", code
+                    try: 
+                        defaults["replacing"][defaults["replaced_by"][code]].remove(code)
+                    except KeyError:
+                        del defaults["replaced_by"][code]
+                    except ValueError:
+                        pass
+                elif "is" in data and data["is"] == "-":
+                    print "killing", code, date
+                    data["removed"] = True
+                    for attr in info_attrs:
+                        data[attr] = ""
+            if "is" in data:
+                replacement = data["is"]
+                defaults["replaced_by"][code] = replacement
+                if replacement != "-":
+                    data["removed"] = True
+                    print date, "replacing", code, "with", replacement
+                    try:
+                        defaults["replacing"][replacement].append(code)
+                    except KeyError:
+                        defaults["replacing"][replacement] = [code]
+                    try:
+                        change[replacement]["replacing"] = defaults["replacing"][replacement]
+                    except KeyError:
+                        change[replacement] = {"replacing": defaults["replacing"][replacement]}
+                    for attr in info_attrs:
+                        if replacement in defaults[attr]:
+                            data[attr] = defaults[attr][replacement]
+                        else:
+                            print "missing replacement", attr, "of", replacement, "replacing", code
+                            data[attr] = ""
+                del data["is"]
+
+        for code, data in change.items():
+            if "description" in data:
+                if data["description"] == "-":
+                    data["fill"] = defaults["fill"][code]
+                    try:
+                        del main_owners[code]
+                    except KeyError:
+                        pass
+                else:
+                    owners = re.findall("\[...?\]", data["description"])
+                    if owners:
+                        main_owner = owners[0][1:-1]
+                        main_owners[code] = main_owner
+                        data["fill"] = defaults["fill"][main_owner]
+                        colonies[main_owner].append(code)
+                        for owner in owners:
+                            try:
+                                name = colony_names[owner[1:-1]]
+                            except KeyError:
+                                name = defaults["name"][owner[1:-1]]
+                            data["description"] = data["description"].replace(owner, name)
+                    else:
+                        data["fill"] = "color13"
+
+            if "flag" in data:
+                if data["flag"] == "-":
+                    flagless.append(code)
+                    if code in main_owners:
+                        data["flag"] = defaults["flag"][main_owners[code]]
+                    else:
+                        data["flag"] = ""
+                elif data["flag"] in flagless:
+                    flagless.remove(code)
+                if code in colonies:
+                    for c in colonies[code]:
+                        if c in flagless:
+                            if date == NOW:
+                                original[c]["flag"] = data["flag"]
+                            else:
+                                if c in change:
+                                    change[c]["flag"] = data["flag"]
+                                else:
+                                    change[c] = {"flag": data["flag"]}
+ 
+        for code, data in change.items():
+            if code in defaults["replacing"]:
+                for replacing in defaults["replacing"][code]:
+                    for attr in info_attrs:
+                        if attr in data:
+                            try:
+                                change[replacing][attr] = data[attr]
+                            except KeyError:
+                                change[replacing] = {attr: data[attr]}
+
+    update(NOW, original)
+    for date, change_data in reversed(sorted(changes.items())):
         if change_data:
-            update(change_data)
+            update(date, change_data)
 
 
 def convert(original_file, change_files):
@@ -156,68 +221,60 @@ def convert(original_file, change_files):
 
 
     # changes_map: {date: 
-    #                {"changed":
-    #                    {code: 
-    #                       {"d": d, "fill": fill},
-    #                       ...
-    #                    },
-    #                 "removed": [code, ...]}}
-    change_sources = transpose_dict(changes_map)["changed"]
-    # change_sources: {date: 
-    #                     {code: 
-    #                         {"d": d, "fill": fill}
-    #                     }, ...}
-    change_sources = {date: transpose_dict(data)
-            for date, data in change_sources.items()}
-    # change_sources: {date: 
-    #                     {"d": 
-    #                         {code1: d1, code2: d2, ... }
-    #                      "fill":
-    #                         {code1: fill1, code2: fill2, ...
-    change_sources = transpose_dict(change_sources)
-    # change_sources: {"d": 
-    #                     {date:
-    #                         {code1: d1, code2: d2, ... },
-    #                         ...
-    #                     }
-    #                  "fill": 
-    #                     {date:
-    #                         {code1: fill1, code2: fill2, ... },
-    #                         ...
-    #                     }
+    #                  {code: 
+    #                      {"d": d, "fill": fill},
+    #                  }, ...}
+    changes_map = {date: transpose_dict(data)
+            for date, data in changes_map.items()}
+    # changes_map: {date: 
+    #                  {"d": 
+    #                      {code1: d1, code2: d2, ... },
+    #                   "fill":
+    #                      {code1: fill1, code2: fill2, ...}
+    #                  }, ...}
+    changes_map = transpose_dict(changes_map)
+    # changes_map: {"d": 
+    #                  {date:
+    #                      {code1: d1, code2: d2, ... },
+    #                      ...
+    #                  },
+    #               "fill": 
+    #                  {date:
+    #                      {code1: fill1, code2: fill2, ... },
+    #                      ...
+    #                  }
 
     def get_changes(tag):
-        source = read_csv('data/' + tag + '.csv')
+        source = util.read_csv('data/' + tag + '.csv')
         original_sources[tag] = source[NOW]
         del source[NOW]
-        change_sources[tag] = source
+        changes_map[tag] = source
 
     get_changes('name')
     get_changes('formal')
-    get_changes('owner')
     get_changes('flag')
     get_changes('link')
-    get_changes('disputed')
+    get_changes('description')
     get_changes('is')
 
     original = merge_data(original_sources)
 
     changes = {}
 
-    dates = list(set.union(*(set(source.keys()) for source in change_sources.values())))
+    dates = list(set.union(*(set(source.keys()) for source in changes_map.values())))
     #Tracer()()
     for date in dates:
         cs = merge_data({tag: source[date] if date in source else {}
-            for tag, source in change_sources.items()})
+            for tag, source in changes_map.items()})
         #rs = changes_map[date]["removed"] if date in changes_map else {}
         if cs != {}:
             changes[date] = cs
             #if rs != {}:
                 #changes[date]["removed"] = rs
 
-    update_data(original, changes)
     for code, data in original.items():
         data["code"] = code
+    update_data(original, changes)
 
     #for code, data in sorted(original.items()):
         #name = data["name"] if "name" in data else ""
