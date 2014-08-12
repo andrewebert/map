@@ -79,6 +79,7 @@ app.directive 'transformable', ($window) -> ($scope) ->
 
     $scope.release = () ->
         $scope.dragging =false
+        $scope.deselect()
         $scope.drag_amount = Math.max(
             Math.abs($scope.last_x - $scope.grab_x),
             Math.abs($scope.last_y - $scope.grab_y))

@@ -5,7 +5,7 @@ MapCtrl = ($scope) ->
     $scope.flag = undefined
     $scope.loading = false
 
-    $scope.label = {x: 0, y: 0, visible: false, flip: "noflip"}
+    $scope.label = {x: 0, y: 0, flip: "noflip"}
 
     $scope.get_d = (country) ->
         if country?.d?
@@ -29,7 +29,8 @@ MapCtrl = ($scope) ->
             #return countries[code]
         #console.log("invalid country #{$scope.time} (#{typeof $scope.time}) #{code}")
 
-    $scope.curr_code = -> $scope.hard_selected ? $scope.soft_selected
+    $scope.curr_code = ->
+        $scope.hard_selected ? $scope.soft_selected ? $scope.info_selected
     curr = ->
         if $scope.countries then $scope.countries[$scope.curr_code()]
         #selected = $scope.curr_code()
@@ -100,18 +101,26 @@ MapCtrl = ($scope) ->
                 $scope.hard_selected = code
             e.stopPropagation()
 
+
     $scope.soft_select = (code, e) ->
         if not $scope.dragging
-            $scope.label.visible = true
             $scope.soft_selected = code
+            console.log("select", $scope.soft_selected)
 
     $scope.deselect = ->
         if not $scope.dragging
-            $scope.label.visible = false
+            console.log("deselect", $scope.soft_selected)
+            $scope.last_soft_selected = $scope.soft_selected
             $scope.soft_selected = undefined
+    
+    $scope.label.visible = ->
+        $scope.soft_selected and not $scope.info_selected
 
     $scope.label.text = ->
         if $scope.soft_selected?
             $scope.countries[$scope.soft_selected]?.name
         else
             ""
+    $scope.set_info_selected = ->
+        console.log("set_info_selected", $scope.last_soft_selected)
+        $scope.info_selected = $scope.last_soft_selected
