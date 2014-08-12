@@ -89,6 +89,7 @@ app.directive('transformable', function($window) {
     };
     $scope.release = function() {
       $scope.dragging = false;
+      $scope.deselect();
       $scope.drag_amount = Math.max(Math.abs($scope.last_x - $scope.grab_x), Math.abs($scope.last_y - $scope.grab_y));
       $scope.last_x = void 0;
       return $scope.last_y = void 0;

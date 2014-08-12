@@ -10,7 +10,6 @@ MapCtrl = function($scope) {
   $scope.label = {
     x: 0,
     y: 0,
-    visible: false,
     flip: "noflip"
   };
   $scope.get_d = function(country) {
@@ -39,8 +38,8 @@ MapCtrl = function($scope) {
     })();
   });
   $scope.curr_code = function() {
-    var _ref;
-    return (_ref = $scope.hard_selected) != null ? _ref : $scope.soft_selected;
+    var _ref, _ref1;
+    return (_ref = (_ref1 = $scope.hard_selected) != null ? _ref1 : $scope.soft_selected) != null ? _ref : $scope.info_selected;
   };
   curr = function() {
     if ($scope.countries) {
@@ -99,22 +98,30 @@ MapCtrl = function($scope) {
   };
   $scope.soft_select = function(code, e) {
     if (!$scope.dragging) {
-      $scope.label.visible = true;
-      return $scope.soft_selected = code;
+      $scope.soft_selected = code;
+      return console.log("select", $scope.soft_selected);
     }
   };
   $scope.deselect = function() {
     if (!$scope.dragging) {
-      $scope.label.visible = false;
+      console.log("deselect", $scope.soft_selected);
+      $scope.last_soft_selected = $scope.soft_selected;
       return $scope.soft_selected = void 0;
     }
   };
-  return $scope.label.text = function() {
+  $scope.label.visible = function() {
+    return $scope.soft_selected && !$scope.info_selected;
+  };
+  $scope.label.text = function() {
     var _ref;
     if ($scope.soft_selected != null) {
       return (_ref = $scope.countries[$scope.soft_selected]) != null ? _ref.name : void 0;
     } else {
       return "";
     }
+  };
+  return $scope.set_info_selected = function() {
+    console.log("set_info_selected", $scope.last_soft_selected);
+    return $scope.info_selected = $scope.last_soft_selected;
   };
 };
