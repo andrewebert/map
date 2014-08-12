@@ -24,8 +24,9 @@ html(lang = "en", ng-app = "map")
     script(src = "static/js/countries.js", type = "text/javascript")
     script(src = "static/js/hotkeys.js", type = "text/javascript")
   body(ng-controller = "MapCtrl", ng-keydown="keydown")
+    title The world, 1950-2014
     //-p#count {{ count }}
-    #labelmarker(ng-show="label.visible" ng-style="{left: label.x + 'px', top: label.y + 'px'}")
+    #labelmarker(ng-show="label.visible()" ng-style="{left: label.x + 'px', top: label.y + 'px'}")
       #label(ng-class="label.flip")
         p {{ label.text() }}
     #map(transformable, countries, time, hotkeys,
@@ -35,18 +36,18 @@ html(lang = "en", ng-app = "map")
          ng-mouseup="release()",
          ng-mouseleave="release()")
 
-      #timeline
+      #timeline(ng-mouseover="release()")
         #playbox
           span#play.fa(ng-click = "play()",
                        ng-class = "{true: 'fa-play', false: 'fa-pause'}[paused]")
-        slider(floor="0",
+        slider.noselect(floor="0",
                ceiling="{{ max_time }} ",
                precision="1",
                translate="pretty_format",
                ng-model="raw_time")
-      #info.noselect(ng-show = "curr_code() || infohover",
-                     ng-mouseover="infohover=true",
-                     ng-mouseleave="infohover=false")
+      #info.noselect(ng-show = "curr_code()",
+                     ng-mouseover="set_info_selected()",
+                     ng-mouseleave="info_selected=undefined")
         #infobox
         #flagbox
           img#flag(ng-src="{{ flag() }}",
