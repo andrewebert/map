@@ -139,7 +139,7 @@ changes = {
     "1906_10": {
         "VU": {
             "description": "Colony of the United Kingdom and France",
-            "fill": "color3"
+            "fill": "color2"
         }
     },
     "1906_11": {
@@ -198,7 +198,7 @@ changes = {
     "1908_11": {
         "CD": {
             "description": "State in personal union with Belgium",
-            "fill": "color4"
+            "fill": "color1"
         },
         "KAT": {
             "description": "State in personal union with Belgium"
@@ -409,7 +409,7 @@ changes = {
     "1916_01": {
         "KI": {
             "description": "Protectorate of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         },
         "TH": {
             "flag": "http://upload.wikimedia.org/wikipedia/commons/d/d7/Flag_of_Thailand_1855.svg"
@@ -912,7 +912,7 @@ changes = {
     "1927_01": {
         "GS": {
             "description": "-",
-            "fill": "color7"
+            "fill": "color11"
         },
         "YE": {
             "flag": "http://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Yemen_1923.svg"
@@ -1400,66 +1400,66 @@ changes = {
     "1946_10": {
         "DJ": {
             "description": "Colony of France",
-            "fill": "color9"
+            "fill": "color6"
         },
         "MR": {
             "description": "Colony of France",
-            "fill": "color9",
+            "fill": "color6",
             "formal": "Mauritania"
         }
     },
     "1946_12": {
         "BI": {
             "description": "League of Nations mandate under Belgium",
-            "fill": "color4"
+            "fill": "color1"
         },
         "BOU": {
             "description": "League of Nations mandate under Australia"
         },
         "BTL": {
             "description": "League of Nations mandate under the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         },
         "CM": {
             "description": "League of Nations mandate under France",
-            "fill": "color9"
+            "fill": "color6"
         },
         "NR": {
             "description": "League of Nations mandate under Australia",
-            "fill": "color8"
+            "fill": "color13"
         },
         "PG": {
             "description": "League of Nations mandate under Australia",
-            "fill": "color8"
+            "fill": "color13"
         },
         "RW": {
             "description": "League of Nations mandate under Belgium"
         },
         "SCM": {
             "description": "League of Nations mandate under the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         },
         "TG": {
             "description": "League of Nations mandate under France",
-            "fill": "color9"
+            "fill": "color6"
         },
         "TZ": {
             "description": "League of Nations mandate under the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         },
         "WS": {
             "description": "League of Nations mandate under New Zealand",
-            "fill": "color10"
+            "fill": "color8"
         }
     },
     "1947_01": {
         "BF": {
             "description": "Colony of France",
-            "fill": "color9"
+            "fill": "color6"
         },
         "BJ": {
             "description": "Colony of France",
-            "fill": "color9"
+            "fill": "color6"
         }
     },
     "1947_03": {
@@ -1490,7 +1490,7 @@ changes = {
         },
         "PW": {
             "description": "League of Nations mandate under France",
-            "fill": "color9"
+            "fill": "color6"
         }
     },
     "1947_12": {
@@ -1504,7 +1504,7 @@ changes = {
         },
         "MY": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         },
         "RO": {
             "flag": "http://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Romania.svg"
@@ -1584,13 +1584,13 @@ changes = {
     "1949_03": {
         "CYR": {
             "description": "Military administration under the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         }
     },
     "1949_06": {
         "SVN": {
             "description": "Protectorate of France",
-            "fill": "color9"
+            "fill": "color6"
         }
     },
     "1949_08": {
@@ -1628,7 +1628,7 @@ changes = {
         "SML": {
             "code": "ID",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg",
             "formal": "Republic of the United States of Indonesia",
             "link": "http://en.wikipedia.org/wiki/Republic_of_the_United_States_of_Indonesia",
@@ -1636,7 +1636,7 @@ changes = {
         },
         "SO": {
             "description": "Military administration under the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         }
     },
     "1950_05": {
@@ -1705,7 +1705,7 @@ changes = {
             "code": "SML",
             "d": "m 856.61702,258.58155 -0.65313,-1.04691 -2.84149,0.15226 0.48837,1.36552 1.91052,0.58293 1.09573,-1.0538 z m 9.07932,-1.15979 -3.0481,-0.92582 -3.46716,0.13174 -0.73437,1.74551 1.93398,0.11189 1.59127,-0.20968 2.32945,0.26563 2.30594,1.30859 -0.91101,-2.42786 z",
             "description": "Declared independence from Indonesia",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/4/4e/Flag_of_South_Moluccas.svg",
             "formal": "Republic of South Maluku",
             "removed": false
@@ -1720,7 +1720,7 @@ changes = {
         },
         "SIK": {
             "description": "-",
-            "fill": "color1",
+            "fill": "color11",
             "formal": "Kingdom of Sikkim"
         }
     },
@@ -1770,7 +1770,7 @@ changes = {
             "code": "TIB",
             "d": "m 765.63707,158.66122 -0.69655,-0.97016 -1.52691,0.23604 -3.02932,-0.47434 0.59496,-1.33237 -1.75248,-1.97118 -1.59426,1.33461 -2.45403,-0.77892 -2.63262,2.01931 -1.93238,2.36081 -2.09929,0.3974 -1.3705,-0.85382 -1.44755,-0.0773 -2.09447,-0.73486 -1.2882,0.80533 -1.3044,2.36136 -0.74413,-2.5014 -1.51179,0.66784 -3.22274,-0.31031 -3.21341,-0.72805 -2.48686,-1.39382 -2.2323,-0.62529 -1.23281,-1.52283 -1.61464,-0.4547 -3.17602,-2.06275 -2.37554,-0.97244 -0.94562,0.75664 -4.23162,-2.21089 -3.09334,-2.00151 -1.5763,-3.4882 2.0188,0.42578 -0.31035,-1.61888 -1.46543,-1.62606 -0.40863,-2.60574 6.81363,-4.148 19.6875,-2.3125 5.125,1.625 0.0625,6.5625 2.6875,2.875 11.4375,1.6875 4.0625,2.875 3.5625,-3.5 1.8125,0.625 3.8125,10.4375 -2.5625,3.1875 z",
             "description": "Suzerainty claimed by China",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/3/3c/Flag_of_Tibet.svg",
             "formal": "Kingdom of Tibet",
             "link": "http://en.wikipedia.org/wiki/Tibet_(1912-1951)",
@@ -1781,7 +1781,7 @@ changes = {
     "1951_06": {
         "AO": {
             "description": "Colony of Portugal",
-            "fill": "color11",
+            "fill": "color7",
             "formal": "Portuguese West Africa",
             "name": "Portuguese West Africa"
         },
@@ -1791,11 +1791,11 @@ changes = {
         },
         "CV": {
             "description": "Colony of Portugal",
-            "fill": "color11"
+            "fill": "color7"
         },
         "GW": {
             "description": "Colony of Portugal",
-            "fill": "color11"
+            "fill": "color7"
         },
         "KP": {
             "d": "m 834.00879,124.88163 -2.17249,-1.40475 -1.29479,-0.51895 0.1239,-0.35202 -0.62846,-1.37481 0.67443,-0.84858 1.44225,-0.51781 0.46595,-0.92763 0.15193,-0.55167 0.94356,-0.68954 -1.38098,-2.22895 0.14484,-1.05062 0.48451,-1.04299 1.08191,0.18462 -0.6835,-0.53834 -2.7e-4,0 -2.75307,-1.81288 0.0352,1.72073 -3.15638,1.32572 1.34711,1.62938 -2.28209,-0.11261 -1.77317,-0.96863 -0.51596,2.19604 -1.91914,1.67563 -1.0418,2.01539 1.65482,0.8485 1.6871,0.34572 0.43218,0.5195 0.19389,1.722 0.51581,0.58553 -0.43278,0.37672 -0.0432,1.41575 0.94155,0.51422 0.81372,0.29548 0.37292,0.6074 0.64216,-0.26807 0.0329,-0.60639 1.5548,0.61415 0.0268,-0.29273 1.2197,0.11491 0.32662,-1.45481 1.7669,-0.15582 1.00639,-0.21185 0.55731,-0.25224 z"
@@ -1805,7 +1805,7 @@ changes = {
         },
         "MO": {
             "description": "Colony of Portugal",
-            "fill": "color11"
+            "fill": "color7"
         },
         "MZ": {
             "formal": "State of East Africa",
@@ -1813,11 +1813,11 @@ changes = {
         },
         "ST": {
             "description": "Colony of Portugal",
-            "fill": "color11"
+            "fill": "color7"
         },
         "TL": {
             "description": "Colony of Portugal",
-            "fill": "color11"
+            "fill": "color7"
         }
     },
     "1951_11": {
@@ -1830,7 +1830,7 @@ changes = {
         "CYR": {
             "code": "CYR",
             "d": "m 554.53634,179.41962 11.17443,6.07696 -0.0129,-1.33166 3.16746,-0.01 -0.23891,-6.33823 -0.51155,-11.69556 -0.64651,-11.29403 -0.97607,-2.55108 0.55877,-1.95261 -0.51109,-1.35192 0.85989,-1.51689 -0.72994,-1.04426 -2.68486,-0.37111 -0.88985,-0.53984 -0.996,-0.0134 -1.01065,-1.41598 -3.65274,-0.64873 -1.80748,0.4325 -1.83032,1.48435 -0.74638,1.53893 0.76536,2.42165 -1.20592,1.45395 -1.26731,0.8204 -0.81145,-0.43647 c -0.0409,0.59208 -0.011,0.82546 -0.0912,1.42112 0.008,0.36555 0.024,0.57443 0.1646,0.86437 0.15479,0.31905 0.0939,0.89381 0.023,1.03377 -0.0709,0.13997 -0.33764,0.84547 -0.36124,1.20189 -0.0236,0.35643 -0.14779,0.92419 -0.14779,0.92419 l 0.0233,0.7299 0.85641,0.11808 0.78996,20.47693 z",
-            "fill": "color12",
+            "fill": "color11",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/8/87/Flag_of_Cyrenaica.svg",
             "formal": "Emirate of Cyrenaica",
             "link": "http://en.wikipedia.org/wiki/Emirate_of_Cyrenaica",
@@ -1841,7 +1841,7 @@ changes = {
             "code": "FZN",
             "d": "m 526.21792,158.29908 0.22896,1.44776 -0.30626,1.73876 0.27927,1.99821 -1.05312,1.32827 1.65563,2.31672 0.12845,1.36174 1.00414,1.77163 1.26608,-0.58203 2.18659,1.47586 1.24101,1.98873 4.36148,1.36896 1.58087,1.74353 1.91199,-1.17984 -4e-5,3.7e-4 0,0 2.72135,-1.73594 8.36496,4.56503 -0.78992,-20.47693 0,0 -0.85641,-0.11808 -0.0233,-0.7299 c 0,0 0.005,-0.0227 0.0305,-0.12451 -0.17882,-0.0848 -0.0617,-0.0537 -0.75655,-0.0242 -0.35755,-0.13391 -0.23301,-0.0713 -0.55308,-0.24846 -0.10653,-0.0983 -0.49536,-0.4376 -0.67585,-0.60388 -0.18049,-0.16627 -0.1182,-0.83536 -0.0668,-1.15798 0.0358,-0.225 0.0152,-0.28527 -0.17982,-0.55208 -0.15053,-0.20597 -0.12913,-0.10267 -0.13713,-0.39376 -0.006,-0.22792 -0.0237,-0.33319 -0.19931,-0.4924 -0.17365,-0.1575 -0.22727,-0.0881 -0.38444,-0.0998 -0.0367,0.1782 -0.0835,0.37217 -0.0959,0.42487 -0.13223,0.0178 -0.24478,0.008 -0.26288,0.0341 -0.22595,0.32616 -0.39457,0.39782 -0.54838,0.20526 -0.19274,-0.2413 -0.66047,-0.51306 -0.963,-0.1573 -0.16649,0.1958 -0.70564,0.54361 -0.93513,0.30588 -0.33503,-0.34706 -0.79935,-0.47216 -1.07785,-0.25936 -0.25948,0.19826 -0.72992,0.55813 -0.84057,0.55829 -0.11893,1.7e-4 -0.17874,0.0599 -0.47681,-0.15797 -0.14818,-0.10833 -0.0798,-0.17358 -0.42208,-0.24548 -0.34224,-0.0721 -0.37122,-0.0595 -0.44302,-0.003 -0.072,0.0567 -0.0661,0.0614 -0.36793,0.25078 -0.0626,0.002 -0.13306,-0.11519 -0.35184,0.0584 -0.15309,0.12147 -0.0697,0.0567 -0.37501,0.25144 -0.21136,-0.0654 -0.11766,-0.048 -0.15566,-0.029 -0.0715,0.0359 -0.13347,0.12462 -0.16747,0.0227 -0.0388,-0.11612 -0.10389,-0.2292 -0.10789,-0.2749 -0.0344,-0.003 -0.10722,0.0382 -0.20432,0.0589 -0.0243,0.005 -0.0875,0.11161 -0.17552,0.21847 -0.10035,0.10048 -0.0506,0.0667 -0.21859,0.18148 -0.19667,0.13441 -0.0854,0.0488 -0.28977,0.14561 -0.16937,-0.15446 -0.3153,-0.39583 -0.53664,-0.65448 -0.14179,8.7e-4 -0.90006,-0.46074 -0.96516,-0.45574 -0.0169,0.0146 -0.01,0.003 -0.0331,0.0303 -0.0522,-0.04 -3e-4,-0.0131 -0.0971,-0.041 -0.0645,0.0143 0.0193,-0.006 -0.0735,0.0297 -0.0459,0.008 -0.0283,-0.003 -0.0672,-0.002 -0.0462,0.0215 -0.0454,0.0212 -0.1342,0.0491 -0.005,0.007 -0.03,0.016 -0.0559,0.0412 -0.0129,0.0126 -0.0465,0.0126 -0.0625,0.0281 -0.016,0.0155 -0.0678,0.0405 -0.0854,0.0577 -0.0354,0.0344 -0.007,0.0626 -0.0394,0.0968 -0.0324,0.0342 -0.0656,0.0897 -0.0834,0.11468 -0.0711,0.0999 -0.0305,0.0871 -0.1174,0.21369 -0.0869,0.12661 -0.12027,0.25681 -0.18787,0.36468 -0.0675,0.10787 -0.11673,0.19506 -0.12983,0.23866 -0.0556,0.18512 -0.14938,0.48402 -0.22588,0.70719 -0.0947,0.12391 -0.50529,0.62452 -0.62122,0.81498 -0.0919,0.15105 -0.10541,0.15445 -0.13001,0.16935 -0.21442,0.1294 -0.41212,0.22429 -0.58345,0.46678 -0.15321,0.21688 -0.0832,0.28158 -0.32616,0.4552 -0.1569,0.1122 -0.11181,0.0607 -0.4915,0.0222 -0.0315,-0.0906 -0.0101,-0.0487 -0.0225,-0.30847 -0.18416,-0.007 -0.32594,-0.063 -0.94124,-0.15042 -0.12527,-0.0252 -0.19515,-0.10406 -0.59879,-0.15296 -0.0417,0.23486 0.0179,0.15616 -0.1387,0.38542 -0.49665,-0.13948 -0.39981,-0.18768 -0.50265,-0.16648 -0.23598,0.0488 -0.10178,0.0422 -0.29628,0.0941 -0.19449,0.0519 -0.18771,-0.0757 -0.33583,-0.0421 -0.14813,0.0335 -0.30398,0.24376 -0.39738,0.25576 -0.0934,0.012 -0.9375,-0.33202 -0.9677,-0.34482 -0.1206,-0.28792 -0.0186,-0.0323 -0.26074,-0.63528 -0.3693,0.29285 -0.23583,0.21151 -0.63484,0.49605 -0.26091,0.18594 -0.0703,0.0508 -0.31791,0.23444 -0.098,0.0727 -0.36488,0.19938 -0.41908,0.18558 -0.24446,-0.0622 -0.08,0.005 -0.49722,-0.29201 -0.0703,-0.0507 -0.11804,-0.119 -0.34177,-0.0597 -0.11578,0.0319 -0.25171,0.13824 -0.56534,0.24162 z",
             "description": "Military administration under France",
-            "fill": "color9",
+            "fill": "color6",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Fezzan.png",
             "formal": "Fezzan-Ghadames",
             "link": "http://en.wikipedia.org/wiki/Fezzan-Ghadames_(French_Administration)",
@@ -1851,7 +1851,7 @@ changes = {
         "LY": {
             "d": "m 526.99812,156.72022 c 0.22373,-0.0593 0.27142,0.009 0.34177,0.0597 0.41721,0.29658 0.25276,0.2298 0.49722,0.29201 0.0542,0.0138 0.32107,-0.11289 0.41908,-0.18558 0.24761,-0.18361 0.057,-0.0485 0.31791,-0.23444 0.39901,-0.28454 0.26554,-0.2032 0.63484,-0.49605 0.24217,0.60302 0.14014,0.34736 0.26074,0.63528 0.0302,0.0128 0.87432,0.35684 0.9677,0.34482 0.0934,-0.012 0.24925,-0.22222 0.39738,-0.25576 0.14812,-0.0336 0.14134,0.094 0.33583,0.0421 0.1945,-0.0519 0.0603,-0.0453 0.29628,-0.0941 0.10284,-0.0212 0.006,0.027 0.50265,0.16648 0.15664,-0.22926 0.097,-0.15056 0.1387,-0.38542 0.40364,0.0489 0.47352,0.1278 0.59879,0.15296 0.6153,0.0874 0.75708,0.14326 0.94124,0.15042 0.0124,0.25976 -0.009,0.21783 0.0225,0.30847 0.37969,0.0385 0.3346,0.09 0.4915,-0.0222 0.24295,-0.17362 0.17295,-0.23832 0.32616,-0.4552 0.17133,-0.24249 0.36903,-0.33738 0.58345,-0.46678 0.0246,-0.0149 0.0381,-0.0183 0.13001,-0.16935 0.11593,-0.19046 0.5265,-0.69107 0.62122,-0.81498 0.0765,-0.22317 0.17025,-0.52207 0.22588,-0.70719 0.0131,-0.0436 0.0623,-0.13079 0.12983,-0.23866 0.0676,-0.10787 0.10097,-0.23807 0.18787,-0.36468 0.0869,-0.12659 0.0463,-0.11382 0.1174,-0.21369 0.0178,-0.025 0.051,-0.0805 0.0834,-0.11468 0.0324,-0.0342 0.004,-0.0624 0.0394,-0.0968 0.0176,-0.0172 0.0694,-0.0422 0.0854,-0.0577 0.016,-0.0155 0.0496,-0.0155 0.0625,-0.0281 0.0259,-0.0252 0.0508,-0.0342 0.0559,-0.0412 0.0888,-0.0279 0.088,-0.0276 0.1342,-0.0491 0.0389,-0.001 0.0213,0.0105 0.0672,0.002 0.0928,-0.0361 0.009,-0.0154 0.0735,-0.0297 0.0968,0.0279 0.0449,10e-4 0.0971,0.041 0.0233,-0.0271 0.0162,-0.0157 0.0331,-0.0303 0.0651,-0.005 0.82337,0.45661 0.96516,0.45574 0.22134,0.25865 0.36727,0.50002 0.53664,0.65448 0.20439,-0.0968 0.0931,-0.0112 0.28977,-0.14561 0.16803,-0.11483 0.11824,-0.081 0.21859,-0.18148 0.088,-0.10686 0.15126,-0.21329 0.17552,-0.21847 0.0971,-0.0207 0.16987,-0.0617 0.20432,-0.0589 0.004,0.0457 0.0691,0.15878 0.10789,0.2749 0.034,0.10192 0.096,0.0132 0.16747,-0.0227 0.038,-0.019 -0.0557,-0.0364 0.15566,0.029 0.30533,-0.19471 0.22192,-0.12997 0.37501,-0.25144 0.21878,-0.17359 0.28927,-0.0562 0.35184,-0.0584 0.30187,-0.18943 0.29597,-0.19411 0.36793,-0.25078 0.0718,-0.0565 0.10078,-0.0691 0.44302,0.003 0.34223,0.0719 0.2739,0.13715 0.42208,0.24548 0.29807,0.2179 0.35788,0.15814 0.47681,0.15797 0.11065,-1.6e-4 0.58109,-0.36003 0.84057,-0.55829 0.2785,-0.2128 0.74282,-0.0877 1.07785,0.25936 0.22949,0.23773 0.76864,-0.11008 0.93513,-0.30588 0.30253,-0.35576 0.77026,-0.084 0.963,0.1573 0.15381,0.19256 0.32243,0.1209 0.54838,-0.20526 0.0181,-0.0261 0.13065,-0.0163 0.26288,-0.0341 0.0124,-0.0527 0.0592,-0.24667 0.0959,-0.42487 0.15717,0.0117 0.21079,-0.0577 0.38444,0.0998 0.17562,0.15921 0.19322,0.26448 0.19931,0.4924 0.008,0.29109 -0.0134,0.18779 0.13713,0.39376 0.19504,0.26681 0.21566,0.32708 0.17982,0.55208 -0.0514,0.32262 -0.11369,0.99171 0.0668,1.15798 0.18049,0.16628 0.56932,0.50558 0.67585,0.60388 0.32007,0.17717 0.19553,0.11455 0.55308,0.24846 0.69482,-0.0295 0.57773,-0.0606 0.75658,0.0242 0.0152,-0.0941 0.0984,-0.51454 0.11728,-0.79968 0.0236,-0.35642 0.29033,-1.06192 0.36124,-1.20189 0.0709,-0.13996 0.13179,-0.71472 -0.023,-1.03377 -0.14064,-0.28994 -0.15657,-0.49882 -0.1646,-0.86437 0.0802,-0.59566 0.0503,-0.82904 0.0912,-1.42112 l -2.13328,-1.13555 -3.84822,-1.32318 -2.43549,-0.61348 -1.3829,-2.81134 -3.60578,-1.41562 -2.24992,-0.52912 -1.10872,0.27288 -3.17126,-1.09225 -0.0641,2.43539 -1.27169,0.90876 -0.79085,1.01352 -1.8022,1.21838 0.32306,1.30937 -0.19471,1.33561 -1.29199,0.7329 0.9436,2.79485 0.18395,1.47282 -0.19902,1.25131 c 0.31361,-0.10338 0.44954,-0.20968 0.56532,-0.24162 z",
             "description": "Military administration under the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg",
             "formal": "Tripolitania",
             "link": "http://en.wikipedia.org/wiki/British_Military_Administration_(Libya)",
@@ -1859,7 +1859,7 @@ changes = {
         },
         "MZ": {
             "description": "Colony of Portugal",
-            "fill": "color11"
+            "fill": "color7"
         }
     },
     "1952_02": {
@@ -1870,7 +1870,7 @@ changes = {
     "1952_04": {
         "JP": {
             "description": "Occupied by the United States and allied forces",
-            "fill": "color6"
+            "fill": "color7"
         }
     },
     "1952_07": {
@@ -1881,7 +1881,7 @@ changes = {
     "1952_09": {
         "ER": {
             "description": "Colony of Italy",
-            "fill": "color4",
+            "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg",
             "formal": "Italian Eritrea",
             "link": "http://en.wikipedia.org/wiki/Italian_Eritrea"
@@ -1921,7 +1921,7 @@ changes = {
             "code": "MW",
             "d": "m 596.3465,284.23683 -0.66169,-4.3178 -0.91011,-1.48045 -0.54085,-0.87791 -2.72485,-0.59228 1.28593,1.41637 0.64312,2.69486 -0.498,0.86034 -0.6318,2.57365 0.45627,2.63059 -0.91133,1.10514 -0.94354,2.94943 1.43306,0.82231 1.54313,1.5239 0.77572,-0.29172 1.06549,0.80346 0.10956,1.27223 -0.64592,1.47621 0.10712,2.23822 1.71719,1.9614 0.94869,-2.2031 1.23077,-0.66862 -0.058,-4.08257 -1.07311,-2.29619 -0.96514,-1.02362 -0.96735,0.0463 -0.63885,-4.12724 0.85451,-2.41288 z",
             "description": "Protectorate of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "formal": "Nyasaland",
             "link": "http://en.wikipedia.org/wiki/Nyasaland",
             "name": "Nyasaland",
@@ -1931,7 +1931,7 @@ changes = {
             "code": "ZM",
             "d": "m 591.509,276.96839 -1.56489,-0.95322 -1.76472,-0.53436 -1.10329,-0.5317 -1.15201,-0.80823 -1.09514,-0.32304 -3.76418,0.53584 -0.75597,0.37948 -0.83384,2.0267 0.59764,1.40013 -0.57635,3.75881 -0.42146,3.18675 0.73852,0.56486 1.91487,1.23557 0.78033,-0.57734 0.1344,3.42354 -2.12885,-0.0263 -1.09341,-1.7473 -0.98983,-1.35287 -2.12349,-0.44363 -0.58485,-1.6636 -1.72761,1.00226 -2.22136,-0.44281 -0.89976,-1.44145 -1.76433,-0.29285 -1.30843,0.0766 -0.1402,-0.98683 -0.9606,-0.0799 0.27529,0.98569 -0.34872,1.53973 0.45762,1.48903 -0.44173,1.18914 0.21176,1.09595 -5.79556,-0.04 -0.38094,10.10247 1.79226,2.59771 1.74324,1.98335 2.28901,-0.7216 1.78812,0.18278 1.06672,0.71569 0.0114,0.2635 0.48872,0.23724 3.07758,0.34767 0.88418,0.36571 0.93613,-0.0737 1.61047,-2.05484 2.50741,-2.6113 1.00132,-0.24973 0.37866,-1.10081 1.6262,-1.26489 2.11757,-0.43465 -0.18036,-2.25966 8.52613,-2.61696 -1.43306,-0.82231 0.94354,-2.94943 0.91133,-1.10514 -0.45627,-2.63059 0.6318,-2.57365 0.498,-0.86034 -0.64312,-2.69486 -1.28593,-1.41637 z",
             "description": "Protectorate of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "formal": "Northern Rhodesia",
             "link": "http://en.wikipedia.org/wiki/Northern_Rhodesia",
             "name": "Northern Rhodesia",
@@ -1958,14 +1958,14 @@ changes = {
     "1953_10": {
         "LA": {
             "description": "Protectorate of France",
-            "fill": "color9",
+            "fill": "color6",
             "formal": "Laos"
         }
     },
     "1953_11": {
         "KH": {
             "description": "Protectorate of France",
-            "fill": "color9",
+            "fill": "color6",
             "formal": "Cambodia",
             "link": "http://en.wikipedia.org/wiki/French_protectorate_of_Cambodia"
         }
@@ -1988,11 +1988,11 @@ changes = {
     "1954_07": {
         "SVN": {
             "description": "Associated state of France",
-            "fill": "color9"
+            "fill": "color6"
         },
         "VN": {
             "description": "Seeking independence from France",
-            "fill": "color13"
+            "fill": "disputed"
         }
     },
     "1954_10": {
@@ -2018,11 +2018,11 @@ changes = {
         },
         "NAN": {
             "description": "Colony of the Kingdom of the Netherlands",
-            "fill": "color10"
+            "fill": "color3"
         },
         "SR": {
             "description": "Colony of the Kingdom of the Netherlands",
-            "fill": "color10"
+            "fill": "color3"
         },
         "SX": {
             "description": "Colony of the Kingdom of the Netherlands"
@@ -2086,7 +2086,7 @@ changes = {
         "TF": {
             "code": "MG",
             "description": "Overseas territory of France",
-            "fill": "color9",
+            "fill": "color6",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
             "formal": "Madagascar and Dependencies",
             "link": "http://en.wikipedia.org/wiki/French_Madagascar",
@@ -2123,7 +2123,7 @@ changes = {
         "BIR": {
             "code": "SD",
             "description": "Condominium of the United Kingdom and Egypt",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/6/6a/Flag_of_Anglo-Egyptian_Sudan.svg",
             "formal": "Anglo-Egyptian Sudan",
             "link": "http://en.wikipedia.org/wiki/Anglo-Egyptian_Sudan",
@@ -2141,7 +2141,7 @@ changes = {
         "HAL": {
             "code": "EG",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/0/0e/Flag_of_Egypt_%281952-1958%29.svg",
             "formal": "Republic of Egypt",
             "link": "http://en.wikipedia.org/wiki/Republic_of_Egypt_(1953%E2%80%931958)",
@@ -2153,7 +2153,7 @@ changes = {
         "SD": {
             "d": "m 568.625,177.8125 0.25,6.34375 -3.1875,0 0.0312,1.34375 0.53125,12.59375 -2.375,-0.21875 -1.21875,2.34375 -0.6875,1.96875 0.625,0.71875 -0.90625,1 0.34375,1.3125 -0.6875,1.3125 -0.25,1.15625 0.96875,-0.1875 0.59375,1.25 0.0937,1.84375 1.03125,0.9375 -0.0312,0.75 0.34375,1.375 1.65625,1.96875 0.0312,1.3125 -0.4375,1.3125 0.1875,0.96875 1,0.9375 0.21875,0.125 1.9375,1.25 1.53125,1.28125 0.0625,1.03125 1.875,1.65625 1.1875,1.375 0.75,1.90625 2.09375,1.25 0.46875,1 1.71875,2.625 1.28125,0.40625 0.71875,-0.53125 1.3125,0.1875 1.5625,-0.65625 0.65625,1.34375 2.5,2.125 1.15625,-0.875 1.78125,0.71875 2.25,-0.75 1.96875,0 1.71875,-1.46875 1.6875,-1.875 1.875,-2.09375 -1.71875,-3.46875 -1.28125,-0.71875 -0.53125,-1.28125 -1.4375,-1.53125 -1.71875,-0.25 0.90625,-1.8125 1.46875,-0.0625 0.40625,-0.96875 -0.0937,-2.46875 0,-0.375 0.75,-3.34375 1.28125,-0.875 0.25,-1.3125 1.125,-2.40625 1.625,-1.59375 1,-3.125 0.34375,-2.71875 -0.34375,-1.28125 0.96875,-4.65625 0.1875,-2.125 0.8125,-0.96875 2.03125,-0.5 1.28125,-1.8125 -1.5625,-1.1875 -1.09375,-0.78125 -1.21875,-3.78125 -0.59375,-3.28125 0.5625,-0.5625 -1.0625,-3.125 -9.125,0 -2.21875,0 -10.1875,0 -11.03125,0 z",
             "description": "Condominium of the United Kingdom and Egypt",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/6/6a/Flag_of_Anglo-Egyptian_Sudan.svg",
             "formal": "Anglo-Egyptian Sudan",
             "link": "http://en.wikipedia.org/wiki/Anglo-Egyptian_Sudan",
@@ -2172,12 +2172,12 @@ changes = {
     "1956_03": {
         "MA": {
             "description": "Protectorate of France",
-            "fill": "color9",
+            "fill": "color6",
             "formal": "French Morocco"
         },
         "TN": {
             "description": "Protectorate of France",
-            "fill": "color9",
+            "fill": "color6",
             "formal": "Tunisia",
             "link": "http://en.wikipedia.org/wiki/French_protectorate_of_Tunisia"
         }
@@ -2190,7 +2190,7 @@ changes = {
             "code": "SMO",
             "d": "m 486.67185,136.50002 1.25,0.54687 1.46875,-0.21875 1.71875,0.34375 1.35938,-0.45312 0.66407,-0.74999 -2.72655,-0.71873 -2.53125,0.21875 -1.5625,-1.375 -1.14063,-3e-5 -0.0781,0.62498 -1.09375,0.23435 -0.51563,1.11719 z",
             "description": "Protectorate of Spain",
-            "fill": "color5",
+            "fill": "color4",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Morocco.svg",
             "formal": "Spanish Morocco",
             "link": "http://en.wikipedia.org/wiki/Spanish_Morocco",
@@ -2235,7 +2235,7 @@ changes = {
             "code": "TAN",
             "d": "m 485.0938,134.71876 -1.09926,0.23127 0.37645,-0.8563 0.78534,0.0108 z",
             "description": "Jointly administered by France, Spain, the United Kingdom, Italy, Portugal and Belgium",
-            "fill": "color9",
+            "fill": "color6",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_International_Tangier.svg",
             "formal": "Tangier International Zone",
             "link": "http://en.wikipedia.org/wiki/Tangier_International_Zone",
@@ -2251,7 +2251,7 @@ changes = {
             "code": "BTL",
             "d": "m 498.71873,221.65626 1.375,6.09375 2.2495,-0.0129 -0.74709,-2.02704 -0.22263,-1.57915 0.61713,-2.85968 -0.70148,-1.15806 -0.2669,-2.5011 0.004,-2.30554 -1.16489,-1.63726 0.20529,-0.98979 -1.28767,-0.23182 z",
             "description": "United Nations trust territory under the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_the_Gold_Coast.svg",
             "formal": "Togoland",
             "link": "http://en.wikipedia.org/wiki/British_Togoland",
@@ -2285,7 +2285,7 @@ changes = {
             "code": "SAA",
             "d": "m 516.68748,90.562516 0.71875,0.28125 0.28125,0.6875 -0.18803,0.643945 -1.20332,-0.176697 -1.18203,-0.809994 0.0443,-0.439942 z",
             "description": "Protectorate of France",
-            "fill": "color9",
+            "fill": "color6",
             "formal": "Saar",
             "link": "http://en.wikipedia.org/wiki/Saar_(protectorate)",
             "name": "Saar",
@@ -2314,7 +2314,7 @@ changes = {
         },
         "GH": {
             "description": "Colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_the_Gold_Coast.svg",
             "formal": "Gold Coast",
             "link": "http://en.wikipedia.org/wiki/Gold_Coast_(British_colony)",
@@ -2346,7 +2346,7 @@ changes = {
         },
         "MY": {
             "description": "Protectorate of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         },
         "SMO": {
             "formal": "Sherifian Empire"
@@ -2367,7 +2367,7 @@ changes = {
         "COC": {
             "code": "SG",
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg",
             "formal": "Singapore",
             "link": "http://en.wikipedia.org/wiki/Singapore",
@@ -2385,7 +2385,7 @@ changes = {
             "code": "AG",
             "d": "m 327.8614,194.45854 c -0.0191,-0.0733 -0.0382,-0.14657 -0.0573,-0.21986 -0.0977,0.0513 -0.1583,0.16665 -0.15193,0.27599 0.003,0.0761 0.0837,0.13016 0.15523,0.11394 0.0688,-0.0273 0.0305,-0.11721 0.054,-0.17007 z m -0.95977,-1.21159 c 0.14192,-0.26601 -0.39622,-0.31299 -0.23978,-0.009 0.0485,0.082 0.17996,0.0709 0.23978,0.009 z m -0.24009,-0.37507 c -0.13631,-0.16369 -0.19919,-0.5138 -0.45858,-0.48564 -0.20732,0.17721 0.0871,0.32846 0.24807,0.33158 0.0689,0.0417 0.10047,0.25766 0.21051,0.15406 z m -0.74862,-3.11753 c 0.15363,-0.18836 -0.15759,-0.16293 -0.23205,-0.0447 -0.12917,0.006 -0.2925,0.25243 -0.0702,0.15444 0.10026,-0.0377 0.19822,-0.083 0.30221,-0.10978 z m 3.22513,3.76208 c 0.25834,-0.14711 -0.15949,-0.5186 -0.32807,-0.34674 -0.20253,0.1378 -0.14932,0.48484 0.12694,0.46241 0.0957,0.0146 0.15563,-0.0394 0.20113,-0.11567 z m 0.0603,-1.7082 c 0.0889,-0.19731 -0.0713,-0.49874 -0.29124,-0.40194 -0.0803,0.17235 0.13245,0.59421 0.2912,0.40194 l 4e-5,0 z m -7.63229,-2.62877 c 0.0458,-0.0466 0.2165,-0.12397 0.0715,-0.13685 -0.12908,-0.005 -0.25775,0.006 -0.34915,0.10876 0.0464,0.0509 0.11156,0.0372 0.17188,0.034 0.0351,-0.002 0.0713,-0.003 0.10578,-0.006 z m 0.56639,-0.19613 c 0.0702,-0.056 0.14033,-0.11193 0.21049,-0.1679 -0.0975,0.0279 -0.25679,-0.0387 -0.30514,0.0633 -0.0669,0.0653 -0.0226,0.16999 0.0695,0.11233 0.002,-0.009 0.0234,9.2e-4 0.0251,-0.008 z m 0.37806,-0.87626 c -0.0934,-0.0555 -0.26853,-0.0474 -0.33082,-0.0173 0.0775,0.0808 0.21503,0.021 0.29952,0.10488 0.10568,0.06 0.036,-0.0338 0.0313,-0.0876 z",
             "description": "Colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Leeward_Islands_1871-1956.gif",
             "formal": "British Leeward Islands",
             "link": "http://en.wikipedia.org/wiki/British_Leeward_Islands",
@@ -2400,7 +2400,7 @@ changes = {
         "AI": {
             "code": "AG",
             "description": "Colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Leeward_Islands_1871-1956.gif",
             "formal": "British Leeward Islands",
             "link": "http://en.wikipedia.org/wiki/British_Leeward_Islands",
@@ -2410,7 +2410,7 @@ changes = {
             "code": "BB",
             "d": "m 334.39774,206.07543 0.19626,-0.22482 -0.15929,-0.13984 -0.26532,-0.38374 -0.15609,0.0462 -0.0186,0.48528 0.0783,0.15303 0.24143,0.12667 0.0833,-0.0628 z",
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/e/ef/Flag_of_Barbados.svg",
             "formal": "Barbados",
             "link": "http://en.wikipedia.org/wiki/Barbados",
@@ -2420,7 +2420,7 @@ changes = {
         "CHR": {
             "code": "SG",
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg",
             "formal": "Singapore",
             "link": "http://en.wikipedia.org/wiki/Singapore",
@@ -2429,7 +2429,7 @@ changes = {
         "DM": {
             "code": "GD",
             "description": "Colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/3/3b/Flag_of_the_British_Windward_Islands_%281903-1958%29.png",
             "formal": "Trinidad and Tobago",
             "link": "http://en.wikipedia.org/wiki/British_Windward_Islands",
@@ -2437,13 +2437,13 @@ changes = {
         },
         "EH": {
             "description": "Colony of Spain",
-            "fill": "color5"
+            "fill": "color4"
         },
         "GD": {
             "code": "GD",
             "d": "m 329.19887,207.30352 0.0166,-0.0188 0.01,-0.0278 0.0172,-0.018 0.016,-0.0223 -0.004,-0.029 -0.008,-0.0119 -0.0194,0.002 -0.0263,0.0191 -0.003,0.031 0.004,0.0281 -0.0161,0.0209 -0.0321,0.008 -0.007,0.01 0.0244,0.0109 0.0284,-0.002 z m 0.35828,-0.95072 0.0564,-0.0955 0.0425,-0.0431 -0.011,-0.0109 -0.003,-0.0109 -6.6e-4,-0.0115 -0.003,-0.0121 -0.0343,0.0295 -0.0807,0.0557 -0.0249,0.0251 0.008,0.0163 0.0172,0.0233 -0.002,0.0257 -0.0641,0.0143 -0.0406,-0.0146 -10e-4,0.0237 0.0324,-9.3e-4 0.0278,0.006 0.0213,0.0144 0.0126,0.0234 0.0224,-0.0236 -0.0209,0 0.0467,-0.0347 z m 0.17578,-0.51908 0.12011,-0.14218 0.0472,-0.28947 -0.0287,-0.20543 -0.12066,0.009 -0.12177,0.0803 -0.13208,0.13644 -0.0401,0.24807 0.19102,0.21365 0.0849,-0.0502 z m -1.72057,3.63711 c 0.26715,-0.0483 0.29537,-0.297 0.31629,-0.52137 0.1142,-0.27378 -0.26574,-0.17652 -0.3015,0.014 -0.11148,0.15377 -0.0792,0.36449 -0.19289,0.51364 0.0478,0.031 0.12239,-0.0251 0.1781,-0.006 z m 1.87567,-10.27657 0.11461,-0.39415 -0.0356,-0.48765 -0.10447,-0.18529 -0.37135,-0.15258 -0.0401,0.0941 -0.0503,0.24871 0.1512,0.39787 0.0706,0.54796 0.26528,-0.069 z m 0.75611,4.53147 c -0.005,-0.25726 0.15265,-0.65675 -0.0245,-0.82512 -0.17812,0.10116 -0.25896,0.31558 -0.38665,0.46951 -0.10537,0.18879 -0.13017,0.49573 0.10233,0.6013 0.2096,0.15718 0.20475,-0.12484 0.30878,-0.24569 z",
             "description": "Colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/3/3b/Flag_of_the_British_Windward_Islands_%281903-1958%29.png",
             "formal": "Windward Islands",
             "link": "http://en.wikipedia.org/wiki/British_Windward_Islands",
@@ -2459,7 +2459,7 @@ changes = {
             "code": "JM",
             "d": "m 301.36402,178.23178 c -0.14678,0.19328 0.0707,0.41273 0.268,0.27211 0.18582,-0.0101 0.23314,-0.14422 0.026,-0.11131 -0.10957,-0.0296 -0.19672,-0.10652 -0.29405,-0.1608 z m 1.81348,0.27342 c 0.16823,-0.21056 -0.22018,-0.29805 -0.3704,-0.27693 -0.20598,0.0655 -0.0463,0.27841 0.11114,0.18995 0.0863,-0.0211 0.21522,0.12341 0.25926,0.087 z m -0.57367,-0.2387 c -0.0838,-0.12556 -0.0792,-0.50049 -0.3175,-0.3188 -0.014,0.12171 0.17967,0.3779 0.3175,0.3188 z m -16.82408,10.69018 -0.61697,-0.10696 -1.18583,0.22123 -0.41321,0.72565 1.45122,1.15684 1.49165,0.50952 0.8977,-0.53061 1.94955,-0.0591 -0.36343,-0.8694 -1.38372,-0.76248 -1.82696,-0.28465 z m -10.19932,-2.78095 c -0.0486,-0.22034 -0.1831,-0.009 -0.1248,0.11837 -0.0269,0.1849 0.31362,0.13801 0.43005,0.0662 0.11169,-0.0833 0.57172,0.0171 0.30362,-0.18351 -0.12319,-0.0147 -0.24638,-0.0294 -0.36957,-0.0441 -0.0326,0.10023 -0.17396,0.13253 -0.2393,0.043 z m 3.96954,-1.14077 c -0.0904,-0.10127 -0.45623,0.043 -0.37851,0.13236 0.14095,-0.0216 0.2335,-0.1497 0.37851,-0.13236 z m 0.43031,-0.0118 c 0.1006,-0.0388 0.36745,-0.18011 0.10742,-0.16393 -0.082,0.0701 -0.321,0.1506 -0.30857,0.20338 0.0698,0.0166 0.13767,-0.0148 0.20115,-0.0395 z",
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "formal": "Jamaica",
             "link": "http://en.wikipedia.org/wiki/Colony_of_Jamaica",
             "name": "Jamaica",
@@ -2473,7 +2473,7 @@ changes = {
         "KN": {
             "code": "AG",
             "description": "Colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Leeward_Islands_1871-1956.gif",
             "formal": "British Leeward Islands",
             "link": "http://en.wikipedia.org/wiki/British_Leeward_Islands",
@@ -2482,7 +2482,7 @@ changes = {
         "KY": {
             "code": "JM",
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/aa/Flag_of_Jamaica_%281957-1962%29.svg",
             "formal": "Jamaica",
             "link": "http://en.wikipedia.org/wiki/Colony_of_Jamaica",
@@ -2491,7 +2491,7 @@ changes = {
         "LC": {
             "code": "GD",
             "description": "Colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/3/3b/Flag_of_the_British_Windward_Islands_%281903-1958%29.png",
             "formal": "Trinidad and Tobago",
             "link": "http://en.wikipedia.org/wiki/British_Windward_Islands",
@@ -2500,7 +2500,7 @@ changes = {
         "MS": {
             "code": "AG",
             "description": "Colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Leeward_Islands_1871-1956.gif",
             "formal": "British Leeward Islands",
             "link": "http://en.wikipedia.org/wiki/British_Leeward_Islands",
@@ -2508,7 +2508,7 @@ changes = {
         },
         "RIM": {
             "description": "Colony of Spain",
-            "fill": "color5"
+            "fill": "color4"
         },
         "SG": {
             "d": "m 790.76714,243.72818 -0.0797,-0.32185 c 0.0498,-0.10363 0.10645,-0.20888 0.15625,-0.3125 0.10493,-0.025 0.20757,-0.0375 0.3125,-0.0625 0.14817,0.0609 0.30863,0.089 0.4375,0.1875 0.0957,0.0421 0.0494,0.0949 0,0.15625 l 0.15244,0.24595 z m 4.29386,37.20403 -0.0395,-0.19783 -0.10433,0.0595 -0.0686,0.009 -0.14092,0.0236 -0.0461,0.16775 0.1649,0.0397 0.13639,0.12435 0.0982,-0.22605 z",
@@ -2521,7 +2521,7 @@ changes = {
         "TC": {
             "code": "JM",
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/aa/Flag_of_Jamaica_%281957-1962%29.svg",
             "formal": "Jamaica",
             "link": "http://en.wikipedia.org/wiki/Colony_of_Jamaica",
@@ -2533,14 +2533,14 @@ changes = {
         "TT": {
             "d": "m 327.92498,213.50078 -0.004,1.25405 -0.85002,0.87307 0.48944,0.28574 2.34674,-0.34923 0.22301,-2.36523 -0.58035,-0.11112 -1.62434,0.41272 z",
             "description": "Colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "formal": "Trinidad and Tobago",
             "name": "Trinidad and Tobago"
         },
         "VC": {
             "code": "GD",
             "description": "Colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/3/3b/Flag_of_the_British_Windward_Islands_%281903-1958%29.png",
             "formal": "Trinidad and Tobago",
             "link": "http://en.wikipedia.org/wiki/British_Windward_Islands",
@@ -2549,7 +2549,7 @@ changes = {
         "VG": {
             "code": "JM",
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/aa/Flag_of_Jamaica_%281957-1962%29.svg",
             "formal": "Jamaica",
             "link": "http://en.wikipedia.org/wiki/Colony_of_Jamaica",
@@ -2584,7 +2584,7 @@ changes = {
         "SY": {
             "code": "SY",
             "d": "m 603.21682,141.72141 5.45027,-3.31811 0.4636,-3.88504 -0.58403,-2.36085 1.32187,-0.79938 1.04151,-2.01924 -2.9045,0.50311 -1.42011,-0.0548 -2.84465,1.21424 -2.15805,0.0101 -1.47929,-0.60935 -2.76947,0.90026 -0.94106,-0.62942 0.0904,1.80505 -0.61517,0.70845 -0.61707,0.70795 -0.48277,1.32786 0.54244,2.45889 1.21057,0.16332 0.58401,1.2543 -1.30544,1.20237 -0.45218,1.74205 -0.30398,0.0356 -0.0945,1.02074 0.27762,0.72541 0.0534,0.0216 3.11401,1.25534 4.82264,-3.38049 z",
-            "fill": "color9",
+            "fill": "color8",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/6/6d/Flag_of_Syria_%281932-1958%3B_1961-1963%29.svg",
             "formal": "Syrian Republic",
             "link": "http://en.wikipedia.org/wiki/Syrian_Republic",
@@ -2626,7 +2626,7 @@ changes = {
         "JO": {
             "code": "IQ",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/c/c5/Flag_of_the_Arab_Federation.svg",
             "formal": "Arab Federation of Iraq and Jordan",
             "link": "http://en.wikipedia.org/wiki/Arab_Federation",
@@ -2636,7 +2636,7 @@ changes = {
     "1958_10": {
         "CHR": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         },
         "FWA": {
             "d": "m 476.4375,160.6875 -0.0937,4.8125 -8.9375,-0.1875 -0.0937,8.15625 -2.5625,0.28125 -0.71875,1.625 0.4375,4.5625 -10.75,0 -0.65625,1.0625 1.4375,1.375 0.65625,1.5 -0.3125,1.59375 0.3125,1.5625 0.21875,3.125 -0.40625,3 -0.8125,1.5625 0.21875,1.71875 -0.71875,1.625 -1.375,2.21875 -1.25,0.625 1.375,1.125 1.09375,2.46875 3.03125,-0.0937 0.65625,-0.75 0.875,-0.0625 1.09375,0.78125 0.84375,0.0312 0.9375,-0.53125 0.5625,0.90625 -1.21875,0.71875 -1.21875,-0.0625 -1.1875,-0.65625 -1.03125,0.71875 -0.5,0.0312 -0.6875,0.4375 -2.53125,-0.0625 0.4375,2.4375 1.46875,-0.53125 0.90625,0.125 0.78125,-0.375 5.125,0.125 -0.0625,1.09375 -0.3125,0.34375 0.21875,1.03125 -0.4375,0.4375 -0.625,0 -0.71875,0.53125 -0.84375,-0.0625 -1.25,1.5625 0.78125,0.5 0.40625,0.71875 0.3125,1.375 0.6875,0.65625 0.71875,0.40625 1.0625,1.25 1.21875,1.875 1.5,-1.40625 0.3125,-0.875 0.5,-0.6875 0.75,-0.0625 0.65625,-0.625 2.25,0.0312 0.75,1.125 0.625,1.34375 -0.125,0.90625 0.46875,0.84375 -0.0625,1.15625 0.78125,-0.1875 0.59375,-0.0625 0.75,-0.375 1.15625,1.96875 -0.21875,1.28125 0.5625,0.65625 0.78125,0.0312 0.59375,-1.28125 0.78125,0.0625 -0.125,0.9375 0.25,1.53125 -0.59375,1.40625 0.8125,0.875 0.875,0.21875 1.1875,1.3125 0.0625,1.25 -0.25,0.40625 -0.21875,2.625 0.53125,0.0625 2.78125,-1.15625 1.9375,-0.90625 3.3125,-0.5625 1.8125,-0.0312 1.9375,0.625 1.28125,-0.0312 0.125,-1.25 -1.21875,-2.75 0.75,-3.59375 1.1875,-2.65625 -0.75,-4.5 -0.375,-2.40625 0.0937,-1.8125 4.84375,-0.125 1.21875,0.21875 0.90625,-0.5 1.28125,0.25 2.4375,0.0625 -0.34375,1.65625 0.84375,0.9375 0.96875,1.125 0.125,1.5625 0.5625,0.65625 -0.125,7.28125 0.6875,2.1875 2.3125,-0.375 0.15625,-5.09375 -0.0625,-2.03125 0.5,-2 0.875,-0.96875 1.34375,-1.96875 -0.28125,-0.875 0.53125,-1.25 -0.625,-1.90625 0.0937,-1.03125 0.1875,-2.84375 0.78125,-1.28125 0.40625,-1.84375 0.71875,-0.65625 2.96875,-0.40625 2.8125,1.1875 1.03125,1.21875 1.4375,0.0625 1.3125,-0.78125 3.375,1.625 1.4375,-0.0625 1.625,-1.375 1.625,0.0937 0.78125,-0.4375 1.5,0.1875 2.1875,0.9375 2.15625,-1.78125 0.65625,0.125 1.90625,3.46875 0.53125,-0.0625 0.0625,-1 0.78125,-0.1875 0.28125,-1.5 -1.8125,-0.0625 0,-2.0625 -1.1875,-1.15625 1.125,-4.1875 3.5,-3 0.0312,-4.125 0.9375,-6.4375 0.5625,-1.375 -1.1875,-1.09375 -0.0625,-1 L 541.5,180 l -0.8125,-4.9375 -1.90625,1.1875 -1.5625,-1.75 -4.375,-1.34375 -9.28125,6.03125 -7.90625,6.25 -3.875,1.40625 -3.0625,0.3125 -0.0312,-2.03125 -1.28125,-0.5 -1.71875,-0.90625 -0.65625,-1.5 -9.28125,-6.90625 -9.1875,-6.9375 -10.125,-7.6875 z",
@@ -2654,7 +2654,7 @@ changes = {
         "GN": {
             "code": "FWA",
             "description": "Federation of colonies of France",
-            "fill": "color9",
+            "fill": "color6",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
             "formal": "French West Africa",
             "link": "http://en.wikipedia.org/wiki/French_West_Africa",
@@ -2674,7 +2674,7 @@ changes = {
         "CG": {
             "code": "FEA",
             "description": "Federation of colonies of France",
-            "fill": "color9",
+            "fill": "color6",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
             "formal": "French Equatorial Africa",
             "link": "http://en.wikipedia.org/wiki/French_Equatorial_Africa",
@@ -2705,7 +2705,7 @@ changes = {
         "GA": {
             "code": "FEA",
             "description": "Federation of colonies of France",
-            "fill": "color9",
+            "fill": "color6",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
             "formal": "French Equatorial Africa",
             "link": "http://en.wikipedia.org/wiki/French_Equatorial_Africa",
@@ -2717,7 +2717,7 @@ changes = {
         "ML": {
             "code": "FWA",
             "description": "Federation of colonies of France",
-            "fill": "color9",
+            "fill": "color6",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
             "formal": "French West Africa",
             "link": "http://en.wikipedia.org/wiki/French_West_Africa",
@@ -2726,7 +2726,7 @@ changes = {
         "MR": {
             "code": "FWA",
             "description": "Federation of colonies of France",
-            "fill": "color9",
+            "fill": "color6",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
             "formal": "French West Africa",
             "link": "http://en.wikipedia.org/wiki/French_West_Africa",
@@ -2735,7 +2735,7 @@ changes = {
         "SN": {
             "code": "FWA",
             "description": "Federation of colonies of France",
-            "fill": "color9",
+            "fill": "color6",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
             "formal": "French West Africa",
             "link": "http://en.wikipedia.org/wiki/French_West_Africa",
@@ -2744,7 +2744,7 @@ changes = {
         "TD": {
             "code": "FEA",
             "description": "Federation of colonies of France",
-            "fill": "color9",
+            "fill": "color6",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
             "formal": "French Equatorial Africa",
             "link": "http://en.wikipedia.org/wiki/French_Equatorial_Africa",
@@ -2755,7 +2755,7 @@ changes = {
         "BF": {
             "code": "FWA",
             "description": "Federation of colonies of France",
-            "fill": "color9",
+            "fill": "color6",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
             "formal": "French West Africa",
             "link": "http://en.wikipedia.org/wiki/French_West_Africa",
@@ -2764,7 +2764,7 @@ changes = {
         "BJ": {
             "code": "FWA",
             "description": "Federation of colonies of France",
-            "fill": "color9",
+            "fill": "color6",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
             "formal": "French West Africa",
             "link": "http://en.wikipedia.org/wiki/French_West_Africa",
@@ -2773,7 +2773,7 @@ changes = {
         "CF": {
             "code": "FEA",
             "description": "Federation of colonies of France",
-            "fill": "color9",
+            "fill": "color6",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
             "formal": "French Equatorial Africa",
             "link": "http://en.wikipedia.org/wiki/French_Equatorial_Africa",
@@ -2782,7 +2782,7 @@ changes = {
         "CI": {
             "code": "FWA",
             "description": "Federation of colonies of France",
-            "fill": "color9",
+            "fill": "color6",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
             "formal": "French West Africa",
             "link": "http://en.wikipedia.org/wiki/French_West_Africa",
@@ -2792,7 +2792,7 @@ changes = {
             "code": "FEA",
             "d": "m 542.73488,224.09863 -1.38171,3.21752 -0.66751,0.57637 -0.19937,2.46118 0.28719,1.33715 -0.21987,0.94605 1.33361,1.65798 0.24533,1.13986 1.04323,1.63845 1.2869,1.02156 0.13179,1.44821 0.29946,0.91992 1.45583,-2.95459 1.66065,-1.6825 1.90003,0.53338 1.80353,0.17719 0.23703,-2.21416 1.07858,-1.61196 1.4915,-1.02234 2.31377,1.07894 1.79387,1.1712 2.05202,0.31254 2.09531,0.61969 0.82067,-1.91729 0.38245,-0.24471 1.27956,0.31887 3.10234,-1.58452 1.11187,0.67157 0.90589,-0.0953 0.41166,-0.77197 1.03774,-0.27203 2.1105,0.33404 1.79677,0.0731 0.9206,-0.33683 -0.46249,-1.00647 -2.10822,-1.25651 -0.73108,-1.90458 -1.1845,-1.37382 -1.90399,-1.65338 -0.0404,-1.0319 -1.54972,-1.28292 -2.14932,-1.38784 -0.98298,-0.91425 -0.19485,-0.98669 0.43225,-1.32122 -0.0303,-1.29539 -1.64495,-1.98492 -0.34148,-1.3586 -1.75554,0.54133 -1.39277,1.28526 -1.9637,3.46391 -2.60861,1.47084 -2.70044,-0.19729 -0.78419,0.29187 0.29026,1.11762 -1.44464,1.10991 -1.1737,1.23944 -3.50847,1.21467 -0.70533,-0.71894 -0.46371,-0.062 -0.508,0.81664 -2.31025,0.23864 z",
             "description": "Federation of colonies of France",
-            "fill": "color9",
+            "fill": "color6",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
             "formal": "French Equatorial Africa",
             "link": "http://en.wikipedia.org/wiki/French_Equatorial_Africa",
@@ -2809,7 +2809,7 @@ changes = {
             "code": "FWA",
             "d": "m 532.84375,173.15625 -9.28125,6.03125 -7.90625,6.25 -3.875,1.40625 0.0312,7.3125 -1.5,2.125 -0.21875,1.96875 -2.46875,0.5 -3.78125,0.25 -1.03125,1.125 -1.78125,0.125 -1.78125,0.0312 -0.6875,-0.625 -1.53125,0.46875 -2.59375,1.3125 -0.53125,1 -2.15625,1.40625 -0.375,0.8125 -1.1875,0.65625 -1.34375,-0.4375 -0.75,0.78125 -0.4375,2.1875 -2.21875,2.625 0.0625,1.09375 -0.75,1.34375 0.15625,1.84375 -1.15625,0.46875 -0.625,0.375 -0.4375,-1.34375 -0.8125,0.34375 -0.46875,-0.0625 -0.53125,0.9375 -2.15625,-0.0312 -0.78125,-0.46875 -0.34375,0.28125 -0.5625,0.25 -0.21875,1.09375 0.625,1.3125 0.6875,2.53125 -1.0625,0.375 -0.25,0.4375 0.1875,0.625 -0.15625,1.375 -0.4375,0 -0.125,0.9375 0.25,1.53125 -0.59375,1.40625 0.8125,0.875 0.875,0.21875 1.1875,1.3125 0.0625,1.25 -0.25,0.40625 -0.21875,2.625 0.53125,0.0625 2.78125,-1.15625 1.9375,-0.90625 3.3125,-0.5625 1.8125,-0.0312 1.9375,0.625 1.28125,-0.0312 0.125,-1.25 -1.21875,-2.75 0.75,-3.59375 1.1875,-2.65625 -0.75,-4.5 -0.375,-2.40625 0.0937,-1.8125 4.84375,-0.125 1.21875,0.21875 0.90625,-0.5 1.28125,0.25 2.4375,0.0625 -0.34375,1.65625 0.84375,0.9375 0.96875,1.125 0.125,1.5625 0.5625,0.65625 -0.125,7.28125 0.6875,2.1875 2.3125,-0.375 0.15625,-5.09375 -0.0625,-2.03125 0.5,-2 0.875,-0.96875 1.34375,-1.96875 -0.28125,-0.875 0.53125,-1.25 -0.625,-1.90625 0.0937,-1.03125 0.1875,-2.84375 0.78125,-1.28125 0.40625,-1.84375 0.71875,-0.65625 2.96875,-0.40625 2.8125,1.1875 1.03125,1.21875 1.4375,0.0625 1.3125,-0.78125 3.375,1.625 1.4375,-0.0625 1.625,-1.375 1.625,0.0937 0.78125,-0.4375 1.5,0.1875 2.1875,0.9375 2.15625,-1.78125 0.65625,0.125 1.90625,3.46875 0.53125,-0.0625 0.0625,-1 0.78125,-0.1875 0.28125,-1.5 -1.8125,-0.0625 0,-2.0625 -1.1875,-1.15625 1.125,-4.1875 3.5,-3 0.0312,-4.125 0.9375,-6.4375 0.5625,-1.375 -1.1875,-1.09375 -0.0625,-1 L 541.5,180 l -0.8125,-4.9375 -1.90625,1.1875 -1.5625,-1.75 -4.375,-1.34375 z",
             "description": "Federation of colonies of France",
-            "fill": "color9",
+            "fill": "color6",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
             "formal": "French West Africa",
             "link": "http://en.wikipedia.org/wiki/French_West_Africa",
@@ -2829,7 +2829,7 @@ changes = {
         "NE": {
             "code": "FWA",
             "description": "Federation of colonies of France",
-            "fill": "color9",
+            "fill": "color6",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
             "formal": "French West Africa",
             "link": "http://en.wikipedia.org/wiki/French_West_Africa",
@@ -2841,7 +2841,7 @@ changes = {
             "code": "ALA",
             "d": "m 148.14964,68.045289 3.46345,-1.40598 0.001,-0.916104 -1.30323,-0.199128 -1.70049,0.449413 -3.20111,1.049641 -1.11825,1.386979 0.37318,0.7657 3.48529,-1.130521 z m -19.31492,-8.206658 1.13462,-1.114673 -1.45118,-0.2627 -2.81295,0.496465 0.39545,0.789496 0.81219,0.544262 1.92187,-0.45285 z m 0.61644,-11.1041 -1.5577,1.065056 0.18271,0.249471 2.1297,-0.164431 0.14498,0.514201 0.84188,0.61762 2.43289,-0.601053 0.58347,-0.308848 -1.65376,-0.378517 -0.7576,-0.746276 -1.73487,0.290509 -0.6117,-0.537732 z m 62.32872,-20.058058 -2.20235,-0.547391 -5.10694,1.392378 -1.57649,-0.175323 -5.50682,1.16586 -2.39786,0.301378 -3.90283,1.25711 -2.36591,1.295727 -4.32712,1.219154 -3.74733,0.08723 -3.18577,1.411227 1.608,0.855134 0.35674,1.158323 -0.40726,1.364751 1.14781,1.044363 -0.57698,1.707286 -4.58858,0.107594 2.14137,-1.377914 -1.72254,0 -6.52051,1.347189 -4.54776,1.159089 0.49889,1.617648 -0.6038,1.124617 2.24857,0.67221 3.44011,-0.314835 0.88836,0.619088 1.45294,-0.619885 3.05588,-0.610154 1.35242,-0.03182 -2.97083,1.081578 0.55553,0.505818 -1.22926,1.286944 -2.75174,0.877244 -1.26359,-0.243701 -3.4776,1.367582 -0.91534,-0.4541 -2.02053,0.207321 -2.63091,1.459887 -3.79612,1.594115 -2.91823,1.649732 0.18397,1.227362 -1.99435,1.637507 0.68352,0.695962 0.25549,1.364688 3.57675,-0.557769 0.22421,1.036891 -1.65591,1.070445 -1.81956,1.743345 1.38929,0.0024 3.60577,-1.173092 -0.81751,1.461613 1.80525,-1.05246 -0.20062,1.488319 2.42797,-1.067421 0.16442,0.504571 3.60726,-0.888833 -3.08435,1.73352 -2.85328,2.23552 -2.83233,1.044379 -1.1585,0.593271 -5.12378,1.777558 -2.45795,1.220838 -3.24487,0.337143 -4.24134,1.633633 -3.2782,0.923742 -4.06455,1.401111 -0.1689,0.504745 4.94288,-0.857445 3.0125,-1.002745 3.45488,-1.01933 3.06235,-0.833365 1.3557,0.229692 4.0719,-1.275743 2.21967,-1.397749 5.24185,-1.533309 1.97801,-1.311209 3.26437,-0.901247 3.7867,-1.234059 4.43764,-2.110258 -0.0912,-1.420724 5.53708,-2.072884 3.68025,-1.929768 4.63625,-1.608396 -0.20422,0.72319 -3.3553,0.889241 -4.16522,2.847189 -1.55838,1.719854 3.1725,-0.620805 3.04721,-0.984471 3.25322,-0.607156 1.44005,-0.18663 1.72848,-2.015189 3.13634,-0.612001 1.3117,1.232826 2.98033,1.333726 3.35844,-0.247843 2.85104,1.038576 1.59054,0.553226 1.66258,3.038265 1.8477,0.846227 3.55197,0.0721 2.00796,0.190335 -1.35425,2.788471 0.80232,2.401163 -1.63749,2.600973 1.23175,0.953768 0.32392,1.127048 2.53302,-1.444544 1.55874,-1.884393 -2.27298,-1.894426 0.71213,-3.379579 0.54128,-2.113516 -0.82283,-1.323247 -0.36984,-1.198389 0.27791,-1.509018 -3.18466,0.944333 -3.79913,1.634458 -0.10446,-1.921054 -0.28401,-1.27531 -1.3589,-0.804185 -2.11119,-0.08577 17.6486,-16.152046 12.12573,-10.076463 0,0 -1.72415,-0.371606 -2.03196,-0.795962 -3.23972,0.429995 -1.09928,-0.34406 -3.53841,-0.248485 -3.09783,-0.832897 -2.40567,0.263221 -2.44395,-0.447279 0.96705,-0.60362 -3.14811,-0.157178 -1.60971,0.507567 0.25475,-1.181561 z",
             "description": "Territory of the United States",
-            "fill": "color6",
+            "fill": "color7",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/e/e6/Flag_of_Alaska.svg",
             "formal": "Alaska",
             "link": "http://en.wikipedia.org/wiki/Territory_of_Alaska",
@@ -2863,7 +2863,7 @@ changes = {
         "SUV": {
             "code": "MV",
             "description": "Protectorate of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/0/07/Flag_of_the_Maldives_1953.svg",
             "formal": "Maldive Islands",
             "link": "http://en.wikipedia.org/wiki/Maldives",
@@ -2888,7 +2888,7 @@ changes = {
             "code": "SN",
             "d": "m 453.51052,204.50026 3.03094,-0.0909 0.64047,-0.75176 0.88238,-0.0512 1.08524,0.78146 0.86289,0.0148 0.92508,-0.53462 0.54837,0.91763 -1.21431,0.71263 -1.20816,-0.0559 -1.18309,-0.67087 -1.04283,0.73322 -0.49902,0.0261 -0.67582,0.4447 -2.53206,-0.067 0.41709,2.43366 1.48338,-0.51722 0.92065,0.10222 0.75194,-0.3575 5.1442,0.1333 1.34366,0.0327 1.99246,0.77398 0.61488,-0.071 0.21306,-0.35307 1.51585,0.25102 0.40403,-0.17908 0.1391,-0.98906 -0.224,-1.2277 -1.03085,-0.8917 -0.5251,-1.81813 -0.10048,-1.97518 -1.79985,-2.18081 -1.6397,-2.33592 -1.82478,-0.84116 -1.30613,-0.93337 -1.54747,0.0349 -1.36599,0.69201 -1.37141,-0.2741 -0.97074,1.01804 -0.69352,1.63046 -1.3908,2.22907 -1.23395,0.60306 1.36356,1.13039 1.10083,2.47188 z",
             "description": "Overseas territory of France",
-            "fill": "color9",
+            "fill": "color6",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
             "formal": "Republic of Senegal",
             "link": "http://en.wikipedia.org/wiki/Senegal",
@@ -2910,7 +2910,7 @@ changes = {
             "code": "RIM",
             "d": "m 526.62141,244.45535 0.94595,-0.18342 4.07978,0.0325 -0.0322,-3.82061 -4.56248,-0.0724 -0.95679,3.56524 0.52576,0.47874 z",
             "description": "Overseas province of Spain",
-            "fill": "color5",
+            "fill": "color4",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_Spain_%281945_-_1977%29.svg",
             "formal": "R\u00edo Muni",
             "link": "http://en.wikipedia.org/wiki/R%C3%ADo_Muni",
@@ -2919,7 +2919,7 @@ changes = {
         },
         "SG": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "formal": "Singapore"
         }
     },
@@ -2957,7 +2957,7 @@ changes = {
             "code": "HAW",
             "d": "m 62.574434,177.87418 0.127706,-0.73938 -0.6156,-0.0674 -0.496607,0.311 -0.199772,0.2313 0.780946,0.57876 0.403327,-0.31426 z m 4.138895,2.09427 -0.54096,-1.04914 -0.18011,-0.20389 -0.840762,0.43749 0.07606,0.12674 0.176082,0.71968 0.929965,0.11156 0.186961,0.0408 0.192761,-0.18329 z m 2.34924,0.46126 -1.32039,-0.13566 -0.297792,0.38661 1.451604,0.0922 0.166578,-0.34312 z m 1.470665,1.69125 0.318772,-0.38108 -0.60536,-0.48691 -0.90672,-0.30164 -0.333429,0.27209 -0.02214,0.19824 0.255685,0.25804 0.31795,0.66839 0.975241,-0.22713 z m 0.339585,4.95329 0.995531,-0.49598 1.231914,-0.67794 0.10645,-0.17596 -0.448079,-1.11224 -0.349498,-0.42508 -0.425958,-0.27526 -0.930887,-0.53626 -0.19577,-0.0588 -0.228068,0.29601 0.04597,0.62419 -0.597623,0.51761 -0.218618,0.35323 0.190438,1.15567 -0.281752,0.88724 0.582145,0.4546 0.523809,-0.53108 z",
             "description": "Territory of the United States",
-            "fill": "color6",
+            "fill": "color7",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/e/ef/Flag_of_Hawaii.svg",
             "formal": "Hawaii",
             "link": "http://en.wikipedia.org/wiki/Territory_of_Hawaii",
@@ -3018,7 +3018,7 @@ changes = {
     "1960_01": {
         "CM": {
             "description": "United Nations trust territory under France",
-            "fill": "color9"
+            "fill": "color6"
         }
     },
     "1960_04": {
@@ -3036,7 +3036,7 @@ changes = {
         },
         "TG": {
             "description": "United Nations trust territory under France",
-            "fill": "color9",
+            "fill": "color6",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/9/91/Flag_of_Togo_%281958-1960%29.svg",
             "formal": "Republic of Togo"
         }
@@ -3047,18 +3047,18 @@ changes = {
         },
         "MG": {
             "description": "Overseas territory of France",
-            "fill": "color9"
+            "fill": "color6"
         },
         "ML": {
             "description": "Overseas territory of France",
-            "fill": "color9"
+            "fill": "color6"
         },
         "SN": {
             "description": "Overseas territory of France"
         },
         "SO2": {
             "description": "Protectorate of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "formal": "British Somaliland",
             "link": "http://en.wikipedia.org/wiki/British_Somaliland",
             "name": "British Somaliland"
@@ -3068,7 +3068,7 @@ changes = {
         "CD": {
             "d": "m 586.41049,236.52119 -2.49015,-2.10982 -0.68137,-1.35601 -1.55214,0.67161 -1.29776,-0.20894 -0.74389,0.53313 -1.26218,-0.38498 -1.7269,-2.62094 -0.9206,0.33683 -1.79677,-0.0731 -2.1105,-0.33404 -1.03774,0.27203 -0.41166,0.77197 -0.90589,0.0953 -1.11187,-0.67157 -3.10234,1.58452 -1.27956,-0.31887 -0.38245,0.24471 -0.82067,1.91729 -2.09531,-0.61969 -2.05202,-0.31254 -1.79387,-1.1712 -2.31377,-1.07894 -1.4915,1.02234 -1.07858,1.61196 -0.23703,2.21416 -0.15482,1.91745 -0.83111,1.69767 -0.53996,1.98078 -0.34201,2.81348 0.14903,1.79932 -0.45682,1.1017 -0.0705,1.16438 -0.32358,1.01278 -1.84947,1.53024 -1.2895,1.63541 -1.22956,3.08429 0.0807,2.6121 -0.71398,1.01606 -1.64127,1.55043 -1.66024,1.98981 -1.04288,-0.56242 -0.17427,-0.89876 -1.52574,-0.0313 -0.96465,1.21541 -0.73407,-0.32338 -1.02282,0.66726 -0.46259,0.8162 -0.0954,1.38407 -0.71397,0.33536 0.38648,0.98473 1.15786,-0.42674 0.81057,0.0594 0.98416,-0.38145 8.26051,0.042 0.67139,2.36585 0.78632,1.90384 0.63315,1.02673 1.0543,1.66003 1.85142,-0.25676 0.92733,-0.44659 1.54008,0.44839 0.42783,-0.79392 0.7215,-1.85018 1.7363,-0.12404 0.15663,-0.55011 1.42753,-0.012 -0.25617,1.14388 3.39422,-0.0277 0.0268,1.99768 0.55062,1.22492 -0.43814,1.91383 0.17623,1.95254 0.91296,1.17814 -0.2141,3.77799 0.6957,-0.29121 1.21059,0.0779 1.73677,-0.47545 1.2668,0.18719 0.9606,0.0799 0.1402,0.98683 1.30843,-0.0766 1.76433,0.29285 0.89976,1.44145 2.22136,0.44281 1.72761,-1.00226 0.58485,1.6636 2.12349,0.44363 0.98983,1.35287 1.09341,1.7473 2.12885,0.0263 -0.1344,-3.42354 -0.78033,0.57734 -1.91487,-1.23557 -0.73852,-0.56486 0.42146,-3.18675 0.57635,-3.75881 -0.59764,-1.40013 0.83384,-2.0267 0.75597,-0.37948 3.76418,-0.53584 1.09514,0.32304 -1.4404,-4.00044 -1.59523,-1.77784 -0.53348,-1.84149 0.30221,-1.65101 -0.46764,-2.92085 -0.13712,-3.82916 -0.69177,-1.44345 0.27308,-1.73681 0.38684,-0.24479 0.1156,-1.88922 0.81082,-0.88497 0.0315,-2.39356 0.65147,-1.21311 0.15599,-2.54843 0.58559,-1.47611 1.06455,-1.65567 1.07221,-0.84322 0.89359,-1.1273 -1.12695,-0.42993 0.13551,-3.71233 z",
             "description": "Colony of Belgium",
-            "fill": "color4",
+            "fill": "color1",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/d/d8/Flag_of_Congo_Free_State.svg",
             "formal": "Belgian Congo",
             "link": "http://en.wikipedia.org/wiki/Belgian_Congo",
@@ -3079,7 +3079,7 @@ changes = {
         "KAT": {
             "code": "CD",
             "description": "Colony of Belgium",
-            "fill": "color4",
+            "fill": "color1",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/d/d8/Flag_of_Congo_Free_State.svg",
             "formal": "Belgian Congo",
             "link": "http://en.wikipedia.org/wiki/Belgian_Congo",
@@ -3093,7 +3093,7 @@ changes = {
         "SO": {
             "d": "m 638.62565,210.90094 -1.26474,0.47168 -0.88833,0.0626 -0.0151,0.0519 0.0435,1.30783 0.12041,3.20278 0.0574,1.65647 -1.19745,1.94976 -1.87018,2.64983 -7.68514,9.52907 -3.64585,0.13988 -2.45701,2.23817 -1.79503,0.0586 -0.75047,1.00078 -2.4003,3.60156 0.0837,11.56546 1.64458,2.61915 0.63878,-0.75175 0.6564,-1.67414 3.07541,-3.84592 2.60572,-2.4149 4.16964,-3.15243 2.77485,-2.57016 3.22568,-4.33089 2.3202,-3.55492 2.29301,-4.65297 1.61707,-4.05456 1.23251,-3.54636 0.6626,-3.43188 0.54412,-1.14668 -0.0794,-1.66871 0.17676,-1.84659 -0.10325,-0.8778 -1.05615,0.009 -1.27003,1.08684 -1.46392,0.31961 z",
             "description": "United Nations trust territory under Italy",
-            "fill": "color4",
+            "fill": "color3",
             "formal": "Somalia",
             "link": "http://en.wikipedia.org/wiki/Trust_Territory_of_Somalia",
             "name": "Italian Somaliland"
@@ -3101,7 +3101,7 @@ changes = {
         "SO2": {
             "code": "SO2",
             "d": "m 636.67873,217.65419 -0.0574,-1.65647 -0.12041,-3.20278 -0.0435,-1.30783 0.0151,-0.0519 -1.58303,0.11156 -0.97254,0.57914 -1.37477,0.20902 -2.41748,0.98634 -3.02279,0.37628 -2.60177,0.81219 -1.38577,-0.0106 -1.30461,-1.32907 -0.59369,-1.31291 -0.92864,-0.58522 -0.96673,1.69904 -0.57028,1.12482 1.0875,1.74818 1.07715,1.52851 1.10008,1.1331 9.24486,3.76763 2.35102,-0.0194 1.87018,-2.64983 1.19745,-1.94976 z",
-            "fill": "color11",
+            "fill": "color14",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_British_Somaliland_%281950-60%29.png",
             "formal": "State of Somaliland",
             "link": "http://en.wikipedia.org/wiki/State_of_Somaliland",
@@ -3112,33 +3112,33 @@ changes = {
     "1960_08": {
         "BF": {
             "description": "Overseas territory of France",
-            "fill": "color9"
+            "fill": "color6"
         },
         "BJ": {
             "description": "Overseas territory of France",
-            "fill": "color9"
+            "fill": "color6"
         },
         "CF": {
             "description": "Overseas territory of France",
-            "fill": "color9"
+            "fill": "color6"
         },
         "CG": {
             "description": "Overseas territory of France",
-            "fill": "color9"
+            "fill": "color6"
         },
         "CI": {
             "description": "Overseas territory of France",
-            "fill": "color9"
+            "fill": "color6"
         },
         "CY": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/2/25/Flag_of_Cyprus_%281960%29.svg",
             "formal": "Cyprus"
         },
         "GA": {
             "description": "Overseas territory of France",
-            "fill": "color9",
+            "fill": "color6",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Gabon_1959-1960.svg"
         },
         "ML": {
@@ -3155,12 +3155,12 @@ changes = {
         },
         "NE": {
             "description": "Overseas territory of France",
-            "fill": "color9"
+            "fill": "color6"
         },
         "SN": {
             "code": "ML",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Mali_1959-1961.svg",
             "formal": "Mali Federation",
             "link": "http://en.wikipedia.org/wiki/Mali_Federation",
@@ -3171,7 +3171,7 @@ changes = {
         },
         "TD": {
             "description": "Overseas territory of France",
-            "fill": "color9"
+            "fill": "color6"
         }
     },
     "1960_09": {
@@ -3194,7 +3194,7 @@ changes = {
         },
         "NG": {
             "description": "Colony and protectorate of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/4/42/Flag_of_British_Colonial_Nigeria.svg",
             "formal": "Nigeria"
         }
@@ -3202,7 +3202,7 @@ changes = {
     "1960_11": {
         "MR": {
             "description": "Overseas territory of France",
-            "fill": "color9",
+            "fill": "color6",
             "link": "http://en.wikipedia.org/wiki/Colonial_Mauritania"
         }
     },
@@ -3217,7 +3217,7 @@ changes = {
         },
         "SL": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "formal": "Sierra Leone"
         }
     },
@@ -3252,7 +3252,7 @@ changes = {
     "1961_06": {
         "KW": {
             "description": "Protectorate of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "formal": "Kuwait"
         }
     },
@@ -3276,7 +3276,7 @@ changes = {
         "SY": {
             "code": "EG",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/5/58/Flag_of_United_Arab_Republic.svg",
             "formal": "United Arab Republic",
             "link": "http://en.wikipedia.org/wiki/United_Arab_Republic",
@@ -3293,7 +3293,7 @@ changes = {
             "code": "SCM",
             "d": "m 525.07271,235.26722 -0.57409,-1.42262 -0.71901,-0.45528 0.0291,-0.87744 0.71204,-2.24678 1.31839,-3.06322 0.81016,-0.0285 1.65705,-1.85823 1.06025,-0.0527 1.54697,1.32051 -3.41194,2.91057 -1.77831,6.02025 z",
             "description": "United Nations trust territory under the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/2/26/British_Cameroons_Flag.gif",
             "formal": "Southern British Cameroons",
             "link": "http://en.wikipedia.org/wiki/British_Cameroon",
@@ -3306,7 +3306,7 @@ changes = {
             "code": "GOA",
             "d": "m 703.91605,196.91921 0.95895,-0.27902 1.3125,0.92233 0.3125,2.0625 -0.62814,0.2058 z",
             "description": "Overseas province of Portugal",
-            "fill": "color11",
+            "fill": "color7",
             "formal": "Portuguese India",
             "link": "http://en.wikipedia.org/wiki/Portuguese_India",
             "name": "Portuguese India",
@@ -3317,7 +3317,7 @@ changes = {
         },
         "TZ": {
             "description": "United Nations trust territory under the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_Tanganyika_%281919-1961%29.svg"
         },
         "WPG": {
@@ -3332,7 +3332,7 @@ changes = {
         },
         "WS": {
             "description": "United Nations trust territory under New Zealand",
-            "fill": "color10"
+            "fill": "color8"
         }
     },
     "1962_03": {
@@ -3344,7 +3344,7 @@ changes = {
         "JM": {
             "code": "TT",
             "description": "Federation of colonies of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_the_West_Indies_Federation.svg",
             "formal": "West Indies Federation",
             "link": "http://en.wikipedia.org/wiki/West_Indies_Federation",
@@ -3371,7 +3371,7 @@ changes = {
         "AG": {
             "code": "TT",
             "description": "Federation of colonies of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_the_West_Indies_Federation.svg",
             "formal": "West Indies Federation",
             "link": "http://en.wikipedia.org/wiki/West_Indies_Federation",
@@ -3380,7 +3380,7 @@ changes = {
         "AI": {
             "code": "TT",
             "description": "Federation of colonies of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_the_West_Indies_Federation.svg",
             "formal": "West Indies Federation",
             "link": "http://en.wikipedia.org/wiki/West_Indies_Federation",
@@ -3389,7 +3389,7 @@ changes = {
         "BB": {
             "code": "TT",
             "description": "Federation of colonies of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_the_West_Indies_Federation.svg",
             "formal": "West Indies Federation",
             "link": "http://en.wikipedia.org/wiki/West_Indies_Federation",
@@ -3398,7 +3398,7 @@ changes = {
         "DM": {
             "code": "TT",
             "description": "Federation of colonies of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_the_West_Indies_Federation.svg",
             "formal": "West Indies Federation",
             "link": "http://en.wikipedia.org/wiki/West_Indies_Federation",
@@ -3407,7 +3407,7 @@ changes = {
         "GD": {
             "code": "TT",
             "description": "Federation of colonies of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_the_West_Indies_Federation.svg",
             "formal": "West Indies Federation",
             "link": "http://en.wikipedia.org/wiki/West_Indies_Federation",
@@ -3416,7 +3416,7 @@ changes = {
         "KY": {
             "code": "TT",
             "description": "Federation of colonies of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_the_West_Indies_Federation.svg",
             "formal": "West Indies Federation",
             "link": "http://en.wikipedia.org/wiki/West_Indies_Federation",
@@ -3425,7 +3425,7 @@ changes = {
         "LC": {
             "code": "TT",
             "description": "Federation of colonies of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_the_West_Indies_Federation.svg",
             "formal": "West Indies Federation",
             "link": "http://en.wikipedia.org/wiki/West_Indies_Federation",
@@ -3434,7 +3434,7 @@ changes = {
         "MS": {
             "code": "TT",
             "description": "Federation of colonies of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_the_West_Indies_Federation.svg",
             "formal": "West Indies Federation",
             "link": "http://en.wikipedia.org/wiki/West_Indies_Federation",
@@ -3443,7 +3443,7 @@ changes = {
         "TC": {
             "code": "TT",
             "description": "Federation of colonies of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_the_West_Indies_Federation.svg",
             "formal": "West Indies Federation",
             "link": "http://en.wikipedia.org/wiki/West_Indies_Federation",
@@ -3452,7 +3452,7 @@ changes = {
         "TT": {
             "d": "m 301.36402,178.23178 c -0.14678,0.19328 0.0707,0.41273 0.268,0.27211 0.18582,-0.0101 0.23314,-0.14422 0.026,-0.11131 -0.10957,-0.0296 -0.19672,-0.10652 -0.29405,-0.1608 z m 1.81348,0.27342 c 0.16823,-0.21056 -0.22018,-0.29805 -0.3704,-0.27693 -0.20598,0.0655 -0.0463,0.27841 0.11114,0.18995 0.0863,-0.0211 0.21522,0.12341 0.25926,0.087 z m -0.57367,-0.2387 c -0.0838,-0.12556 -0.0792,-0.50049 -0.3175,-0.3188 -0.014,0.12171 0.17967,0.3779 0.3175,0.3188 z m -27.0234,7.90923 c -0.0486,-0.22034 -0.1831,-0.009 -0.1248,0.11837 -0.0269,0.1849 0.31362,0.13801 0.43005,0.0662 0.11169,-0.0833 0.57172,0.0171 0.30362,-0.18351 -0.12319,-0.0147 -0.24638,-0.0294 -0.36957,-0.0441 -0.0326,0.10023 -0.17396,0.13253 -0.2393,0.043 z m 3.96954,-1.14077 c -0.0904,-0.10127 -0.45623,0.043 -0.37851,0.13236 0.14095,-0.0216 0.2335,-0.1497 0.37851,-0.13236 z m 0.43031,-0.0118 c 0.1006,-0.0388 0.36745,-0.18011 0.10742,-0.16393 -0.082,0.0701 -0.321,0.1506 -0.30857,0.20338 0.0698,0.0166 0.13767,-0.0148 0.20115,-0.0395 z m 49.21859,22.28036 0.0166,-0.0188 0.01,-0.0278 0.0172,-0.018 0.016,-0.0223 -0.004,-0.029 -0.008,-0.0119 -0.0194,0.002 -0.0263,0.0191 -0.003,0.031 0.004,0.0281 -0.0161,0.0209 -0.0321,0.008 -0.007,0.01 0.0244,0.0109 0.0284,-0.002 z m 0.35828,-0.95072 0.0564,-0.0955 0.0425,-0.0431 -0.011,-0.0109 -0.003,-0.0109 -6.6e-4,-0.0115 -0.003,-0.0121 -0.0343,0.0295 -0.0807,0.0557 -0.0249,0.0251 0.008,0.0163 0.0172,0.0233 -0.002,0.0257 -0.0641,0.0143 -0.0406,-0.0146 -10e-4,0.0237 0.0324,-9.3e-4 0.0278,0.006 0.0213,0.0144 0.0126,0.0234 0.0224,-0.0236 -0.0209,0 0.0467,-0.0347 z m 0.17578,-0.51908 0.12011,-0.14218 0.0472,-0.28947 -0.0287,-0.20543 -0.12066,0.009 -0.12177,0.0803 -0.13208,0.13644 -0.0401,0.24807 0.19102,0.21365 0.0849,-0.0502 z m -1.87153,-11.37518 c -0.0191,-0.0733 -0.0382,-0.14657 -0.0573,-0.21986 -0.0977,0.0513 -0.1583,0.16665 -0.15193,0.27599 0.003,0.0761 0.0837,0.13016 0.15523,0.11394 0.0688,-0.0273 0.0305,-0.11721 0.054,-0.17007 z m -0.95977,-1.21159 c 0.14192,-0.26601 -0.39622,-0.31299 -0.23978,-0.009 0.0485,0.082 0.17996,0.0709 0.23978,0.009 z m -0.24009,-0.37507 c -0.13631,-0.16369 -0.19919,-0.5138 -0.45858,-0.48564 -0.20732,0.17721 0.0871,0.32846 0.24807,0.33158 0.0689,0.0417 0.10047,0.25766 0.21051,0.15406 z m -0.74862,-3.11753 c 0.15363,-0.18836 -0.15759,-0.16293 -0.23205,-0.0447 -0.12917,0.006 -0.2925,0.25243 -0.0702,0.15444 0.10026,-0.0377 0.19822,-0.083 0.30221,-0.10978 z m -40.13317,-0.79767 -0.61697,-0.10696 -1.18583,0.22123 -0.41321,0.72565 1.45122,1.15684 1.49165,0.50952 0.8977,-0.53061 1.94955,-0.0591 -0.36343,-0.8694 -1.38372,-0.76248 -1.82696,-0.28465 z m 43.3583,4.55975 c 0.25834,-0.14711 -0.15949,-0.5186 -0.32807,-0.34674 -0.20253,0.1378 -0.14932,0.48484 0.12694,0.46241 0.0957,0.0146 0.15563,-0.0394 0.20113,-0.11567 z m 0.0603,-1.7082 c 0.0889,-0.19731 -0.0713,-0.49874 -0.29124,-0.40194 -0.0803,0.17235 0.13245,0.59421 0.2912,0.40194 l 4e-5,0 z m 0.68968,7.38603 0.11461,-0.39415 -0.0356,-0.48765 -0.10447,-0.18529 -0.37135,-0.15258 -0.0401,0.0941 -0.0503,0.24871 0.1512,0.39787 0.0706,0.54796 0.26528,-0.069 z m 0.75611,4.53147 c -0.005,-0.25726 0.15265,-0.65675 -0.0245,-0.82512 -0.17812,0.10116 -0.25896,0.31558 -0.38665,0.46951 -0.10537,0.18879 -0.13017,0.49573 0.10233,0.6013 0.2096,0.15718 0.20475,-0.12484 0.30878,-0.24569 z m 3.7536,2.3497 0.19626,-0.22482 -0.15929,-0.13984 -0.26532,-0.38374 -0.15609,0.0462 -0.0186,0.48528 0.0783,0.15303 0.24143,0.12667 0.0833,-0.0628 z m -6.38538,3.3954 c 0.26715,-0.0483 0.29537,-0.297 0.31629,-0.52137 0.1142,-0.27378 -0.26574,-0.17652 -0.3015,0.014 -0.11148,0.15377 -0.0792,0.36449 -0.19289,0.51364 0.0478,0.031 0.12239,-0.0251 0.1781,-0.006 z m -0.0874,4.02995 -0.004,1.25405 -0.85002,0.87307 0.48944,0.28574 2.34674,-0.34923 0.22301,-2.36523 -0.58035,-0.11112 -1.62434,0.41272 z",
             "description": "Federation of colonies of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_the_West_Indies_Federation.svg",
             "formal": "West Indies Federation",
             "link": "http://en.wikipedia.org/wiki/West_Indies_Federation",
@@ -3470,7 +3470,7 @@ changes = {
         "VC": {
             "code": "TT",
             "description": "Federation of colonies of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_the_West_Indies_Federation.svg",
             "formal": "West Indies Federation",
             "link": "http://en.wikipedia.org/wiki/West_Indies_Federation",
@@ -3481,7 +3481,7 @@ changes = {
         "BI": {
             "d": "m 585.3125,251.25 -1.6875,1 -0.6875,-0.34375 -0.8125,0.90625 -0.0937,1.875 -0.40625,0.25 -0.25,1.75 0.6875,1.4375 0.125,3.8125 1.15625,-0.125 1.03125,-1.15625 L 585.5,259 l 0.6875,-0.6875 -0.0312,-1.03125 -0.59375,-0.71875 -0.15625,-1.25 0.8125,-0.375 0.1875,-1.875 -1.09375,-1.8125 z",
             "description": "United Nations trust territory under Belgium",
-            "fill": "color4",
+            "fill": "color1",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Belgium.svg",
             "formal": "Ruanda-Urundi",
             "link": "http://en.wikipedia.org/wiki/Ruanda-Urundi",
@@ -3493,7 +3493,7 @@ changes = {
         "DZ": {
             "code": "FR",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
             "formal": "French Republic",
             "link": "http://en.wikipedia.org/wiki/France",
@@ -3511,7 +3511,7 @@ changes = {
         "RW": {
             "code": "BI",
             "description": "United Nations trust territory under Belgium",
-            "fill": "color4",
+            "fill": "color1",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Belgium.svg",
             "formal": "Ruanda-Urundi",
             "link": "http://en.wikipedia.org/wiki/Ruanda-Urundi",
@@ -3521,13 +3521,13 @@ changes = {
     "1962_08": {
         "JM": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Jamaica_%281962%29.svg",
             "link": "http://en.wikipedia.org/wiki/Colony_of_Jamaica"
         },
         "TT": {
             "description": "Colony of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         }
     },
     "1962_09": {
@@ -3555,12 +3555,12 @@ changes = {
         },
         "UG": {
             "description": "Protectorate of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/0/0b/Flag_of_Uganda_1962.svg"
         },
         "WPG": {
             "description": "Colony of the Kingdom of the Netherlands",
-            "fill": "color10",
+            "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/e/ed/Morning_Star_flag.svg",
             "link": "http://en.wikipedia.org/wiki/Netherlands_New_Guinea"
         }
@@ -3570,7 +3570,7 @@ changes = {
             "code": "ER",
             "d": "m 617.94334,207.84254 1.20333,0.27562 0.80802,-0.77537 -1.40885,-0.95494 -0.91717,-1.0908 -1.58848,-1.83207 -1.62801,-1.80987 -3.93475,-2.99905 -1.59778,-1.54654 -0.91411,-2.91446 -1.80411,-3.67567 -1.30195,1.81217 -2.01062,0.52198 -0.82218,0.97345 -0.16917,2.11042 -0.98177,4.66549 0.34881,1.27119 3.26313,0.6636 0.76447,-2.36961 1.74992,1.44134 1.5956,-0.74667 0.70019,0.66387 1.90653,0.038 2.47675,1.27298 0.76789,1.09637 1.2777,1.01988 1.22295,1.86134 0.99366,1.02735 z",
             "description": "Autonomous state federated with Ethiopia",
-            "fill": "color1",
+            "fill": "color10",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/1/1e/Flag_of_Eritrea_%281952-1961%29.svg",
             "link": "http://en.wikipedia.org/wiki/Eritrea",
             "name": "Eritrea",
@@ -3586,7 +3586,7 @@ changes = {
     "1962_12": {
         "ER": {
             "description": "-",
-            "fill": "color6",
+            "fill": "color13",
             "formal": "Eritrea"
         },
         "NP": {
@@ -3604,7 +3604,7 @@ changes = {
             "code": "KAT",
             "d": "m 577.66264,269.29268 -2.34292,0.68272 -4.41941,-1.85615 -4.11007,1.14904 -0.57452,3.27037 -5.45104,-0.79014 0.038,1.05926 0.55062,1.22492 -0.43814,1.91383 0.17623,1.95254 0.91296,1.17814 -0.2141,3.77799 0.6957,-0.29121 1.21059,0.0779 1.73677,-0.47545 1.2668,0.18719 0.9606,0.0799 0.1402,0.98683 1.30843,-0.0766 1.76433,0.29285 0.89976,1.44145 2.22136,0.44281 1.72761,-1.00226 0.58485,1.6636 2.12349,0.44363 0.98983,1.35287 1.09341,1.7473 2.12885,0.0263 -0.1344,-3.42354 -0.78033,0.57734 -1.91487,-1.23557 -0.73852,-0.56486 0.42146,-3.18675 0.57635,-3.75881 -0.59764,-1.40013 0.83384,-2.0267 0.75597,-0.37948 3.76418,-0.53584 1.09514,0.32304 -1.42616,-4.01674 z",
             "description": "Seeking independence from Congo-L\ufffdopoldville (unrecognized)",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/9/95/Flag_of_Katanga.svg",
             "formal": "State of Katanga",
             "link": "http://en.wikipedia.org/wiki/State_of_Katanga",
@@ -3652,7 +3652,7 @@ changes = {
             "code": "WPG",
             "d": "m 876.17767,251.31898 -0.4245,-1.17996 -4.49026,-1.30383 -1.4464,1.03476 -3.79015,0.76914 1.15864,1.57094 2.49177,0.5862 1.05795,1.89021 4.1039,0.006 0.20669,0.84232 -1.99723,-0.0617 -3.06113,1.14338 2.07739,1.55961 -0.054,1.37947 0.57895,1.16422 1.08928,-0.2799 0.90129,-1.54288 4.06044,2.93384 2.2956,0.26546 5.27302,2.68853 1.17297,2.66528 0.48284,3.45231 -1.82841,0.88153 -1.39734,2.58372 3.54968,-0.0976 0.7646,-0.90449 2.78547,0.63854 2.25465,2.60569 0.77074,-10.34654 0.5082,-10.34652 -2.98698,-0.60672 -2.04147,-1.13583 -2.3659,-1.10679 -2.49281,0.003 -3.27486,1.91613 -2.47599,3.36763 -2.82142,-1.90039 -0.63518,-5.13478 z",
             "description": "UNA",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_the_United_Nations.svg",
             "formal": "West Papua",
             "link": "http://en.wikipedia.org/wiki/United_Nations_Temporary_Executive_Authority",
@@ -3683,20 +3683,20 @@ changes = {
         },
         "SAR": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "formal": "Sarawak"
         }
     },
     "1963_08": {
         "SAB": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "formal": "North Borneo",
             "name": "North Borneo"
         },
         "SG": {
             "description": "Self-governing territory of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         }
     },
     "1963_09": {
@@ -3714,7 +3714,7 @@ changes = {
             "code": "SAB",
             "d": "m 824.5938,233.99995 3.21875,0 2.46875,0.53125 2,-1.09375 -0.5625,-1.53125 1.875,-0.15625 0.125,-1.25 -2.375,-0.96875 -1.90625,-0.875 -0.21875,-1.375 -1.5313,-1.62495 -1.125,0.0312 -1.25,2.46875 -0.68496,0.73685 z",
             "description": "Self-governing territory of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/1/1c/Flag_of_North_Borneo_1948-1963.png",
             "formal": "Sabah",
             "link": "http://en.wikipedia.org/wiki/Crown_Colony_of_North_Borneo",
@@ -3724,7 +3724,7 @@ changes = {
         "SAR": {
             "code": "SAR",
             "d": "m 824.62754,228.89305 -1.37754,1.4819 -0.0312,1.5625 -0.0625,2.03125 -1.34375,-0.125 -0.5625,1.09375 -1.34375,-1.65625 -1.28125,2.03125 -1.90625,2.5 -3.34375,0.6875 -1.1875,0.59375 -0.46875,2.6875 -2.15625,0.59375 -2.09375,-1.09375 0.53125,2.125 1.9375,1.8125 1.78125,-0.65625 1.8125,0.21875 1.59375,-1.59375 1.34375,-0.28125 2.6875,0.875 2.25,-0.65625 1.34375,-4.40625 1.03125,-1.125 0.8125,-3.59375 z",
-            "fill": "color1",
+            "fill": "color11",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/7/72/Flag_of_the_Crown_Colony_of_Sarawak_%281946%29.svg",
             "formal": "Sarawak",
             "link": "http://en.wikipedia.org/wiki/Crown_Colony_of_Sarawak",
@@ -3734,7 +3734,7 @@ changes = {
         "SG": {
             "code": "SG",
             "d": "m 790.76714,243.72818 -0.0797,-0.32185 c 0.0498,-0.10363 0.10645,-0.20888 0.15625,-0.3125 0.10493,-0.025 0.20757,-0.0375 0.3125,-0.0625 0.14817,0.0609 0.30863,0.089 0.4375,0.1875 0.0957,0.0421 0.0494,0.0949 0,0.15625 l 0.15244,0.24595 z",
-            "fill": "color7",
+            "fill": "color11",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Singapore.svg",
             "formal": "State of Singapore",
             "link": "http://en.wikipedia.org/wiki/Singapore",
@@ -3745,7 +3745,7 @@ changes = {
             "code": "SUV",
             "d": "m 705.13025,249.38745 -0.006,-0.0371 -0.0132,-0.0394 -0.0182,-0.0335 -0.0208,-0.0216 0.003,-0.0167 0,-2.6e-4 -0.002,-0.0136 0.003,-0.009 0.0173,-0.002 1.2e-4,-0.0234 -0.0388,0.0216 0.0102,0.059 0.0448,0.11587 0.0209,0 z m 0.35892,-0.16659 2.8e-4,-0.01 0.003,-0.007 0.002,-0.007 -0.003,-0.009 -0.0233,0.0206 -0.008,0.0252 0.005,0.0252 0.0176,0.0216 0.006,-0.0587 z",
             "description": "Seeking independence from the Maldives and the United Kingdom (unrecognized)",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/e/e5/Flag_of_the_United_Suvadive_Republic.svg",
             "formal": "United Suvadive Republic",
             "link": "http://en.wikipedia.org/wiki/Suvadive_Islands",
@@ -3771,13 +3771,13 @@ changes = {
         },
         "KE": {
             "description": "Colony and protectorate of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/e/e2/Flag_of_British_East_Africa.svg"
         },
         "MW": {
             "code": "ZW",
             "description": "Self-governing colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/4/42/Flag_of_the_Federation_of_Rhodesia_and_Nyasaland.svg",
             "formal": "Federation of Rhodesia and Nyasaland",
             "link": "http://en.wikipedia.org/wiki/Federation_of_Rhodesia_and_Nyasaland",
@@ -3788,13 +3788,13 @@ changes = {
         },
         "ZAN": {
             "description": "Protectorate of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Zanzibar_Under_British_Rule.svg"
         },
         "ZM": {
             "code": "ZW",
             "description": "Self-governing colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/4/42/Flag_of_the_Federation_of_Rhodesia_and_Nyasaland.svg",
             "formal": "Federation of Rhodesia and Nyasaland",
             "link": "http://en.wikipedia.org/wiki/Federation_of_Rhodesia_and_Nyasaland",
@@ -3835,7 +3835,7 @@ changes = {
         "ZAN": {
             "code": "ZAN",
             "d": "m 611.04221,272.94485 c 0.31181,-0.26045 0.55889,-0.58362 0.57151,-1.04225 -0.0861,0.32981 -1.26835,0.96963 -0.57151,1.04222 l 0,3e-5 z m -0.48014,-5.72454 c -0.44798,-0.28756 -0.2526,-1.23825 -0.5225,-1.36182 -0.2345,0.5164 -0.50044,1.09966 -0.20706,1.64815 0.43054,0.0162 0.45379,0.61242 0.83517,0.55315 0.22903,-0.20164 -0.10103,-0.59325 -0.10561,-0.83948 z m 1.10415,-4.0277 c -0.23138,0.21501 -0.71287,-0.10661 -0.49595,0.40764 0.16748,0.41996 -0.44962,1.12023 0.15685,1.2826 0.40903,-0.44419 0.26416,-1.08088 0.34672,-1.6212 l -0.008,-0.069 -2e-5,0 z",
-            "fill": "color1",
+            "fill": "color11",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/7/7d/Flag_of_Zanzibar_%28January-April_1964%29.svg",
             "formal": "People's Republic of Zanzibar and Pemba",
             "link": "http://en.wikipedia.org/wiki/People%27s_Republic_of_Zanzibar_and_Pemba",
@@ -3857,7 +3857,7 @@ changes = {
     "1964_07": {
         "MW": {
             "description": "Protectorate of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/3/3a/Flag_of_Nyasaland_%281919-1964%29.svg",
             "formal": "Nyasaland",
             "link": "http://en.wikipedia.org/wiki/Nyasaland",
@@ -3876,7 +3876,7 @@ changes = {
     "1964_09": {
         "MT": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/5/51/Flag_of_Malta_%281943-1964%29.svg",
             "formal": "Crown Colony of the Island of Malta and its Dependencies",
             "link": "http://en.wikipedia.org/wiki/Malta_Colony"
@@ -3895,7 +3895,7 @@ changes = {
         },
         "ZM": {
             "description": "Protectorate of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/c/c9/Flag_of_Northern_Rhodesia_%281939-1953%29.svg",
             "formal": "Northern Rhodesia",
             "link": "http://en.wikipedia.org/wiki/Northern_Rhodesia",
@@ -3913,7 +3913,7 @@ changes = {
         },
         "GM": {
             "description": "Colony and protectorate of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/5/5e/Flag_of_The_Gambia_%281889-1965%29.svg",
             "formal": "Gambia",
             "link": "http://en.wikipedia.org/wiki/Gambia_Colony_and_Protectorate",
@@ -3923,13 +3923,13 @@ changes = {
     "1965_04": {
         "LS": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         }
     },
     "1965_07": {
         "MV": {
             "description": "Protectorate of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/0/07/Flag_of_the_Maldives_1953.svg",
             "formal": "Maldive Islands"
         },
@@ -3943,7 +3943,7 @@ changes = {
         "CK": {
             "code": "NZ",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg",
             "formal": "Dominion of New Zealand",
             "link": "http://en.wikipedia.org/wiki/New_Zealand",
@@ -3967,7 +3967,7 @@ changes = {
         "SG": {
             "code": "MY",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg",
             "formal": "Malaysia",
             "link": "http://en.wikipedia.org/wiki/Malaysia",
@@ -3981,7 +3981,7 @@ changes = {
         "IO": {
             "code": "MU",
             "description": "Colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/b/b3/Flag_of_Mauritius_1923.svg",
             "formal": "Mauritius",
             "link": "http://en.wikipedia.org/wiki/Mauritius",
@@ -3998,7 +3998,7 @@ changes = {
         },
         "ZW": {
             "description": "Self-governing colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "formal": "Southern Rhodesia",
             "link": "http://en.wikipedia.org/wiki/Southern_Rhodesia",
             "name": "Southern Rhodesia"
@@ -4023,7 +4023,7 @@ changes = {
     "1966_05": {
         "GY": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_British_Guiana_1954-1966.png",
             "link": "http://en.wikipedia.org/wiki/British_Guiana",
             "name": "British Guiana"
@@ -4040,7 +4040,7 @@ changes = {
     "1966_09": {
         "BW": {
             "description": "Protectorate of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg",
             "formal": "Bechuanaland",
             "link": "http://en.wikipedia.org/wiki/Bechuanaland_Protectorate",
@@ -4050,7 +4050,7 @@ changes = {
     "1966_10": {
         "LS": {
             "description": "Protectorate of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg",
             "formal": "Basutoland",
             "link": "http://en.wikipedia.org/wiki/Basutoland",
@@ -4060,7 +4060,7 @@ changes = {
     "1966_11": {
         "BB": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         },
         "BI": {
             "flag": "http://upload.wikimedia.org/wikipedia/commons/3/3f/Flag_of_Burundi_%281962_to_1966%29.svg",
@@ -4075,7 +4075,7 @@ changes = {
     "1967_02": {
         "AG": {
             "description": "Colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/0/0c/Flag_of_Antigua%2C_1957-1967.png"
         },
         "AI": {
@@ -4083,7 +4083,7 @@ changes = {
         },
         "KN": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         }
     },
     "1967_03": {
@@ -4095,23 +4095,23 @@ changes = {
         },
         "DM": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         },
         "GD": {
             "description": "Colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/4/4e/Flag_of_Grenada_1903-1967.gif"
         },
         "LC": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         }
     },
     "1967_05": {
         "BIA": {
             "code": "NG",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg",
             "formal": "Federal Republic of Nigeria",
             "link": "http://en.wikipedia.org/wiki/Nigeria",
@@ -4143,7 +4143,7 @@ changes = {
         "AI": {
             "code": "KN",
             "description": "Associated state of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/b/b6/Flag_of_Saint_Christopher-Nevis-Anguilla.svg",
             "formal": "Saint Christopher-Nevis-Anguilla",
             "link": "http://en.wikipedia.org/wiki/Saint_Christopher-Nevis-Anguilla",
@@ -4168,7 +4168,7 @@ changes = {
         "BEN2": {
             "code": "NG",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg",
             "formal": "Federal Republic of Nigeria",
             "link": "http://en.wikipedia.org/wiki/Nigeria",
@@ -4187,7 +4187,7 @@ changes = {
             "code": "BEN2",
             "d": "m 517.81247,226.75002 -1.84375,0.375 -0.5,2.09375 -1.46875,0.5 0.77142,1.85288 2.91608,-0.25913 0.875,-3.65625 z",
             "description": "Declared independence from Nigeria (puppet state of Biafra, unrecognized)",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/5/52/Flag_of_the_Republic_of_Benin.svg",
             "formal": "Republic of Benin",
             "link": "http://en.wikipedia.org/wiki/Republic_of_Benin_(1967)",
@@ -4209,7 +4209,7 @@ changes = {
     "1967_11": {
         "SYE": {
             "description": "Colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/d/d7/Flag_of_the_Federation_of_South_Arabia.svg",
             "formal": "Federation of South Arabia",
             "link": "http://en.wikipedia.org/wiki/Federation_of_South_Arabia",
@@ -4222,7 +4222,7 @@ changes = {
         },
         "NR": {
             "description": "United Nations trust territory under Australia",
-            "fill": "color8",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/en/b/b9/Flag_of_Australia.svg",
             "formal": "Nauru"
         }
@@ -4230,7 +4230,7 @@ changes = {
     "1968_03": {
         "MU": {
             "description": "Colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/b/b3/Flag_of_Mauritius_1923.svg",
             "formal": "Mauritius"
         }
@@ -4248,7 +4248,7 @@ changes = {
     "1968_07": {
         "SZ": {
             "description": "Protectorate of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "formal": "Swaziland"
         }
     },
@@ -4260,7 +4260,7 @@ changes = {
     "1968_10": {
         "GQ": {
             "description": "Overseas province of Spain",
-            "fill": "color5",
+            "fill": "color4",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_Spain_%281945_-_1977%29.svg",
             "formal": "Equatorial Guinea"
         },
@@ -4289,7 +4289,7 @@ changes = {
     "1969_03": {
         "AI": {
             "description": "Declared independence from St. Christopher-Nevis and from the United Kingdom (unrecognized)",
-            "fill": "color13",
+            "fill": "disputed",
             "formal": "Republic of Anguilla",
             "link": "http://en.wikipedia.org/wiki/Republic_of_Anguilla"
         }
@@ -4305,7 +4305,7 @@ changes = {
     "1969_08": {
         "VC": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         }
     },
     "1969_09": {
@@ -4362,7 +4362,7 @@ changes = {
             "code": "SKN",
             "d": "m 628.15385,155.57879 1.64623,2.99415 1.75672,-0.24306 -1.32582,-2.729 -0.32041,0.27622 z",
             "description": "Border undecided between Saudi Arabia and Kuwait",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "",
             "formal": "Saudi-Kuwaiti neutral zone",
             "link": "http://en.wikipedia.org/wiki/Saudi-Kuwaiti_neutral_zone",
@@ -4375,7 +4375,7 @@ changes = {
             "code": "BIA",
             "d": "m 517.68747,231.31252 0.875,-3.625 1.8125,-1.125 1.3125,1.1875 2.0625,-0.625 1.69745,0.78429 -0.9267,2.35579 -0.71204,2.24678 3e-5,3e-4 -2.90439,1.14257 -1.06364,-0.16694 -1.0753,0.71148 -2.24116,-0.0694 -1.50419,-1.98595 -0.24864,-0.57229 z",
             "description": "Declared independence from Nigeria (recognized by Gabon, Haiti, C?te d'Ivoire, Tanzania and Zambia).",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/8/82/Flag_of_Biafra.svg",
             "formal": "Republic of Biafra",
             "link": "http://en.wikipedia.org/wiki/Republic_of_Biafra",
@@ -4396,7 +4396,7 @@ changes = {
         },
         "LC": {
             "description": "Associated state of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         }
     },
     "1970_04": {
@@ -4418,7 +4418,7 @@ changes = {
     "1970_06": {
         "TO": {
             "description": "Protected state of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         }
     },
     "1970_08": {
@@ -4434,7 +4434,7 @@ changes = {
     "1970_10": {
         "FJ": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/4/44/Flag_of_Fiji_1924-1970.svg"
         },
         "KH": {
@@ -4446,7 +4446,7 @@ changes = {
     "1970_11": {
         "SC": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         }
     },
     "1970_12": {
@@ -4458,7 +4458,7 @@ changes = {
         "BD": {
             "code": "PK",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg",
             "formal": "Islamic Republic of Pakistan",
             "link": "http://en.wikipedia.org/wiki/Pakistan",
@@ -4482,7 +4482,7 @@ changes = {
     "1971_08": {
         "BH": {
             "description": "Protectorate of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "formal": "Bahrain",
             "link": "http://en.wikipedia.org/wiki/History_of_Bahrain_(1783%E2%80%931971)"
         }
@@ -4493,7 +4493,7 @@ changes = {
         },
         "QA": {
             "description": "Protectorate of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_Qatar_%281949%29.svg",
             "formal": "Qatar"
         }
@@ -4521,7 +4521,7 @@ changes = {
         "AE": {
             "d": "m 640.97895,170.6876 0.17149,0.73457 1.33088,3.21682 8.37888,1.60064 0.49335,-0.67102 -0.0435,-1.27833 0.67609,-1.3141 -0.11629,-1.29798 1.17627,-0.62548 -0.52801,-0.44169 0.0122,-2.06889 1.39231,-0.0124 -0.64564,-2.51032 -0.64198,-1.08345 -1.50103,1.95898 -1.82024,2.0378 -1.6595,2.14786 -1.66015,-0.0939 -2.26837,-0.083 -2.09379,0.5006 -0.181,-0.87106 -0.47202,0.15429 z",
             "description": "Protectorate of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_the_Trucial_States.svg",
             "formal": "Trucial States",
             "link": "http://en.wikipedia.org/wiki/Trucial_States",
@@ -4532,7 +4532,7 @@ changes = {
         },
         "BD": {
             "description": "Declared independence from Pakistan",
-            "fill": "color13"
+            "fill": "disputed"
         },
         "CYR": {
             "flag": "http://upload.wikimedia.org/wikipedia/commons/c/c4/Flag_of_Libya_%281969%E2%80%931972%29.svg"
@@ -4546,7 +4546,7 @@ changes = {
         "RAK": {
             "code": "AE",
             "description": "Protectorate of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_the_Trucial_States.svg",
             "formal": "Trucial States",
             "link": "http://en.wikipedia.org/wiki/Trucial_States",
@@ -4571,7 +4571,7 @@ changes = {
         "RAK": {
             "code": "RAK",
             "d": "m 652.63503,164.9364 -0.90759,1.19556 0.34651,0.88207 0.59662,0 -0.0773,-0.35356 -0.26517,0 -0.0111,-0.24306 0.7819,-0.65851 z m -0.10916,3.6151 -0.19781,-0.9519 0.65186,0.022 0.15175,0.9163 z",
-            "fill": "color9",
+            "fill": "color11",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/6/6d/Flag_of_Sharjah.svg",
             "formal": "Emirate of Ras al-Khaimah",
             "link": "http://en.wikipedia.org/wiki/Ras_al-Khaimah",
@@ -4601,7 +4601,7 @@ changes = {
             "code": "RYU",
             "d": "m 850.45731,158.03409 c -0.12617,-0.27485 0.2369,-0.50409 0.40028,-0.66253 0.18068,-0.30292 -0.25913,-0.36802 -0.31664,-0.078 -0.20801,0.27118 -0.69055,0.13161 -0.76148,0.53316 -0.23494,0.14902 0.25686,0.18624 0.34803,0.34709 0.20076,0.13688 0.2398,0.0409 0.32981,-0.13973 z m -0.24531,0.33038 c -0.14631,-0.0812 -0.23634,-0.27081 -0.42369,-0.26618 0.0606,0.12113 0.16303,0.32366 0.33969,0.31316 0.0565,0.008 0.17277,0.0613 0.084,-0.047 z m -0.51075,1.21997 c 0.0367,-0.2256 -0.20654,-0.36453 -0.27302,-0.55898 -0.29146,-0.0455 -0.0913,0.37228 -0.004,0.50408 0.0589,0.0876 0.1933,0.14943 0.27689,0.0549 z m -1.02701,3.39395 c 0.32466,-0.31184 -0.2685,-1.00633 -0.30694,-0.32729 -0.077,0.30823 -0.42297,0.36161 -0.62827,0.22621 -0.10248,0.19692 0.33453,0.54564 -0.0968,0.63816 -0.24013,0.29602 -0.19788,0.76213 -0.15376,1.12742 0.23243,0.30107 0.46219,-0.21323 0.27499,-0.41913 0.1075,-0.18938 0.21342,-0.29239 0.0685,-0.52371 0.23752,-0.22003 0.55377,-0.43398 0.79826,-0.68653 l 0.044,-0.0351 2e-5,0 z m -6.12319,6.07005 c -0.16905,-0.0796 -0.38238,-0.30616 -0.5074,-0.31442 -0.0876,0.23175 0.17245,0.50057 0.40002,0.36072 0.0364,-0.0139 0.072,-0.0299 0.10738,-0.0463 z m -2.97786,0.72205 c 0.0606,-0.048 0.0461,-0.17424 -0.0487,-0.14574 -0.0936,0.0286 -0.0461,0.13489 -0.0628,0.20323 -0.0262,0.0955 -0.13778,0.11178 -0.22084,0.12593 -0.0775,0.002 -0.18014,0.0547 -0.1334,0.14624 0.0348,0.0998 0.10708,0.20621 0.2221,0.21516 0.12523,0.0151 0.23807,-0.0995 0.23437,-0.2229 -0.0104,-0.10184 -0.0114,-0.20571 0.006,-0.30731 l 0.003,-0.0146 -4e-5,0 z m -0.93743,0.7491 c 0.20559,-0.1936 -0.14033,-0.4495 -0.33771,-0.38578 -0.22976,0.0661 -0.2754,0.46763 0.0381,0.40037 0.0988,0.0143 0.20708,0.0348 0.29958,-0.0146 z",
             "description": "Military administration under the United States",
-            "fill": "color6",
+            "fill": "color7",
             "flag": "http://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
             "formal": "Ryukyu Islands",
             "link": "http://en.wikipedia.org/wiki/United_States_Civil_Administration_of_the_Ryukyu_Islands",
@@ -4665,7 +4665,7 @@ changes = {
         },
         "BS": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/4/47/Flag_of_the_Bahamas_%281953-1964%29.svg"
         },
         "CK": {
@@ -4675,7 +4675,7 @@ changes = {
     "1973_09": {
         "GW": {
             "description": "Overseas province of Portugal",
-            "fill": "color11",
+            "fill": "color7",
             "formal": "Portugese Guinea",
             "link": "http://en.wikipedia.org/wiki/Portuguese_Guinea",
             "name": "Portugese Guinea"
@@ -4689,7 +4689,7 @@ changes = {
     "1974_02": {
         "GD": {
             "description": "Associated state of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/1/12/Flag_of_Grenada_1967.svg"
         }
     },
@@ -4715,14 +4715,14 @@ changes = {
         },
         "GW": {
             "description": "Declared independence from Portugal",
-            "fill": "color13"
+            "fill": "disputed"
         }
     },
     "1974_10": {
         "NU": {
             "code": "NZ",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg",
             "formal": "Dominion of New Zealand",
             "link": "http://en.wikipedia.org/wiki/New_Zealand",
@@ -4778,7 +4778,7 @@ changes = {
             "code": "SIK",
             "d": "m 741.00908,160.98301 -0.74413,-2.5014 -1.51179,0.66784 0.0702,1.36811 0.41262,1.10152 1.95136,0.0133 z",
             "description": "Protectorate of India",
-            "fill": "color6",
+            "fill": "color8",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/6/6b/Flag_of_Sikkim_%281967-1975%29.svg",
             "formal": "Sikkim",
             "link": "http://en.wikipedia.org/wiki/Sikkim",
@@ -4792,7 +4792,7 @@ changes = {
         },
         "MZ": {
             "description": "Overseas province of Portugal",
-            "fill": "color11",
+            "fill": "color7",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg",
             "formal": "Mozambique",
             "link": "http://en.wikipedia.org/wiki/Portuguese_Mozambique"
@@ -4806,7 +4806,7 @@ changes = {
         },
         "CV": {
             "description": "Overseas province of Portugal",
-            "fill": "color11",
+            "fill": "color7",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg",
             "formal": "Cape Verde"
         },
@@ -4816,7 +4816,7 @@ changes = {
         "KM": {
             "d": "m 625.77635,288.81882 c 0.56684,-1.86053 -1.08919,-0.58035 0,0 z m -3.78448,-2.12655 c -0.11818,-0.15221 -0.58261,-0.32145 -0.39018,0.0374 0.0699,0.1419 0.58349,0.16921 0.53116,0.10842 -0.047,-0.0486 -0.094,-0.0972 -0.14098,-0.14586 z m 1.94518,-0.71597 c -0.25113,-0.0988 -0.21028,0.45883 -0.52364,0.26402 -0.21714,-0.0159 -0.20535,0.0576 -0.0203,0.13004 0.26845,0.0229 0.41401,0.56604 0.63778,0.39882 0.0752,-0.27221 -0.0173,-0.53423 -0.0939,-0.79288 z m -2.79352,-0.57241 c 0.15531,-0.2748 -0.12283,-0.58758 -0.18882,-0.86803 -0.0709,-0.24707 0.14661,-0.57876 -0.0372,-0.77585 -0.1893,-0.14915 -0.33609,0.15126 -0.32197,0.31994 -0.0335,0.28315 -0.067,0.56631 -0.10042,0.84947 0.11505,0.27221 0.38019,0.35834 0.60567,0.50798 0.0228,8.2e-4 0.0256,-0.0267 0.0427,-0.0335 z",
             "description": "Overseas territory of France",
-            "fill": "color9",
+            "fill": "color6",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/0/02/Flag_of_the_Comoros_%281963_to_1975%29.svg",
             "formal": "Comoros"
         },
@@ -4827,7 +4827,7 @@ changes = {
         },
         "ST": {
             "description": "Overseas province of Portugal",
-            "fill": "color11",
+            "fill": "color7",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg",
             "formal": "S\u00e3o Tom\u00e9 and Pr\u00edncipe"
         }
@@ -4842,7 +4842,7 @@ changes = {
         "CAB": {
             "code": "AO",
             "description": "Overseas province of Portugal",
-            "fill": "color11",
+            "fill": "color7",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg",
             "formal": "Angola",
             "link": "http://en.wikipedia.org/wiki/Portuguese_Angola",
@@ -4853,7 +4853,7 @@ changes = {
         "BOU": {
             "code": "PG",
             "description": "United Nations trust territory under Australia",
-            "fill": "color8",
+            "fill": "color13",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/e/e3/Flag_of_Papua_New_Guinea.svg",
             "formal": "Papua and New Guinea",
             "link": "http://en.wikipedia.org/wiki/Territory_of_Papua_and_New_Guinea",
@@ -4868,7 +4868,7 @@ changes = {
         "PG": {
             "d": "m 936.13781,269.31502 0.46225,-0.88892 -1.23883,-1.07743 -1.21102,-2.01246 -0.79837,-0.72009 -0.23749,-0.9447 -0.40796,0.30697 0.43393,2.41836 1.07383,2.01639 1.11444,1.21935 0.80922,-0.31747 z m -10.59216,-4.26051 1.06855,-1.93792 0.16518,-1.7611 -0.53506,-0.52124 -1.68154,0.0604 0.19483,1.87085 -1.63588,1.13219 -0.8622,1.08629 -1.6139,0.24249 -0.16116,-1.68546 -0.40693,0.0786 -0.52192,1.52205 -1.5487,0.2484 -2.47936,-0.46349 -0.29813,0.98227 1.53724,0.88547 2.22843,0.92223 1.48648,0.004 1.49063,-0.74289 1.58599,-0.77161 0.50336,-0.8904 1.48409,-0.26103 z m -13.85829,6.06393 -0.45281,-2.11564 2.60052,-0.34176 -0.55779,-1.68382 -4.53125,-1.96225 -0.30768,-1.87033 -1.46429,-1.59621 -1.84127,-1.62656 -5.09042,-1.81687 -4.77009,-2.1875 -0.5082,10.34652 -0.77074,10.34654 2.87715,0.13241 1.51365,0.53091 2.2988,-1.09136 -0.14454,-2.34172 1.79691,-1.04822 2.44381,-0.90548 3.52993,1.38833 1.19809,2.77846 1.41254,1.74582 1.95607,2.02548 2.76619,0.47775 2.35728,0.35667 0.5909,0.82294 1.8737,-0.22148 0.41633,-0.9176 -2.81814,-1.33576 0.90179,-0.59883 -2.09938,-0.53944 0.25504,-1.40637 -1.61047,0.10549 -1.50094,-3.36712 -2.32069,-2.083 z m 17.30076,-9.16919 -0.23836,-1.65084 -1.00844,-1.01607 -1.0524,-1.33337 -1.14073,-0.76208 -0.92174,-0.69844 -1.47671,-0.88891 -0.81084,0.76668 1.98271,0.93321 1.52816,1.35454 1.21346,1.04034 0.58214,1.22673 0.41383,1.87414 0.92892,-0.84593 z",
             "description": "United Nations trust territory under Australia",
-            "fill": "color8",
+            "fill": "color13",
             "formal": "Papua and New Guinea",
             "link": "http://en.wikipedia.org/wiki/Territory_of_Papua_and_New_Guinea",
             "replacing": [
@@ -4888,7 +4888,7 @@ changes = {
         "AO": {
             "d": "m 545.70414,266.32259 -8.26051,-0.042 -0.98416,0.38145 -0.81057,-0.0594 -1.15786,0.42674 -0.2698,0.61706 1.3891,2.00868 0.55787,2.12533 0.8243,3.06722 -0.86947,1.25871 -0.15564,0.65987 0.66881,1.90479 0.7246,1.92606 0.82248,1.13498 0.12584,1.79944 -0.32081,2.35184 -0.91131,1.41275 -1.6257,2.07723 -0.68014,1.30105 -0.94068,2.86205 -0.16376,1.36263 -1.00026,2.9068 -0.42653,2.79199 0.22863,1.99633 1.34184,-0.60397 1.66637,-0.5408 1.79308,0.0948 1.62252,1.43566 0.42272,-0.22314 11.2189,-0.137 1.87677,1.52128 6.68002,0.44939 5.12262,-1.29386 -1.74324,-1.98335 -1.79226,-2.59771 0.38094,-10.10247 5.79556,0.04 -0.21176,-1.09595 0.44173,-1.18914 -0.45762,-1.48903 0.34872,-1.53973 -0.27529,-0.98569 -1.2668,-0.18719 -1.73677,0.47545 -1.21059,-0.0779 -0.6957,0.29121 0.2141,-3.77799 -0.91296,-1.17814 -0.17623,-1.95254 0.43814,-1.91383 -0.55062,-1.22492 -0.0268,-1.99768 -3.39422,0.0277 0.25617,-1.14388 -1.42753,0.012 -0.15663,0.55011 -1.7363,0.12404 -0.7215,1.85018 -0.42783,0.79392 -1.54008,-0.44839 -0.92733,0.44659 -1.85142,0.25676 -1.0543,-1.66003 -0.63315,-1.02673 -0.78632,-1.90384 -0.67139,-2.36585 z",
             "description": "Overseas province of Portugal",
-            "fill": "color11",
+            "fill": "color7",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg",
             "formal": "Angola",
             "link": "http://en.wikipedia.org/wiki/Portuguese_Angola"
@@ -4903,7 +4903,7 @@ changes = {
             "code": "CAB",
             "d": "m 534.81853,265.7093 0.0954,-1.38407 0.46259,-0.8162 1.02282,-0.66726 -1.04406,-1.08924 -0.84909,0.53404 -1.13749,1.37074 0.73586,2.38735 0.71397,-0.33536 z",
             "description": "Seeking independence from Portugal and separation from Angola",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/6/6c/Flag_of_Cabinda_Province.svg",
             "formal": "Republic of Cabinda",
             "link": "http://en.wikipedia.org/wiki/Republic_of_Cabinda",
@@ -4912,7 +4912,7 @@ changes = {
         },
         "EH": {
             "description": "Overseas province of Spain",
-            "fill": "color5",
+            "fill": "color4",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_Spain_%281945_-_1977%29.svg",
             "formal": "Spanish Sahara",
             "link": "http://en.wikipedia.org/wiki/Spanish_Sahara",
@@ -4920,13 +4920,13 @@ changes = {
         },
         "SR": {
             "description": "Constituent country of the Kingdom of the Netherlands",
-            "fill": "color10",
+            "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Dutch_Guyana.svg",
             "formal": "Suriname"
         },
         "TL": {
             "description": "Overseas province of Portugal",
-            "fill": "color11",
+            "fill": "color7",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg",
             "formal": "Portugese Timor",
             "link": "http://en.wikipedia.org/wiki/Portugese_Timor",
@@ -4949,7 +4949,7 @@ changes = {
             "code": "TL",
             "d": "m 849.17238,275.8959 0.23164,0.62607 -0.0297,0.96257 2.41645,-0.91171 3.02602,-1.3898 1.09672,-0.8602 -1.02788,-0.39359 -0.90437,0.39654 -1.95829,0.10747 -2.46192,0.71369 -0.38866,0.74896 z",
             "description": "Declared independence from Portugal (recognized by Albania, Cape Verde, Guinea, Guinea-Bissau, Mozambique, and S\ufffdo Tom\ufffd and Pr\ufffdncipe)",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/2/26/Flag_of_East_Timor.svg",
             "formal": "Democratic Republic of East Timor",
             "link": "http://en.wikipedia.org/wiki/Democratic_Republic_of_East_Timor",
@@ -4973,7 +4973,7 @@ changes = {
         "TV": {
             "code": "KI",
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/4/4d/Flag_of_Gilbert_and_Ellice_Islands.svg",
             "formal": "Gilbert and Ellice Islands",
             "link": "http://en.wikipedia.org/wiki/Gilbert_and_ellice_islands",
@@ -4984,7 +4984,7 @@ changes = {
         "EH": {
             "d": "m 453.07716,180.99201 0.62703,-1.05871 10.76223,0.0198 -0.42729,-4.58393 0.70479,-1.63062 2.57166,-0.285 0.0919,-8.12922 8.93422,0.16623 0.0981,-4.81393 0.0645,-0.61545 0.003,-0.21273 -0.68704,3.2e-4 -11.39363,0.007 -0.051,0.0445 -1.81844,3.24507 -1.84637,1.15848 -1.04171,1.96487 -0.11371,1.69313 -0.77434,1.85323 -0.93398,0.51184 -1.57774,2.01924 -1.0021,2.24037 0.14831,1.07439 -0.94067,1.65415 -1.07697,0.86491 -0.16799,1.47091 z",
             "description": "Claimed by Morocco, Mauritania and the SADR",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Morocco.svg",
             "formal": "Western Sahara",
             "link": "http://en.wikipedia.org/wiki/Western_Sahara"
@@ -4994,7 +4994,7 @@ changes = {
         },
         "MO": {
             "description": "Overseas province of Portugal",
-            "fill": "color11"
+            "fill": "color7"
         },
         "MR": {
             "d": "m 466.19047,201.25584 0.94287,-0.57869 0.49324,-1.87047 0.88065,-0.0732 1.92621,0.8843 1.57323,-0.62784 1.07038,0.21075 0.42469,-0.70611 11.13347,-0.0482 0.63235,-2.22312 -0.47737,-0.39133 -1.2204,-13.70099 -1.18273,-13.70241 4.17726,-0.0571 -10.12453,-7.69495 -0.0981,4.81393 -8.93422,-0.16623 -0.0919,8.12922 -2.57166,0.285 -0.70479,1.63062 0.42729,4.58393 -10.76223,-0.0198 -0.62703,1.05871 1.41558,1.37075 0.67489,1.50874 -0.31322,1.58296 0.2952,1.57802 0.23159,3.13737 -0.41157,2.98931 -0.80788,1.56554 0.20259,1.71095 0.97074,-1.01804 1.37141,0.2741 1.36599,-0.69201 1.54747,-0.0349 1.30613,0.93337 1.82478,0.84116 1.6397,2.33592 1.79985,2.18081 z"
@@ -5012,7 +5012,7 @@ changes = {
         "SC": {
             "d": "m 653.88253,262.43928 c -0.0387,-0.005 -0.0786,-0.0184 -0.10208,-0.0515 -0.015,-0.0265 -0.0486,-0.0121 -0.0711,-0.004 -0.0332,0.002 -0.01,0.0294 -0.005,0.0482 0.003,0.0211 0.007,0.0404 0.0251,0.0543 0.0235,0.005 0.053,0.004 0.0726,0.0153 0.01,0.0337 0.0299,0.0679 0.0652,0.079 0.017,0.008 0.0448,0.014 0.0575,-0.003 0.0227,-0.0118 0.0125,-0.0363 0.0184,-0.0561 -5e-4,-0.0297 0.0312,-0.0179 0.0509,-0.0215 -0.0141,-0.0148 -0.0193,-0.0436 -0.0443,-0.0413 -0.0202,-0.0153 -0.0433,0.0262 -0.054,-6.4e-4 -0.004,-0.006 -0.009,-0.0127 -0.0129,-0.0193 z m -0.83017,0.98916 c 0.0211,-0.006 -0.002,-0.0427 0.009,-0.065 -0.005,-0.0274 0.0191,-0.0502 0.02,-0.0728 -0.003,-0.0316 -0.0257,-0.0659 -0.0609,-0.063 -0.0385,-0.01 -0.0295,0.0307 -0.0291,0.0555 0.002,0.0308 -0.0187,0.0467 -0.0311,0.0704 -0.008,0.0345 -0.0414,0.0524 -0.0752,0.0508 -0.0294,0.002 -0.0431,0.0325 -0.0633,0.0501 0.0304,0.0338 -0.0562,0.0136 -0.0123,0.0442 0.0233,0.0199 0.0501,-0.007 0.074,0.0101 10e-4,0.0123 -0.0188,0.0369 0.0249,0.0344 0.039,0.0115 0.0659,0.0579 0.11113,0.0533 0.0207,0.013 0.0295,0.0452 0.0448,0.066 0.005,0.0344 0.058,0.0139 0.0484,0.0547 -0.0171,0.027 0.0373,0.0506 0.02,0.0709 -0.0144,0.0272 -0.0642,-0.01 -0.0632,0.0282 -0.0167,0.0234 -0.004,0.069 0.0254,0.0408 0.0318,-0.011 0.0361,0.0316 0.0467,0.0531 0.0158,0.0283 0.0218,0.0657 0.0566,0.0766 0.0145,0.01 0.0714,0.021 0.0634,-0.005 0.006,-0.0325 -0.0335,-0.0415 -0.0275,-0.0726 0.002,-0.04 -0.0384,-0.0743 -0.0169,-0.11386 0.0337,-0.005 0.0224,-0.0378 0.0202,-0.0663 -0.007,-0.0281 -0.0139,-0.0527 -4.3e-4,-0.0815 0.0134,-0.0292 0.0103,-0.0545 -0.0164,-0.0741 -0.0475,-0.0471 -0.11423,-0.0765 -0.14564,-0.13826 -0.004,-0.006 -0.0292,-0.003 -0.0225,-0.007 z",
             "description": "Autonomous territory of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/c/c9/Flag_of_Seychelles_1961-1976.gif",
             "formal": "Seychelles"
         }
@@ -5021,7 +5021,7 @@ changes = {
         "SVN": {
             "code": "SVN",
             "d": "m 794.66959,193.32311 1.06518,-0.79061 1.61785,2.11718 2.79447,1.96133 2.03481,2.5498 1.997,5.87583 0.20562,5.58509 -2.13329,2.09073 -3.02105,2.04406 -2.07114,2.64662 -3.27588,2.95605 -1.15396,-2.03597 0.62642,-2.1508 -2.21236,-1.80342 2.30913,-1.2787 2.90846,-0.23018 -1.39556,-1.92331 4.44964,-2.44331 -0.0622,-3.80452 -0.8904,-2.1174 0.10762,-3.17417 -1.00002,-2.2428 -2.40716,-2.20909 -1.24355,-1.66914 z",
-            "fill": "color6",
+            "fill": "color11",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/4/4a/FNL_Flag.svg",
             "formal": "Republic of Vietnam",
             "link": "http://en.wikipedia.org/wiki/Provisional_Revolutionary_Government_of_the_Republic_of_South_Vietnam",
@@ -5040,7 +5040,7 @@ changes = {
             "code": "BOU",
             "d": "m 936.13781,269.31502 0.46225,-0.88892 -1.23883,-1.07743 -1.21102,-2.01246 -0.79837,-0.72009 -0.23749,-0.9447 -0.40796,0.30697 0.43393,2.41836 1.07383,2.01639 1.11444,1.21935 0.80922,-0.31747 z",
             "description": "Seeking independence from Papua New Guinea (unrecognized)",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/e/e4/Flag_of_Bougainville.svg",
             "formal": "Republic of the North Solomons",
             "link": "http://en.wikipedia.org/wiki/Republic_of_North_Solomons",
@@ -5055,7 +5055,7 @@ changes = {
         "TRN": {
             "code": "ZA",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/6/67/Flag_of_South_Africa_1928-1994.svg",
             "formal": "Republic of South Africa",
             "link": "http://en.wikipedia.org/wiki/South_Africa",
@@ -5100,7 +5100,7 @@ changes = {
     "1977_06": {
         "DJ": {
             "description": "Overseas territory of France",
-            "fill": "color9",
+            "fill": "color6",
             "flag": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
             "formal": "The Afars and the Issas",
             "link": "http://en.wikipedia.org/wiki/French_Territory_of_the_Afars_and_Issas",
@@ -5128,7 +5128,7 @@ changes = {
         "BOP": {
             "code": "ZA",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/6/67/Flag_of_South_Africa_1928-1994.svg",
             "formal": "Republic of South Africa",
             "link": "http://en.wikipedia.org/wiki/South_Africa",
@@ -5166,7 +5166,7 @@ changes = {
         "ACI": {
             "code": "AU",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/en/b/b9/Flag_of_Australia.svg",
             "formal": "Commonwealth of Australia",
             "link": "http://en.wikipedia.org/wiki/Australia",
@@ -5183,7 +5183,7 @@ changes = {
         },
         "SB": {
             "description": "Protectorate of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "link": "http://en.wikipedia.org/wiki/British_Solomon_Islands"
         }
     },
@@ -5213,7 +5213,7 @@ changes = {
         },
         "TV": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Tuvalu_%281976-1978%29.svg",
             "formal": "Ellice Islands"
         }
@@ -5221,7 +5221,7 @@ changes = {
     "1978_11": {
         "DM": {
             "description": "Associated state of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/1/1e/Flag_of_Dominica%2C_1965-1978.png"
         }
     },
@@ -5268,7 +5268,7 @@ changes = {
     "1979_07": {
         "KI": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/4/4d/Flag_of_Gilbert_and_Ellice_Islands.svg",
             "formal": "Gilbert Islands",
             "link": "http://en.wikipedia.org/wiki/Gilbert_and_Ellice_Islands"
@@ -5306,7 +5306,7 @@ changes = {
         "VEN": {
             "code": "ZA",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/6/67/Flag_of_South_Africa_1928-1994.svg",
             "formal": "Republic of South Africa",
             "link": "http://en.wikipedia.org/wiki/South_Africa",
@@ -5326,7 +5326,7 @@ changes = {
     "1979_10": {
         "VC": {
             "description": "Associated state of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/5/55/Flag_of_Saint_Vincent_and_the_Grenadines_%281907-1979%29.svg"
         }
     },
@@ -5336,7 +5336,7 @@ changes = {
         },
         "ZW": {
             "description": "Unrecognized",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/3/3f/Flag_of_Zimbabwe_Rhodesia.svg",
             "formal": "Republic of Zimbabwe-Rhodesia",
             "link": "http://en.wikipedia.org/wiki/Republic_of_Zimbabwe-Rhodesia",
@@ -5362,7 +5362,7 @@ changes = {
         },
         "ZW": {
             "description": "Self-governing colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_Southern_Rhodesia.svg",
             "formal": "Southern Rhodesia",
             "link": "http://en.wikipedia.org/wiki/Southern_Rhodesia",
@@ -5380,7 +5380,7 @@ changes = {
         },
         "VU": {
             "description": "Condominum of the United Kingdom and France",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/1/13/Flag_of_the_British_New_Hebrides_%281953-1980%29.svg",
             "formal": "New Hebrides Condominium",
             "link": "http://en.wikipedia.org/wiki/New_Hebrides",
@@ -5460,7 +5460,7 @@ changes = {
     "1981_09": {
         "BZ": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/d/d6/Flag_of_British_Honduras_%281919-1981%29.svg",
             "formal": "British Honduras",
             "link": "http://en.wikipedia.org/wiki/British_Honduras"
@@ -5474,7 +5474,7 @@ changes = {
     "1981_11": {
         "AG": {
             "description": "Associated state of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         },
         "DM": {
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/aa/Flag_of_Dominica_1978.svg"
@@ -5484,7 +5484,7 @@ changes = {
         "CIS": {
             "code": "ZA",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/6/67/Flag_of_South_Africa_1928-1994.svg",
             "formal": "Republic of South Africa",
             "link": "http://en.wikipedia.org/wiki/South_Africa",
@@ -5500,7 +5500,7 @@ changes = {
             "code": "SIN",
             "d": "m 620.62334,154.93897 1.90492,-0.88896 3.23837,1.20645 -3.14312,1.1747 z",
             "description": "Border undecided between Saudi Arabia and Iraq",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "",
             "formal": "Saudi\u2013Iraqi neutral zone",
             "link": "http://en.wikipedia.org/wiki/Saudi-Iraqi_neutral_zone",
@@ -5529,14 +5529,14 @@ changes = {
         },
         "FK": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/6/67/Flag_of_the_Falkland_Islands_%281948-1999%29.svg",
             "formal": "Falkland Islands",
             "link": "http://en.wikipedia.org/wiki/Falkland_Islands"
         },
         "GS": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/6/67/Flag_of_the_Falkland_Islands_%281948-1999%29.svg",
             "link": "http://en.wikipedia.org/wiki/South_Georgia_and_the_South_Sandwich_Islands"
         }
@@ -5544,14 +5544,14 @@ changes = {
     "1982_06": {
         "FK": {
             "description": "Occupied by Argentina",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg",
             "formal": "Islas Malvinas",
             "link": "http://en.wikipedia.org/wiki/Falklands_War"
         },
         "GS": {
             "description": "Occupied by Argentina",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg",
             "link": "http://en.wikipedia.org/wiki/Falklands_War"
         }
@@ -5559,47 +5559,47 @@ changes = {
     "1983_01": {
         "AI": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         },
         "BM": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         },
         "FK": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         },
         "GS": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         },
         "HK": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         },
         "IO": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         },
         "KY": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         },
         "MS": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         },
         "PN": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         },
         "SH": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         },
         "VG": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         }
     },
     "1983_02": {
@@ -5623,7 +5623,7 @@ changes = {
     "1983_09": {
         "KN": {
             "description": "Associated state of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/b/b6/Flag_of_Saint_Christopher-Nevis-Anguilla.svg",
             "formal": "Saint Christopher and Nevis",
             "link": "http://en.wikipedia.org/wiki/Saint_Christopher-Nevis-Anguilla",
@@ -5640,7 +5640,7 @@ changes = {
         "NCY": {
             "code": "CY",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/6/63/Flag_of_Cyprus_%281960-2006%29.svg",
             "formal": "Republic of Cyprus",
             "link": "http://en.wikipedia.org/wiki/Cyprus",
@@ -5650,7 +5650,7 @@ changes = {
     "1984_01": {
         "BN": {
             "description": "Protected state of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "formal": "Brunei"
         }
     },
@@ -5730,7 +5730,7 @@ changes = {
         "AW": {
             "code": "NAN",
             "description": "Constituent country of the Kingdom of the Netherlands",
-            "fill": "color10",
+            "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_the_Netherlands_Antilles_%281959-1986%29.svg",
             "formal": "The Netherlands Antilles",
             "link": "http://en.wikipedia.org/wiki/Netherlands_Antilles",
@@ -5781,7 +5781,7 @@ changes = {
         "FM": {
             "code": "PW",
             "description": "United Nations trust territory under the United States",
-            "fill": "color6",
+            "fill": "color7",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_the_Trust_Territory_of_the_Pacific_Islands.svg",
             "formal": "Trust Territory of the Pacific Islands",
             "link": "http://en.wikipedia.org/wiki/TTPI",
@@ -5790,7 +5790,7 @@ changes = {
         "MH": {
             "code": "PW",
             "description": "United Nations trust territory under the United States",
-            "fill": "color6",
+            "fill": "color7",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_the_Trust_Territory_of_the_Pacific_Islands.svg",
             "formal": "Trust Territory of the Pacific Islands",
             "link": "http://en.wikipedia.org/wiki/TTPI",
@@ -5799,7 +5799,7 @@ changes = {
         "MP": {
             "code": "PW",
             "description": "United Nations trust territory under the United States",
-            "fill": "color6",
+            "fill": "color7",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_the_Trust_Territory_of_the_Pacific_Islands.svg",
             "formal": "Trust Territory of the Pacific Islands",
             "link": "http://en.wikipedia.org/wiki/TTPI",
@@ -5841,7 +5841,7 @@ changes = {
     "1987_07": {
         "PW": {
             "description": "United Nations trust territory under the United States",
-            "fill": "color6"
+            "fill": "color7"
         }
     },
     "1987_10": {
@@ -5885,7 +5885,7 @@ changes = {
         "PS": {
             "code": "IL",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Israel.svg",
             "formal": "State of Israel",
             "link": "http://en.wikipedia.org/wiki/Israel",
@@ -5949,7 +5949,7 @@ changes = {
         "LT": {
             "code": "RU",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -5958,7 +5958,7 @@ changes = {
         "NA": {
             "code": "ZA",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/6/67/Flag_of_South_Africa_1928-1994.svg",
             "formal": "Republic of South Africa",
             "link": "http://en.wikipedia.org/wiki/South_Africa",
@@ -6018,7 +6018,7 @@ changes = {
         "BOU": {
             "code": "PG",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/e/e3/Flag_of_Papua_New_Guinea.svg",
             "formal": "Independent State of Papua New Guinea",
             "link": "http://en.wikipedia.org/wiki/Papua_New_Guinea",
@@ -6027,7 +6027,7 @@ changes = {
         "LV": {
             "code": "RU",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -6067,7 +6067,7 @@ changes = {
         "SYE": {
             "code": "SYE",
             "d": "m 630.05272,193.83111 -3.61935,6.0005 1.39695,1.71442 -0.76197,1.20645 -1.77793,0.22225 -4.22257,4.50831 1.94821,0.22066 0.87116,-0.43083 1.38117,0.0701 0.39539,-0.80753 0.71913,-0.23166 0.56977,-0.83829 0.69421,-0.1804 2.32778,-0.16488 1.74309,-0.61124 1.55791,-1.31764 0.84401,0.18778 1.21484,-0.17498 2.36379,-2.24016 4.34826,-1.4811 2.67742,-1.34044 -0.006,-1.08277 0.44012,-1.40969 1.94404,-0.85297 -6.7e-4,-2e-5 -1.06411,-2.21841 -2.5537,-5.23932 -7.86898,1.21696 -2.47779,1.42866 -1.75784,3.33368 z m 19.67411,13.65784 c -0.29165,-0.3095 -0.88549,-0.35524 -1.0379,0.11101 -0.47237,0.34035 0.3949,0.44365 0.54266,0.74786 0.45708,0.30422 1.0477,0.0172 1.56035,0.018 0.30805,-0.29714 0.7333,-0.32791 1.03172,-0.61011 -0.51974,-0.21856 -1.03811,-0.44499 -1.61462,-0.33962 -0.1761,0.0108 -0.2963,0.18108 -0.48221,0.0729 z",
-            "fill": "color2",
+            "fill": "color11",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/d/db/Flag_of_South_Yemen.svg",
             "formal": "People's Democratic Republic of Yemen",
             "link": "http://en.wikipedia.org/wiki/South_Yemen",
@@ -6090,7 +6090,7 @@ changes = {
         "BY": {
             "code": "RU",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -6132,7 +6132,7 @@ changes = {
         "KW": {
             "code": "KW",
             "d": "m 629.17492,152.49271 -1.84287,-0.26342 -1.60255,3.04077 2.44287,0.30598 0.85283,1.51132 1.90287,-0.0823 -1.16193,-2.39197 0.14995,-0.72296 -0.74117,-1.3974 z",
-            "fill": "color11",
+            "fill": "color14",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/aa/Flag_of_Kuwait.svg",
             "formal": "State of Kuwait",
             "name": "Kuwait",
@@ -6147,7 +6147,7 @@ changes = {
         "EDE": {
             "code": "EDE",
             "d": "m 529.4375,75.9375 -1.25,0.8125 -2.34375,0.59375 0.625,2.03125 1.4375,1.03125 -1.375,0.46875 0.65625,2.3125 -1.125,0.4375 0.0937,1.25 -1.40625,0.53125 -0.125,2 1.3125,1.4375 3.875,-0.0625 1.65625,-0.75 0.8125,-0.75 L 534,86.6875 l 0.53125,-0.59375 0.6875,0.375 L 536.25,86.125 535.09375,84.1875 535.1875,83.125 534.46875,81.5 533.5,80.4375 l 0.59375,-0.8125 -0.6875,-1.53125 -1.1875,-0.96875 -2.78125,-1.1875 z m 2.84375,5.46875 c 0.30597,-0.08988 0.25215,0.187099 0.28125,0.375 0.22997,0.05644 0.50128,0.38684 0.0625,0.40625 -0.57807,0.296727 -1.0227,-0.651074 -0.34375,-0.78125 z",
-            "fill": "color2",
+            "fill": "color11",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_German_Democratic_Republic.svg",
             "formal": "German Democratic Republic",
             "link": "http://en.wikipedia.org/wiki/East_Germany",
@@ -6201,7 +6201,7 @@ changes = {
         "KW": {
             "code": "IQ",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/7/7b/Flag_of_Iraq_%281991-2004%29.svg",
             "formal": "Republic of Iraq",
             "link": "http://en.wikipedia.org/wiki/Iraq",
@@ -6212,7 +6212,7 @@ changes = {
         "ABK": {
             "code": "RU",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -6224,7 +6224,7 @@ changes = {
         "GE": {
             "code": "RU",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -6258,7 +6258,7 @@ changes = {
         "SOT": {
             "code": "RU",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -6269,7 +6269,7 @@ changes = {
         "ER": {
             "code": "ET",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/8/8a/Flag_of_Ethiopia_%281987%E2%80%931991%29.svg",
             "formal": "People's Democratic Republic of Ethiopia",
             "link": "http://en.wikipedia.org/wiki/People's_Democratic_Republic_of_Ethiopia",
@@ -6290,7 +6290,7 @@ changes = {
         "SO2": {
             "code": "SO",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_Somalia.svg",
             "formal": "Federal Republic of Somalia",
             "link": "http://en.wikipedia.org/wiki/Somalia",
@@ -6304,7 +6304,7 @@ changes = {
         "HR": {
             "code": "RS",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/7/71/Flag_of_SFR_Yugoslavia.svg",
             "formal": "Socialist Federal Republic of Yugoslavia",
             "link": "http://en.wikipedia.org/wiki/Socialist_Federal_Republic_of_Yugoslavia",
@@ -6327,7 +6327,7 @@ changes = {
         "SI": {
             "code": "RS",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/7/71/Flag_of_SFR_Yugoslavia.svg",
             "formal": "Socialist Federal Republic of Yugoslavia",
             "link": "http://en.wikipedia.org/wiki/Socialist_Federal_Republic_of_Yugoslavia",
@@ -6349,7 +6349,7 @@ changes = {
         "CRI": {
             "code": "RU",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -6358,7 +6358,7 @@ changes = {
         "EE": {
             "code": "RU",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -6367,7 +6367,7 @@ changes = {
         "GAG": {
             "code": "RU",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -6376,7 +6376,7 @@ changes = {
         "KG": {
             "code": "RU",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -6385,7 +6385,7 @@ changes = {
         "MD": {
             "code": "RU",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -6394,7 +6394,7 @@ changes = {
         "NVR": {
             "code": "RU",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -6428,7 +6428,7 @@ changes = {
         "TRA": {
             "code": "RU",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -6437,7 +6437,7 @@ changes = {
         "UA": {
             "code": "RU",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -6448,7 +6448,7 @@ changes = {
         "AM": {
             "code": "RU",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -6457,7 +6457,7 @@ changes = {
         "MK": {
             "code": "RS",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/7/71/Flag_of_SFR_Yugoslavia.svg",
             "formal": "Socialist Federal Republic of Yugoslavia",
             "link": "http://en.wikipedia.org/wiki/Socialist_Federal_Republic_of_Yugoslavia",
@@ -6502,7 +6502,7 @@ changes = {
         "TJ": {
             "code": "RU",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -6514,7 +6514,7 @@ changes = {
         "UZ": {
             "code": "RU",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -6525,7 +6525,7 @@ changes = {
         "CHE": {
             "code": "RU",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -6559,7 +6559,7 @@ changes = {
         "TM": {
             "code": "RU",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -6570,7 +6570,7 @@ changes = {
         "KZ": {
             "code": "RU",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg",
             "formal": "Union of Soviet Socialist Republics",
             "link": "http://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics",
@@ -6615,7 +6615,7 @@ changes = {
         "NKR": {
             "code": "AZ",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Azerbaijan.svg",
             "formal": "Republic of Azerbaijan",
             "link": "http://en.wikipedia.org/wiki/Azerbaijan",
@@ -6677,7 +6677,7 @@ changes = {
         "BA": {
             "code": "RS",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/7/71/Flag_of_SFR_Yugoslavia.svg",
             "formal": "Socialist Federal Republic of Yugoslavia",
             "link": "http://en.wikipedia.org/wiki/Socialist_Federal_Republic_of_Yugoslavia",
@@ -6752,7 +6752,7 @@ changes = {
         "RSR": {
             "code": "BA",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/e/e1/Flag_of_Bosnia_and_Herzegovina_%281992-1998%29.svg",
             "formal": "Republic of Bosnia and Herzegovina",
             "link": "http://en.wikipedia.org/wiki/Republic_of_Bosnia_and_Herzegovina",
@@ -6808,7 +6808,7 @@ changes = {
         "SK": {
             "code": "CZ",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg",
             "formal": "Czech and Slovak Federal Republic",
             "link": "http://en.wikipedia.org/wiki/Czechoslovakia",
@@ -6824,7 +6824,7 @@ changes = {
         },
         "ER": {
             "description": "Declared independence from Ethiopia",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/7/75/Flag_of_the_EPLF.svg",
             "formal": "Provisional Government of Eritrea"
         },
@@ -6840,7 +6840,7 @@ changes = {
     "1993_08": {
         "PS": {
             "description": "Declared independence from Israel (recognized by most states)",
-            "fill": "color13"
+            "fill": "disputed"
         }
     },
     "1993_09": {
@@ -6853,7 +6853,7 @@ changes = {
             "code": "BOP",
             "d": "m 575.90532,329.04877 0.95246,-0.53973 -0.22224,-1.01595 -1.34138,0.0953 z m -3.68284,-2.14303 0.12699,1.7938 2.17479,0.74609 -0.0159,-1.68268 -0.90484,-1.06358 z m -0.77785,1.44456 -1.46044,0.28574 0.76991,-2.27797 z m -4.04796,0.90484 0.79372,0.92071 1.04771,-0.42861 0.60322,0.6826 c 0,0 -0.93658,0.25399 -0.92071,0.33336 0.0159,0.0794 0.71435,0.84134 0.71435,0.84134 l 0.76197,-0.95246 0.71434,-0.36511 -1.20645,-1.71443 -1.76205,0.80959 z m -0.0952,6.52435 1.76205,-1.22232 -1.39694,-1.19058 z m -4.25433,-4.31782 0.87309,-1.30169 1.3017,-0.33337 1.63506,1.77793 -0.76197,0.76197 -0.14287,1.88905 -2.14304,-0.96834 0.127,-1.47631 z",
             "description": "Nominally independent from South Africa (recognized only by South Africa)",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Bophuthatswana.svg",
             "formal": "Republic of Bophuthatswana",
             "link": "http://en.wikipedia.org/wiki/Bophuthatswana",
@@ -6864,7 +6864,7 @@ changes = {
             "code": "CIS",
             "d": "m 572.92095,353.22539 -1.47632,-2.69863 0.39686,-0.30161 -0.69847,-0.93659 0.46036,-0.41273 0.88896,0.74609 -0.20637,0.39686 0.30162,0.76197 0.61909,-0.20637 1.17471,1.71443 z",
             "description": "Nominally independent from South Africa (recognized only by South Africa)",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/c/cc/Flag_of_Ciskei.svg",
             "formal": "Republic of Ciskei",
             "link": "http://en.wikipedia.org/wiki/Ciskei",
@@ -6875,7 +6875,7 @@ changes = {
             "code": "TRN",
             "d": "m 575.55609,344.60563 0.46035,2.25416 -3.80984,0.76196 3.81529,3.38204 4.37395,-4.271 -1.49027,-1.39694 -2.00016,-0.60323 0.95246,-0.88896 -0.38099,-0.63497 -1.36519,0.41273 z",
             "description": "Nominally independent from South Africa (recognized only by South Africa)",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Transkei.svg",
             "formal": "Republic of Transkei",
             "link": "http://en.wikipedia.org/wiki/Transkei",
@@ -6886,7 +6886,7 @@ changes = {
             "code": "VEN",
             "d": "m 584.23935,318.03198 -1.93667,1.65093 1.3017,1.49219 1.87318,-2.82564 z",
             "description": "Nominally independent from South Africa (recognized only by South Africa)",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/3/3a/Flag_of_Venda.svg",
             "formal": "Republic of Venda",
             "link": "http://en.wikipedia.org/wiki/Venda",
@@ -6906,7 +6906,7 @@ changes = {
     "1994_10": {
         "PW": {
             "description": "Trustee of the United States",
-            "fill": "color6"
+            "fill": "color7"
         }
     },
     "1994_12": {
@@ -6914,7 +6914,7 @@ changes = {
             "code": "GAG",
             "d": "m 571.76216,99.918492 -0.50798,0.126998 -0.28681,0.61892 0.0804,1.42887 -0.61662,0.6918 0.32416,0.73211 0.58394,-0.33568 0.28805,-1.06141 0.54302,-0.9878 -0.25588,-0.55522 0.23618,-0.1337 z",
             "description": "Seeking autonomy within Moldova",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/6/69/Flag_of_Gagauzia.svg",
             "formal": "Republic of Gagauzia",
             "link": "http://en.wikipedia.org/wiki/Gagauzia#Independent_Moldova",
@@ -6967,7 +6967,7 @@ changes = {
             "code": "RSR",
             "d": "m 542.77792,106.48393 1.57148,0.67349 1.06636,-0.51634 -0.29184,-0.5388 0.85309,-0.22449 c 0.0449,0 0.34797,-0.51635 0.34797,-0.51635 l 1.03269,0.0224 0.10663,0.37047 -0.19082,0.15154 0.6342,0.5893 -0.49389,0.39287 0.15715,0.55002 -1.0383,0.073 -0.52757,1.03269 0.65665,0.40409 0.21328,0.49951 -0.81381,0.0505 -0.40409,-0.24133 -0.0954,0.93727 0.83779,1.59924 0.89331,0.44303 0.22417,-1.68787 0.76131,-0.71254 0.4483,-0.2799 0.58439,-0.13567 0.23337,-1.44213 -1.32815,-1.18025 0.50405,-1.35235 -0.91119,0.009 0,-5.1e-4 -1.19945,-0.68169 -1.73329,0.0427 -2.20231,-0.51195 -1.16712,0.0684 -0.50345,0.62965 z",
             "description": "Declared independence from Bosnia (seeking union with Yugoslavia)",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/3/39/Flag_of_Republika_Srpska.svg",
             "formal": "Republika Srpska",
             "link": "http://en.wikipedia.org/wiki/Republika_Srpska",
@@ -6997,6 +6997,7 @@ changes = {
             "fill": "color9",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Afghanistan_%281992-1996%3B_2001%29.svg",
             "formal": "Islamic State of Afghanistan",
+            "name": "Afghanistan",
             "replacing": [
                 "AFN"
             ]
@@ -7004,7 +7005,7 @@ changes = {
         "AFN": {
             "code": "AF",
             "description": "-",
-            "fill": "color13",
+            "fill": "color11",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Afghanistan_%281992-1996%3B_2001%29.svg",
             "formal": "Islamic State of Afghanistan",
             "link": "http://en.wikipedia.org/wiki/Islamic_State_of_Afghanistan",
@@ -7066,7 +7067,7 @@ changes = {
     "1997_07": {
         "HK": {
             "description": "Dependent territory of the United Kingdom",
-            "fill": "color3",
+            "fill": "color2",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/8/85/Flag_of_Hong_Kong_1959.svg",
             "formal": "Hong Kong"
         },
@@ -7078,7 +7079,7 @@ changes = {
         "ANJ": {
             "code": "KM",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/9/97/Flag_of_the_Comoros_%281996-2001%29.svg",
             "formal": "Federal Islamic Republic of the Comoros",
             "link": "http://en.wikipedia.org/wiki/Comoros",
@@ -7094,7 +7095,7 @@ changes = {
         "MOH": {
             "code": "KM",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/9/97/Flag_of_the_Comoros_%281996-2001%29.svg",
             "formal": "Federal Islamic Republic of the Comoros",
             "link": "http://en.wikipedia.org/wiki/Comoros",
@@ -7134,7 +7135,7 @@ changes = {
         "PUN": {
             "code": "SO",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_Somalia.svg",
             "formal": "Federal Republic of Somalia",
             "link": "http://en.wikipedia.org/wiki/Somalia",
@@ -7151,7 +7152,7 @@ changes = {
             "code": "BOU",
             "d": "m 936.13781,269.31502 0.46225,-0.88892 -1.23883,-1.07743 -1.21102,-2.01246 -0.79837,-0.72009 -0.23749,-0.9447 -0.40796,0.30697 0.43393,2.41836 1.07383,2.01639 1.11444,1.21935 0.80922,-0.31747 z",
             "description": "Seeking independence from Papua New Guinea (unrecognized)",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/e/e4/Flag_of_Bougainville.svg",
             "formal": "Republic of Bougainville",
             "link": "http://en.wikipedia.org/wiki/Autonomous_Region_of_Bougainville",
@@ -7196,7 +7197,7 @@ changes = {
         "TL": {
             "code": "ID",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg",
             "formal": "Republic of Indonesia",
             "link": "http://en.wikipedia.org/wiki/Indonesia",
@@ -7206,7 +7207,7 @@ changes = {
     "1999_10": {
         "TL": {
             "description": "Declared independence from Indonesia",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/2/26/Flag_of_East_Timor.svg",
             "formal": "Democratic Republic of Timor-Leste",
             "link": "http://en.wikipedia.org/wiki/East_Timor"
@@ -7215,7 +7216,7 @@ changes = {
     "1999_12": {
         "MO": {
             "description": "Special territory of Portugal",
-            "fill": "color11",
+            "fill": "color7",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg",
             "formal": "Macau"
         },
@@ -7226,7 +7227,7 @@ changes = {
             "code": "PNC",
             "d": "m 278.41217,219.18245 -1.03611,-1.65522 -0.48781,0.44876 0.84927,1.32551 z",
             "description": "Unorganized territory of the United States",
-            "fill": "color6",
+            "fill": "color7",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/b/bd/Flag_of_Panama_Canal_Zone.svg",
             "formal": "Panama Canal Zone",
             "link": "http://en.wikipedia.org/wiki/Panama_Canal_Zone",
@@ -7237,14 +7238,14 @@ changes = {
     "2000_01": {
         "HAL": {
             "description": "Disputed between Egypt and Sudan",
-            "fill": "color13"
+            "fill": "disputed"
         }
     },
     "2000_02": {
         "CHE": {
             "code": "CHE",
             "d": "m 616.01979,112.80846 -1.33345,-0.44448 -0.85721,-2.28591 0.34924,-0.98421 2.92087,-0.31748 -0.38098,1.2382 0.60323,1.07945 z",
-            "fill": "color13",
+            "fill": "color11",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/d/d6/Flag_of_Chechen_Republic_of_Ichkeria.svg",
             "formal": "Chechen Republic of Ichkeria",
             "name": "Chechyna",
@@ -7267,7 +7268,7 @@ changes = {
             "code": "PUN",
             "d": "m 638.43393,225.88631 1.54845,-3.88249 1.23251,-3.54636 0.6626,-3.43188 0.54412,-1.14668 -0.0794,-1.66871 0.17676,-1.84659 -0.10325,-0.8778 -1.05615,0.009 -1.27003,1.08684 -1.46392,0.31961 3e-5,-3.1e-4 -1.26474,0.47168 -0.88833,0.0626 -0.0151,0.0519 0.0435,1.30783 0.12041,3.20278 0.0574,1.65647 -1.19745,1.94976 -1.87018,2.64983 -2.94412,3.65052 z",
             "description": "Seeking autonomy within Somalia",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/7/7a/Flag_of_Puntland.svg",
             "formal": "Puntland State of Somalia",
             "link": "http://en.wikipedia.org/wiki/Puntland",
@@ -7291,7 +7292,7 @@ changes = {
         "AF": {
             "d": "m 682.16317,131.58479 -0.78971,3.41361 0.57397,2.00903 6.27175,0.40813 0.40028,1.21349 -0.46292,1.14986 -2.54777,-0.0997 1.51922,2.10672 -1.51644,0.80383 -0.71867,1.91401 0.54713,1.90088 -0.86398,0.88937 -1.04988,-0.29445 -1.96322,0.41226 -0.11743,0.88446 -1.99695,-0.006 -1.15403,1.78911 0.39791,2.69144 -3.27324,1.31662 -1.92517,-0.27829 -0.42932,0.69451 -1.67954,-0.40402 -2.62065,0.47451 -4.78022,-1.6175 1.95609,-2.86763 -0.58037,-2.03455 -2.12501,-0.53291 -0.57484,-2.0081 -1.34752,-2.52984 0.8039,-1.73973 -1.24859,-0.46981 0.27142,-2.32196 0.26068,-4.00409 4e-5,4.8e-4 2.94666,1.22315 1.90004,-0.42966 0.23704,-1.46219 1.97251,-0.48727 1.26415,-0.98345 -0.0669,-2.58794 2.06069,-0.62557 0.13449,-1.15041 1.44205,0.86401 0.81249,0.10025 1.46355,0.0215 2.14129,0.68292 0.89684,0.39433 1.64004,-1.03907 1.01462,0.59787 z",
             "description": "Claims Afghanistan (recognized by Pakistan, Saudi Arabia, and the UAE)",
-            "fill": "color13",
+            "fill": "disputed",
             "formal": "Islamic Emirate of Afghanistan",
             "name": "Afghanistan (Taliban)"
         },
@@ -7299,7 +7300,7 @@ changes = {
             "code": "AFN",
             "d": "m 689.2161,136.04967 -0.68917,-1.60279 -0.95768,-1.36914 1.18507,-1.40892 2.64651,-0.67982 2.91345,-0.37596 1.17491,-0.59759 1.42824,-0.36298 -0.71784,-0.92804 -2.69998,-0.005 -1.86548,-0.2382 -1.25019,1.44787 -1.08053,0.32122 -0.74018,0.67999 -1.30856,-1.05973 -0.46394,-2.71493 -0.83043,-0.15318 0.0203,-0.98471 -1.60779,-0.73117 -0.82254,1.11919 0.0643,1.30047 -0.28012,0.47458 -1.58015,-0.0671 -0.4946,1.45327 0.90347,2.01779 -0.78971,3.41361 0.57397,2.00903 6.27181,0.40813 z",
             "description": "Claims Afghanistan (recognized by all countries except Pakistan, Saudi Arabia, and the UAE)",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Afghanistan_%281992-1996%3B_2001%29.svg",
             "formal": "Islamic State of Afghanistan",
             "link": "http://en.wikipedia.org/wiki/Northern_alliance",
@@ -7321,7 +7322,7 @@ changes = {
     "2002_02": {
         "AI": {
             "description": "Dependent Territory of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         },
         "BH": {
             "flag": "http://upload.wikimedia.org/wikipedia/commons/f/f9/Flag_of_Bahrain_1972.svg",
@@ -7329,46 +7330,46 @@ changes = {
         },
         "BM": {
             "description": "Dependent Territory of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         },
         "FK": {
             "description": "Dependent Territory of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         },
         "GS": {
             "description": "Dependent Territory of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         },
         "IO": {
             "description": "Dependent Territory of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         },
         "KY": {
             "description": "Dependent Territory of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         },
         "LC": {
             "flag": "http://upload.wikimedia.org/wikipedia/commons/b/b3/Flag_of_Saint_Lucia_%281979-2002%29.svg"
         },
         "MS": {
             "description": "Dependent Territory of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         },
         "PN": {
             "description": "Dependent Territory of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         },
         "SH": {
             "description": "Dependent Territory of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         },
         "TC": {
             "description": "Dependent Territory of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         },
         "VG": {
             "description": "Dependent Territory of the United Kingdom",
-            "fill": "color3"
+            "fill": "color2"
         }
     },
     "2002_03": {
@@ -7376,7 +7377,7 @@ changes = {
             "code": "ANJ",
             "d": "m 623.93705,285.9763 c -0.25113,-0.0988 -0.21028,0.45883 -0.52364,0.26402 -0.21714,-0.0159 -0.20535,0.0576 -0.0203,0.13004 0.26845,0.0229 0.41401,0.56604 0.63778,0.39882 0.0752,-0.27221 -0.0173,-0.53423 -0.0939,-0.79288 z",
             "description": "Declared independence from Comoros (unrecognized)",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/5/58/Flag_of_Anjouan.svg",
             "formal": "State of Anjouan",
             "link": "http://en.wikipedia.org/wiki/Anjouan",
@@ -7390,7 +7391,7 @@ changes = {
             "code": "MOH",
             "d": "m 621.99187,286.69227 c -0.11818,-0.15221 -0.58261,-0.32145 -0.39018,0.0374 0.0699,0.1419 0.58349,0.16921 0.53116,0.10842 -0.047,-0.0486 -0.094,-0.0972 -0.14098,-0.14586 z",
             "description": "Declared independence from Comoros (unrecognized)",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Moh%C3%A9li.svg",
             "formal": "Democratic Republic of Moh\u00e9li",
             "link": "http://en.wikipedia.org/wiki/Moh%C3%A9li",
@@ -7406,7 +7407,7 @@ changes = {
     "2002_05": {
         "TL": {
             "description": "UNA",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "",
             "formal": "United Nations Transitional Administration in East Timor",
             "link": "http://en.wikipedia.org/wiki/United_Nations_Transitional_Administration_in_East_Timor"
@@ -7458,23 +7459,23 @@ changes = {
     "2003_03": {
         "BL": {
             "description": "Overseas territory of France",
-            "fill": "color9"
+            "fill": "color6"
         },
         "MF": {
             "description": "Overseas territory of France",
-            "fill": "color9"
+            "fill": "color6"
         },
         "PF": {
             "description": "Overseas territory of France",
-            "fill": "color9"
+            "fill": "color6"
         },
         "PM": {
             "description": "Overseas territory of France",
-            "fill": "color9"
+            "fill": "color6"
         },
         "WF": {
             "description": "Overseas territory of France",
-            "fill": "color9"
+            "fill": "color6"
         }
     },
     "2003_04": {
@@ -7554,7 +7555,7 @@ changes = {
         "ME": {
             "code": "RS",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/9/90/Flag_of_Serbia_and_Montenegro.svg",
             "formal": "State Union of Serbia and Montenegro",
             "link": "http://en.wikipedia.org/wiki/Serbia_and_Montenegro",
@@ -7602,7 +7603,7 @@ changes = {
         "KOS": {
             "code": "RS",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/6/6d/Flag_of_Serbia_%282004-2010%29.svg",
             "formal": "Republic of Serbia",
             "link": "http://en.wikipedia.org/wiki/Serbia",
@@ -7624,7 +7625,7 @@ changes = {
         "ABK": {
             "code": "GE",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Georgia.svg",
             "formal": "Georgia",
             "link": "http://en.wikipedia.org/wiki/Georgia",
@@ -7640,7 +7641,7 @@ changes = {
         "SOT": {
             "code": "GE",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Georgia.svg",
             "formal": "Georgia",
             "link": "http://en.wikipedia.org/wiki/Georgia",
@@ -7679,7 +7680,7 @@ changes = {
         "CW": {
             "code": "NAN",
             "description": "Constituent country of the Kingdom of the Netherlands",
-            "fill": "color10",
+            "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_the_Netherlands_Antilles_%281986-2010%29.svg",
             "formal": "The Netherlands Antilles",
             "link": "http://en.wikipedia.org/wiki/Netherlands_Antilles",
@@ -7692,7 +7693,7 @@ changes = {
             "code": "NAN",
             "d": "m 309.95137,209.05191 -0.0208,-0.27519 -0.40301,-0.2245 -0.0141,0.14109 0.0572,0.0935 0.11083,0.0677 0.0484,0.11116 -0.004,0.28404 0.0678,0.15938 0.15745,-0.35722 z m 15.58109,-18.81228 c 0.0334,0.14545 0.38923,0.19585 0.26811,0.003 -0.0872,-0.0313 -0.17938,0.0159 -0.26811,-0.003 z m -17.1173,19.08159 -0.19297,-0.31365 -0.50285,-0.23116 -0.15471,-0.35148 -0.10976,-0.0991 -0.11118,-0.0223 -0.003,0.25985 0.41045,0.49722 0.51523,0.30605 0.14843,-0.0454 z",
             "description": "Constituent country of the Kingdom of the Netherlands",
-            "fill": "color10",
+            "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_the_Netherlands_Antilles_%281986-2010%29.svg",
             "formal": "The Netherlands Antilles",
             "link": "http://en.wikipedia.org/wiki/Netherlands_Antilles",
@@ -7710,7 +7711,7 @@ changes = {
         "SX": {
             "code": "NAN",
             "description": "Constituent country of the Kingdom of the Netherlands",
-            "fill": "color10",
+            "fill": "color3",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_the_Netherlands_Antilles_%281986-2010%29.svg",
             "formal": "The Netherlands Antilles",
             "link": "http://en.wikipedia.org/wiki/Netherlands_Antilles",
@@ -7744,7 +7745,7 @@ changes = {
         "SS": {
             "code": "SD",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Sudan.svg",
             "formal": "Republic of the Sudan",
             "link": "http://en.wikipedia.org/wiki/Sudan",
@@ -7798,7 +7799,7 @@ changes = {
         "CRI": {
             "code": "UA",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg",
             "formal": "Ukraine",
             "link": "http://en.wikipedia.org/wiki/Ukraine",
@@ -7816,7 +7817,7 @@ changes = {
         "NVR": {
             "code": "UA",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg",
             "formal": "Ukraine",
             "link": "http://en.wikipedia.org/wiki/Ukraine",
@@ -7851,7 +7852,7 @@ changes = {
     "2014_06": {
         "BIR": {
             "description": "Unclaimed",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "",
             "formal": "Bir Tawil"
         },
@@ -7864,7 +7865,7 @@ changes = {
         "ISIS": {
             "code": "",
             "description": "",
-            "fill": "color13",
+            "fill": "disputed",
             "flag": "",
             "formal": "",
             "link": "",

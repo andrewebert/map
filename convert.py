@@ -176,7 +176,7 @@ def update_data(original, changes):
                                 name = defaults["name"][owner[1:-1]]
                             data["description"] = data["description"].replace(owner, name)
                     else:
-                        data["fill"] = "color13"
+                        data["fill"] = "disputed"
 
             if "flag" in data:
                 if data["flag"] == "-":

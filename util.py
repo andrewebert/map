@@ -57,6 +57,7 @@ def lookup_fill(fill):
              "#6f8de0": "color12",
              "#b47cd0": "color13",
              "#dd629f": "color14",
+             "#ffffff": "blank",
             }
     return table[fill]
 
