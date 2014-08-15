@@ -59,7 +59,7 @@ def get_data(original_file, changed_files):
     for f in changed_files:
         time = os.path.basename(f)[6:13]
         paths = util.parse_svg(f)
-        print "\n", time,
+        #print "\n", time,
         new = extract_map_data(paths)
         changes[time] = get_map_difference(prev, new)
         prev = new
@@ -120,7 +120,7 @@ def update_data(original, changes):
             if ("is" in data and data["is"] == "-") or "d" in data:
                 if code in defaults["replaced_by"]:
                     data["removed"] = False
-                    print date, "unremoving", code
+                    #print date, "unremoving", code
                     try: 
                         defaults["replacing"][defaults["replaced_by"][code]].remove(code)
                     except KeyError:
@@ -128,7 +128,7 @@ def update_data(original, changes):
                     except ValueError:
                         pass
                 elif "is" in data and data["is"] == "-":
-                    print "killing", code, date
+                    #print "killing", code, date
                     data["removed"] = True
                     for attr in info_attrs:
                         data[attr] = ""
@@ -137,7 +137,7 @@ def update_data(original, changes):
                 defaults["replaced_by"][code] = replacement
                 if replacement != "-":
                     data["removed"] = True
-                    print date, "replacing", code, "with", replacement
+                    #print date, "replacing", code, "with", replacement
                     try:
                         defaults["replacing"][replacement].append(code)
                     except KeyError:
@@ -150,7 +150,7 @@ def update_data(original, changes):
                         if replacement in defaults[attr]:
                             data[attr] = defaults[attr][replacement]
                         else:
-                            print "missing replacement", attr, "of", replacement, "replacing", code
+                            #print "missing replacement", attr, "of", replacement, "replacing", code
                             data[attr] = ""
                 del data["is"]
 

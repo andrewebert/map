@@ -107,6 +107,15 @@ initial_countries = {
         "link": "http://en.wikipedia.org/wiki/Armenia",
         "name": "Armenia"
     },
+    "ANJ": {
+        "code": "KM",
+        "description": "",
+        "fill": "color13",
+        "flag": "http://upload.wikimedia.org/wikipedia/commons/9/94/Flag_of_the_Comoros.svg",
+        "formal": "Union of the Comoros",
+        "link": "http://en.wikipedia.org/wiki/Comoros",
+        "removed": true
+    },
     "AO": {
         "code": "AO",
         "d": "m 545.70414,266.32259 -8.26051,-0.042 -0.98416,0.38145 -0.81057,-0.0594 -1.15786,0.42674 -0.2698,0.61706 1.3891,2.00868 0.55787,2.12533 0.8243,3.06722 -0.86947,1.25871 -0.15564,0.65987 0.66881,1.90479 0.7246,1.92606 0.82248,1.13498 0.12584,1.79944 -0.32081,2.35184 -0.91131,1.41275 -1.6257,2.07723 -0.68014,1.30105 -0.94068,2.86205 -0.16376,1.36263 -1.00026,2.9068 -0.42653,2.79199 0.22863,1.99633 1.34184,-0.60397 1.66637,-0.5408 1.79308,0.0948 1.62252,1.43566 0.42272,-0.22314 11.2189,-0.137 1.87677,1.52128 6.68002,0.44939 5.12262,-1.29386 -1.74324,-1.98335 -1.79226,-2.59771 0.38094,-10.10247 5.79556,0.04 -0.21176,-1.09595 0.44173,-1.18914 -0.45762,-1.48903 0.34872,-1.53973 -0.27529,-0.98569 -1.2668,-0.18719 -1.73677,0.47545 -1.21059,-0.0779 -0.6957,0.29121 0.2141,-3.77799 -0.91296,-1.17814 -0.17623,-1.95254 0.43814,-1.91383 -0.55062,-1.22492 -0.0268,-1.99768 -3.39422,0.0277 0.25617,-1.14388 -1.42753,0.012 -0.15663,0.55011 -1.7363,0.12404 -0.7215,1.85018 -0.42783,0.79392 -1.54008,-0.44839 -0.92733,0.44659 -1.85142,0.25676 -1.0543,-1.66003 -0.63315,-1.02673 -0.78632,-1.90384 -0.67139,-2.36585 z m -10.88561,-0.61329 0.0954,-1.38407 0.46259,-0.8162 1.02282,-0.66726 -1.04406,-1.08924 -0.84909,0.53404 -1.13749,1.37074 0.73586,2.38735 0.71397,-0.33536 z",
@@ -200,7 +209,10 @@ initial_countries = {
         "flag": "http://upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_Bosnia_and_Herzegovina.svg",
         "formal": "Bosnia and Herzegovina",
         "link": "http://en.wikipedia.org/wiki/Bosnia_and_Herzegovina",
-        "name": "Bosnia and Herzegovina"
+        "name": "Bosnia and Herzegovina",
+        "replacing": [
+            "RSR"
+        ]
     },
     "BB": {
         "code": "BB",
@@ -1295,7 +1307,11 @@ initial_countries = {
         "flag": "http://upload.wikimedia.org/wikipedia/commons/9/94/Flag_of_the_Comoros.svg",
         "formal": "Union of the Comoros",
         "link": "http://en.wikipedia.org/wiki/Comoros",
-        "name": "Comoros"
+        "name": "Comoros",
+        "replacing": [
+            "MOH",
+            "ANJ"
+        ]
     },
     "KN": {
         "code": "KN",
@@ -1574,6 +1590,15 @@ initial_countries = {
         "link": "http://en.wikipedia.org/wiki/Macau",
         "name": "Macau"
     },
+    "MOH": {
+        "code": "KM",
+        "description": "",
+        "fill": "color13",
+        "flag": "http://upload.wikimedia.org/wikipedia/commons/9/94/Flag_of_the_Comoros.svg",
+        "formal": "Union of the Comoros",
+        "link": "http://en.wikipedia.org/wiki/Comoros",
+        "removed": true
+    },
     "MP": {
         "code": "MP",
         "d": "m 903.82717,202.65839 -0.01,-0.0702 -0.0965,-0.0293 -0.20992,0.082 0.0283,0.0848 0.0697,0.0505 0.10429,0.0307 0.11377,-0.14853 z m 0.67263,-2.57972 -0.0908,-0.2825 -0.063,-0.002 -0.0895,0.0932 0.0313,0.10155 0.12531,0.2518 0.0867,-0.16187 z m 0.15854,-0.51647 0.0611,-0.13164 -0.01,-0.15258 0.0683,-0.13567 -0.0939,0.027 -0.17956,0.13211 -0.0296,0.28638 0.0452,0.0367 0.14505,0.02 -0.007,-0.0823 z m -0.81749,-3.82957 0.008,-0.0656 -0.0787,-0.0631 -0.1776,0.005 0.03,0.084 0.0713,0.0499 0.0907,0.0116 0.0564,-0.0222 z m -0.92888,-5.52478 0.1218,-0.18357 -0.10124,-0.11396 -0.0388,0.0547 -0.10112,0.31272 0.11933,-0.0699 z m -0.64709,-2.17039 -0.0237,-0.0888 -0.053,-0.0354 -0.12669,-0.0164 0.0558,0.17193 0.0891,0.087 0.0585,-0.11829 z",
@@ -1841,7 +1866,8 @@ initial_countries = {
         "flag": "http://upload.wikimedia.org/wikipedia/commons/a/ab/Flag_of_Panama.svg",
         "formal": "Republic of Panama",
         "link": "http://en.wikipedia.org/wiki/Panama",
-        "name": "Panama"
+        "name": "Panama",
+        "replacing": []
     },
     "PE": {
         "code": "PE",
@@ -1920,6 +1946,15 @@ initial_countries = {
         "formal": "Pitcairn, Henderson, Ducie and Oeno Islands",
         "link": "http://en.wikipedia.org/wiki/Pitcairn_Islands",
         "name": "Pitcairn Islands"
+    },
+    "PNC": {
+        "code": "PA",
+        "description": "",
+        "fill": "color13",
+        "flag": "http://upload.wikimedia.org/wikipedia/commons/a/ab/Flag_of_Panama.svg",
+        "formal": "Republic of Panama",
+        "link": "http://en.wikipedia.org/wiki/Panama",
+        "removed": true
     },
     "PR": {
         "code": "PR",
@@ -2022,6 +2057,15 @@ initial_countries = {
         "formal": "Republic of Serbia",
         "link": "http://en.wikipedia.org/wiki/Serbia",
         "name": "Serbia"
+    },
+    "RSR": {
+        "code": "BA",
+        "description": "",
+        "fill": "color13",
+        "flag": "http://upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_Bosnia_and_Herzegovina.svg",
+        "formal": "Bosnia and Herzegovina",
+        "link": "http://en.wikipedia.org/wiki/Bosnia_and_Herzegovina",
+        "removed": true
     },
     "RU": {
         "code": "RU",
@@ -2189,6 +2233,15 @@ initial_countries = {
         "flag": "http://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
         "formal": "Republic of India",
         "link": "http://en.wikipedia.org/wiki/India",
+        "removed": true
+    },
+    "SIN": {
+        "code": "SA",
+        "description": "",
+        "fill": "color13",
+        "flag": "http://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg",
+        "formal": "Kingdom of Saudi Arabia",
+        "link": "http://en.wikipedia.org/wiki/Saudi_Arabia",
         "removed": true
     },
     "SK": {

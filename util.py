@@ -43,20 +43,20 @@ def parse_fill(style):
     return re.match(r".*fill:(.*?);.*", style).groups()[0]
 
 def lookup_fill(fill):
-    table = {"#cc6e6e": "color1",
-            "#cc916e": "color2",
-            "#ccb76e": "color3",
-            "#b7cc6e": "color4",
-            "#86cc6e": "color5",
-            "#6ecc9a": "color6",
-            "#6eccc9": "color7",
-            "#6ea1cc": "color8",
-            "#6e72cc": "color9",
-            "#986ecc": "color10",
-            "#c66ecc": "color11",
-            "#cc6ea3": "color12",
-            "#9d9d9d": "color13",
-            "#ffffff": "color14",
+    table = {"#af0b0b": "color1",
+             "#cd8c00": "color2",
+             "#d4dd00": "color3",
+             "#19a137": "color4",
+             "#0496b6": "color5",
+             "#470baf": "color6",
+             "#97209a": "color7",
+             "#d0977c": "color8",
+             "#d0c47c": "color9",
+             "#9cd07c": "color10",
+             "#7dcfb5": "color11",
+             "#6f8de0": "color12",
+             "#b47cd0": "color13",
+             "#dd629f": "color14",
             }
     return table[fill]
 

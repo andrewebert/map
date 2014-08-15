@@ -13,14 +13,17 @@ import util
 import sys
 import os
 
-def get_path(tree, code):
+def get_paths(tree):
     root = tree.getroot()
     paths = root.findall('{http://www.w3.org/2000/svg}path')
     for p in paths:
         if "code" not in p.attrib:
             print "missing code:", p.attrib["id"],
             raise KeyError
-    return [p for p in paths if p.attrib["code"] == code][0]
+    return paths
+
+def get_path(tree, code):
+    return [p for p in get_paths(tree) if p.attrib["code"] == code][0]
 
 def get_orig(source, code, attr):
     tree = ET.parse(source)
@@ -86,9 +89,18 @@ if __name__ == "__main__":
     else:
         end = fixed
     source, destinations = get_filenames(fixed, start, end)
-    if attr == "delete":
-        value = None
+    if code == "all":
+        tree = ET.parse(source)
+        for path in get_paths(tree):
+            code = path.attrib["code"]
+            value = get_orig(source, code, attr)
+            for dest in destinations:
+                print dest
+                set(dest, code, attr, value)
     else:
-        value = get_orig(source, code, attr)
-    for dest in destinations:
-        set(dest, code, attr, value)
+        if attr == "delete":
+            value = None
+        else:
+            value = get_orig(source, code, attr)
+        for dest in destinations:
+            set(dest, code, attr, value)
