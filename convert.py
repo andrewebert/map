@@ -59,7 +59,7 @@ def get_data(original_file, changed_files):
     for f in changed_files:
         time = os.path.basename(f)[6:13]
         paths = util.parse_svg(f)
-        #print "\n", time,
+        print "\n", time,
         new = extract_map_data(paths)
         changes[time] = get_map_difference(prev, new)
         prev = new

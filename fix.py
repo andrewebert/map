@@ -23,7 +23,16 @@ def get_paths(tree):
     return paths
 
 def get_path(tree, code):
-    return [p for p in get_paths(tree) if p.attrib["code"] == code][0]
+    paths = [p for p in get_paths(tree) if p.attrib["code"] == code]
+    if len(paths) < 1:
+        print "can't find", code
+        raise KeyError
+    elif len(paths) > 1:
+        print "found multiple", code
+        raise KeyError
+    else:
+        return paths[0]
+        
 
 def get_orig(source, code, attr):
     tree = ET.parse(source)
