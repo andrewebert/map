@@ -15,8 +15,9 @@ Territory:
 - Ashmore and Cartier Islands: 1933, 1938
 - Burkina Faso 1958
 - Andorra
-
+- Trieste
 - Kashmir
 
+- Resize SVGs
 - Alliances mode: NATO/Warsaw Pact, etc.
 - Detail borders in civil wars

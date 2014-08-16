@@ -205,6 +205,15 @@ initial_countries = {
             "RSR"
         ]
     },
+    "BAR": {
+        "code": "IN",
+        "description": "",
+        "fill": "disputed",
+        "flag": "static/img/Flag_of_India.svg",
+        "formal": "Republic of India",
+        "link": "http://en.wikipedia.org/wiki/India",
+        "removed": true
+    },
     "BB": {
         "code": "BB",
         "d": "m 334.39774,206.07543 0.19626,-0.22482 -0.15929,-0.13984 -0.26532,-0.38374 -0.15609,0.0462 -0.0186,0.48528 0.0783,0.15303 0.24143,0.12667 0.0833,-0.0628 z",
@@ -1255,6 +1264,15 @@ initial_countries = {
         "formal": "Italian Republic",
         "link": "http://en.wikipedia.org/wiki/Italy",
         "name": "Italy"
+    },
+    "JAK": {
+        "code": "IN",
+        "description": "",
+        "fill": "disputed",
+        "flag": "static/img/Flag_of_India.svg",
+        "formal": "Republic of India",
+        "link": "http://en.wikipedia.org/wiki/India",
+        "removed": true
     },
     "JE": {
         "code": "JE",
