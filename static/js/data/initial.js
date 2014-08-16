@@ -19,10 +19,6 @@ initial_countries = {
         "link": "http://en.wikipedia.org/wiki/Ashmore_and_Cartier_Islands",
         "name": "Ashmore and Cartier Islands"
     },
-    "AD": {
-        "code": "AD",
-        "link": "http://en.wikipedia.org/wiki/Andorra"
-    },
     "AE": {
         "code": "AE",
         "d": "m 640.97895,170.6876 0.17149,0.73457 1.33088,3.21682 8.37888,1.60064 0.49335,-0.67102 -0.0435,-1.27833 0.67609,-1.3141 -0.11629,-1.29798 1.17627,-0.62548 -0.52801,-0.44169 0.0122,-2.06889 1.39231,-0.0124 -0.64564,-2.51032 -0.64198,-1.08345 -1.50103,1.95898 -1.82024,2.0378 -1.6595,2.14786 -1.66015,-0.0939 -2.26837,-0.083 -2.09379,0.5006 -0.181,-0.87106 -0.47202,0.15429 z",
@@ -2781,6 +2777,7 @@ initial_countries = {
         "fill": "color1",
         "flag": "http://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Andorra.svg",
         "formal": "Principality of Andorra",
+        "link": "http://en.wikipedia.org/wiki/Andorra",
         "name": "Andorra"
     },
     "ZAN": {

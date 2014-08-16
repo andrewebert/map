@@ -1623,7 +1623,8 @@ changes = {
             ]
         },
         "PUN": {
-            "description": "Military administration under the United Kingdom"
+            "description": "Military administration under the United Kingdom",
+            "flag": "http://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg"
         },
         "SML": {
             "code": "ID",
@@ -1636,7 +1637,8 @@ changes = {
         },
         "SO": {
             "description": "Military administration under the United Kingdom",
-            "fill": "color2"
+            "fill": "color2",
+            "flag": "http://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg"
         }
     },
     "1950_05": {
@@ -3087,16 +3089,15 @@ changes = {
         },
         "PUN": {
             "description": "United Nations trust territory under Italy",
-            "formal": "Somalia",
+            "formal": "Italian Somaliland",
             "link": "http://en.wikipedia.org/wiki/Trust_Territory_of_Somalia"
         },
         "SO": {
             "d": "m 638.62565,210.90094 -1.26474,0.47168 -0.88833,0.0626 -0.0151,0.0519 0.0435,1.30783 0.12041,3.20278 0.0574,1.65647 -1.19745,1.94976 -1.87018,2.64983 -7.68514,9.52907 -3.64585,0.13988 -2.45701,2.23817 -1.79503,0.0586 -0.75047,1.00078 -2.4003,3.60156 0.0837,11.56546 1.64458,2.61915 0.63878,-0.75175 0.6564,-1.67414 3.07541,-3.84592 2.60572,-2.4149 4.16964,-3.15243 2.77485,-2.57016 3.22568,-4.33089 2.3202,-3.55492 2.29301,-4.65297 1.61707,-4.05456 1.23251,-3.54636 0.6626,-3.43188 0.54412,-1.14668 -0.0794,-1.66871 0.17676,-1.84659 -0.10325,-0.8778 -1.05615,0.009 -1.27003,1.08684 -1.46392,0.31961 z",
             "description": "United Nations trust territory under Italy",
             "fill": "color3",
-            "formal": "Somalia",
-            "link": "http://en.wikipedia.org/wiki/Trust_Territory_of_Somalia",
-            "name": "Italian Somaliland"
+            "formal": "Italian Somaliland",
+            "link": "http://en.wikipedia.org/wiki/Trust_Territory_of_Somalia"
         },
         "SO2": {
             "code": "SO2",
@@ -4676,9 +4677,9 @@ changes = {
         "GW": {
             "description": "Overseas province of Portugal",
             "fill": "color7",
-            "formal": "Portugese Guinea",
+            "formal": "Portuguese Guinea",
             "link": "http://en.wikipedia.org/wiki/Portuguese_Guinea",
-            "name": "Portugese Guinea"
+            "name": "Portuguese Guinea"
         }
     },
     "1974_01": {
@@ -4928,9 +4929,9 @@ changes = {
             "description": "Overseas province of Portugal",
             "fill": "color7",
             "flag": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg",
-            "formal": "Portugese Timor",
+            "formal": "Portuguese Timor",
             "link": "http://en.wikipedia.org/wiki/Portugese_Timor",
-            "name": "Portugese Timor"
+            "name": "Portuguese Timor"
         }
     },
     "1975_12": {
