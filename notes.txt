@@ -18,6 +18,7 @@ Territory:
 - Trieste
 - Kashmir
 
+- Clicking disables name label
 - Resize SVGs
 - Alliances mode: NATO/Warsaw Pact, etc.
 - Detail borders in civil wars

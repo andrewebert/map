@@ -1207,7 +1207,14 @@ initial_countries = {
         "formal": "Republic of India",
         "link": "http://en.wikipedia.org/wiki/India",
         "name": "India",
-        "replacing": []
+        "replacing": [
+            "BAR",
+            "HYD",
+            "JAK",
+            "SIK",
+            "PK",
+            "TPR"
+        ]
     },
     "IO": {
         "code": "IO",
