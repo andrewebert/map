@@ -26,10 +26,10 @@ def get_path(tree, code):
     paths = [p for p in get_paths(tree) if p.attrib["code"] == code]
     if len(paths) < 1:
         print "can't find", code
-        raise KeyError
+        raise IndexError
     elif len(paths) > 1:
         print "found multiple", code
-        raise KeyError
+        raise IndexError
     else:
         return paths[0]
         
