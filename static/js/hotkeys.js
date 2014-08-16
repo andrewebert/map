@@ -70,10 +70,10 @@ app.directive('hotkeys', function(hotkeys) {
         }
       });
     };
-    set_time_key("u", -1);
-    set_time_key("p", +1);
-    set_time_key("U", -12);
-    set_time_key("P", +12);
+    set_time_key("[", -1);
+    set_time_key("]", +1);
+    set_time_key("{", -12);
+    set_time_key("}", +12);
     return shift = function(e, dx, dy) {
       var amount;
       amount = 50;

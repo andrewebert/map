@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="450" height="300" id="svg2838" sodipodi:version="0.32" inkscape:version="0.47 r22583" sodipodi:docname="Flag_of_Venezuela_1930-2006.svg" version="1.1">
+  <metadata id="metadata2860">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs id="defs2858">
+    <inkscape:perspective sodipodi:type="inkscape:persp3d" inkscape:vp_x="0 : 150 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="450 : 150 : 1" inkscape:persp3d-origin="225 : 100 : 1" id="perspective968"/>
+  </defs>
+  <sodipodi:namedview inkscape:window-height="686" inkscape:window-width="1021" inkscape:pageshadow="2" inkscape:pageopacity="0.0" guidetolerance="10.0" gridtolerance="10.0" objecttolerance="10.0" borderopacity="1.0" bordercolor="#666666" pagecolor="#ffffff" id="base" inkscape:zoom="1.2421509" inkscape:cx="284.60045" inkscape:cy="138.91677" inkscape:window-x="1" inkscape:window-y="25" inkscape:current-layer="svg2838" showgrid="false" inkscape:window-maximized="0"/>
+  <rect id="yellow" width="450" height="100" x="1.2778856e-05" y="-9.5431005e-09" style="fill:#f7d117"/>
+  <rect id="blue" width="450" height="100" y="100" fill="#0033ab"/>
+  <rect id="red" width="450" height="100" y="200" fill="#cf142b"/>
+  <path d="" id="line11231" stroke-miterlimit="2.6131" style="fill: none; stroke: black; stroke-width: 0.060118; stroke-miterlimit: 2.6131;"/>
+  <path d="" id="line11233" stroke-miterlimit="2.6131" style="fill: none; stroke: black; stroke-width: 0.060118; stroke-miterlimit: 2.6131;"/>
+  <g id="g2831" transform="translate(0.23502, 6.13045)">
+    <path style="fill: white;" d="M 138.23202,184.54171 L 141.11034,175.54201 L 133.49054,169.9547 L 142.93922,169.91108 L 145.89841,160.93765 L 148.85969,169.9104 L 158.30838,169.95181 L 150.68988,175.54089 L 153.57029,184.53992 L 145.90051,179.02142 L 138.23202,184.54171 z " id="path3932"/>
+    <path style="fill: white;" d="M 311.29794,184.542 L 308.41961,175.5423 L 316.03942,169.955 L 306.59074,169.91138 L 303.63155,160.93795 L 300.67027,169.91069 L 291.22158,169.95211 L 298.84008,175.54119 L 295.95967,184.54021 L 303.62945,179.02171 L 311.29794,184.542 z " id="path2849"/>
+    <path style="fill: white;" d="M 237.99712,112.18894 L 230.3887,117.79169 L 233.28528,126.78552 L 225.6056,121.28083 L 217.94706,126.81488 L 220.80919,117.81003 L 213.17936,112.23645 L 222.62793,112.17584 L 225.57098,103.19711 L 228.54839,112.16451 L 237.99712,112.18894 z " id="path2855"/>
+    <use x="0" y="0" xlink:href="#path2855" id="use4950" transform="matrix(0.918218, -0.396074, 0.396074, 0.918218, -61.8079, 107.579)" width="450" height="300"/>
+    <use height="300" width="450" transform="matrix(0.68625, -0.727365, 0.727365, 0.68625, -77.0343, 228.966)" id="use4952" xlink:href="#path2855" y="0" x="0"/>
+    <use height="300" width="450" transform="matrix(-1, 0, 0, 1, 449.395, -0.000141641)" id="use4954" xlink:href="#use4950" y="0" x="0"/>
+    <use height="300" width="450" transform="matrix(-1, 0, 0, 1, 449.395, -0.588235)" id="use4956" xlink:href="#use4952" y="0" x="0"/>
+  </g>
+</svg>

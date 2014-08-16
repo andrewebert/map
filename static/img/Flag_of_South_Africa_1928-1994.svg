@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="594" height="396">
+<clipPath id="t">
+<path d="M31.5,21 h-31.5 v21 z v21 h31.5 z h31.5 v-21 z v-21 h-31.5 z"/>
+</clipPath>
+<clipPath id="s">
+<path d="M0,0 h63 v42 h-63 z"/>
+</clipPath>
+<rect width="594" height="396" fill="#003884"/>
+<rect width="594" height="264" fill="#fff"/>
+<rect width="594" height="132" fill="#ff8400"/>
+<g transform="translate(211,165.5)">
+<g id="UK" transform="translate(0,10.5)">
+<path d="M-1,-1 v44 h65 v-44 z" fill="#000"/>
+<path d="M0,0 v42 h63 v-42 z" fill="#003884"/>
+<path d="M0,0 L63,42 M63,0 L0,42" clip-path="url(#s)" stroke="#fff" stroke-width="8.4"/>
+<path d="M0,0 L63,42 M63,0 L0,42" clip-path="url(#t)" stroke="#cf142b" stroke-width="5.6"/>
+<path d="M31.5,0 v42 M0,21 h63" stroke="#fff" stroke-width="14"/>
+<path d="M31.5,0 v42 M0,21 h63" stroke="#cf142b" stroke-width="8.4"/>
+</g>
+<g id="Transvaal" transform="translate(107,10.5)">
+<path d="M-1,-1 v44 h65 v-44 z" fill="#000"/>
+<rect width="63" height="42" fill="#003884"/>
+<rect width="63" height="28" fill="#fff"/>
+<rect width="63" height="14" fill="#ce1126"/>
+<rect width="14" height="42" fill="#007a4d"/>
+</g>
+<g id="Orange" transform="translate(64)">
+<path d="M-1,-1 v65 h44 v-65 z" fill="#000"/>
+<rect width="42" height="63" fill="#fff"/>
+<path d="M3,0 v27" stroke-width="6" stroke="#ce1126"/>
+<path d="M15,0 v27" stroke-width="6" stroke="#003884"/>
+<path d="M9,27 v36 M21,0 v63 M33,0 v63" stroke-width="6" stroke="#ff8400"/>
+</g>
+</g>
+</svg>

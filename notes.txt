@@ -15,20 +15,7 @@ Territory:
 - Ashmore and Cartier Islands: 1933, 1938
 - Burkina Faso 1958
 
-- Allied occupation of Japan
-- Democratic Republic of Yemen: 1994
 - Kashmir
-- United Nations
 
-- Have more detailed colony explanations
-  - GB:       0 - 1983_01: Crown Colony of the United Kingdom
-        1983_04 - 2002_02: Dependent Territory of the United Kingdom
-        2002_03 - present: Overseas Territory of the United Kingdom
-  - [GB] -> the United Kingdom
-  - [US] -> the United States
-  - [NL] -> the Kingdom of the Netherlands
-  - [DK] -> the Kingdom of Denmark
-- Don't disappear hover select when under infobox
-- Have colonies be darker versions of their owner
 - Alliances mode: NATO/Warsaw Pact, etc.
 - Detail borders in civil wars

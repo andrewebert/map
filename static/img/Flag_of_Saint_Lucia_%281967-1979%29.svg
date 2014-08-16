@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2244"
+   sodipodi:version="0.32"
+   inkscape:version="0.45.1"
+   width="400.00003"
+   height="250"
+   version="1.0"
+   sodipodi:docbase="C:\Documents and Settings\Brendan!\Desktop"
+   sodipodi:docname="oldsaintlucia.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <metadata
+     id="metadata2249">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs2247" />
+  <sodipodi:namedview
+     inkscape:window-height="579"
+     inkscape:window-width="748"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     inkscape:zoom="1"
+     inkscape:cx="173.5"
+     inkscape:cy="148.15"
+     inkscape:window-x="18"
+     inkscape:window-y="-5"
+     inkscape:current-layer="svg2244" />
+  <g
+     id="g2253"
+     transform="scale(1.1527378,1.1520737)">
+    <path
+       style="fill:#fefefe"
+       d="M 0,108.5 L 0,0 L 173.5,0 L 347,0 L 347,108.5 L 347,217 L 173.5,217 L 0,217 L 0,108.5 z "
+       id="path2261" />
+    <path
+       style="fill:#fefe00"
+       d="M 0,108.5 L 0,0 L 173.5,0 L 347,0 L 347,108.5 L 347,217 L 173.5,217 L 0,217 L 0,108.5 z M 97.301414,188.37079 L 104.63592,184.74158 L 139.07039,115.86406 L 173.50486,46.986529 L 207.93126,115.86246 L 242.35765,184.7384 L 249.7958,188.41889 C 253.88678,190.44316 257.3576,191.96453 257.50873,191.79969 C 257.65986,191.63486 238.81883,153.58679 215.63979,107.24842 L 173.49607,22.996837 L 131.24882,107.49842 C 108.01283,153.97429 89.218768,192 89.484239,192 C 89.749709,192 93.267438,190.36686 97.301414,188.37079 z "
+       id="path2259" />
+    <path
+       style="fill:#0065fe"
+       d="M 0,108.5 L 0,0 L 173.5,0 L 347,0 L 347,108.5 L 347,217 L 173.5,217 L 0,217 L 0,108.5 z M 257.94497,192.25 C 257.91471,191.8375 238.90132,153.58679 215.693,107.24842 L 173.49607,22.996837 L 131.24803,107.49998 C 108.01161,153.97672 89,192.22743 89,192.50157 C 89,192.7757 127.025,193 173.5,193 C 219.975,193 257.97524,192.6625 257.94497,192.25 z M 139.24854,115.49805 L 173.49515,46.996095 L 207.6395,115.24805 C 226.41889,152.78662 241.65662,183.63836 241.50112,183.80747 C 241.34562,183.97658 225.98167,176.49403 207.35902,167.17957 L 173.49966,150.2442 L 139.99983,167.06787 C 121.57492,176.3209 106.16293,183.91595 105.75096,183.94578 C 105.33899,183.9756 120.4129,153.17412 139.24854,115.49805 z "
+       id="path2257" />
+    <path
+       style="fill:#000000"
+       d="M 139.24854,115.49805 L 173.49515,46.996095 L 207.6395,115.24805 C 226.41889,152.78662 241.65662,183.63836 241.50112,183.80747 C 241.34562,183.97658 225.98167,176.49403 207.35902,167.17957 L 173.49966,150.2442 L 139.99983,167.06787 C 121.57492,176.3209 106.16293,183.91595 105.75096,183.94578 C 105.33899,183.9756 120.4129,153.17412 139.24854,115.49805 z "
+       id="path2255" />
+  </g>
+</svg>

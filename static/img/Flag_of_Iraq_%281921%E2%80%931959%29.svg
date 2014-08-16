@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="600"
+   height="300"
+   id="svg9055">
+  <defs
+     id="defs9057" />
+  <rect
+     width="600"
+     height="100"
+     x="0"
+     y="0"
+     id="rect9065"
+     style="fill:#000000" />
+  <rect
+     width="600"
+     height="100"
+     x="0"
+     y="200"
+     id="rect7189"
+     style="fill:#007a3d" />
+  <rect
+     width="600"
+     height="100"
+     x="0"
+     y="100"
+     id="rect9687"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+  <path
+     d="M 0,300 150,200 150,100 0,0 z"
+     id="path10309"
+     style="fill:#ce1126" />
+  <path
+     d="m 104.32048,-40.930347 -9.598199,-9.543561 -9.624807,9.516725 1.477077,-13.454487 -13.441443,-1.591396 11.440083,-7.233909 -7.136399,-11.501163 12.788474,4.433948 4.542498,-12.75032 4.506883,12.762954 12.800803,-4.398226 -7.16848,11.481194 11.41984,7.265822 -13.44584,1.553861 1.43951,13.458558 z"
+     transform="translate(-23.13311,160.9303)"
+     id="path5035"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+  <path
+     d="m 104.32048,-40.930347 -9.598199,-9.543561 -9.624807,9.516725 1.477077,-13.454487 -13.441443,-1.591396 11.440083,-7.233909 -7.136399,-11.501163 12.788474,4.433948 4.542498,-12.75032 4.506883,12.762954 12.800803,-4.398226 -7.16848,11.481194 11.41984,7.265822 -13.44584,1.553861 1.43951,13.458558 z"
+     transform="translate(-23.13311,260.9303)"
+     id="path5910"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+  <metadata
+     id="metadata2987">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

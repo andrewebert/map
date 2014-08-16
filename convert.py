@@ -6,7 +6,7 @@ from IPython.core.debugger import Tracer
 
 import util
 
-NOW = "2014_07"
+NOW = "2014_08"
 
 def extract_map_data(paths):
     map = {}
@@ -98,15 +98,16 @@ def update_data(original, changes):
             for attr in attrs}
     defaults["fill"]["UNA"] = "color11"
     defaults["flag"]["UNA"] = \
-        "http://upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_the_United_Nations.svg"
+        "static/img/Flag_of_the_United_Nations.svg"
     defaults["name"]["UNA"] = "United Nations"
-    colonies = {code: [] for code in original.keys()}
+    colonies = {code: [] for code in original.keys() + ["UNA"]}
     main_owners = {}
     colony_names = {
             "GB": "the United Kingdom",
             "US": "the United States",
             "NL": "the Kingdom of the Netherlands",
-            "DK": "the Kingdom of Denmark"
+            "DK": "the Kingdom of Denmark",
+            "UNA": "the United Nations",
             }
     flagless = []
 

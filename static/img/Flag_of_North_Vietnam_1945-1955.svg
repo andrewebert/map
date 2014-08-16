@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   width="900"
+   height="600"
+   viewBox="0 0 30 20"
+   id="svg2">
+  <defs
+     id="defs20" />
+  <rect
+     width="30"
+     height="20"
+     x="0"
+     y="0"
+     id="red_background"
+     style="fill:#da251d;fill-opacity:1" />
+  <g
+     transform="matrix(6,0,0,6,15,10)"
+     id="yellow_star"
+     style="fill:#ffff00">
+    <g
+       id="cone">
+      <polygon
+         points="0,1 0.7,1 0,0 "
+         transform="matrix(0.89673607,0.44256573,-0.44256573,0.89673607,0,-1)"
+         id="triangle" />
+      <use
+         transform="scale(-1,1)"
+         id="use8"
+         x="0"
+         y="0"
+         width="30"
+         height="20"
+         xlink:href="#triangle" />
+    </g>
+    <use
+       transform="matrix(0.30901699,0.95105652,-0.95105652,0.30901699,0,0)"
+       id="use10"
+       x="0"
+       y="0"
+       width="30"
+       height="20"
+       xlink:href="#cone" />
+    <use
+       transform="matrix(0.30901699,-0.95105652,0.95105652,0.30901699,0,0)"
+       id="use12"
+       x="0"
+       y="0"
+       width="30"
+       height="20"
+       xlink:href="#cone" />
+    <use
+       transform="matrix(-0.80901699,0.58778525,-0.58778525,-0.80901699,0,0)"
+       id="use14"
+       x="0"
+       y="0"
+       width="30"
+       height="20"
+       xlink:href="#cone" />
+    <use
+       transform="matrix(-0.80901699,-0.58778525,0.58778525,-0.80901699,0,0)"
+       id="use16"
+       x="0"
+       y="0"
+       width="30"
+       height="20"
+       xlink:href="#cone" />
+  </g>
+</svg>

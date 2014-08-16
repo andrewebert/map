@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<rect width="1000" height="700" fill="#ff0"/>
+<rect width="900" height="32" y="354" id="red" style="fill:#da251d"/>
+<use transform="translate(0,-70)" id="use3010" xlink:href="#red"/>
+<use transform="translate(0,-140)" id="use3012" xlink:href="#red"/>
+</svg>

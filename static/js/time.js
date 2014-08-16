@@ -8,7 +8,7 @@ app.directive('time', function($timeout) {
     START_YEAR = 1950;
     START_MONTH = 1;
     NOW_YEAR = 2014;
-    NOW_MONTH = 7;
+    NOW_MONTH = 8;
     NOW = "" + NOW_YEAR + "_" + (format_month(NOW_MONTH));
     times = [];
     for (y = _i = NOW_YEAR; NOW_YEAR <= START_YEAR ? _i <= START_YEAR : _i >= START_YEAR; y = NOW_YEAR <= START_YEAR ? ++_i : --_i) {

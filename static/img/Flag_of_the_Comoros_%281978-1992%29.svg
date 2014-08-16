@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:odm="http://product.corel.com/CGS/11/cddns/" xml:space="preserve" width="1023px" height="614px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd"
+     viewBox="0 0 1024 614">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil1 {fill:#FFFFFF}
+    .fil0 {fill:#3D8E33}
+   ]]>
+  </style>
+ </defs>
+ <path class="fil0" d="M0 0l1024 0 0 614 -1024 0 0 -614z"/>
+ <g id="Layer 1">
+  <path class="fil1" d="M676 170c-38,-37 -89,-60 -147,-60 -116,0 -210,95 -210,210 0,87 52,161 127,194 -39,-38 -63,-92 -63,-150 0,-116 95,-211 211,-211 29,0 57,6 82,17z"/>
+  <path class="fil1" d="M655 178l20 29 34 -10 -22 28 20 29 -33 -12 -22 28 2 -35 -34 -12 34 -10 1 -35zm10 14m27 10m6 9m-1 28m-7 9m-27 8m-10 -4m-16 -23m0 -11m18 -23"/>
+  <path class="fil1" d="M598 262l20 29 34 -10 -22 28 20 29 -33 -12 -22 28 2 -35 -33 -12 33 -10 1 -35zm10 14m27 10m6 9m-1 28m-7 9m-27 8m-10 -4m-16 -23m0 -11m18 -23"/>
+  <path class="fil1" d="M541 346l20 29 34 -10 -22 28 20 29 -33 -12 -22 28 2 -35 -33 -12 33 -10 1 -35zm10 14m27 10m6 9m-1 29m-6 8m-28 8m-10 -4m-16 -23m0 -11m18 -23"/>
+  <path class="fil1" d="M482 434l20 29 33 -9 -21 27 19 30 -33 -12 -21 27 1 -35 -33 -12 34 -9 1 -36zm10 15m26 10m7 9m-1 28m-7 9m-27 7m-11 -3m-15 -24m0 -11m17 -22"/>
+ </g>
+</svg>

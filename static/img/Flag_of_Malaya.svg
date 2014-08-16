@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.0"
+   width="1100"
+   height="550"
+   id="Malay flag">
+  <rect
+     width="1100"
+     height="550"
+     id="rect6"
+     style="fill:#fff"/>
+  <rect
+     width="1100"
+     height="50"
+     x="0"
+     y="500"
+     id="rect18"
+     style="fill:#ce1126;fill-opacity:1" />
+  <use
+     transform="translate(0,-100)"
+     id="use2777"
+     xlink:href="#rect18" />
+  <use
+     transform="translate(0,-200)"
+     id="use2779"
+     xlink:href="#rect18" />
+  <use
+     transform="translate(0,-300)"
+     id="use2781"
+     xlink:href="#rect18" />
+  <use
+     transform="translate(0,-400)"
+     id="use2783"
+     xlink:href="#rect18" />
+  <use
+     transform="translate(0,-500)"
+     id="use2785"
+     xlink:href="#rect18" />
+  <rect
+     width="550"
+     height="350"
+     id="rect20"
+     style="fill:#002b7f;fill-opacity:1" />
+  <path
+     d="m 259.10475,289.00373 c 7.429,-0.56 13.817,-2.16 20.541,-3.424 -89.836,46.534 -189.878,-23.679 -182.584,-119.82 6.265,-82.575 96.053,-144.389 180.302,-102.703 -78.895,-10.744 -140.362,35.796 -140.362,111.833 0,64.24 42.57,105.192 103.845,114.114 3.464,1.896 14.794,1.896 18.258,0 z"
+     id="path22"
+     style="fill:#fad115;fill-rule:evenodd" />
+  <polygon
+     points="290.528,189.779 236.378,198.738 278.61,163.683 228.214,141.945 282.693,135.286 252.049,89.752 301.479,113.605 300.318,58.733 329.007,105.523 357.696,58.733 356.533,113.605 405.963,89.754 375.32,135.286 429.8,141.945 379.403,163.683 421.635,198.738 367.485,189.779 384.06,242.1 343.351,205.289 329.007,258.268 329.007,258.268 314.662,205.289 273.954,242.1 "
+     transform="translate(23.51475,16.49973)"
+     id="polygon24"
+     style="fill:#fad115" />
+</svg>

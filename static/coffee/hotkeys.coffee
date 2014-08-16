@@ -25,10 +25,10 @@ app.directive 'hotkeys', (hotkeys) -> ($scope) ->
             combo: key
             callback: -> $scope.set_time($scope.time + dt)
 
-    set_time_key("u", -1)
-    set_time_key("p", +1)
-    set_time_key("U", -12)
-    set_time_key("P", +12)
+    set_time_key("[", -1)
+    set_time_key("]", +1)
+    set_time_key("{", -12)
+    set_time_key("}", +12)
     
     shift = (e, dx, dy) ->
         amount = 50

@@ -14,9 +14,9 @@ def get_filenames(fixed, start, end):
 
 
 style = "fill:#7dcfb5;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.50000000000000000;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-fixed = "2014_07"
+fixed = "2014_08"
 start = "1900_01"
-end = "2014_07"
+end = fixed
 source, destinations = get_filenames(fixed, start, end)
             
 for dest in destinations:

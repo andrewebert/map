@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="900px" height="450px" viewBox="0 0 900 450" enable-background="new 0 0 900 450" xml:space="preserve">
+<title>Flag of the Philippines</title>
+<desc>
+	Coding according to the official &quot;description and specification of the FILIPINO flag&quot; in Executive Order No. 23 from 1936
+	</desc>
+<rect fill="#4169E1" width="900" height="450"/>
+<rect y="225" fill="#D71F27" width="900" height="225"/>
+<path fill="#FFFFFF" d="M389.711,225L0,450V0"/>
+<g>
+	<g>
+		<polygon fill="#FCD116" points="344.71,225 327.8,230.88 327.44,248.78 316.62,234.51 299.49,239.69 309.71,225 299.49,210.31 
+			316.62,215.49 327.44,201.22 327.8,219.12 		"/>
+		<g>
+			<polygon fill="#FCD116" points="44.78,391.46 51.73,407.96 36.05,399.32 22.5,411.03 25.86,393.45 10.55,384.18 28.31,381.95 
+				32.39,364.52 40,380.72 57.84,379.21 			"/>
+			<polygon fill="#FCD116" points="57.84,70.79 40,69.28 32.39,85.48 28.31,68.05 10.55,65.82 25.86,56.55 22.5,38.97 36.05,50.68 
+				51.73,42.04 44.78,58.54 			"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<g>
+				<g>
+					<g>
+						<path fill="#FCD116" d="M45,225l5.844,5.844L140,225l-89.156-5.844L45,225z"/>
+						<path id="g" fill="#FCD116" d="M55,236.19l4.769,4.769L140,225L55,236.19z"/>
+						<path id="g_1_" fill="#FCD116" d="M55,213.81l4.769-4.769L140,225L55,213.81z"/>
+					</g>
+					<g>
+						<path fill="#FCD116" d="M235,225l-5.844-5.844L140,225l89.156,5.844L235,225z"/>
+						<path id="g_8_" fill="#FCD116" d="M225,213.81l-4.769-4.769L140,225L225,213.81z"/>
+						<path id="g_9_" fill="#FCD116" d="M225,236.19l-4.769,4.769L140,225L225,236.19z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path fill="#FCD116" d="M140,130l-5.844,5.844L140,225l5.844-89.156L140,130z"/>
+						<path id="g_4_" fill="#FCD116" d="M128.81,140l-4.769,4.769L140,225L128.81,140z"/>
+						<path id="g_5_" fill="#FCD116" d="M151.19,140l4.769,4.769L140,225L151.19,140z"/>
+					</g>
+					<g>
+						<path fill="#FCD116" d="M140,320l5.844-5.844L140,225l-5.844,89.156L140,320z"/>
+						<path id="g_12_" fill="#FCD116" d="M151.19,310l4.769-4.769L140,225L151.19,310z"/>
+						<path id="g_13_" fill="#FCD116" d="M128.81,310l-4.769-4.769L140,225L128.81,310z"/>
+					</g>
+				</g>
+			</g>
+			<g>
+				<g>
+					<g>
+						<path fill="#FCD116" d="M72.825,157.825v8.264L140,225l-58.911-67.175H72.825z"/>
+						<path id="g_2_" fill="#FCD116" d="M71.983,172.809v6.744L140,225L71.983,172.809z"/>
+						<path id="g_3_" fill="#FCD116" d="M87.809,156.983h6.744L140,225L87.809,156.983z"/>
+					</g>
+					<g>
+						<path fill="#FCD116" d="M207.175,292.175v-8.264L140,225l58.911,67.175H207.175z"/>
+						<path id="g_10_" fill="#FCD116" d="M208.017,277.191v-6.744L140,225L208.017,277.191z"/>
+						<path id="g_11_" fill="#FCD116" d="M192.191,293.017h-6.744L140,225L192.191,293.017z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path fill="#FCD116" d="M207.175,157.825h-8.264L140,225l67.175-58.911V157.825z"/>
+						<path id="g_6_" fill="#FCD116" d="M192.191,156.983h-6.744L140,225L192.191,156.983z"/>
+						<path id="g_7_" fill="#FCD116" d="M208.017,172.809v6.744L140,225L208.017,172.809z"/>
+					</g>
+					<g>
+						<path fill="#FCD116" d="M72.825,292.175h8.264L140,225l-67.175,58.911V292.175z"/>
+						<path id="g_14_" fill="#FCD116" d="M87.809,293.017h6.744L140,225L87.809,293.017z"/>
+						<path id="g_15_" fill="#FCD116" d="M71.983,277.191v-6.744L140,225L71.983,277.191z"/>
+					</g>
+				</g>
+			</g>
+		</g>
+		<circle fill="#FCD116" cx="140" cy="225" r="45"/>
+	</g>
+</g>
+</svg>

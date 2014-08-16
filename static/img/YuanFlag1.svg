@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="900"
+   height="600"
+   id="svg2"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="YuanFlag1.svg"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
+  <metadata
+     id="metadata12">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1600"
+     inkscape:window-height="848"
+     id="namedview10"
+     showgrid="false"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="325.85646"
+     inkscape:cy="373.18276"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs5" />
+  <path
+     d="M 900,70 551.92251,298.51962 900,528 900,70 z"
+     id="path3946"
+     style="fill:#163a90;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+  <path
+     d="M 796.29839,0 450.00923,227.79359 111.79995,0 z"
+     id="path3954"
+     style="fill:#f9c300;fill-opacity:1;fill-rule:evenodd;stroke:none"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cccc" />
+  <path
+     d="M 0,70 349.48648,300.05657 0,530 0,70 z"
+     id="path3943"
+     style="fill:#000004;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+  <path
+     d="M 900,0 900,72 112,599.99996 3.9993358e-5,600 0,528 788,0 900,0 z"
+     id="path1316"
+     style="fill:#c2231f;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+  <path
+     d="M 796.2347,600 455.20366,372.44773 112.56067,600 796.2347,600 z"
+     id="path4833"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+  <use
+     transform="matrix(-1,0,0,1,900,0)"
+     id="use2834"
+     x="0"
+     y="0"
+     width="900"
+     height="600"
+     xlink:href="#path1316"
+     style="fill:#c2231f;fill-opacity:1" />
+</svg>

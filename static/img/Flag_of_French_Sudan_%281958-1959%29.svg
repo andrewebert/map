@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="300">
+<rect width="150" height="300" fill="#002395"/>
+<rect width="150" height="300" x="150" fill="#ffffff"/>
+<rect width="150" height="300" x="300" fill="#ED2939"/>
+<circle cx="225" cy="85" r="20" fill="#000"/>
+<path fill="#000" d="M175,240 h10 v-30 h80 v30 h10 v-40 h-45 v-70 h45 v-40 h-10 v30 h-35 v-30 h-10 v30 h-35 v-30 h-10 v40 h45 v70 h-45 v40 z"/>
+</svg>

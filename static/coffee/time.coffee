@@ -4,7 +4,7 @@ app.directive 'time', ($timeout) -> ($scope) ->
     START_YEAR = 1950
     START_MONTH = 1
     NOW_YEAR = 2014
-    NOW_MONTH = 7
+    NOW_MONTH = 8
     NOW = "#{NOW_YEAR}_#{format_month(NOW_MONTH)}"
 
     times = []
