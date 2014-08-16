@@ -14,6 +14,7 @@ Flags:
 Territory:
 - Ashmore and Cartier Islands: 1933, 1938
 - Burkina Faso 1958
+- Andorra
 
 - Kashmir
 

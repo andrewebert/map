@@ -5,7 +5,7 @@ app.directive('time', function($timeout) {
     format_month = function(m) {
       return (m < 10 ? "0" : "") + m.toString();
     };
-    START_YEAR = 1950;
+    START_YEAR = 1940;
     START_MONTH = 1;
     NOW_YEAR = 2014;
     NOW_MONTH = 8;

@@ -430,7 +430,8 @@ initial_countries = {
         "flag": "static/img/Flag_of_Canada.svg",
         "formal": "Canada",
         "link": "http://en.wikipedia.org/wiki/Canada",
-        "name": "Canada"
+        "name": "Canada",
+        "replacing": []
     },
     "CAB": {
         "code": "AO",
@@ -554,7 +555,9 @@ initial_countries = {
         "formal": "People's Republic of China",
         "link": "http://en.wikipedia.org/wiki/China",
         "name": "China",
-        "replacing": []
+        "replacing": [
+            "TW"
+        ]
     },
     "CO": {
         "code": "CO",
@@ -658,6 +661,33 @@ initial_countries = {
         "link": "http://en.wikipedia.org/wiki/Germany",
         "name": "Germany",
         "replacing": []
+    },
+    "DEFR": {
+        "code": "DE",
+        "description": "",
+        "fill": "disputed",
+        "flag": "static/img/Flag_of_Germany.svg",
+        "formal": "Federal Republic of Germany",
+        "link": "http://en.wikipedia.org/wiki/Germany",
+        "removed": true
+    },
+    "DEGB": {
+        "code": "DE",
+        "description": "",
+        "fill": "disputed",
+        "flag": "static/img/Flag_of_Germany.svg",
+        "formal": "Federal Republic of Germany",
+        "link": "http://en.wikipedia.org/wiki/Germany",
+        "removed": true
+    },
+    "DEUS": {
+        "code": "DE",
+        "description": "",
+        "fill": "disputed",
+        "flag": "static/img/Flag_of_Germany.svg",
+        "formal": "Federal Republic of Germany",
+        "link": "http://en.wikipedia.org/wiki/Germany",
+        "removed": true
     },
     "DJ": {
         "code": "DJ",
@@ -776,6 +806,15 @@ initial_countries = {
         "formal": "Federal Democratic Republic of Ethiopia",
         "link": "http://en.wikipedia.org/wiki/Ethiopia",
         "name": "Ethiopia"
+    },
+    "ETR": {
+        "code": "CN",
+        "description": "",
+        "fill": "disputed",
+        "flag": "static/img/Flag_of_the_People%2527s_Republic_of_China.svg",
+        "formal": "People's Republic of China",
+        "link": "http://en.wikipedia.org/wiki/China",
+        "removed": true
     },
     "FEA": {
         "code": "",
@@ -1743,6 +1782,15 @@ initial_countries = {
         "link": "http://en.wikipedia.org/wiki/Norfolk_Island",
         "name": "Norfolk Island"
     },
+    "NFL": {
+        "code": "CA",
+        "description": "",
+        "fill": "disputed",
+        "flag": "static/img/Flag_of_Canada.svg",
+        "formal": "Canada",
+        "link": "http://en.wikipedia.org/wiki/Canada",
+        "removed": true
+    },
     "NG": {
         "code": "NG",
         "d": "m 523.80868,232.51188 0.71204,-2.24678 1.31839,-3.06322 0.81016,-0.0285 1.65705,-1.85823 1.06025,-0.0527 1.57805,1.30466 1.91582,-1.0698 0.25325,-1.31967 0.61959,-1.27874 0.42156,-1.60654 1.48449,-1.30785 0.54481,-2.22243 0.58598,-0.70753 0.378,-1.65002 0.7164,-2.02618 2.32067,-2.45667 0.13379,-1.05525 0.29617,-0.5734 -1.11955,-1.26452 -0.51704,0.0701 -1.93068,-3.47581 -0.65463,-0.12634 -2.15252,1.77463 -2.16586,-0.9264 -1.4996,-0.18523 -0.79795,0.44577 -1.63223,-0.0963 -1.62849,1.35297 -1.4191,0.0776 -3.38221,-1.64099 -1.31282,0.7794 -1.42061,-0.0542 -1.05162,-1.19908 -2.79529,-1.18474 -2.98658,0.37605 -0.72119,0.68662 -0.3839,1.8259 -0.79333,1.28012 -0.18408,2.83428 -0.10537,1.05476 0.63293,1.88327 -0.54614,1.27805 0.29644,0.85395 -1.34959,1.96535 -0.85841,0.97323 -0.52311,2.00259 0.074,2.01958 -0.15305,5.11766 2.46988,0.002 2.10302,-0.0392 1.9864,2.09178 0.92716,2.29806 1.50419,1.98595 2.24116,0.0694 1.0753,-0.71148 1.06364,0.16694 2.90439,-1.14257 z",
@@ -1859,6 +1907,15 @@ initial_countries = {
         "link": "http://en.wikipedia.org/wiki/Panama",
         "name": "Panama",
         "replacing": []
+    },
+    "PAP": {
+        "code": "PG",
+        "description": "",
+        "fill": "disputed",
+        "flag": "static/img/Flag_of_Papua_New_Guinea.svg",
+        "formal": "Independent State of Papua New Guinea",
+        "link": "http://en.wikipedia.org/wiki/Papua_New_Guinea",
+        "removed": true
     },
     "PE": {
         "code": "PE",
@@ -2530,6 +2587,15 @@ initial_countries = {
         "formal": "Kingdom of Tonga",
         "link": "http://en.wikipedia.org/wiki/Tonga",
         "name": "Tonga"
+    },
+    "TPR": {
+        "code": "IN",
+        "description": "",
+        "fill": "disputed",
+        "flag": "static/img/Flag_of_India.svg",
+        "formal": "Republic of India",
+        "link": "http://en.wikipedia.org/wiki/India",
+        "removed": true
     },
     "TR": {
         "code": "TR",

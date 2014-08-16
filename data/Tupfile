@@ -1,0 +1,1 @@
+: flag_urls.csv |> ./convert_flag.sh |> flag.csv

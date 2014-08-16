@@ -108,6 +108,7 @@ def update_data(original, changes):
             "NL": "the Kingdom of the Netherlands",
             "DK": "the Kingdom of Denmark",
             "UNA": "the United Nations",
+            "RU": "the Soviet Union",
             }
     flagless = []
 

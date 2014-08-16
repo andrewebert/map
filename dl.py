@@ -11,8 +11,12 @@ def main():
                 if not os.path.isfile(file):
                     print url
                     r = requests.get(url)
-                    with open(file, 'wb') as f:
-                        f.write(r.content)
+                    if r.status_code == 200:
+                        with open(file, 'wb') as f:
+                            f.write(r.content)
+                    else:
+                        print "Invalid URL"
+                        raise KeyError
                 
 
 if __name__ == "__main__":
