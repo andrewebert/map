@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   width="450" height="300">
+  <metadata><rdf:RDF><cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Flag of the Mengjiang</dc:title>
+  </cc:Work></rdf:RDF></metadata>
+  <rect style="fill:#f9c300" width="450" height="300"/>
+  <rect style="fill:#133481" width="450" height="180" y="60"/>
+  <rect style="fill:#ffffff" width="450" height="100" y="100"/>
+  <rect style="fill:#c2231f" width="450" height="61.111112" y="119.444444" />
+</svg>

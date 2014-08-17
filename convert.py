@@ -169,7 +169,10 @@ def update_data(original, changes):
                     if owners:
                         main_owner = owners[0][1:-1]
                         main_owners[code] = main_owner
-                        data["fill"] = defaults["fill"][main_owner]
+                        main_owner_for_fill = main_owner
+                        while main_owner_for_fill in main_owners:
+                            main_owner_for_fill = main_owners[main_owner_for_fill]
+                        data["fill"] = defaults["fill"][main_owner_for_fill]
                         colonies[main_owner].append(code)
                         for owner in owners:
                             try:
@@ -209,6 +212,14 @@ def update_data(original, changes):
                                 change[replacing][attr] = data[attr]
                             except KeyError:
                                 change[replacing] = {attr: data[attr]}
+            if date !=  NOW and "fill" in data and code in colonies:
+                for colony in colonies[code]:
+                    #print "changing colony fill", date, colony, code
+                    if colony in change:
+                        change[colony]["fill"] = data["fill"]
+                    else:
+                        change[colony] = {"fill": data["fill"]}
+
 
     update(NOW, original)
     for date, change_data in reversed(sorted(changes.items())):

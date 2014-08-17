@@ -20,8 +20,10 @@ Territory:
 - Trieste
 - Kashmir
 - Ifni
+- Greenland
 
 - Clicking disables name label
+- URL modification
 - Resize SVGs
 - Alliances mode: NATO/Warsaw Pact, etc.
 - Detail borders in civil wars
