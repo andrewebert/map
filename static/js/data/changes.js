@@ -147,6 +147,9 @@ changes = {
         },
         "IR": {
             "flag": "static/img/Amir_Kabir_Flag.svg"
+        },
+        "KUR": {
+            "flag": "static/img/Amir_Kabir_Flag.svg"
         }
     },
     "1908_07": {
@@ -175,6 +178,9 @@ changes = {
             "flag": "static/img/US_flag_45_stars.svg"
         },
         "MP": {
+            "flag": "static/img/US_flag_45_stars.svg"
+        },
+        "PH": {
             "flag": "static/img/US_flag_45_stars.svg"
         },
         "PW": {
@@ -340,6 +346,9 @@ changes = {
             "flag": "static/img/US_flag_46_stars.svg"
         },
         "MP": {
+            "flag": "static/img/US_flag_46_stars.svg"
+        },
+        "PH": {
             "flag": "static/img/US_flag_46_stars.svg"
         },
         "PW": {
@@ -654,7 +663,7 @@ changes = {
             "flag": "static/img/Flag_of_Bohemia.svg"
         },
         "PH": {
-            "flag": ""
+            "flag": "static/img/US_flag_48_stars.svg"
         },
         "SK": {
             "flag": "static/img/Flag_of_Bohemia.svg"
@@ -705,7 +714,7 @@ changes = {
             "flag": "static/img/Flag_of_the_Democratic_Republic_of_Armenia.svg"
         },
         "JO": {
-            "flag": ""
+            "flag": "static/img/Flag_of_the_United_Kingdom.svg"
         }
     },
     "1921_05": {
@@ -741,6 +750,9 @@ changes = {
     "1923_01": {
         "MT": {
             "flag": "static/img/Flag_of_Malta_%25281898-1923%2529.svg"
+        },
+        "MYKL": {
+            "flag": "static/img/Flag_of_Kelantan_%25281912_-_1923%2529.svg"
         },
         "YE": {
             "flag": "static/img/Flag_of_Yemen_1918.svg"
@@ -1093,6 +1105,12 @@ changes = {
     "1933_01": {
         "IR": {
             "flag": "static/img/Flag_of_Persia_%25281910-1925%2529.svg"
+        },
+        "KUR": {
+            "flag": "static/img/Flag_of_Persia_%25281910-1925%2529.svg"
+        },
+        "MYTG": {
+            "flag": "static/img/Flag_of_Terengganu_%25281912_-_1933%2529.svg"
         }
     },
     "1933_03": {
@@ -1265,7 +1283,7 @@ changes = {
             "flag": "static/img/Flag_of_Albania_%25281934-1939%2529.svg"
         },
         "PH": {
-            "flag": ""
+            "flag": "static/img/US_flag_48_stars.svg"
         }
     },
     "1943_11": {
@@ -1413,31 +1431,58 @@ changes = {
         }
     },
     "1946_01": {
+        "AL": {
+            "formal": "Democratic Government of Albania"
+        },
         "BA": {
-            "flag": "static/img/Flag_of_the_Democratic_Federal_Yugoslavia.svg"
+            "flag": "static/img/Flag_of_the_Democratic_Federal_Yugoslavia.svg",
+            "formal": "Democratic Federal Yugoslavia"
         },
         "HR": {
-            "flag": "static/img/Flag_of_the_Democratic_Federal_Yugoslavia.svg"
+            "flag": "static/img/Flag_of_the_Democratic_Federal_Yugoslavia.svg",
+            "formal": "Democratic Federal Yugoslavia"
+        },
+        "IR": {
+            "d": "m 615.9375,121.375 -1.59375,0.90625 1.4375,3.65625 -0.34375,1 1.84375,2.59375 2.34375,3.875 1.84375,0.96875 0.5,1.875 -1.15625,1.09375 -0.25,2.5 2.28125,3.03125 3.53125,1.71875 1.71875,2.40625 -0.125,2.3125 0.875,0 0.25,1.6875 1.6875,1.65625 0.84375,-1.25 1.875,1.0625 1.375,-0.53125 2.53125,4.25 2.1875,3 2.71875,0.90625 3.03125,2.4375 3.4375,1.0625 2.5625,-1.5625 2.03125,-0.5625 1.34375,0.5625 1.65625,3.90625 3.125,0.40625 3.03125,0.75 5.25,0.9375 0.5625,-3.6875 3.71875,-1.625 -0.4375,-1.46875 -1.375,-0.53125 -0.46875,-2.78125 -2.8125,-1.40625 -1.375,-1.90625 -1.625,-1.65625 1.96875,-2.875 -0.5625,-2.03125 -2.125,-0.53125 -0.59375,-2.03125 -1.34375,-2.53125 0.8125,-1.71875 -1.25,-0.46875 0.25,-2.34375 0.28125,-4 -0.8125,-2.71875 -1.96875,-0.0937 -3.625,-2.875 -2.15625,-0.34375 -3.25,-1.65625 -1.90625,-0.28125 -1.03125,0.59375 -1.75,-0.0937 -1.5,1.84375 -2.15625,0.625 -0.125,0.75 -3.9375,0.875 -3.8125,-0.5625 -2.125,-1.625 -2.59375,-0.6875 -1.15625,0.25 1.6875,3.46875 -1.21875,0.59375 -2.6875,-1.84375 -1.625,1.125 -1.09375,-3.1875 -3.28125,0.0625 -2,-5.40625 -0.71875,-0.6875 -0.625,-1.1875 z",
+            "replacing": [
+                "KUR"
+            ]
         },
         "KOS": {
-            "flag": "static/img/Flag_of_the_Democratic_Federal_Yugoslavia.svg"
+            "flag": "static/img/Flag_of_the_Democratic_Federal_Yugoslavia.svg",
+            "formal": "Democratic Federal Yugoslavia"
+        },
+        "KUR": {
+            "code": "IR",
+            "description": "",
+            "fill": "disputed",
+            "flag": "static/img/State_Flag_of_Iran_%25281933-1964%2529.svg",
+            "formal": "Imperial State of Iran",
+            "link": "http://en.wikipedia.org/wiki/Iran",
+            "removed": true
         },
         "ME": {
-            "flag": "static/img/Flag_of_the_Democratic_Federal_Yugoslavia.svg"
+            "flag": "static/img/Flag_of_the_Democratic_Federal_Yugoslavia.svg",
+            "formal": "Democratic Federal Yugoslavia"
         },
         "MK": {
-            "flag": "static/img/Flag_of_the_Democratic_Federal_Yugoslavia.svg"
+            "flag": "static/img/Flag_of_the_Democratic_Federal_Yugoslavia.svg",
+            "formal": "Democratic Federal Yugoslavia"
         },
         "RS": {
-            "flag": "static/img/Flag_of_the_Democratic_Federal_Yugoslavia.svg"
+            "flag": "static/img/Flag_of_the_Democratic_Federal_Yugoslavia.svg",
+            "formal": "Democratic Federal Yugoslavia"
         },
         "SI": {
-            "flag": "static/img/Flag_of_the_Democratic_Federal_Yugoslavia.svg"
+            "flag": "static/img/Flag_of_the_Democratic_Federal_Yugoslavia.svg",
+            "formal": "Democratic Federal Yugoslavia"
         }
     },
     "1946_02": {
         "HU": {
-            "flag": "static/img/Flag_of_Hungary_%25281920%25E2%2580%25931946%2529.svg"
+            "flag": "static/img/Flag_of_Hungary_%25281920%25E2%2580%25931946%2529.svg",
+            "formal": "Kingdom of Hungary",
+            "link": "http://en.wikipedia.org/wiki/Kingdom_of_Hungary_(1920%E2%80%931946)"
         }
     },
     "1946_03": {
@@ -1446,8 +1491,81 @@ changes = {
         }
     },
     "1946_04": {
+        "CHR": {
+            "formal": "Straits Settlements",
+            "link": "http://en.wikipedia.org/wiki/Straits_Settlements"
+        },
+        "COC": {
+            "formal": "Straits Settlements",
+            "link": "http://en.wikipedia.org/wiki/Straits_Settlements"
+        },
         "LA": {
             "flag": "static/img/Flag_of_Laos.svg"
+        },
+        "MY": {
+            "d": "m 787.78125,238.5938 3.3125,1.03125 -0.96875,-0.8125 -0.25,-1.875 -0.3125,-1.09375 0.18531,-0.88522 -1.70566,-2.43665 -4.17275,0.3655 0.82237,-3.59406 -1.50427,0.30043 -0.14047,-0.84868 -1.91886,2.92398 0.52808,0.86215 0.5,2.625 1.6875,2.125 0.375,1.625 1.125,0.8125 2.125,-0.0937 z",
+            "description": "Protectorate of the United Kingdom",
+            "fill": "color2",
+            "formal": "Federated Malay States",
+            "link": "http://en.wikipedia.org/wiki/Federated_Malay_States"
+        },
+        "MYJH": {
+            "code": "MYJH",
+            "d": "m 787.76803,238.58309 -0.67008,2.43665 0.49575,0.38654 2.6875,2.375 0.48594,-0.0531 -0.0797,-0.32185 c 0.0498,-0.10363 0.10645,-0.20888 0.15625,-0.3125 0.10493,-0.025 0.20757,-0.0375 0.3125,-0.0625 0.14817,0.0609 0.30863,0.089 0.4375,0.1875 0.0957,0.0421 0.0494,0.0949 0,0.15625 l 0.15244,0.24595 0.53512,-0.0585 0.0312,-1.09375 -1.15991,-2.80045 z",
+            "description": "Protectorate of the United Kingdom",
+            "fill": "color2",
+            "flag": "static/img/Flag_of_Johor.svg",
+            "formal": "State of Johor Darul Ta'zim",
+            "link": "http://en.wikipedia.org/wiki/Johor",
+            "name": "Johor",
+            "removed": false
+        },
+        "MYKD": {
+            "code": "MYKD",
+            "d": "m 780.53125,226.5625 -0.4375,0.5625 0.6875,1.34375 -0.21875,2.3125 0.5625,0.875 1.90625,-2.875 -0.125,-0.8125 -2.375,-1.40625 z",
+            "description": "Protectorate of the United Kingdom",
+            "fill": "color2",
+            "flag": "static/img/Flag_of_Kedah.svg",
+            "formal": "State of Kedah Darul Aman",
+            "link": "http://en.wikipedia.org/wiki/Kedah",
+            "name": "Kedah",
+            "removed": false
+        },
+        "MYKL": {
+            "code": "MYKL",
+            "d": "m 785.875,227.90625 -0.84375,1.3125 -0.34375,0.0625 -0.8125,3.59375 3.46875,-0.28125 -0.25,-3.75 -0.5625,-0.625 -0.65625,-0.3125 z",
+            "description": "Protectorate of the United Kingdom",
+            "fill": "color2",
+            "flag": "static/img/Flag_of_Kelantan.svg",
+            "formal": "State of Kelantan Darul",
+            "link": "http://en.wikipedia.org/wiki/Kelantan",
+            "name": "Kelantan",
+            "removed": false
+        },
+        "MYTG": {
+            "code": "MYTG",
+            "d": "m 788.03125,232.53125 1.6875,2.40625 0.0937,-0.5625 -0.25,-2.125 -1.28125,-2.125 -1.18325,-1.2885 0.24367,3.74634 z",
+            "description": "Protectorate of the United Kingdom",
+            "fill": "color2",
+            "flag": "static/img/Flag_of_Terengganu_%2528pre_1953%2529.svg",
+            "formal": "State of Perlis Indera Kayangan",
+            "link": "http://en.wikipedia.org/wiki/Terengganu",
+            "name": "Terengganu",
+            "removed": false
+        },
+        "SG": {
+            "d": "m 785.35073,239.72238 1.74302,1.30887 0.37402,-1.40396 z m 5.41641,4.0058 -0.0797,-0.32185 c 0.0498,-0.10363 0.10645,-0.20888 0.15625,-0.3125 0.10493,-0.025 0.20757,-0.0375 0.3125,-0.0625 0.14817,0.0609 0.30863,0.089 0.4375,0.1875 0.0957,0.0421 0.0494,0.0949 0,0.15625 l 0.15244,0.24595 z m 4.29386,37.20403 -0.0395,-0.19783 -0.10433,0.0595 -0.0686,0.009 -0.14092,0.0236 -0.0461,0.16775 0.1649,0.0397 0.13639,0.12435 0.0982,-0.22605 z m -25.02202,5.40161 0.0195,-0.0301 0.006,-0.0363 -0.01,-0.0372 -0.008,0.0375 -0.0179,0.027 -0.0264,0.0149 -0.032,0.002 10e-4,0.0171 0.007,0.009 0.026,0.0136 0.0343,-0.018 z",
+            "formal": "Straits Settlements",
+            "link": "http://en.wikipedia.org/wiki/Straits_Settlements",
+            "name": "Straits Settlements"
+        }
+    },
+    "1946_05": {
+        "JO": {
+            "description": "League of Nations mandate under the United Kingdom",
+            "fill": "color2",
+            "formal": "Emirate of Transjordan",
+            "link": "http://en.wikipedia.org/wiki/Emirate_of_Transjordan"
         }
     },
     "1946_06": {
@@ -1455,7 +1573,9 @@ changes = {
             "flag": "static/img/Flag_of_Italy_%25281861-1946%2529.svg"
         },
         "IT": {
-            "flag": "static/img/Flag_of_Italy_%25281861-1946%2529.svg"
+            "flag": "static/img/Flag_of_Italy_%25281861-1946%2529.svg",
+            "formal": "Kingdom of Italy",
+            "link": "http://en.wikipedia.org/wiki/Kingdom_of_Italy_(1861%E2%80%931946)"
         },
         "PUN": {
             "flag": "static/img/Flag_of_Italy_%25281861-1946%2529.svg"
@@ -1464,9 +1584,19 @@ changes = {
             "flag": "static/img/Flag_of_Italy_%25281861-1946%2529.svg"
         }
     },
+    "1946_07": {
+        "PH": {
+            "description": "Associated state of the United States",
+            "fill": "color7",
+            "formal": "Commonwealth of the Philippines",
+            "link": "http://en.wikipedia.org/wiki/Commonwealth_of_the_Philippines"
+        }
+    },
     "1946_09": {
         "BG": {
-            "flag": "static/img/Flag_of_Bulgaria.svg"
+            "flag": "static/img/Flag_of_Bulgaria.svg",
+            "formal": "Kingdom of Bulgaria",
+            "link": "http://en.wikipedia.org/wiki/Kingdom_of_Bulgaria"
         }
     },
     "1946_10": {
@@ -1735,7 +1865,29 @@ changes = {
         },
         "MY": {
             "description": "Crown colony of the United Kingdom",
-            "fill": "color2"
+            "fill": "color2",
+            "formal": "Malayan Union",
+            "link": "http://en.wikipedia.org/wiki/Malayan_Union"
+        },
+        "MYJH": {
+            "description": "Crown colony of the United Kingdom",
+            "formal": "Malayan Union",
+            "link": "http://en.wikipedia.org/wiki/Malayan_Union"
+        },
+        "MYKD": {
+            "description": "Crown colony of the United Kingdom",
+            "formal": "Malayan Union",
+            "link": "http://en.wikipedia.org/wiki/Malayan_Union"
+        },
+        "MYKL": {
+            "description": "Crown colony of the United Kingdom",
+            "formal": "Malayan Union",
+            "link": "http://en.wikipedia.org/wiki/Malayan_Union"
+        },
+        "MYTG": {
+            "description": "Crown colony of the United Kingdom",
+            "formal": "Malayan Union",
+            "link": "http://en.wikipedia.org/wiki/Malayan_Union"
         },
         "RO": {
             "flag": "static/img/Flag_of_Romania.svg"
@@ -2194,6 +2346,18 @@ changes = {
     },
     "1950_05": {
         "MY": {
+            "flag": "static/img/Flag_of_the_Federated_Malay_States_%25281895_-_1946%2529.svg"
+        },
+        "MYJH": {
+            "flag": "static/img/Flag_of_the_Federated_Malay_States_%25281895_-_1946%2529.svg"
+        },
+        "MYKD": {
+            "flag": "static/img/Flag_of_the_Federated_Malay_States_%25281895_-_1946%2529.svg"
+        },
+        "MYKL": {
+            "flag": "static/img/Flag_of_the_Federated_Malay_States_%25281895_-_1946%2529.svg"
+        },
+        "MYTG": {
             "flag": "static/img/Flag_of_the_Federated_Malay_States_%25281895_-_1946%2529.svg"
         }
     },
@@ -2959,6 +3123,18 @@ changes = {
         "MY": {
             "description": "Protectorate of the United Kingdom",
             "fill": "color2"
+        },
+        "MYJH": {
+            "description": "Protectorate of the United Kingdom"
+        },
+        "MYKD": {
+            "description": "Protectorate of the United Kingdom"
+        },
+        "MYKL": {
+            "description": "Protectorate of the United Kingdom"
+        },
+        "MYTG": {
+            "description": "Protectorate of the United Kingdom"
         },
         "SMO": {
             "formal": "Sherifian Empire"
@@ -4323,6 +4499,26 @@ changes = {
             "formal": "Federation of Malaya",
             "link": "http://en.wikipedia.org/wiki/Federation_of_Malaya",
             "name": "Malaya"
+        },
+        "MYJH": {
+            "flag": "static/img/Flag_of_Malaya.svg",
+            "formal": "Federation of Malaya",
+            "link": "http://en.wikipedia.org/wiki/Federation_of_Malaya"
+        },
+        "MYKD": {
+            "flag": "static/img/Flag_of_Malaya.svg",
+            "formal": "Federation of Malaya",
+            "link": "http://en.wikipedia.org/wiki/Federation_of_Malaya"
+        },
+        "MYKL": {
+            "flag": "static/img/Flag_of_Malaya.svg",
+            "formal": "Federation of Malaya",
+            "link": "http://en.wikipedia.org/wiki/Federation_of_Malaya"
+        },
+        "MYTG": {
+            "flag": "static/img/Flag_of_Malaya.svg",
+            "formal": "Federation of Malaya",
+            "link": "http://en.wikipedia.org/wiki/Federation_of_Malaya"
         },
         "SAB": {
             "code": "SAB",

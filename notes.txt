@@ -10,6 +10,8 @@ Flags:
 - Turks and Caicos 1968
 - Vanuatu 1906
 - Trieste 1954
+- Kedah 1912
+- Kelantan 1912
 
 Territory:
 - Ashmore and Cartier Islands: 1933, 1938
@@ -17,6 +19,7 @@ Territory:
 - Andorra
 - Trieste
 - Kashmir
+- Ifni
 
 - Clicking disables name label
 - Resize SVGs

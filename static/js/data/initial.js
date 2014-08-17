@@ -1271,7 +1271,9 @@ initial_countries = {
         "formal": "Islamic Republic of Iran",
         "link": "http://en.wikipedia.org/wiki/Iran",
         "name": "Iran",
-        "replacing": []
+        "replacing": [
+            "KUR"
+        ]
     },
     "IS": {
         "code": "IS",
@@ -1787,6 +1789,42 @@ initial_countries = {
         "link": "http://en.wikipedia.org/wiki/Malaysia",
         "name": "Malaysia",
         "replacing": []
+    },
+    "MYJH": {
+        "code": "MY",
+        "description": "",
+        "fill": "disputed",
+        "flag": "static/img/Flag_of_Malaysia.svg",
+        "formal": "Malaysia",
+        "link": "http://en.wikipedia.org/wiki/Malaysia",
+        "removed": true
+    },
+    "MYKD": {
+        "code": "MY",
+        "description": "",
+        "fill": "disputed",
+        "flag": "static/img/Flag_of_Malaysia.svg",
+        "formal": "Malaysia",
+        "link": "http://en.wikipedia.org/wiki/Malaysia",
+        "removed": true
+    },
+    "MYKL": {
+        "code": "MY",
+        "description": "",
+        "fill": "disputed",
+        "flag": "static/img/Flag_of_Malaysia.svg",
+        "formal": "Malaysia",
+        "link": "http://en.wikipedia.org/wiki/Malaysia",
+        "removed": true
+    },
+    "MYTG": {
+        "code": "MY",
+        "description": "",
+        "fill": "disputed",
+        "flag": "static/img/Flag_of_Malaysia.svg",
+        "formal": "Malaysia",
+        "link": "http://en.wikipedia.org/wiki/Malaysia",
+        "removed": true
     },
     "MZ": {
         "code": "MZ",
