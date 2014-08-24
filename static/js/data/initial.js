@@ -158,7 +158,7 @@ initial_countries = {
     "AT": {
         "code": "AT",
         "d": "m 541.8568,95.342776 -0.34011,-1.075638 0.16251,-0.39392 -1.18378,-0.58557 -1.13904,0.160942 -1.98233,-0.945771 -0.84404,0.231322 -1.28304,1.268365 -1.89781,-0.998061 -0.76526,1.429951 -0.85747,0.39409 0.48467,2.023523 -0.19581,0.527915 -0.81289,-0.636033 -1.19114,-0.09535 -1.73478,0.557047 -2.18953,-0.132441 -0.3091,0.819831 -1.29728,-0.862693 -0.73833,0.17129 0.12271,0.551265 -0.34259,0.760347 1.15092,0.565435 1.27194,0.0844 1.52964,0.441413 0.25616,-0.590554 2.42168,-0.539771 0.62127,1.080037 3.61077,0.801413 2.07459,0.24037 1.20436,-0.70392 2.16992,-0.0773 0.43187,-0.523896 0.6584,-1.999497 -0.53542,-0.673273 1.39144,-0.0061 0.0769,-1.26916 z",
-        "fill": "color10",
+        "fill": "color4",
         "flag": "static/img/Flag_of_Austria.svg",
         "formal": "Republic of Austria",
         "link": "http://en.wikipedia.org/wiki/Austria",
@@ -612,7 +612,8 @@ initial_countries = {
         "name": "China",
         "replacing": [
             "MEN",
-            "TW"
+            "TW",
+            "ETR"
         ]
     },
     "CO": {
@@ -642,6 +643,15 @@ initial_countries = {
         "formal": "Republic of Costa Rica",
         "link": "http://en.wikipedia.org/wiki/Costa_Rica",
         "name": "Costa Rica"
+    },
+    "CRE": {
+        "code": "GR",
+        "description": "",
+        "fill": "disputed",
+        "flag": "static/img/Flag_of_Greece.svg",
+        "formal": "Hellenic Republic",
+        "link": "http://en.wikipedia.org/wiki/Greece",
+        "removed": true
     },
     "CRI": {
         "code": "CRI",
@@ -720,7 +730,8 @@ initial_countries = {
             "DEFR",
             "EDE",
             "DEGB",
-            "DEUS"
+            "DEUS",
+            "KON"
         ]
     },
     "DEFR": {
@@ -739,6 +750,15 @@ initial_countries = {
         "flag": "static/img/Flag_of_Germany.svg",
         "formal": "Federal Republic of Germany",
         "link": "http://en.wikipedia.org/wiki/Germany",
+        "removed": true
+    },
+    "DEOS": {
+        "code": "RU",
+        "description": "",
+        "fill": "disputed",
+        "flag": "static/img/Flag_of_Russia.svg",
+        "formal": "Russian Federation",
+        "link": "http://en.wikipedia.org/wiki/Russia",
         "removed": true
     },
     "DEUS": {
@@ -1088,7 +1108,10 @@ initial_countries = {
         "flag": "static/img/Flag_of_Greece.svg",
         "formal": "Hellenic Republic",
         "link": "http://en.wikipedia.org/wiki/Greece",
-        "name": "Greece"
+        "name": "Greece",
+        "replacing": [
+            "CRE"
+        ]
     },
     "GS": {
         "code": "GS",
@@ -2353,7 +2376,8 @@ initial_countries = {
             "SOT",
             "BY",
             "LV",
-            "LT"
+            "LT",
+            "PL"
         ]
     },
     "RW": {
@@ -2861,6 +2885,15 @@ initial_countries = {
         "formal": "Republic of Trinidad and Tobago",
         "link": "http://en.wikipedia.org/wiki/Trinidad_and_Tobago",
         "name": "Trinidad and Tobago"
+    },
+    "TUV": {
+        "code": "RU",
+        "description": "",
+        "fill": "disputed",
+        "flag": "static/img/Flag_of_Russia.svg",
+        "formal": "Russian Federation",
+        "link": "http://en.wikipedia.org/wiki/Russia",
+        "removed": true
     },
     "TV": {
         "code": "TV",

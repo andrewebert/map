@@ -1,7 +1,7 @@
 app.directive 'time', ($timeout) -> ($scope) ->
     format_month = (m) -> (if m < 10 then "0" else "") + m.toString()
 
-    START_YEAR = 1940
+    START_YEAR = 1945
     START_MONTH = 1
     NOW_YEAR = 2014
     NOW_MONTH = 8

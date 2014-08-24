@@ -100,6 +100,12 @@ def update_data(original, changes):
     defaults["flag"]["UNA"] = \
         "static/img/Flag_of_the_United_Nations.svg"
     defaults["name"]["UNA"] = "United Nations"
+    defaults["fill"]["FBE"] = "color1"
+    defaults["flag"]["FBE"] = "static/img/Flag_of_Belgium.svg"
+    defaults["name"]["FBE"] = "the Belgian government in exile"
+    defaults["fill"]["FFR"] = "color2"
+    defaults["flag"]["FFR"] = "static/img/Flag_of_Free_France_1940-1944.svg"
+    defaults["name"]["FFR"] = "Free France"
     colonies = {code: [] for code in original.keys() + ["UNA"]}
     main_owners = {}
     colony_names = {
@@ -221,10 +227,13 @@ def update_data(original, changes):
                         change[colony] = {"fill": data["fill"]}
 
 
+
     update(NOW, original)
     for date, change_data in reversed(sorted(changes.items())):
         if change_data:
             update(date, change_data)
+    print "FR", colonies["FR"]
+    print "BE", colonies["BE"]
 
 
 def convert(original_file, change_files):

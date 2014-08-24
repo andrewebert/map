@@ -22,6 +22,8 @@ Territory:
 - Ifni
 - Greenland
 
+- Colonies of Free France and Free Belgium
+- Descriptive text for each year
 - Clicking disables name label
 - URL modification
 - Resize SVGs
