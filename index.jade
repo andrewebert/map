@@ -37,7 +37,7 @@ html(lang = "en", ng-app = "map")
                ng-attr-href = "{{ link() }}",
                target="_blank")
         {{ formal() }}
-      img#flag(ng-src="{{ flag() }}",
+      img#flag.noselect(ng-src="{{ flag() }}",
                ng-show="flag()",
                ng-class="{hoverable: !drag_data.dragging}")
       p.description {{ description() }}

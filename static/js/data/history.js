@@ -1,4 +1,78 @@
 history_data = {
+    "1980": {
+        "highlighted": "ZW SV VU",
+        "text": [
+            "In April 1980, Zimbabwe formally achieves independence under African majority rule.",
+            "In May, the left-wing rebels of the Farabundo Mart\u00ed National Liberation Front rose up against the government of El Salvador, beginning the Salvadoran Civil War.",
+            "In July, the New Hebrides Condominium achieves independence from Great Britain and France as Vanuatu.",
+            "In September, Iraq launched a surprise attack on Iran, beginning the Iraq-Iran War."
+        ]
+    },
+    "1981": {
+        "highlighted": "BZ AG SIN CIS ZA IQ SA",
+        "text": [
+            "Belize and Angigua and Barbuda declare independence from the United Kingdom in September and November of 1981, respectively.",
+            "In December, South Africa declares the Republic of Ciskei to be an independent Bantu republic.",
+            "Also in December, Iraq and Saudi Arabia formally define their borders, removing the Saudi-Iraqi Neutral Zone."
+        ]
+    },
+    "1982": {
+        "highlighted": "FK GS LB",
+        "text": [
+            "In April 1982, Argentina invaded the British territories of the Falkland Islands and the Georgia and South Sandwich Islands, starting the Falklands War. The War ended three months later with an Argentine defeat.",
+            "In June, Israel invaded southern Lebanon, beginning the First Lebanon War."
+        ]
+    },
+    "1983": {
+        "highlighted": "GD",
+        "text": [
+            "In October 1983, following months of political turmoil, the U.S. invaded Grenada. The Grenadan military government was overthrown and replaced by the Governor-General, Paul Scoon, until elections were held in 1984.",
+            "Also in October, the Turkish Republic of Northern Cyprus declared independence from Cyprus, recognized only be Turkey."
+        ]
+    },
+    "1984": {
+        "highlighted": "BN",
+        "text": [
+            "In January 1984 Brunei gained independence from the United Kingdom."
+        ]
+    },
+    "1985": {
+        "highlighted": "IL LB",
+        "text": [
+            "In June 1985 the First Lebanon War came to an end with Israel withdrawing from north and central Lebanon. In the aftermath of the war Syria came to dominate the Lebanese political system."
+        ]
+    },
+    "1986": {
+        "highlighted": "NAN AW PW FM MH MP",
+        "text": [
+            "In January 1986, Aruba split from the Netherlands Antilles.",
+            "In November, the Trust Territory of the Pacific Islands was dissolved into Palau, the Marshall Islands, the Federated States of Micronesia, and the Northern Mariana Islands."
+        ]
+    },
+    "1987": {
+        "highlighted": "IL PS",
+        "text": [
+            "In November 1987, Palesinians in Israel launched the First Intifada, seeking to create an independent Palestinian state."
+        ]
+    },
+    "1988": {
+        "highlighted": "IL PS IR IQ MM",
+        "text": [
+            "On August 8 1988 hundreds of thousands of Burmese protestors attempted to bring down Burma's Socialist government. The government was overthrown in a military coup and the protests were brutally crushed.",
+            "Also in August, the Iran-Iraq ended in a ceasefire with neither side making significant gains.",
+            "In November, the State of Palestine declared independence from Israel with partial international recognition."
+        ]
+    },
+    "1989": {
+        "highlighted": "PL HU EDE CZ BG RO",
+        "text": []
+    },
+    "1989 saw a wave of popular uprisings in eastern Europe, beginning with a wave of strikes in Poland in April and expanding to Hungary, East Germany, Czechoslovakia, Bulgaria and Romania. The unrest weakened or destroyed the Communist governments of the affected nations.": {
+        "highlighted": "",
+        "text": [
+            "In November the Berlin wall fell, setting the stage for the reunification of Germany."
+        ]
+    },
     "1990": {
         "highlighted": "DE EDE KW IQ RU PG YE LV BOU SYE BY ZA NA LT",
         "text": [
