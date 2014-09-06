@@ -31,8 +31,8 @@ html(lang = "en", ng-app = "map")
     #labelmarker(ng-show="label.visible()" ng-style="{left: label.x + 'px', top: label.y + 'px'}")
       #label(ng-class="label.flip")
         p {{ label.text() }}
-    #sidebar
-      //-#infobox
+    #sidebar(ng-style="{height: (mapHeight+57) + 'px'}",
+             ng-class="{overflowauto: !curr_code()}")
       a#formal(ng-class = "{nopoint: drag_data.dragging}",
                ng-attr-href = "{{ link() }}",
                target="_blank")
@@ -44,7 +44,6 @@ html(lang = "en", ng-app = "map")
       p.description(ng-repeat="p in history_text()",
                     ng-hide="curr_code()")
         {{ p }}
-      //-hr#sidebar-spacer
     #map(transformable, countries, time, hotkeys, history,
          ng-style="{width: mapWidth + 'px', height: (mapHeight+57) + 'px'}",
          ng-mousedown="grab($event)",

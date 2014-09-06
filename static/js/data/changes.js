@@ -9566,6 +9566,7 @@ changes = {
             "flag": "static/img/Flag_of_Puntland.svg",
             "formal": "Puntland State of Somalia",
             "link": "http://en.wikipedia.org/wiki/Puntland",
+            "name": "Puntland",
             "removed": false
         },
         "SO": {

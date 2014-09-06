@@ -5,6 +5,7 @@ body {
 #map {
   background-color: #ffffff;
   position: absolute;
+  z-index: 0;
   display: block;
   left: 400px;
   margin: 0px;
@@ -41,6 +42,11 @@ slider {
 }
 slider .bubble.limit {
   display: none;
+}
+slider .bar {
+  background: #c0c0c0 !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
 }
 #world {
   position: absolute;
@@ -144,9 +150,12 @@ slider .bubble.limit {
 #sidebar {
   position: fixed;
   width: 400px;
-  height: 100%;
   background-color: #002b36;
+  max-height: 100%;
   z-index: 10;
+}
+.overflowauto {
+  overflow: auto;
 }
 #sidebar * {
   display: block;
@@ -159,6 +168,7 @@ slider .bubble.limit {
   font-size: 24px;
 }
 #flag {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
