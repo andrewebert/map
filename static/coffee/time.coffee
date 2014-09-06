@@ -39,6 +39,8 @@ app.directive 'time', ($timeout) -> ($scope) ->
     $scope.$watch 'raw_time', (value) ->
         $scope.time = parseInt(value)
 
+    $scope.year = -> Math.floor($scope.time/12) + START_YEAR
+
     $scope.set_time = (new_time) ->
         if new_time < 0
             $scope.raw_time = "0"

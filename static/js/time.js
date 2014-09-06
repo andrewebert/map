@@ -51,6 +51,9 @@ app.directive('time', function($timeout) {
     $scope.$watch('raw_time', function(value) {
       return $scope.time = parseInt(value);
     });
+    $scope.year = function() {
+      return Math.floor($scope.time / 12) + START_YEAR;
+    };
     $scope.set_time = function(new_time) {
       if (new_time < 0) {
         return $scope.raw_time = "0";

@@ -18,7 +18,10 @@ MapCtrl = ($scope) ->
     $scope.$watch 'time', (time) ->
         $scope.countries = $scope.data[time]
         $scope.visible_countries = (country for _, country of $scope.countries \
-            when not country.removed)
+            when not country.removed).sort (a,b) ->
+              $scope.highlighted(a) > $scope.highlighted(b)
+
+
 
     #$scope.country = (code) ->
         #countries = $scope.countries[$scope.time]

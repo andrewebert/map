@@ -24,7 +24,7 @@ MapCtrl = function($scope) {
   $scope.$watch('time', function(time) {
     var country, _;
     $scope.countries = $scope.data[time];
-    return $scope.visible_countries = (function() {
+    return $scope.visible_countries = ((function() {
       var _ref, _results;
       _ref = $scope.countries;
       _results = [];
@@ -35,7 +35,9 @@ MapCtrl = function($scope) {
         }
       }
       return _results;
-    })();
+    })()).sort(function(a, b) {
+      return $scope.highlighted(a) > $scope.highlighted(b);
+    });
   });
   $scope.curr_code = function() {
     var _ref, _ref1;

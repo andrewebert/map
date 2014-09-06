@@ -9,15 +9,16 @@ app.directive 'transformable', ($window) -> ($scope) ->
     $scope.zoom_level = 0
     
     $scope.initializeWindowSize = ->
-        MARGIN_LEFT = 10
-        MARGIN_RIGHT = 10
-        MARGIN_TOP = 10
-        MARGIN_BOTTOM = 10
+        MARGIN_LEFT = 0
+        MARGIN_RIGHT = 0
+        MARGIN_TOP = 0
+        MARGIN_BOTTOM = 0
         BASE_WIDTH = 1000
         BASE_HEIGHT = 506
         TIMELINE_HEIGHT = 57
+        SIDEBAR_WIDTH = 400
 
-        width = window.innerWidth - MARGIN_LEFT - MARGIN_RIGHT
+        width = window.innerWidth - MARGIN_LEFT - MARGIN_RIGHT - SIDEBAR_WIDTH
         height = window.innerHeight - MARGIN_TOP - MARGIN_BOTTOM - TIMELINE_HEIGHT
         $scope.base_scale = Math.max(
             Math.min(width/BASE_WIDTH, height/BASE_HEIGHT), 1)

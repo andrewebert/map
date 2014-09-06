@@ -1,15 +1,16 @@
 body {
   background-color: #d8d8d8;
+  margin: 0px;
 }
 #map {
   background-color: #ffffff;
-  position: relative;
+  position: absolute;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  box-shadow: 0px 0px 10px #555;
+  left: 400px;
+  margin: 0px;
+  /*margin-top: 10px;*/
+  /*margin-bottom: 10px;*/
+  /*box-shadow: 0px 0px 10px #555;*/
 }
 #playbox {
   position: absolute;
@@ -58,6 +59,9 @@ slider .bubble.limit {
   stroke: #000000;
   stroke-opacity: 1;
   stroke-linejoin: round;
+}
+#world .highlighted {
+  stroke: #ff0000;
 }
 #world:focus {
   cursor: default;
@@ -137,62 +141,61 @@ slider .bubble.limit {
   opacity: 0.9;
   pointer-events: none;
 }
-#flagbox {
-  position: absolute;
-  left: -42%;
-  top: -30%;
-  width: 115%;
-  height: 140%;
-  pointer-events: none;
-}
-#flag {
-  position: absolute;
+#sidebar {
+  position: fixed;
+  width: 400px;
+  height: 100%;
+  background-color: #002b36;
   z-index: 10;
-  /*left: 4%;*/
-  /*top: 11%;*/
-  margin: auto;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
-  max-width: 20%;
-  max-height: 44%;
-  pointer-events: auto;
 }
-#flag.hoverable:hover {
-  left: 0%;
-  top: 0%;
-  max-width: 100%;
-  max-height: 100%;
-}
-#text {
-  position: absolute;
-  margin-top: 0px;
-  top: 10%;
-  left: 30%;
-  width: 65%;
+#sidebar * {
+  display: block;
 }
 #formal {
   text-decoration: none;
+  text-align: center;
+  margin: 20px;
+  color: #eee8d5;
+  font-size: 24px;
 }
+#flag {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  left: 0px;
+  right: 0px;
+  max-width: 70%;
+  max-height: 200px;
+}
+#flag.hoverable:hover {
+  max-width: 140%;
+  max-height: 320px;
+}
+.description {
+  font-size: 1em;
+  /*top: @sidebar-spacing * 3 + 56px + @sidebar-width * 0.5;*/
+  color: #eee8d5;
+  margin: 20px;
+}
+/*#sidebar-spacer {*/
+/*position: absolute;*/
+/*top: 445px;*/
+/*width: 100%;*/
+/*}*/
 .nopoint {
   pointer-events: none;
 }
-@media (min-width: 1400px) and (min-height: 700px) {
-  #formal,
-  #owner {
-    font-size: 1.5em;
-  }
-}
-@media (min-width: 1600px) and (min-height: 800px) {
-  #formal,
-  #owner {
-    font-size: 2em;
-  }
-}
-#description {
-  font-size: 1em !important;
-}
+/*@media (min-width: 1400px) and (min-height: 700px) {*/
+/*#formal, #owner {*/
+/*font-size: 1.5em;*/
+/*}*/
+/*}*/
+/*@media (min-width: 1600px) and (min-height: 800px) {*/
+/*#formal, #owner {*/
+/*font-size: 2em;*/
+/*}*/
+/*}*/
 .color1 {
   fill: #af0b0b;
 }

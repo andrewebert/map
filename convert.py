@@ -236,6 +236,11 @@ def update_data(original, changes):
     print "BE", colonies["BE"]
 
 
+def write_js(var, dict):
+    return "{0} = {1};".format(var, json.dumps(dict, sort_keys=True,
+        indent = 4, separators=(',',': ')))
+
+
 def convert(original_file, change_files):
     original_map, changes_map = get_data(original_file, change_files)
 
@@ -305,10 +310,6 @@ def convert(original_file, change_files):
             #if code in data and "flag" in data[code]:
                 #print "    " + date
 
-    def write_js(var, dict):
-        return "{0} = {1};".format(var, json.dumps(dict, sort_keys=True,
-            indent = 4, separators=(',',': ')))
-
     original_str = write_js("initial_countries", original)
     changes_str = write_js("changes", changes)
     #fills_str = write_js("fills", fills)
@@ -320,8 +321,32 @@ def convert(original_file, change_files):
         #f.write(fills_str)
 
 
+def convert_history():
+    with open("data/history.txt") as f:
+        lines = f.readlines()
+    history = {}
+    curr_year = None
+    curr = {}
+    while lines != []:
+        line = lines[0].strip()
+        lines = lines[1:]
+        if re.match(r'\d{4}', line):
+            if curr_year:
+                history[curr_year] = curr
+            curr_year = line;
+            curr = {"highlighted": lines[0].strip(), "text": []}
+            lines = lines[1:]
+        elif line != "":
+            curr["text"].append(line)
+    if curr_year:
+        history[curr_year] = curr
+
+    with open("static/js/data/history.js", 'w') as f:
+        f.write(write_js("history_data", history))
+
 
 if __name__ == "__main__":
     filenames = list(reversed(util.get_images()))
     convert(filenames[0], filenames[1:])
+    convert_history()
 

@@ -10,15 +10,16 @@ app.directive('transformable', function($window) {
     $scope.y_trans = 0;
     $scope.zoom_level = 0;
     $scope.initializeWindowSize = function() {
-      var BASE_HEIGHT, BASE_WIDTH, MARGIN_BOTTOM, MARGIN_LEFT, MARGIN_RIGHT, MARGIN_TOP, TIMELINE_HEIGHT, height, width;
-      MARGIN_LEFT = 10;
-      MARGIN_RIGHT = 10;
-      MARGIN_TOP = 10;
-      MARGIN_BOTTOM = 10;
+      var BASE_HEIGHT, BASE_WIDTH, MARGIN_BOTTOM, MARGIN_LEFT, MARGIN_RIGHT, MARGIN_TOP, SIDEBAR_WIDTH, TIMELINE_HEIGHT, height, width;
+      MARGIN_LEFT = 0;
+      MARGIN_RIGHT = 0;
+      MARGIN_TOP = 0;
+      MARGIN_BOTTOM = 0;
       BASE_WIDTH = 1000;
       BASE_HEIGHT = 506;
       TIMELINE_HEIGHT = 57;
-      width = window.innerWidth - MARGIN_LEFT - MARGIN_RIGHT;
+      SIDEBAR_WIDTH = 400;
+      width = window.innerWidth - MARGIN_LEFT - MARGIN_RIGHT - SIDEBAR_WIDTH;
       height = window.innerHeight - MARGIN_TOP - MARGIN_BOTTOM - TIMELINE_HEIGHT;
       $scope.base_scale = Math.max(Math.min(width / BASE_WIDTH, height / BASE_HEIGHT), 1);
       $scope.mapWidth = BASE_WIDTH * $scope.base_scale;

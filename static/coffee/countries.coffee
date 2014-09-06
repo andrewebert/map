@@ -10,8 +10,8 @@ app.directive 'countries', -> ($scope) ->
     for country, data of initial_countries
         countries[last_time][country] = data
 
-    flag_urls = (initial_countries[code].flag for code in population \
-        when initial_countries[code]?.flag?)
+    #flag_urls = (initial_countries[code].flag for code in population \
+        #when initial_countries[code]?.flag?)
     prev = countries[last_time]
     for date, i in $scope.times[1..]
         time = $scope.times.length - i - 2
@@ -46,11 +46,11 @@ app.directive 'countries', -> ($scope) ->
         image.onload = -> on_load(src, image)
         image.onerror = -> on_load(src, image)
 
-    load_flags = (flag_urls) ->
-        store = (src, image) -> 
-            console.log(src)
-            $scope.flags[src] = image
-        for src in flag_urls
-            $scope.load_image(src, store)
+    #load_flags = (flag_urls) ->
+        #store = (src, image) -> 
+            #console.log(src)
+            #$scope.flags[src] = image
+        #for src in flag_urls
+            #$scope.load_image(src, store)
 
 

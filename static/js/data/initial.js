@@ -230,6 +230,15 @@ initial_countries = {
         "link": "http://en.wikipedia.org/wiki/Azerbaijan",
         "name": "Azerbaijan"
     },
+    "AZA": {
+        "code": "ML",
+        "description": "",
+        "fill": "disputed",
+        "flag": "static/img/Flag_of_Mali.svg",
+        "formal": "Republic of Mali",
+        "link": "http://en.wikipedia.org/wiki/Mali",
+        "removed": true
+    },
     "BA": {
         "code": "BA",
         "d": "m 547.809,105.45387 -1.19945,-0.68169 -1.73329,0.0427 -2.20231,-0.51195 -1.16712,0.0684 -0.49319,0.63956 -0.95697,-0.70795 -0.42709,1.27873 1.34556,1.43691 0.62279,0.95091 1.25541,1.14524 1.02199,0.67862 1.06542,1.28095 2.352,1.16179 0.22417,-1.68787 0.76131,-0.71254 0.4483,-0.2799 0.58439,-0.13567 0.23337,-1.44213 -1.32815,-1.18025 0.50405,-1.35235 -0.91119,0.009 z",
@@ -1767,7 +1776,10 @@ initial_countries = {
         "flag": "static/img/Flag_of_Mali.svg",
         "formal": "Republic of Mali",
         "link": "http://en.wikipedia.org/wiki/Mali",
-        "name": "Mali"
+        "name": "Mali",
+        "replacing": [
+            "AZA"
+        ]
     },
     "MM": {
         "code": "MM",
