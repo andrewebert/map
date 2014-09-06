@@ -66,9 +66,10 @@ history_data = {
         ]
     },
     "1998": {
-        "highlighted": "CD PUN SO PG BOU",
+        "highlighted": "CD PUN SO PG BOU GB",
         "text": [
-            "In August 1998, rebel forces backed by Rwanda, Burundi and Uganda began the Second Congo War.",
+            "In April 1998, the Good Friday Agreement brought an end to the Troubles in Northern Ireland.",
+            "In August, rebel forces backed by Rwanda, Burundi and Uganda began the Second Congo War.",
             "Also in August, the Puntland State of Somalia declared independence from the rest of Somalia.",
             "In December, the Republic of Bougainville was taken over by Papua New Guinea."
         ]
@@ -138,7 +139,7 @@ history_data = {
         "text": [
             "In February 2008, Kosovo peacefully declared independence from Serbia with partial international recognition.",
             "In August, seperatists in Abkhazia and South Ossetia, with Russian backing, successfully gained independence from Georgia following a brief war. Both nations gained limited international recognition.",
-            "In December, Israel launched an invasion of the Gaza Strip in Palestine."
+            "In December, Israel launched an invasion of the Gaza Strip."
         ]
     },
     "2009": {
@@ -169,7 +170,7 @@ history_data = {
         "text": [
             "In April 2012, shortly after the overthrow of the Malian government, the National Movement for the Liberation of Azawad (MNLA) declared independence in northern Mali. In June, the Islamic movement Ansar Dine took control of most cities in Azawad.",
             "In February, President Ali Abdullah Saleh of Yemen resigned following widespread protests.",
-            "In November, Israel launched an invasion of the Gaza Strip in Palestine."
+            "In November, Israel launched an invasion of the Gaza Strip."
         ]
     },
     "2013": {
@@ -182,9 +183,9 @@ history_data = {
     "2014": {
         "highlighted": "UA CRI NVR IQ SY ISIS IL PS",
         "text": [
-            "The 2014 Ukraine revolution and the deposition of President Viktor Yanukovych created unrest in the pro-Russian eastern and southern regions of Ukraine. In March, Russia annexed the Crimean peninsula. In April, separatists in Donetsk and Luhansk declared indepencence, forming the unrecognized Federal State of Novorossiya.",
-            "In June, the Islamic State of Iraq and the Levant (ISIL, also known as ISIS) captured a significant amount of territory in Syria and Iraq. Its leader, Abu Bakr al-Baghdadi, declared the captured territory to be the Islamic State and himself its Caliph. In August, U.S. troops returned to Iraq to fight the Islamic State.",
-            "In July, Israel launched an invasion of the Gaza Strip in Palestine."
+            "The 2014 Ukraine revolution and the overthrow of President Viktor Yanukovych created unrest in the pro-Russian eastern and southern regions of Ukraine. In March, Russia annexed the Crimean peninsula. In April, separatists in Donetsk and Luhansk declared indepencence, forming the unrecognized Federal State of Novorossiya.",
+            "In June, the Islamic State of Iraq and the Levant (ISIL, also known as ISIS) captured large portions of Syria and Iraq. Its leader, Abu Bakr al-Baghdadi, declared the captured territory to be the Islamic State and himself its Caliph. In August, U.S. troops returned to Iraq to fight the Islamic State.",
+            "In July, Israel launched an invasion of the Gaza Strip."
         ]
     }
 };

@@ -14,19 +14,7 @@ changes = {
         "AU": {
             "flag": ""
         },
-        "CHR": {
-            "flag": ""
-        },
-        "COC": {
-            "flag": ""
-        },
-        "HM": {
-            "flag": ""
-        },
         "NF": {
-            "flag": ""
-        },
-        "NR": {
             "flag": ""
         }
     },
@@ -168,22 +156,7 @@ changes = {
         "DEUS": {
             "flag": "static/img/US_flag_45_stars.svg"
         },
-        "FM": {
-            "flag": "static/img/US_flag_45_stars.svg"
-        },
         "GU": {
-            "flag": "static/img/US_flag_45_stars.svg"
-        },
-        "MH": {
-            "flag": "static/img/US_flag_45_stars.svg"
-        },
-        "MP": {
-            "flag": "static/img/US_flag_45_stars.svg"
-        },
-        "PH": {
-            "flag": "static/img/US_flag_45_stars.svg"
-        },
-        "PW": {
             "flag": "static/img/US_flag_45_stars.svg"
         },
         "RYU": {
@@ -263,6 +236,9 @@ changes = {
         "CV": {
             "flag": "static/img/Flag_Portugal_%25281830%2529.svg"
         },
+        "GOA": {
+            "flag": "static/img/Flag_Portugal_%25281830%2529.svg"
+        },
         "GW": {
             "flag": "static/img/Flag_Portugal_%25281830%2529.svg"
         },
@@ -274,9 +250,6 @@ changes = {
         },
         "PT": {
             "flag": "static/img/Flag_Portugal_%25281830%2529.svg"
-        },
-        "TL": {
-            "flag": "static/img/Flag_Portugal_%25281830%2529.svg"
         }
     },
     "1912_02": {
@@ -286,13 +259,7 @@ changes = {
         "ETR": {
             "flag": "static/img/China_Qing_Dynasty_Flag_1889.svg"
         },
-        "HK": {
-            "flag": "static/img/China_Qing_Dynasty_Flag_1889.svg"
-        },
         "MEN": {
-            "flag": "static/img/China_Qing_Dynasty_Flag_1889.svg"
-        },
-        "MO": {
             "flag": "static/img/China_Qing_Dynasty_Flag_1889.svg"
         },
         "TW": {
@@ -342,22 +309,7 @@ changes = {
         "DEUS": {
             "flag": "static/img/US_flag_46_stars.svg"
         },
-        "FM": {
-            "flag": "static/img/US_flag_46_stars.svg"
-        },
         "GU": {
-            "flag": "static/img/US_flag_46_stars.svg"
-        },
-        "MH": {
-            "flag": "static/img/US_flag_46_stars.svg"
-        },
-        "MP": {
-            "flag": "static/img/US_flag_46_stars.svg"
-        },
-        "PH": {
-            "flag": "static/img/US_flag_46_stars.svg"
-        },
-        "PW": {
             "flag": "static/img/US_flag_46_stars.svg"
         },
         "RYU": {
@@ -432,13 +384,7 @@ changes = {
         "ETR": {
             "flag": "static/img/Flag_of_the_Republic_of_China_1912-1928.svg"
         },
-        "HK": {
-            "flag": "static/img/Flag_of_the_Republic_of_China_1912-1928.svg"
-        },
         "MEN": {
-            "flag": "static/img/Flag_of_the_Republic_of_China_1912-1928.svg"
-        },
-        "MO": {
             "flag": "static/img/Flag_of_the_Republic_of_China_1912-1928.svg"
         },
         "SMO": {
@@ -467,13 +413,7 @@ changes = {
         "ETR": {
             "flag": "static/img/YuanFlag1.svg"
         },
-        "HK": {
-            "flag": "static/img/YuanFlag1.svg"
-        },
         "MEN": {
-            "flag": "static/img/YuanFlag1.svg"
-        },
-        "MO": {
             "flag": "static/img/YuanFlag1.svg"
         },
         "TW": {
@@ -566,13 +506,7 @@ changes = {
         "LV": {
             "flag": "static/img/Flag_of_Russia.svg"
         },
-        "MAN": {
-            "flag": "static/img/Flag_of_Russia.svg"
-        },
         "MD": {
-            "flag": "static/img/Flag_of_Russia.svg"
-        },
-        "MEN": {
             "flag": "static/img/Flag_of_Russia.svg"
         },
         "NVR": {
@@ -903,13 +837,7 @@ changes = {
         "LV": {
             "flag": "static/img/Flag_of_Russian_SFSR_%25281918-1937%2529.svg"
         },
-        "MAN": {
-            "flag": "static/img/Flag_of_Russian_SFSR_%25281918-1937%2529.svg"
-        },
         "MD": {
-            "flag": "static/img/Flag_of_Russian_SFSR_%25281918-1937%2529.svg"
-        },
-        "MEN": {
             "flag": "static/img/Flag_of_Russian_SFSR_%25281918-1937%2529.svg"
         },
         "NVR": {
@@ -1006,13 +934,7 @@ changes = {
         "LV": {
             "flag": "static/img/Flag_of_the_Soviet_Union_%25281923%2529.svg"
         },
-        "MAN": {
-            "flag": "static/img/Flag_of_the_Soviet_Union_%25281923%2529.svg"
-        },
         "MD": {
-            "flag": "static/img/Flag_of_the_Soviet_Union_%25281923%2529.svg"
-        },
-        "MEN": {
             "flag": "static/img/Flag_of_the_Soviet_Union_%25281923%2529.svg"
         },
         "NVR": {
@@ -1174,13 +1096,7 @@ changes = {
         "ETR": {
             "flag": "static/img/Flag_of_the_Republic_of_China_1912-1928.svg"
         },
-        "HK": {
-            "flag": "static/img/Flag_of_the_Republic_of_China_1912-1928.svg"
-        },
         "MEN": {
-            "flag": "static/img/Flag_of_the_Republic_of_China_1912-1928.svg"
-        },
-        "MO": {
             "flag": "static/img/Flag_of_the_Republic_of_China_1912-1928.svg"
         },
         "TW": {
@@ -1412,9 +1328,6 @@ changes = {
         }
     },
     "1936_05": {
-        "ER": {
-            "flag": "static/img/Flag_of_Ethiopia_%25281897-1936%253B_1941-1974%2529.svg"
-        },
         "ET": {
             "flag": "static/img/Flag_of_Ethiopia_%25281897-1936%253B_1941-1974%2529.svg"
         }
@@ -1482,9 +1395,6 @@ changes = {
         }
     },
     "1941_05": {
-        "ER": {
-            "flag": ""
-        },
         "ET": {
             "flag": ""
         }
@@ -2046,10 +1956,6 @@ changes = {
             "link": "http://en.wikipedia.org/wiki/Nazi_Germany",
             "removed": true
         },
-        "FO": {
-            "fill": "color5",
-            "flag": "static/img/Flag_of_German_Reich_%25281935%25E2%2580%25931945%2529.svg"
-        },
         "GL": {
             "fill": "color5",
             "flag": "static/img/Flag_of_German_Reich_%25281935%25E2%2580%25931945%2529.svg"
@@ -2067,10 +1973,6 @@ changes = {
             "link": "http://en.wikipedia.org/wiki/Independent_State_of_Croatia",
             "name": "Croatia",
             "removed": false
-        },
-        "ID": {
-            "fill": "color5",
-            "flag": "static/img/Flag_of_German_Reich_%25281935%25E2%2580%25931945%2529.svg"
         },
         "IT": {
             "d": "m 534.90698,103.19972 -0.62454,0.33023 0.0154,1.07162 0.81178,1.0311 0.67855,-1.32997 0.6787,-1.36604 0.22714,-0.45717 -1.01646,-0.70711 0.76235,-1.18219 -2.0552,-0.23468 -3.6108,-0.801443 7e-5,7e-5 -0.62127,-1.080037 -2.42168,0.539771 -0.25616,0.590554 -1.52964,-0.441413 -0.13133,1.272378 -1.07159,0.52309 -1.86275,-0.38861 -0.48416,1.25002 -1.18568,0.0984 -0.45315,-0.491 -1.35908,1.05029 -1.20056,0.14711 -1.0987,-0.66303 -0.0738,0.87452 0.77691,1.16021 -0.83867,0.9393 0.72852,2.37865 1.38265,0.38926 -0.24132,1.33099 1.04414,-0.22471 1.40491,-1.42331 1.14456,-0.4147 2.10012,1.01277 1.27527,0.35657 0.94124,3.0309 1.82257,1.76917 2.44624,2.00594 2.08242,1.39753 1.91209,0.20112 1.18862,1.25074 1.69027,0.56772 0.84704,1.35351 1.09731,0.39232 0.8917,1.59561 1.13018,1.84711 -0.52231,0.68389 -0.42725,1.7231 0.0477,0.98533 1.07352,-0.24849 1.21935,-2.75669 1.0733,-0.18983 0.19505,-1.66503 -1.95207,-1.17611 0.94501,-2.03666 2.27933,0.51626 1.54473,1.47176 0.39667,-1.12973 -0.31298,-0.58674 -2.33538,-1.63039 -1.95842,-0.94072 -2.38027,-1.1203 0.67428,-0.61577 -0.67365,-0.682 -2.00312,0.019 -3.0078,-2.4786 -1.4436,-2.53531 -2.47015,-1.54421 -0.92133,-1.56301 0.25555,-0.87621 -0.23127,-1.53035 1.96812,-1.09689 2.02271,0.45047 z m 5.55462,22.90686 -1.96341,0.28105 -2.64239,0.35093 -3.0674,-0.29458 -0.2886,1.65647 3.73142,1.64381 1.35036,0.34912 2.07015,1.21891 0.46066,-1.66408 -0.44701,-1.00195 z m -16.80666,-9.42806 -1.24729,0.96391 -1.42049,-0.15577 0.65175,1.78615 0.23539,3.8179 1.01206,0.84752 1.0212,-1.06639 1.18744,0.20123 0.19552,-4.18162 z"
@@ -2110,9 +2012,6 @@ changes = {
             "flag": "static/img/Flag_of_German_Reich_%25281935%25E2%2580%25931945%2529.svg",
             "formal": "German Reich",
             "link": "http://en.wikipedia.org/wiki/Nazi_Germany"
-        },
-        "SML": {
-            "flag": "static/img/Flag_of_German_Reich_%25281935%25E2%2580%25931945%2529.svg"
         },
         "SR": {
             "fill": "color5",
@@ -2790,12 +2689,6 @@ changes = {
             "flag": "static/img/Flag_of_Italy_%25281861-1946%2529.svg",
             "formal": "Kingdom of Italy",
             "link": "http://en.wikipedia.org/wiki/Kingdom_of_Italy_(1861%E2%80%931946)"
-        },
-        "PUN": {
-            "flag": "static/img/Flag_of_Italy_%25281861-1946%2529.svg"
-        },
-        "SO": {
-            "flag": "static/img/Flag_of_Italy_%25281861-1946%2529.svg"
         }
     },
     "1946_07": {
@@ -3454,9 +3347,6 @@ changes = {
             "formal": "Republic of China",
             "link": "http://en.wikipedia.org/wiki/Republic_of_China_(1912%E2%80%931949)"
         },
-        "MO": {
-            "flag": "static/img/Flag_of_the_Republic_of_China.svg"
-        },
         "NJI": {
             "flag": "static/img/Flag_of_the_Republic_of_China.svg",
             "formal": "Republic of China",
@@ -3915,6 +3805,7 @@ changes = {
             "d": "m 596.3465,284.23683 -0.66169,-4.3178 -0.91011,-1.48045 -0.54085,-0.87791 -2.72485,-0.59228 1.28593,1.41637 0.64312,2.69486 -0.498,0.86034 -0.6318,2.57365 0.45627,2.63059 -0.91133,1.10514 -0.94354,2.94943 1.43306,0.82231 1.54313,1.5239 0.77572,-0.29172 1.06549,0.80346 0.10956,1.27223 -0.64592,1.47621 0.10712,2.23822 1.71719,1.9614 0.94869,-2.2031 1.23077,-0.66862 -0.058,-4.08257 -1.07311,-2.29619 -0.96514,-1.02362 -0.96735,0.0463 -0.63885,-4.12724 0.85451,-2.41288 z",
             "description": "Protectorate of the United Kingdom",
             "fill": "color2",
+            "flag": "static/img/Flag_of_Nyasaland_%25281919-1964%2529.svg",
             "formal": "Nyasaland",
             "link": "http://en.wikipedia.org/wiki/Nyasaland",
             "name": "Nyasaland",
@@ -3925,6 +3816,7 @@ changes = {
             "d": "m 591.509,276.96839 -1.56489,-0.95322 -1.76472,-0.53436 -1.10329,-0.5317 -1.15201,-0.80823 -1.09514,-0.32304 -3.76418,0.53584 -0.75597,0.37948 -0.83384,2.0267 0.59764,1.40013 -0.57635,3.75881 -0.42146,3.18675 0.73852,0.56486 1.91487,1.23557 0.78033,-0.57734 0.1344,3.42354 -2.12885,-0.0263 -1.09341,-1.7473 -0.98983,-1.35287 -2.12349,-0.44363 -0.58485,-1.6636 -1.72761,1.00226 -2.22136,-0.44281 -0.89976,-1.44145 -1.76433,-0.29285 -1.30843,0.0766 -0.1402,-0.98683 -0.9606,-0.0799 0.27529,0.98569 -0.34872,1.53973 0.45762,1.48903 -0.44173,1.18914 0.21176,1.09595 -5.79556,-0.04 -0.38094,10.10247 1.79226,2.59771 1.74324,1.98335 2.28901,-0.7216 1.78812,0.18278 1.06672,0.71569 0.0114,0.2635 0.48872,0.23724 3.07758,0.34767 0.88418,0.36571 0.93613,-0.0737 1.61047,-2.05484 2.50741,-2.6113 1.00132,-0.24973 0.37866,-1.10081 1.6262,-1.26489 2.11757,-0.43465 -0.18036,-2.25966 8.52613,-2.61696 -1.43306,-0.82231 0.94354,-2.94943 0.91133,-1.10514 -0.45627,-2.63059 0.6318,-2.57365 0.498,-0.86034 -0.64312,-2.69486 -1.28593,-1.41637 z",
             "description": "Protectorate of the United Kingdom",
             "fill": "color2",
+            "flag": "static/img/Flag_of_Northern_Rhodesia_%25281939-1953%2529.svg",
             "formal": "Northern Rhodesia",
             "link": "http://en.wikipedia.org/wiki/Northern_Rhodesia",
             "name": "Northern Rhodesia",
@@ -3932,20 +3824,10 @@ changes = {
         },
         "ZW": {
             "d": "m 585.58322,318.30599 3.06943,-3.60254 0.83625,-2.289 0.42981,-0.28884 0.40163,-1.86857 -0.39772,-0.94027 0.23155,-2.37233 0.64224,-2.20025 0.17707,-4.01851 -1.39445,-1.02024 -1.30981,-0.2307 -0.56481,-0.78562 -1.25785,-0.6701 -2.31553,0.0632 -0.13409,-1.18449 -2.11757,0.43465 -1.6262,1.26489 -0.37866,1.10081 -1.00132,0.24973 -2.50741,2.6113 -1.61047,2.05484 -0.93613,0.0737 -0.88418,-0.36571 -3.07758,-0.34767 0.97129,2.53826 0.53445,0.56633 0.7977,1.83704 2.98058,3.48664 1.1648,0.34132 -0.0395,1.11957 0.7239,2.01279 2.10321,0.48713 1.68587,1.43421 1.11502,0.0346 1.30235,0.53768 0.94294,-0.38104 1.44318,0.31724 z",
+            "flag": "static/img/Flag_of_Southern_Rhodesia.svg",
             "formal": "Southern Rhodesia",
             "link": "http://en.wikipedia.org/wiki/Southern_Rhodesia",
             "name": "Southern Rhodesia"
-        }
-    },
-    "1953_09": {
-        "MW": {
-            "flag": "static/img/Flag_of_Southern_Rhodesia.svg"
-        },
-        "ZM": {
-            "flag": "static/img/Flag_of_Southern_Rhodesia.svg"
-        },
-        "ZW": {
-            "flag": "static/img/Flag_of_Southern_Rhodesia.svg"
         }
     },
     "1953_10": {
@@ -5396,6 +5278,7 @@ changes = {
             "d": "m 703.91605,196.91921 0.95895,-0.27902 1.3125,0.92233 0.3125,2.0625 -0.62814,0.2058 z",
             "description": "Overseas province of Portugal",
             "fill": "color7",
+            "flag": "static/img/Flag_of_Portugal.svg",
             "formal": "Portuguese India",
             "link": "http://en.wikipedia.org/wiki/Portuguese_India",
             "name": "Portuguese India",

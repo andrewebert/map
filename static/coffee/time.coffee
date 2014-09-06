@@ -1,4 +1,4 @@
-app.directive 'time', ($timeout) -> ($scope) ->
+app.directive 'time', ($timeout, $location) -> ($scope) ->
     format_month = (m) -> (if m < 10 then "0" else "") + m.toString()
 
     START_YEAR = 1945
@@ -19,8 +19,8 @@ app.directive 'time', ($timeout) -> ($scope) ->
 
     $scope.times = times
     $scope.max_time = (NOW_YEAR - START_YEAR) * 12 + NOW_MONTH - START_MONTH
-    $scope.time = $scope.max_time
-    $scope.raw_time = $scope.time.toString()
+    #$scope.time = $scope.max_time
+    #$scope.raw_time = $scope.time.toString()
     $scope.paused = true
 
     
@@ -36,8 +36,23 @@ app.directive 'time', ($timeout) -> ($scope) ->
                   9: "Sep", 10: "Oct", 11: "Nov", 12: "Dec"}
         return "#{months[month]} #{year}"
 
+    to_url_time = (time) ->
+        year = Math.floor(time/12) + START_YEAR
+        month = time%12 + 1
+        return "#{year}-#{if month < 10 then "0" else ""}#{month}"
+
+    from_url_time = (url) ->
+        [year, month] = url[1..].split("-")
+        time = (parseInt(year) - START_YEAR)*12 + parseInt(month) - 1
+        if isNaN(time) then return $scope.max_time
+        return Math.max(Math.min(time, $scope.max_time), 0)
+
+    $scope.$watch (-> $location.url()), (url) ->
+        $scope.raw_time = from_url_time(url).toString()
+
     $scope.$watch 'raw_time', (value) ->
         $scope.time = parseInt(value)
+        $location.url(to_url_time($scope.time))
 
     $scope.year = -> Math.floor($scope.time/12) + START_YEAR
 

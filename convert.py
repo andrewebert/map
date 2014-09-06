@@ -179,6 +179,9 @@ def update_data(original, changes):
                         while main_owner_for_fill in main_owners:
                             main_owner_for_fill = main_owners[main_owner_for_fill]
                         data["fill"] = defaults["fill"][main_owner_for_fill]
+                        for colony_list in colonies.values():
+                            if code in colony_list:
+                                colony_list.remove(code)
                         colonies[main_owner].append(code)
                         for owner in owners:
                             try:

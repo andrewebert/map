@@ -1,10 +1,10 @@
 2014
 UA CRI NVR IQ SY ISIS IL PS
-The 2014 Ukraine revolution and the deposition of President Viktor Yanukovych created unrest in the pro-Russian eastern and southern regions of Ukraine. In March, Russia annexed the Crimean peninsula. In April, separatists in Donetsk and Luhansk declared indepencence, forming the unrecognized Federal State of Novorossiya.
+The 2014 Ukraine revolution and the overthrow of President Viktor Yanukovych created unrest in the pro-Russian eastern and southern regions of Ukraine. In March, Russia annexed the Crimean peninsula. In April, separatists in Donetsk and Luhansk declared indepencence, forming the unrecognized Federal State of Novorossiya.
 
-In June, the Islamic State of Iraq and the Levant (ISIL, also known as ISIS) captured a significant amount of territory in Syria and Iraq. Its leader, Abu Bakr al-Baghdadi, declared the captured territory to be the Islamic State and himself its Caliph. In August, U.S. troops returned to Iraq to fight the Islamic State.
+In June, the Islamic State of Iraq and the Levant (ISIL, also known as ISIS) captured large portions of Syria and Iraq. Its leader, Abu Bakr al-Baghdadi, declared the captured territory to be the Islamic State and himself its Caliph. In August, U.S. troops returned to Iraq to fight the Islamic State.
 
-In July, Israel launched an invasion of the Gaza Strip in Palestine.
+In July, Israel launched an invasion of the Gaza Strip.
 
 2013
 EG
@@ -18,7 +18,7 @@ In April 2012, shortly after the overthrow of the Malian government, the Nationa
 
 In February, President Ali Abdullah Saleh of Yemen resigned following widespread protests.
 
-In November, Israel launched an invasion of the Gaza Strip in Palestine.
+In November, Israel launched an invasion of the Gaza Strip.
 
 2011
 SS TN LY EG SY
@@ -48,7 +48,7 @@ In February 2008, Kosovo peacefully declared independence from Serbia with parti
 
 In August, seperatists in Abkhazia and South Ossetia, with Russian backing, successfully gained independence from Georgia following a brief war. Both nations gained limited international recognition.
 
-In December, Israel launched an invasion of the Gaza Strip in Palestine.
+In December, Israel launched an invasion of the Gaza Strip.
 
 2006
 ME RS LB
@@ -107,8 +107,10 @@ In October, Russian forces occupied the Chechen Republic of Ichkeria, ending its
 Also in October, East Timor gained independence from Indonesia following a referendum. Administration of East Timor was controlled by the United Nations until independence was formalized in May 2002.
 
 1998
-CD PUN SO PG BOU
-In August 1998, rebel forces backed by Rwanda, Burundi and Uganda began the Second Congo War.
+CD PUN SO PG BOU GB
+In April 1998, the Good Friday Agreement brought an end to the Troubles in Northern Ireland.
+
+In August, rebel forces backed by Rwanda, Burundi and Uganda began the Second Congo War.
 
 Also in August, the Puntland State of Somalia declared independence from the rest of Somalia.
 

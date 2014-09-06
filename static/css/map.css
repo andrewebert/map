@@ -1,5 +1,6 @@
 body {
-  background-color: #d8d8d8;
+  background-color: #002b36;
+  /*#d8d8d8;*/
   margin: 0px;
 }
 #map {
@@ -36,15 +37,18 @@ body {
 }
 slider {
   position: absolute;
-  right: 2%;
-  bottom: 0%;
-  width: 91%;
+  left: 1%;
+  width: 98%;
+  color: #eee8d5;
 }
 slider .bubble.limit {
   display: none;
 }
 slider .bar {
-  background: #c0c0c0 !important;
+  height: 22px !important;
+  top: -8px !important;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), #c0c0c0 7px, #c0c0c0 15px, rgba(0, 0, 0, 0) 15px) !important;
+  border-radius: 0px !important;
   box-shadow: none !important;
   -webkit-box-shadow: none !important;
 }
@@ -179,8 +183,8 @@ slider .bar {
   max-height: 200px;
 }
 #flag.hoverable:hover {
-  max-width: 140%;
-  max-height: 320px;
+  max-width: 210%;
+  max-height: 480px;
 }
 .description {
   font-size: 1em;
@@ -255,7 +259,7 @@ slider .bar {
   fill: #9d9d9d;
 }
 .selected {
-  fill: "000000";
+  fill: #fdf6e3;
 }
 /*.color1.selected { fill: #af0b0b; }*/
 /*.color2.selected { fill: #af480b; }*/

@@ -31,7 +31,7 @@ html(lang = "en", ng-app = "map")
     #labelmarker(ng-show="label.visible()" ng-style="{left: label.x + 'px', top: label.y + 'px'}")
       #label(ng-class="label.flip")
         p {{ label.text() }}
-    #sidebar(ng-style="{height: (mapHeight+57) + 'px'}",
+    #sidebar(ng-style="{height: mapHeight + 'px'}",
              ng-class="{overflowauto: !curr_code()}")
       a#formal(ng-class = "{nopoint: drag_data.dragging}",
                ng-attr-href = "{{ link() }}",
@@ -44,22 +44,23 @@ html(lang = "en", ng-app = "map")
       p.description(ng-repeat="p in history_text()",
                     ng-hide="curr_code()")
         {{ p }}
+    #timeline(ng-mouseover="release()")
+      //-#playbox
+        //-span#play.fa(ng-click = "play()",
+                      //-ng-class = "{true: 'fa-play', false: 'fa-pause'}[paused]")
+      slider.noselect(floor="0",
+                      ceiling="{{ max_time }} ",
+                      precision="1",
+                      translate="pretty_format",
+                      ng-model="raw_time",
+                      ng-style="{top: mapHeight+'px'}")
     #map(transformable, countries, time, hotkeys, history,
-         ng-style="{width: mapWidth + 'px', height: (mapHeight+57) + 'px'}",
+         ng-style="{width: mapWidth + 'px', height: mapHeight + 'px'}",
          ng-mousedown="grab($event)",
          ng-mousemove="drag($event)",
          ng-mouseup="release()",
          ng-mouseleave="release()")
 
-      #timeline(ng-mouseover="release()")
-        #playbox
-          span#play.fa(ng-click = "play()",
-                       ng-class = "{true: 'fa-play', false: 'fa-pause'}[paused]")
-        slider.noselect(floor="0",
-               ceiling="{{ max_time }} ",
-               precision="1",
-               translate="pretty_format",
-               ng-model="raw_time")
       //-#info.noselect(ng-show = "curr_code()",
                      //-ng-mouseover="set_info_selected()",
                      //-ng-mouseleave="info_selected=undefined")

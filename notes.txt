@@ -12,6 +12,7 @@ Flags:
 - Trieste 1954
 - Kedah 1912
 - Kelantan 1912
+- ERROR: Aaland 1950
 
 Territory:
 - Ashmore and Cartier Islands: 1933, 1938

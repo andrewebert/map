@@ -283,9 +283,20 @@
                 };
                 return pointer.bind(events.start, onStart);
               };
+              clickBar = function(event) {
+                  eventX = event.clientX || (event.touches ? event.touches[0].clientX : 0);
+                  newOffset = eventX - element[0].getBoundingClientRect().left - pointerHalfWidth;
+                  newOffset = Math.max(Math.min(newOffset, maxOffset), minOffset);
+                  newPercent = percentOffset(newOffset);
+                  newValue = minValue + (valueRange * newPercent / 100.0);
+                  newValue = roundStep(newValue, parseInt(scope.precision), parseFloat(scope.step), parseFloat(scope.floor));
+                  scope[refLow] = newValue;
+                  return scope.$apply();
+              }
               setBindings = function() {
                 var bind, inputMethod, _j, _len1, _ref2, _results;
                 boundToInputs = true;
+                fullBar.bind('click', clickBar);
                 bind = function(method) {
                   bindToInputEvents(minPtr, refLow, inputEvents[method]);
                   return bindToInputEvents(maxPtr, refHigh, inputEvents[method]);
