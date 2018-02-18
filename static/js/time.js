@@ -7,8 +7,8 @@ app.directive('time', function($timeout, $location) {
     };
     START_YEAR = 1945;
     START_MONTH = 1;
-    NOW_YEAR = 2014;
-    NOW_MONTH = 8;
+    NOW_YEAR = 2018;
+    NOW_MONTH = 2;
     NOW = "" + NOW_YEAR + "_" + (format_month(NOW_MONTH));
     times = [];
     for (y = _i = NOW_YEAR; NOW_YEAR <= START_YEAR ? _i <= START_YEAR : _i >= START_YEAR; y = NOW_YEAR <= START_YEAR ? ++_i : --_i) {
